@@ -238,7 +238,166 @@
         </ul>
         <div class="tab-content">
             <div class="tab-pane local" id="comment-local">
-              <div class="comments" id="local-comments-container"></div>
+              
+<style>
+  #local-comments-container {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 8px;
+  }
+  #local-comments-container h3 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  #local-comments-form {
+    margin-bottom: 20px;
+  }
+  #local-comments-form input,
+  #local-comments-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  #local-comments-form textarea {
+    height: 120px;
+    resize: vertical;
+  }
+  #local-comments-form button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  #local-comments-form button:hover {
+    background: #555;
+  }
+  .local-comment {
+    margin-bottom: 15px;
+    padding: 15px;
+    background: white;
+    border-radius: 6px;
+    border-left: 4px solid #333;
+  }
+  .local-comment-author {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  .local-comment-time {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 10px;
+  }
+  .local-comment-content {
+    line-height: 1.5;
+    color: #666;
+  }
+  #local-comments-list {
+    margin-top: 20px;
+  }
+  .local-comment-empty {
+    text-align: center;
+    color: #999;
+    padding: 20px;
+  }
+</style>
+
+<div id="local-comments-container">
+  <h3>本地评论</h3>
+  
+  <!-- 评论表单 -->
+  <form id="local-comments-form">
+    <input type="text" id="local-comment-name" placeholder="请输入您的昵称" required>
+    <textarea id="local-comment-content" placeholder="留下您的评论吧" required></textarea>
+    <button type="submit">发表评论</button>
+  </form>
+  
+  <!-- 评论列表 -->
+  <div id="local-comments-list">
+    <div class="local-comment-empty">暂无评论，快来抢沙发吧！</div>
+  </div>
+</div>
+
+<script>
+NexT.utils.loadComments(document.querySelector('#local-comments-container'), () => {
+  // 页面路径作为评论存储的key
+  const commentKey = 'local_comments_' + encodeURIComponent('/post/2026-02-01-macmini-32gb.html');
+  // 简单的哈希函数
+  function simpleHash(str) {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) {
+      const char = str.charCodeAt(i);
+      hash = ((hash << 5) - hash) + char;
+      hash = hash & hash;
+    }
+    return Math.abs(hash).toString(16);
+  }
+  const safeCommentKey = 'local_comments_' + simpleHash('/post/2026-02-01-macmini-32gb.html');
+  const commentsList = document.getElementById('local-comments-list');
+  const commentForm = document.getElementById('local-comments-form');
+  
+  // 加载评论
+  function loadComments() {
+    const comments = JSON.parse(localStorage.getItem(safeCommentKey) || '[]');
+    
+    if (comments.length === 0) {
+      commentsList.innerHTML = '<div class="local-comment-empty">暂无评论，快来抢沙发吧！</div>';
+      return;
+    }
+    
+    commentsList.innerHTML = comments.map(comment => `
+      <div class="local-comment">
+        <div class="local-comment-author">${comment.name}</div>
+        <div class="local-comment-time">${comment.time}</div>
+        <div class="local-comment-content">${comment.content}</div>
+      </div>
+    `).join('');
+  }
+  
+  // 提交评论
+  commentForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const name = document.getElementById('local-comment-name').value;
+    const content = document.getElementById('local-comment-content').value;
+    
+    if (!name || !content) return;
+    
+    const now = new Date();
+    const time = now.toLocaleString('zh-CN', {
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit'
+    });
+    
+    const comments = JSON.parse(localStorage.getItem(safeCommentKey) || '[]');
+    comments.push({
+      name: name,
+      content: content,
+      time: time
+    });
+    
+    localStorage.setItem(safeCommentKey, JSON.stringify(comments));
+    
+    // 清空表单
+    document.getElementById('local-comment-content').value = '';
+    
+    // 重新加载评论
+    loadComments();
+  });
+  
+  // 初始加载评论
+  loadComments();
+});
+</script>
             </div>
             <div class="tab-pane gitalk" id="comment-gitalk">
               <div class="comments" id="gitalk-container"></div>
@@ -413,164 +572,5 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
 });
 </script>
 
-<style>
-  #local-comments {
-    margin-top: 20px;
-    padding: 20px;
-    background: #f8f8f8;
-    border-radius: 8px;
-  }
-  #local-comments h3 {
-    margin-bottom: 15px;
-    color: #333;
-  }
-  #local-comments-form {
-    margin-bottom: 20px;
-  }
-  #local-comments-form input,
-  #local-comments-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  #local-comments-form textarea {
-    height: 120px;
-    resize: vertical;
-  }
-  #local-comments-form button {
-    background: #333;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  #local-comments-form button:hover {
-    background: #555;
-  }
-  .local-comment {
-    margin-bottom: 15px;
-    padding: 15px;
-    background: white;
-    border-radius: 6px;
-    border-left: 4px solid #333;
-  }
-  .local-comment-author {
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #333;
-  }
-  .local-comment-time {
-    font-size: 12px;
-    color: #999;
-    margin-bottom: 10px;
-  }
-  .local-comment-content {
-    line-height: 1.5;
-    color: #666;
-  }
-  #local-comments-list {
-    margin-top: 20px;
-  }
-  .local-comment-empty {
-    text-align: center;
-    color: #999;
-    padding: 20px;
-  }
-</style>
-
-<div id="local-comments">
-  <h3>本地评论</h3>
-  
-  <!-- 评论表单 -->
-  <form id="local-comments-form">
-    <input type="text" id="local-comment-name" placeholder="请输入您的昵称" required>
-    <textarea id="local-comment-content" placeholder="留下您的评论吧" required></textarea>
-    <button type="submit">发表评论</button>
-  </form>
-  
-  <!-- 评论列表 -->
-  <div id="local-comments-list">
-    <div class="local-comment-empty">暂无评论，快来抢沙发吧！</div>
-  </div>
-</div>
-
-<script>
-NexT.utils.loadComments(document.querySelector('#local-comments-container'), () => {
-  // 页面路径作为评论存储的key
-  const commentKey = 'local_comments_' + encodeURIComponent('/post/2025-01-06-zf41el.html');
-  // 简单的哈希函数
-  function simpleHash(str) {
-    let hash = 0;
-    for (let i = 0; i < str.length; i++) {
-      const char = str.charCodeAt(i);
-      hash = ((hash << 5) - hash) + char;
-      hash = hash & hash;
-    }
-    return Math.abs(hash).toString(16);
-  }
-  const safeCommentKey = 'local_comments_' + simpleHash('/post/2025-01-06-zf41el.html');
-  const commentsList = document.getElementById('local-comments-list');
-  const commentForm = document.getElementById('local-comments-form');
-  
-  // 加载评论
-  function loadComments() {
-    const comments = JSON.parse(localStorage.getItem(safeCommentKey) || '[]');
-    
-    if (comments.length === 0) {
-      commentsList.innerHTML = '<div class="local-comment-empty">暂无评论，快来抢沙发吧！</div>';
-      return;
-    }
-    
-    commentsList.innerHTML = comments.map(comment => `
-      <div class="local-comment">
-        <div class="local-comment-author">${comment.name}</div>
-        <div class="local-comment-time">${comment.time}</div>
-        <div class="local-comment-content">${comment.content}</div>
-      </div>
-    `).join('');
-  }
-  
-  // 提交评论
-  commentForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const name = document.getElementById('local-comment-name').value;
-    const content = document.getElementById('local-comment-content').value;
-    
-    if (!name || !content) return;
-    
-    const now = new Date();
-    const time = now.toLocaleString('zh-CN', {
-      year: 'numeric',
-      month: '2-digit',
-      day: '2-digit',
-      hour: '2-digit',
-      minute: '2-digit'
-    });
-    
-    const comments = JSON.parse(localStorage.getItem(safeCommentKey) || '[]');
-    comments.push({
-      name: name,
-      content: content,
-      time: time
-    });
-    
-    localStorage.setItem(safeCommentKey, JSON.stringify(comments));
-    
-    // 清空表单
-    document.getElementById('local-comment-content').value = '';
-    
-    // 重新加载评论
-    loadComments();
-  });
-  
-  // 初始加载评论
-  loadComments();
-});
-</script>
 </body>
 </html>
