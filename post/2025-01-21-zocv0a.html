@@ -329,7 +329,8 @@
 </div>
 
 <script>
-NexT.utils.loadComments(document.querySelector('#local-comments-container'), () => {
+// 页面加载完成后执行
+window.addEventListener('DOMContentLoaded', function() {
   // 页面路径作为评论存储的key
   const commentKey = 'local_comments_' + encodeURIComponent('/post/2026-02-01-macmini-32gb.html');
   // 简单的哈希函数
@@ -344,67 +345,83 @@ NexT.utils.loadComments(document.querySelector('#local-comments-container'), () 
   }
   const safeCommentKey = 'local_comments_' + simpleHash('/post/2026-02-01-macmini-32gb.html');
   const commentsList = document.getElementById('local-comments-list');
-  const commentForm = document.getElementById('local-comments-form');
   const submitButton = document.getElementById('local-comment-submit');
   
   // 加载评论
   function loadComments() {
-    const comments = JSON.parse(localStorage.getItem(safeCommentKey) || '[]');
-    
-    if (comments.length === 0) {
-      commentsList.innerHTML = '<div class="local-comment-empty">暂无评论，快来抢沙发吧！</div>';
-      return;
+    try {
+      const comments = JSON.parse(localStorage.getItem(safeCommentKey) || '[]');
+      
+      if (comments.length === 0) {
+        commentsList.innerHTML = '<div class="local-comment-empty">暂无评论，快来抢沙发吧！</div>';
+        return;
+      }
+      
+      commentsList.innerHTML = comments.map(comment => `
+        <div class="local-comment">
+          <div class="local-comment-author">${comment.name}</div>
+          <div class="local-comment-time">${comment.time}</div>
+          <div class="local-comment-content">${comment.content}</div>
+        </div>
+      `).join('');
+    } catch (error) {
+      console.error('加载评论失败:', error);
+      commentsList.innerHTML = '<div class="local-comment-empty">加载评论失败，请刷新页面重试</div>';
     }
-    
-    commentsList.innerHTML = comments.map(comment => `
-      <div class="local-comment">
-        <div class="local-comment-author">${comment.name}</div>
-        <div class="local-comment-time">${comment.time}</div>
-        <div class="local-comment-content">${comment.content}</div>
-      </div>
-    `).join('');
   }
   
   // 提交评论
   function submitComment() {
-    const name = document.getElementById('local-comment-name').value;
-    const content = document.getElementById('local-comment-content').value;
-    
-    if (!name || !content) {
-      alert('请填写昵称和评论内容！');
-      return;
+    try {
+      const name = document.getElementById('local-comment-name').value;
+      const content = document.getElementById('local-comment-content').value;
+      
+      if (!name || !content) {
+        alert('请填写昵称和评论内容！');
+        return;
+      }
+      
+      const now = new Date();
+      const time = now.toLocaleString('zh-CN', {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit'
+      });
+      
+      const comments = JSON.parse(localStorage.getItem(safeCommentKey) || '[]');
+      comments.push({
+        name: name,
+        content: content,
+        time: time
+      });
+      
+      localStorage.setItem(safeCommentKey, JSON.stringify(comments));
+      
+      // 清空表单
+      document.getElementById('local-comment-content').value = '';
+      
+      // 重新加载评论
+      loadComments();
+    } catch (error) {
+      console.error('提交评论失败:', error);
+      alert('提交评论失败，请刷新页面重试');
     }
-    
-    const now = new Date();
-    const time = now.toLocaleString('zh-CN', {
-      year: 'numeric',
-      month: '2-digit',
-      day: '2-digit',
-      hour: '2-digit',
-      minute: '2-digit'
-    });
-    
-    const comments = JSON.parse(localStorage.getItem(safeCommentKey) || '[]');
-    comments.push({
-      name: name,
-      content: content,
-      time: time
-    });
-    
-    localStorage.setItem(safeCommentKey, JSON.stringify(comments));
-    
-    // 清空表单
-    document.getElementById('local-comment-content').value = '';
-    
-    // 重新加载评论
-    loadComments();
   }
   
-  // 添加点击事件监听器
-  submitButton.addEventListener('click', submitComment);
+  // 确保按钮元素存在
+  if (submitButton) {
+    // 添加点击事件监听器
+    submitButton.addEventListener('click', submitComment);
+    console.log('本地评论按钮事件监听器已绑定');
+  } else {
+    console.error('未找到本地评论提交按钮');
+  }
   
   // 初始加载评论
   loadComments();
+  console.log('本地评论系统初始化完成');
 });
 </script>
             </div>
