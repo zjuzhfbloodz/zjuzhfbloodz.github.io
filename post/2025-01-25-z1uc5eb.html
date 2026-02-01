@@ -311,9 +311,9 @@
   
   <!-- 评论表单 -->
   <form id="local-comments-form">
-    <input type="text" id="local-comment-name" placeholder="请输入您的昵称" required>
-    <textarea id="local-comment-content" placeholder="留下您的评论吧" required></textarea>
-    <button type="submit">发表评论</button>
+    <input type="text" id="local-comment-name" placeholder="请输入您的昵称">
+    <textarea id="local-comment-content" placeholder="留下您的评论吧"></textarea>
+    <button type="button" id="local-comment-submit">发表评论</button>
   </form>
   
   <!-- 评论列表 -->
@@ -339,6 +339,7 @@ NexT.utils.loadComments(document.querySelector('#local-comments-container'), () 
   const safeCommentKey = 'local_comments_' + simpleHash('/post/2026-02-01-macmini-32gb.html');
   const commentsList = document.getElementById('local-comments-list');
   const commentForm = document.getElementById('local-comments-form');
+  const submitButton = document.getElementById('local-comment-submit');
   
   // 加载评论
   function loadComments() {
@@ -359,13 +360,14 @@ NexT.utils.loadComments(document.querySelector('#local-comments-container'), () 
   }
   
   // 提交评论
-  commentForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
+  function submitComment() {
     const name = document.getElementById('local-comment-name').value;
     const content = document.getElementById('local-comment-content').value;
     
-    if (!name || !content) return;
+    if (!name || !content) {
+      alert('请填写昵称和评论内容！');
+      return;
+    }
     
     const now = new Date();
     const time = now.toLocaleString('zh-CN', {
@@ -390,7 +392,10 @@ NexT.utils.loadComments(document.querySelector('#local-comments-container'), () 
     
     // 重新加载评论
     loadComments();
-  });
+  }
+  
+  // 添加点击事件监听器
+  submitButton.addEventListener('click', submitComment);
   
   // 初始加载评论
   loadComments();
