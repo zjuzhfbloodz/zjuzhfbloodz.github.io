@@ -1,5 +1,5 @@
 // 自动生成 - 不要手动修改
-// 最后更新: 2026/2/4 02:17:31
+// 最后更新: 2026/2/4 09:18:29
 // 运行: node scripts/generate-pet-images.js 更新数据
 
 const petImagesData = {
@@ -10,6 +10,55 @@ const petImagesData = {
 ],
     images: {
   "2026-02-04": [
+    {
+      "date": "2026-02-04",
+      "time": "08:03",
+      "img": "/images/pets/dog_20260204_080315.jpg",
+      "type": "dog",
+      "found": true
+    },
+    {
+      "date": "2026-02-04",
+      "time": "07:32",
+      "img": "/images/pets/dog_20260204_073209.jpg",
+      "type": "dog",
+      "found": true
+    },
+    {
+      "date": "2026-02-04",
+      "time": "06:32",
+      "img": "/images/pets/dog_20260204_063224.jpg",
+      "type": "dog",
+      "found": true
+    },
+    {
+      "date": "2026-02-04",
+      "time": "06:01",
+      "img": "/images/pets/dog_20260204_060114.jpg",
+      "type": "dog",
+      "found": true
+    },
+    {
+      "date": "2026-02-04",
+      "time": "05:01",
+      "img": "/images/pets/dog_20260204_050111.jpg",
+      "type": "dog",
+      "found": true
+    },
+    {
+      "date": "2026-02-04",
+      "time": "03:31",
+      "img": "/images/pets/cat_20260204_033155.jpg",
+      "type": "cat",
+      "found": true
+    },
+    {
+      "date": "2026-02-04",
+      "time": "03:02",
+      "img": "/images/pets/dog_20260204_030211.jpg",
+      "type": "dog",
+      "found": true
+    },
     {
       "date": "2026-02-04",
       "time": "02:01",
@@ -444,12 +493,12 @@ const petImagesData = {
   ]
 },
     stats: {
-        totalImages: 61,
+        totalImages: 68,
         totalDays: 3,
-        foundCount: 22,
+        foundCount: 29,
         notFoundCount: 39,
-        dogCount: 16,
-        catCount: 6
+        dogCount: 22,
+        catCount: 7
     },
     generatedAt: new Date().toISOString()
 };
