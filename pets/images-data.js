@@ -1,5 +1,5 @@
 // 自动生成 - 不要手动修改
-// 最后更新: 2026/2/6 05:35:05
+// 最后更新: 2026/2/6 06:05:04
 // 运行: node scripts/generate-pet-images.js 更新数据
 
 const petImagesData = {
@@ -12,6 +12,209 @@ const petImagesData = {
 ],
     images: {
   "2026-02-06": [
+    {
+      "date": "2026-02-06",
+      "time": "06:04",
+      "img": "/images/pets/pet_20260206_060446.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-06",
+      "time": "06:03",
+      "img": "/images/pets/pet_20260206_060341.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-06",
+      "time": "06:02",
+      "img": "/images/pets/pet_20260206_060237.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-06",
+      "time": "06:01",
+      "img": "/images/pets/pet_20260206_060115.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-06",
+      "time": "06:01",
+      "img": "/images/pets/pet_20260206_060132.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-06",
+      "time": "06:00",
+      "img": "/images/pets/pet_20260206_060027.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-06",
+      "time": "05:59",
+      "img": "/images/pets/pet_20260206_055922.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-06",
+      "time": "05:58",
+      "img": "/images/pets/pet_20260206_055818.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-06",
+      "time": "05:57",
+      "img": "/images/pets/pet_20260206_055713.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-06",
+      "time": "05:56",
+      "img": "/images/pets/pet_20260206_055608.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-06",
+      "time": "05:55",
+      "img": "/images/pets/pet_20260206_055503.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-06",
+      "time": "05:53",
+      "img": "/images/pets/pet_20260206_055358.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-06",
+      "time": "05:52",
+      "img": "/images/pets/pet_20260206_055254.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-06",
+      "time": "05:51",
+      "img": "/images/pets/pet_20260206_055149.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-06",
+      "time": "05:50",
+      "img": "/images/pets/pet_20260206_055044.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-06",
+      "time": "05:49",
+      "img": "/images/pets/pet_20260206_054939.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-06",
+      "time": "05:48",
+      "img": "/images/pets/pet_20260206_054835.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-06",
+      "time": "05:47",
+      "img": "/images/pets/pet_20260206_054730.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-06",
+      "time": "05:46",
+      "img": "/images/pets/pet_20260206_054625.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-06",
+      "time": "05:45",
+      "img": "/images/pets/pet_20260206_054520.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-06",
+      "time": "05:44",
+      "img": "/images/pets/pet_20260206_054416.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-06",
+      "time": "05:43",
+      "img": "/images/pets/pet_20260206_054311.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-06",
+      "time": "05:42",
+      "img": "/images/pets/pet_20260206_054206.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-06",
+      "time": "05:41",
+      "img": "/images/pets/pet_20260206_054101.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-06",
+      "time": "05:39",
+      "img": "/images/pets/pet_20260206_053957.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-06",
+      "time": "05:38",
+      "img": "/images/pets/pet_20260206_053852.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-06",
+      "time": "05:37",
+      "img": "/images/pets/pet_20260206_053747.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-06",
+      "time": "05:36",
+      "img": "/images/pets/pet_20260206_053642.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-06",
+      "time": "05:35",
+      "img": "/images/pets/pet_20260206_053538.jpg",
+      "type": "pet",
+      "found": false
+    },
     {
       "date": "2026-02-06",
       "time": "05:34",
@@ -10089,10 +10292,10 @@ const petImagesData = {
   ]
 },
     stats: {
-        totalImages: 1438,
+        totalImages: 1467,
         totalDays: 5,
         foundCount: 31,
-        notFoundCount: 1407,
+        notFoundCount: 1436,
         dogCount: 24,
         catCount: 7
     },
