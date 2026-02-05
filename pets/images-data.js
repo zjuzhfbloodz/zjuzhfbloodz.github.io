@@ -1,5 +1,5 @@
 // 自动生成 - 不要手动修改
-// 最后更新: 2026/02/05 18:13:29
+// 最后更新: 2026/02/05 21:13:04
 // 运行: node scripts/generate-pet-images.js 更新数据
 
 const petImagesData = {
@@ -11,6 +11,13 @@ const petImagesData = {
     ],
     "images": {
         "2026-02-05": [
+            {
+                "date": "2026-02-05",
+                "time": "21:13",
+                "img": "/images/pets/pet_20260205_211304.jpg",
+                "type": "pet",
+                "found": true
+            },
             {
                 "date": "2026-02-05",
                 "time": "18:13",
