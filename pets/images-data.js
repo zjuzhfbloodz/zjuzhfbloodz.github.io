@@ -1,5 +1,4 @@
-// 自动生成
-// 最后更新: 2026/02/05 21:21:39
+// 自动更新
 const petImagesData = {
     "dates": [
         "2026-02-05",
@@ -9,6 +8,13 @@ const petImagesData = {
     ],
     "images": {
         "2026-02-05": [
+            {
+                "date": "2026-02-05",
+                "time": "21:23",
+                "img": "/images/pets/pet_20260205_212320.jpg",
+                "type": "pet",
+                "found": true
+            },
             {
                 "date": "2026-02-05",
                 "time": "21:21",
