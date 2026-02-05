@@ -48,13 +48,6 @@ const petImagesData = {
             },
             {
                 "date": "2026-02-05",
-                "time": "17:00",
-                "img": "/images/pets/pet_20260205_170004.jpg",
-                "type": "pet",
-                "found": true
-            },
-            {
-                "date": "2026-02-05",
                 "time": "16:55",
                 "img": "/images/pets/pet_20260205_165501.jpg",
                 "type": "pet",
