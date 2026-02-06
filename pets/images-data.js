@@ -1,5 +1,5 @@
 // 自动生成 - 不要手动修改
-// 最后更新: 2026/2/6 20:05:04
+// 最后更新: 2026/2/6 20:35:03
 // 运行: node scripts/generate-pet-images.js 更新数据
 
 const petImagesData = {
