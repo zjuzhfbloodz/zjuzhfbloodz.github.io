@@ -1,5 +1,5 @@
 // 自动生成 - 不要手动修改
-// 最后更新: 2026/2/7 06:35:10
+// 最后更新: 2026/2/7 07:05:03
 // 运行: node scripts/generate-pet-images.js 更新数据
 
 const petImagesData = {
@@ -13,6 +13,13 @@ const petImagesData = {
 ],
     images: {
   "2026-02-07": [
+    {
+      "date": "2026-02-07",
+      "time": "07:03",
+      "img": "/images/pets/pet_20260207_070340.jpg",
+      "type": "pet",
+      "found": false
+    },
     {
       "date": "2026-02-07",
       "time": "06:30",
@@ -10974,10 +10981,10 @@ const petImagesData = {
   ]
 },
     stats: {
-        totalImages: 1564,
+        totalImages: 1565,
         totalDays: 6,
         foundCount: 31,
-        notFoundCount: 1533,
+        notFoundCount: 1534,
         dogCount: 24,
         catCount: 7
     },
