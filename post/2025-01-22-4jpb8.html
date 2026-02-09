@@ -427,6 +427,26 @@
 
   
 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : 'Ov23liwXa5PmFLHICFm6',
+      clientSecret: 'b2abf76f8d432d5b1296e981c836b4ca6d93ccf5',
+      repo        : 'zjuzhfbloodz.github.io',
+      owner       : 'zjuzhfbloodz',
+      admin       : ['zjuzhfbloodz'],
+      id          : '6919f3627a6682ba58b4ec08edfe494a',
+        language: 'zh-CN',
+      distractionFreeMode: false
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
 <script>
   function loadCount() {
     var d = document, s = d.createElement('script');
@@ -456,26 +476,6 @@
       (d.head || d.body).appendChild(s);
     }
   });
-</script>
-
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
-
-<script>
-NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
-    var gitalk = new Gitalk({
-      clientID    : 'Ov23liwXa5PmFLHICFm6',
-      clientSecret: 'b2abf76f8d432d5b1296e981c836b4ca6d93ccf5',
-      repo        : 'zjuzhfbloodz.github.io',
-      owner       : 'zjuzhfbloodz',
-      admin       : ['zjuzhfbloodz'],
-      id          : '6919f3627a6682ba58b4ec08edfe494a',
-        language: 'zh-CN',
-      distractionFreeMode: false
-    });
-    gitalk.render('gitalk-container');
-  }, window.Gitalk);
-});
 </script>
 
 </body>
