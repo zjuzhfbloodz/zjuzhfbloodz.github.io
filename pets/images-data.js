@@ -1,5 +1,5 @@
 // 自动生成 - 不要手动修改
-// 最后更新: 2026/2/10 06:35:03
+// 最后更新: 2026/2/10 09:05:04
 // 运行: node scripts/generate-pet-images.js 更新数据
 
 const petImagesData = {
@@ -16,6 +16,41 @@ const petImagesData = {
 ],
     images: {
   "2026-02-10": [
+    {
+      "date": "2026-02-10",
+      "time": "09:01",
+      "img": "/images/pets/pet_20260210_090100.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-10",
+      "time": "08:30",
+      "img": "/images/pets/pet_20260210_083038.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-10",
+      "time": "08:02",
+      "img": "/images/pets/pet_20260210_080212.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-10",
+      "time": "07:30",
+      "img": "/images/pets/pet_20260210_073026.jpg",
+      "type": "pet",
+      "found": false
+    },
+    {
+      "date": "2026-02-10",
+      "time": "07:01",
+      "img": "/images/pets/pet_20260210_070129.jpg",
+      "type": "pet",
+      "found": false
+    },
     {
       "date": "2026-02-10",
       "time": "06:30",
@@ -11998,10 +12033,10 @@ const petImagesData = {
   ]
 },
     stats: {
-        totalImages: 1709,
+        totalImages: 1714,
         totalDays: 9,
         foundCount: 31,
-        notFoundCount: 1678,
+        notFoundCount: 1683,
         dogCount: 24,
         catCount: 7
     },
