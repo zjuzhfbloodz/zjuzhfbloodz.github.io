@@ -1,0 +1,1 @@
+{"found":true,"pets":[{"name":"Mango","type":"dog","confidence":0.95,"location":"画面左侧沙发的一堆被褥中","action":"蜷缩在被子里睡觉"},{"name":"Nomi","type":"cat","confidence":0.75,"location":"画面左侧靠近窗户的沙发靠背上方","action":"端坐在靠背上，背对着镜头看向窗外"}],"summary":"在监控画面左侧的沙发被褥中发现了正在睡觉的小狗Mango，同时在窗边的沙发靠背上发现了一只正在坐着的猫咪（疑似Nomi）。"}
