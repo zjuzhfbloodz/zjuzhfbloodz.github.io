@@ -1,5 +1,5 @@
 // 自动生成 - 不要手动修改
-// 最后更新: 2026/2/14 06:05:03
+// 最后更新: 2026/2/14 06:31:32
 // 支持 AI JSON+summary 格式
 
 const petImagesData = {
@@ -20,6 +20,17 @@ const petImagesData = {
 ],
     images: {
   "2026-02-14": [
+    {
+      "date": "2026-02-14",
+      "time": "06:31",
+      "img": "/images/pets/pet_20260214_063108.jpg",
+      "type": "dog",
+      "found": true,
+      "petName": "Mango",
+      "location": "位于画面左侧，沙发上靠垫和毯子堆的中间",
+      "action": "蜷缩在沙发上休息",
+      "summary": "在监控画面的沙发左侧发现了小狗 Mango 正在睡觉，未发现 Nomi 和小义乌的身影。"
+    },
     {
       "date": "2026-02-14",
       "time": "06:00",
@@ -21013,11 +21024,11 @@ const petImagesData = {
   ]
 },
     stats: {
-        totalImages: 1906,
+        totalImages: 1907,
         totalDays: 13,
-        foundCount: 41,
+        foundCount: 42,
         notFoundCount: 1865,
-        dogCount: 30,
+        dogCount: 31,
         catCount: 11
     },
     generatedAt: new Date().toISOString()
