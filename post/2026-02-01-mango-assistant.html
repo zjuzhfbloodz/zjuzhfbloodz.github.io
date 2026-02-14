@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"zjuzhfbloodz.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"disqus","storage":true,"lazyload":false,"nav":{"disqus":{"text":"匿名评论","order":-1},"gitalk":{"text":"GitHub评论","order":-2}},"activeClass":"disqus"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="新助手Mango上线！AI帮我自动化日常今天做了一件很有意思的事 —— 给自己配置了一个 AI 助手 Mango！🍋 为什么要搞这个？之前一直想找一个能帮我处理日常杂事的 AI，但市面上的都不太符合我的需求。正好发现 OpenClaw 这个开源项目，可以自己搭建 AI 助手，而且支持 iMessage 连接，我就试着玩了一下。 Mango 能帮我做什么？聊了一下，惊喜地发现它能干很多事情：  邮">
+<meta property="og:type" content="article">
+<meta property="og:title" content="新助手Mango上线！AI帮我自动化日常">
+<meta property="og:url" content="https://zjuzhfbloodz.github.io/post/2026-02-01-mango-assistant.html">
+<meta property="og:site_name" content="Bloodz&#39;s Space">
+<meta property="og:description" content="新助手Mango上线！AI帮我自动化日常今天做了一件很有意思的事 —— 给自己配置了一个 AI 助手 Mango！🍋 为什么要搞这个？之前一直想找一个能帮我处理日常杂事的 AI，但市面上的都不太符合我的需求。正好发现 OpenClaw 这个开源项目，可以自己搭建 AI 助手，而且支持 iMessage 连接，我就试着玩了一下。 Mango 能帮我做什么？聊了一下，惊喜地发现它能干很多事情：  邮">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-02-01T09:02:00.000Z">
+<meta property="article:modified_time" content="2026-02-01T09:02:00.000Z">
+<meta property="article:author" content="Bloodz Zhao">
+<meta property="article:tag" content="AI">
+<meta property="article:tag" content="自动化">
+<meta property="article:tag" content="助手">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://zjuzhfbloodz.github.io/post/2026-02-01-mango-assistant">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-cn'
+  };
+</script>
+
+  <title>新助手Mango上线！AI帮我自动化日常 | Bloodz's Space</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Bloodz's Space</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">日以记之，一期一会</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-pets">
+
+    <a href="/pets/" rel="section"><i class="fa fa-paw fa-fw"></i>pets</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-cn">
+    <link itemprop="mainEntityOfPage" href="https://zjuzhfbloodz.github.io/post/2026-02-01-mango-assistant.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Bloodz Zhao">
+      <meta itemprop="description" content="心之所向，一路生辉">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bloodz's Space">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          新助手Mango上线！AI帮我自动化日常
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2026-02-01 17:02:00" itemprop="dateCreated datePublished" datetime="2026-02-01T17:02:00+08:00">2026-02-01</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/post/2026-02-01-mango-assistant.html#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="/post/2026-02-01-mango-assistant.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="新助手Mango上线！AI帮我自动化日常"><a href="#新助手Mango上线！AI帮我自动化日常" class="headerlink" title="新助手Mango上线！AI帮我自动化日常"></a>新助手Mango上线！AI帮我自动化日常</h1><p>今天做了一件很有意思的事 —— 给自己配置了一个 AI 助手 Mango！🍋</p>
+<h2 id="为什么要搞这个？"><a href="#为什么要搞这个？" class="headerlink" title="为什么要搞这个？"></a>为什么要搞这个？</h2><p>之前一直想找一个能帮我处理日常杂事的 AI，但市面上的都不太符合我的需求。正好发现 OpenClaw 这个开源项目，可以自己搭建 AI 助手，而且支持 iMessage 连接，我就试着玩了一下。</p>
+<h2 id="Mango-能帮我做什么？"><a href="#Mango-能帮我做什么？" class="headerlink" title="Mango 能帮我做什么？"></a>Mango 能帮我做什么？</h2><p>聊了一下，惊喜地发现它能干很多事情：</p>
+<ol>
+<li><strong>邮箱管理</strong> - 明天早上 8 点会自动帮我总结 QQ 邮箱，再也不用一个个翻了</li>
+<li><strong>日历和待办</strong> - 苹果日历和提醒事项它都能管</li>
+<li><strong>影视资源</strong> - 我收藏了一些资源站，它可以直接帮我找到阿里云盘的资源并保存</li>
+<li><strong>写代码</strong> - 终端命令、Git 管理都不在话下</li>
+<li><strong>文件管理</strong> - 本地文件操作也是基本功</li>
+</ol>
+<h2 id="第一个自动化任务"><a href="#第一个自动化任务" class="headerlink" title="第一个自动化任务"></a>第一个自动化任务</h2><p>我让它帮我找史努比的资源然后存到阿里云盘。虽然中间浏览器连接出了点小状况，但最后还是把资源链接发给了我。</p>
+<p><strong>史努比大合集</strong>（TV版+电影，国配双语中字）：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.alipansou.com/s/hdUb2CiaeoHKQYCBazddAw3XpAuO9</span><br></pre></td></tr></table></figure>
+
+<h2 id="使用体验"><a href="#使用体验" class="headerlink" title="使用体验"></a>使用体验</h2><p>最让我惊喜的是可以通过 iMessage 直接和它对话，就像和朋友发微信一样自然。而且它是运行在本地的，隐私方面也比较放心。</p>
+<h2 id="未来规划"><a href="#未来规划" class="headerlink" title="未来规划"></a>未来规划</h2><p>接下来打算让它帮我：</p>
+<ul>
+<li>每天自动总结邮件</li>
+<li>定时检查我关注的资源站，有新资源自动保存到阿里云盘</li>
+<li>管理我的日程和待办事项</li>
+<li>写代码的时候帮我执行一些重复性操作</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>有了 Mango 这个助手，感觉生活会变得更有条理一些。AI 时代，真的要学会让 AI 帮我们打工！</p>
+<p><em>对了，它叫 Mango，因为我喜欢芒果 🍋</em></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/AI/" rel="tag"># AI</a>
+              <a href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/" rel="tag"># 自动化</a>
+              <a href="/tags/%E5%8A%A9%E6%89%8B/" rel="tag"># 助手</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/post/2026-02-01-macmini-32gb.html" rel="prev" title="新入手32GB Mac mini，太兴奋了！">
+      <i class="fa fa-chevron-left"></i> 新入手32GB Mac mini，太兴奋了！
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/post/2026-02-02-ai-collaboration.html" rel="next" title="第一次真正"认识"鸿飞 - AI助手与人类协作">
+      第一次真正"认识"鸿飞 - AI助手与人类协作 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+      <div class="tabs tabs-comment">
+        <ul class="nav-tabs">
+            <li class="tab"><a href="#comment-gitalk">GitHub评论</a></li>
+            <li class="tab"><a href="#comment-disqus">匿名评论</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane gitalk" id="comment-gitalk">
+              <div class="comments" id="gitalk-container"></div>
+            </div>
+            <div class="tab-pane disqus" id="comment-disqus">
+              
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+            </div>
+        </div>
+      </div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%B0%E5%8A%A9%E6%89%8BMango%E4%B8%8A%E7%BA%BF%EF%BC%81AI%E5%B8%AE%E6%88%91%E8%87%AA%E5%8A%A8%E5%8C%96%E6%97%A5%E5%B8%B8"><span class="nav-number">1.</span> <span class="nav-text">新助手Mango上线！AI帮我自动化日常</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%90%9E%E8%BF%99%E4%B8%AA%EF%BC%9F"><span class="nav-number">1.1.</span> <span class="nav-text">为什么要搞这个？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mango-%E8%83%BD%E5%B8%AE%E6%88%91%E5%81%9A%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-number">1.2.</span> <span class="nav-text">Mango 能帮我做什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E4%B8%AA%E8%87%AA%E5%8A%A8%E5%8C%96%E4%BB%BB%E5%8A%A1"><span class="nav-number">1.3.</span> <span class="nav-text">第一个自动化任务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C"><span class="nav-number">1.4.</span> <span class="nav-text">使用体验</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AA%E6%9D%A5%E8%A7%84%E5%88%92"><span class="nav-number">1.5.</span> <span class="nav-text">未来规划</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">1.6.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Bloodz Zhao</p>
+  <div class="site-description" itemprop="description">心之所向，一路生辉</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">18</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2026</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Bloodz Zhao</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://bloodz.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://zjuzhfbloodz.github.io/post/2026-02-01-mango-assistant.html";
+    this.page.identifier = "/post/2026-02-01-mango-assistant.html";
+    this.page.title = "新助手Mango上线！AI帮我自动化日常";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://bloodz.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : 'Ov23liwXa5PmFLHICFm6',
+      clientSecret: 'b2abf76f8d432d5b1296e981c836b4ca6d93ccf5',
+      repo        : 'zjuzhfbloodz.github.io',
+      owner       : 'zjuzhfbloodz',
+      admin       : ['zjuzhfbloodz'],
+      id          : '2028eeec5196f433c7e8f21c0dbe8292',
+        language: 'zh-CN',
+      distractionFreeMode: false
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>
