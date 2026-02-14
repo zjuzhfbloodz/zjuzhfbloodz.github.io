@@ -4,7 +4,7 @@ permalink: /pets/images-data.js
 ---
 
 // 自动生成 - 不要手动修改
-// 最后更新: 2026/2/14 20:05:26
+// 最后更新: 2026/2/14 20:31:17
 // 支持 AI JSON+summary 格式
 
 const petImagesData = {
@@ -25,6 +25,17 @@ const petImagesData = {
 ],
     images: {
   "2026-02-14": [
+    {
+      "date": "2026-02-14",
+      "time": "20:30",
+      "img": "/images/pets/pet_20260214_203048.jpg",
+      "type": "pet",
+      "found": false,
+      "petName": null,
+      "location": "",
+      "action": "",
+      "summary": ""
+    },
     {
       "date": "2026-02-14",
       "time": "20:01",
@@ -21326,10 +21337,10 @@ const petImagesData = {
   ]
 },
     stats: {
-        totalImages: 1934,
+        totalImages: 1935,
         totalDays: 13,
         foundCount: 45,
-        notFoundCount: 1889,
+        notFoundCount: 1890,
         dogCount: 33,
         catCount: 12
     },
