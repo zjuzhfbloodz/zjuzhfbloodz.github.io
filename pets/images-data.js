@@ -1,5 +1,5 @@
 // 自动生成 - 不要手动修改
-// 最后更新: 2026/2/14 07:35:10
+// 最后更新: 2026/2/14 10:28:09
 // 支持 AI JSON+summary 格式
 
 const petImagesData = {
@@ -20,6 +20,61 @@ const petImagesData = {
 ],
     images: {
   "2026-02-14": [
+    {
+      "date": "2026-02-14",
+      "time": "10:00",
+      "img": "/images/pets/pet_20260214_100048.jpg",
+      "type": "pet",
+      "found": false,
+      "petName": null,
+      "location": "",
+      "action": "",
+      "summary": "监控画面中未发现宠物 Mango、Nomi 或 小义乌。"
+    },
+    {
+      "date": "2026-02-14",
+      "time": "09:30",
+      "img": "/images/pets/pet_20260214_093036.jpg",
+      "type": "pet",
+      "found": false,
+      "petName": null,
+      "location": "",
+      "action": "",
+      "summary": "画面中未发现宠物"
+    },
+    {
+      "date": "2026-02-14",
+      "time": "09:01",
+      "img": "/images/pets/pet_20260214_090118.jpg",
+      "type": "dog",
+      "found": true,
+      "petName": "Mango",
+      "location": "画面左侧沙发的被褥堆里",
+      "action": "正趴在被子中间睡觉或休息，只露出了白色的头部和立着的耳朵",
+      "summary": "画面中只发现了小狗 Mango 趴在沙发左侧的被褥中，未发现 Nomi 和 小义乌。"
+    },
+    {
+      "date": "2026-02-14",
+      "time": "08:30",
+      "img": "/images/pets/pet_20260214_083035.jpg",
+      "type": "pet",
+      "found": false,
+      "petName": null,
+      "location": "",
+      "action": "",
+      "summary": "画面中未发现宠物"
+    },
+    {
+      "date": "2026-02-14",
+      "time": "08:01",
+      "img": "/images/pets/pet_20260214_080104.jpg",
+      "type": "cat",
+      "found": true,
+      "petName": "小义乌",
+      "location": "沙发左侧的被子堆里",
+      "action": "趴在被子里休息，只露出了头部",
+      "summary": "小义乌正趴在沙发左侧的被子堆里休息。"
+    },
     {
       "date": "2026-02-14",
       "time": "07:30",
@@ -21046,12 +21101,12 @@ const petImagesData = {
   ]
 },
     stats: {
-        totalImages: 1909,
+        totalImages: 1914,
         totalDays: 13,
-        foundCount: 43,
-        notFoundCount: 1866,
-        dogCount: 32,
-        catCount: 11
+        foundCount: 45,
+        notFoundCount: 1869,
+        dogCount: 33,
+        catCount: 12
     },
     generatedAt: new Date().toISOString()
 };
