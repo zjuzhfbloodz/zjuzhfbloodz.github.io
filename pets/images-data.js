@@ -1,5 +1,5 @@
 // 自动生成 - 不要手动修改
-// 最后更新: 2026/2/15 14:35:04
+// 最后更新: 2026/2/15 15:01:56
 // 支持 AI JSON+summary 格式
 
 const petImagesData = {
@@ -21,6 +21,17 @@ const petImagesData = {
 ],
     images: {
   "2026-02-15": [
+    {
+      "date": "2026-02-15",
+      "time": "15:01",
+      "img": "/images/pets/pet_20260215_150105.jpg",
+      "type": "pet",
+      "found": false,
+      "petName": null,
+      "location": "",
+      "action": "",
+      "summary": ""
+    },
     {
       "date": "2026-02-15",
       "time": "14:30",
@@ -21731,10 +21742,10 @@ const petImagesData = {
   ]
 },
     stats: {
-        totalImages: 1971,
+        totalImages: 1972,
         totalDays: 14,
         foundCount: 45,
-        notFoundCount: 1926,
+        notFoundCount: 1927,
         dogCount: 33,
         catCount: 12
     },
