@@ -1,5 +1,5 @@
 // 自动生成 - 不要手动修改
-// 最后更新: 2026/2/16 20:35:06
+// 最后更新: 2026/2/16 21:02:48
 // 支持 AI JSON+summary 格式
 
 const petImagesData = {
@@ -22,6 +22,17 @@ const petImagesData = {
 ],
     images: {
   "2026-02-16": [
+    {
+      "date": "2026-02-16",
+      "time": "21:01",
+      "img": "/images/pets/pet_20260216_210133.jpg",
+      "type": "cat",
+      "found": true,
+      "petName": "小义乌",
+      "location": "画面中央背景处，左侧大塑料碗的正后方地面上",
+      "action": "探头张望",
+      "summary": "画面中发现了一只疑似'小义乌'的猫咪，正躲在背景里的水盆后面探头观察。"
+    },
     {
       "date": "2026-02-16",
       "time": "20:31",
@@ -22394,12 +22405,12 @@ const petImagesData = {
   ]
 },
     stats: {
-        totalImages: 2031,
+        totalImages: 2032,
         totalDays: 15,
-        foundCount: 45,
+        foundCount: 46,
         notFoundCount: 1986,
         dogCount: 33,
-        catCount: 12
+        catCount: 13
     },
     generatedAt: new Date().toISOString()
 };
