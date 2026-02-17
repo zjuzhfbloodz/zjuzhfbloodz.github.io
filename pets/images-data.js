@@ -1,5 +1,5 @@
 // 自动生成 - 不要手动修改
-// 最后更新: 2026/2/18 02:35:08
+// 最后更新: 2026/2/18 03:02:28
 // 支持 AI JSON+summary 格式
 
 const petImagesData = {
@@ -24,6 +24,17 @@ const petImagesData = {
 ],
     images: {
   "2026-02-18": [
+    {
+      "date": "2026-02-18",
+      "time": "03:01",
+      "img": "/images/pets/pet_20260218_030106.jpg",
+      "type": "cat",
+      "found": true,
+      "petName": "小义乌",
+      "location": "画面右下角，时间戳03:01:05上方边缘",
+      "action": "侧对镜头趴着或坐着，正在休息或观察环境",
+      "summary": "在监控画面右下角发现一只猫，根据体型和夜视下的毛色表现，初步判断为小义乌。"
+    },
     {
       "date": "2026-02-18",
       "time": "02:31",
@@ -23082,12 +23093,12 @@ const petImagesData = {
   ]
 },
     stats: {
-        totalImages: 2093,
+        totalImages: 2094,
         totalDays: 17,
-        foundCount: 49,
+        foundCount: 50,
         notFoundCount: 2044,
         dogCount: 36,
-        catCount: 13
+        catCount: 14
     },
     generatedAt: new Date().toISOString()
 };
