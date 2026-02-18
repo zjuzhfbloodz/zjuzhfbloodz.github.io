@@ -1,5 +1,5 @@
 // 自动生成 - 不要手动修改
-// 最后更新: 2026/2/19 02:35:05
+// 最后更新: 2026/2/19 03:01:12
 // 支持 AI JSON+summary 格式
 
 const petImagesData = {
@@ -25,6 +25,17 @@ const petImagesData = {
 ],
     images: {
   "2026-02-19": [
+    {
+      "date": "2026-02-19",
+      "time": "03:00",
+      "img": "/images/pets/pet_20260219_030051.jpg",
+      "type": "pet",
+      "found": false,
+      "petName": null,
+      "location": "",
+      "action": "",
+      "summary": "画面中没有发现猫或狗，仅有两个盛水的透明塑料碗。"
+    },
     {
       "date": "2026-02-19",
       "time": "02:30",
@@ -23613,10 +23624,10 @@ const petImagesData = {
   ]
 },
     stats: {
-        totalImages: 2141,
+        totalImages: 2142,
         totalDays: 18,
         foundCount: 50,
-        notFoundCount: 2091,
+        notFoundCount: 2092,
         dogCount: 36,
         catCount: 14
     },
