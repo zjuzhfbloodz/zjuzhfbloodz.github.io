@@ -1,5 +1,5 @@
 // 自动生成 - 不要手动修改
-// 最后更新: 2026/2/19 12:35:04
+// 最后更新: 2026/2/19 13:02:00
 // 支持 AI JSON+summary 格式
 
 const petImagesData = {
@@ -25,6 +25,17 @@ const petImagesData = {
 ],
     images: {
   "2026-02-19": [
+    {
+      "date": "2026-02-19",
+      "time": "13:01",
+      "img": "/images/pets/pet_20260219_130110.jpg",
+      "type": "pet",
+      "found": false,
+      "petName": null,
+      "location": "",
+      "action": "",
+      "summary": "监控画面中没有发现宠物 Mango、Nomi 或 小义乌。"
+    },
     {
       "date": "2026-02-19",
       "time": "12:31",
@@ -23844,10 +23855,10 @@ const petImagesData = {
   ]
 },
     stats: {
-        totalImages: 2162,
+        totalImages: 2163,
         totalDays: 18,
         foundCount: 50,
-        notFoundCount: 2112,
+        notFoundCount: 2113,
         dogCount: 36,
         catCount: 14
     },
