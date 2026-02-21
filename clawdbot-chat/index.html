@@ -27,8 +27,8 @@
 <meta property="og:site_name" content="Bloodz&#39;s Space">
 <meta property="og:description" content="Bloodz AI Chat            :root {         --bg: #0b1220;         --panel: #121b2d;         --panel-2: #0f1727;         --text: #e6edf7;         --muted: #95a3bb;         --line: #27">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-02-21T15:53:19.290Z">
-<meta property="article:modified_time" content="2026-02-21T15:53:19.290Z">
+<meta property="article:published_time" content="2026-02-21T15:56:31.346Z">
+<meta property="article:modified_time" content="2026-02-21T15:56:31.346Z">
 <meta property="article:author" content="Bloodz Zhao">
 <meta name="twitter:card" content="summary">
 
@@ -373,7 +373,7 @@
         <div class="config">
           <label>
             API Base URL
-            <input id="baseUrl" placeholder="默认当前站点 /claw-api" />
+            <input id="baseUrl" placeholder="请填写可访问的 API 地址（例如 https://api.xxx.com/claw-api）" />
           </label>
           <label>
             Gateway Token
@@ -437,12 +437,12 @@
       function loadConfig() {
         try {
           const saved = JSON.parse(localStorage.getItem(CONFIG_KEY) || "{}");
-          els.baseUrl.value = saved.baseUrl || defaultBaseUrl();
+          els.baseUrl.value = saved.baseUrl || "";
           if (saved.token) els.token.value = saved.token;
           if (saved.agentId) els.agentId.value = saved.agentId;
           if (saved.sessionUser) els.sessionUser.value = saved.sessionUser;
         } catch {
-          els.baseUrl.value = defaultBaseUrl();
+          els.baseUrl.value = "";
         }
       }
 
@@ -522,7 +522,7 @@
         setError("");
         setBusy(true, "AI 正在思考...");
 
-        const baseUrl = (els.baseUrl.value.trim() || defaultBaseUrl()).replace(/\/$/, "");
+        const baseUrl = els.baseUrl.value.trim().replace(/\/$/, "");
         const token = els.token.value.trim();
         const agentId = (els.agentId.value || "main").trim();
         const sessionUser = els.sessionUser.value.trim();
@@ -530,6 +530,12 @@
         if (!baseUrl) {
           setBusy(false, "就绪");
           setError("请先填写 API Base URL");
+          return;
+        }
+
+        if (/github\.io$/i.test(window.location.hostname) && baseUrl === defaultBaseUrl()) {
+          setBusy(false, "就绪");
+          setError("当前是 GitHub Pages 静态站点，默认同域 /claw-api 不存在。请填你自己的网关 API 地址。");
           return;
         }
 
@@ -560,7 +566,10 @@
 
           const json = await res.json().catch(() => ({}));
           if (!res.ok) {
-            const detail = (json && json.error && json.error.message) || `${res.status} ${res.statusText}`;
+            let detail = (json && json.error && json.error.message) || `${res.status} ${res.statusText}`;
+            if (res.status === 404 && /github\.io$/i.test(window.location.hostname)) {
+              detail = "当前页面在 GitHub Pages，未提供 /claw-api 后端。请填写可访问的 API Base URL。";
+            }
             throw new Error(detail);
           }
 
