@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"zjuzhfbloodz.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"disqus","storage":true,"lazyload":false,"nav":{"disqus":{"text":"匿名评论","order":-1},"gitalk":{"text":"GitHub评论","order":-2}},"activeClass":"disqus"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Clawdbot Web Chat            :root {         --bg: #0b1220;         --panel: #121b2d;         --panel-2: #0f1727;         --text: #e6edf7;         --muted: #95a3bb;         --line:">
+  <meta name="description" content="Bloodz AI Chat            :root {         --bg: #0b1220;         --panel: #121b2d;         --panel-2: #0f1727;         --text: #e6edf7;         --muted: #95a3bb;         --line: #27">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Bloodz&#39;s Space">
 <meta property="og:url" content="https://zjuzhfbloodz.github.io/clawdbot-chat/index.html">
 <meta property="og:site_name" content="Bloodz&#39;s Space">
-<meta property="og:description" content="Clawdbot Web Chat            :root {         --bg: #0b1220;         --panel: #121b2d;         --panel-2: #0f1727;         --text: #e6edf7;         --muted: #95a3bb;         --line:">
+<meta property="og:description" content="Bloodz AI Chat            :root {         --bg: #0b1220;         --panel: #121b2d;         --panel-2: #0f1727;         --text: #e6edf7;         --muted: #95a3bb;         --line: #27">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-02-21T14:34:14.309Z">
-<meta property="article:modified_time" content="2026-02-21T14:34:14.309Z">
+<meta property="article:published_time" content="2026-02-21T15:53:19.290Z">
+<meta property="article:modified_time" content="2026-02-21T15:53:19.290Z">
 <meta property="article:author" content="Bloodz Zhao">
 <meta name="twitter:card" content="summary">
 
@@ -124,6 +124,11 @@
     <a href="/pets/" rel="section"><i class="fa fa-paw fa-fw"></i>pets</a>
 
   </li>
+        <li class="menu-item menu-item-chat">
+
+    <a href="/clawdbot-chat/" rel="section"><i class="fa fa-comments fa-fw"></i>chat</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
@@ -180,7 +185,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clawdbot Web Chat</title>
+    <title>Bloodz AI Chat</title>
     <style>
       :root {
         --bg: #0b1220;
@@ -195,6 +200,7 @@
       }
 
       * { box-sizing: border-box; }
+
       body {
         margin: 0;
         color: var(--text);
@@ -206,7 +212,7 @@
       }
 
       .wrap {
-        max-width: 1000px;
+        max-width: 1040px;
         margin: 0 auto;
         padding: 20px;
       }
@@ -256,7 +262,7 @@
       input:focus { border-color: var(--accent); }
 
       .chat {
-        height: min(70vh, 760px);
+        height: min(72vh, 780px);
         display: grid;
         grid-template-rows: 1fr auto;
       }
@@ -269,7 +275,7 @@
       }
 
       .msg {
-        max-width: 86%;
+        max-width: 88%;
         padding: 10px 12px;
         border-radius: 12px;
         white-space: pre-wrap;
@@ -301,7 +307,7 @@
 
       textarea {
         resize: vertical;
-        min-height: 78px;
+        min-height: 82px;
         max-height: 240px;
         border-radius: 10px;
         border: 1px solid var(--line);
@@ -323,6 +329,12 @@
         cursor: pointer;
       }
 
+      .btn-ghost {
+        background: transparent;
+        color: var(--muted);
+        border: 1px solid var(--line);
+      }
+
       button[disabled] {
         opacity: 0.6;
         cursor: not-allowed;
@@ -336,11 +348,16 @@
         gap: 8px;
       }
 
+      .actions {
+        display: flex;
+        gap: 8px;
+      }
+
       .error { color: var(--danger); }
 
       @media (max-width: 760px) {
         .wrap { padding: 12px; }
-        .chat { height: calc(100vh - 210px); }
+        .chat { height: calc(100vh - 230px); }
         .composer-wrap { grid-template-columns: 1fr; }
         button { height: 42px; }
       }
@@ -349,14 +366,14 @@
   <body>
     <main class="wrap">
       <section class="card top">
-        <h1>Clawdbot 网页聊天</h1>
+        <h1>Bloodz AI Chat</h1>
         <div class="muted" style="margin-bottom: 12px">
-          这个页面调用 Gateway 的 OpenAI 兼容接口：<code>/v1/chat/completions</code>
+          多轮上下文聊天（OpenAI 兼容接口）：<code>/v1/chat/completions</code>
         </div>
         <div class="config">
           <label>
             API Base URL
-            <input id="baseUrl" placeholder="https://your-blog.com/claw-api" />
+            <input id="baseUrl" placeholder="默认当前站点 /claw-api" />
           </label>
           <label>
             Gateway Token
@@ -381,8 +398,13 @@
             <button id="sendBtn">发送</button>
           </div>
           <div class="row">
-            <small id="status" class="muted">就绪</small>
-            <small id="error" class="error"></small>
+            <div>
+              <small id="status" class="muted">就绪</small>
+              <small id="error" class="error"></small>
+            </div>
+            <div class="actions">
+              <button id="newChatBtn" class="btn-ghost" type="button">新对话</button>
+            </div>
           </div>
         </div>
       </section>
@@ -400,30 +422,52 @@
         sendBtn: $("sendBtn"),
         status: $("status"),
         error: $("error"),
+        newChatBtn: $("newChatBtn"),
       };
 
-      const KEY = "clawdbot-blog-chat-config";
+      const CONFIG_KEY = "clawdbot-blog-chat-config";
+      const HISTORY_KEY = "clawdbot-blog-chat-history";
+
+      let history = [];
+
+      function defaultBaseUrl() {
+        return `${window.location.origin}/claw-api`;
+      }
 
       function loadConfig() {
         try {
-          const saved = JSON.parse(localStorage.getItem(KEY) || "{}");
-          if (saved.baseUrl) els.baseUrl.value = saved.baseUrl;
+          const saved = JSON.parse(localStorage.getItem(CONFIG_KEY) || "{}");
+          els.baseUrl.value = saved.baseUrl || defaultBaseUrl();
           if (saved.token) els.token.value = saved.token;
           if (saved.agentId) els.agentId.value = saved.agentId;
           if (saved.sessionUser) els.sessionUser.value = saved.sessionUser;
         } catch {
-          // ignore invalid local storage
+          els.baseUrl.value = defaultBaseUrl();
         }
       }
 
       function saveConfig() {
-        const payload = {
+        localStorage.setItem(CONFIG_KEY, JSON.stringify({
           baseUrl: els.baseUrl.value.trim(),
           token: els.token.value,
-          agentId: els.agentId.value.trim(),
+          agentId: (els.agentId.value || "main").trim(),
           sessionUser: els.sessionUser.value.trim(),
-        };
-        localStorage.setItem(KEY, JSON.stringify(payload));
+        }));
+      }
+
+      function saveHistory() {
+        localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
+      }
+
+      function loadHistory() {
+        try {
+          const saved = JSON.parse(localStorage.getItem(HISTORY_KEY) || "[]");
+          if (Array.isArray(saved)) {
+            history = saved.filter((m) => m && (m.role === "user" || m.role === "assistant") && typeof m.content === "string");
+          }
+        } catch {
+          history = [];
+        }
       }
 
       function setBusy(busy, text) {
@@ -444,12 +488,30 @@
         return div;
       }
 
+      function renderHistory() {
+        els.messages.innerHTML = "";
+        if (!history.length) {
+          pushMessage("bot", "你好，我是 Bloodz 的 AI 助手。你可以像现在这样连续对话。\n\n提示：点“新对话”可清空上下文。");
+          return;
+        }
+        history.forEach((m) => {
+          pushMessage(m.role === "assistant" ? "bot" : "user", m.content);
+        });
+      }
+
       function readBotText(json) {
         const choices = Array.isArray(json && json.choices) ? json.choices : [];
         const first = choices[0] || {};
-        const m = first.message || {};
-        const c = m.content;
-        return typeof c === "string" ? c : "";
+        const message = first.message || {};
+        const content = message.content;
+        if (typeof content === "string") return content;
+        if (Array.isArray(content)) {
+          return content
+            .map((item) => (item && typeof item.text === "string" ? item.text : ""))
+            .join("\n")
+            .trim();
+        }
+        return "";
       }
 
       async function send() {
@@ -458,9 +520,9 @@
 
         saveConfig();
         setError("");
-        setBusy(true, "Clawdbot 正在思考...");
+        setBusy(true, "AI 正在思考...");
 
-        const baseUrl = els.baseUrl.value.trim().replace(/\/$/, "");
+        const baseUrl = (els.baseUrl.value.trim() || defaultBaseUrl()).replace(/\/$/, "");
         const token = els.token.value.trim();
         const agentId = (els.agentId.value || "main").trim();
         const sessionUser = els.sessionUser.value.trim();
@@ -470,6 +532,9 @@
           setError("请先填写 API Base URL");
           return;
         }
+
+        history.push({ role: "user", content: prompt });
+        saveHistory();
 
         pushMessage("user", prompt);
         els.prompt.value = "";
@@ -489,7 +554,7 @@
               model: `clawdbot:${agentId}`,
               user: sessionUser || undefined,
               stream: false,
-              messages: [{ role: "user", content: prompt }],
+              messages: history.map((m) => ({ role: m.role, content: m.content })),
             }),
           });
 
@@ -501,17 +566,27 @@
 
           const botText = readBotText(json) || "(空响应)";
           botNode.textContent = botText;
+          history.push({ role: "assistant", content: botText });
+          saveHistory();
           setBusy(false, "就绪");
         } catch (err) {
           botNode.textContent = "请求失败";
+          history.pop();
+          saveHistory();
           setBusy(false, "就绪");
           setError(err instanceof Error ? err.message : String(err));
         }
       }
 
-      els.sendBtn.addEventListener("click", () => {
-        void send();
-      });
+      function resetChat() {
+        history = [];
+        saveHistory();
+        renderHistory();
+        setError("");
+      }
+
+      els.sendBtn.addEventListener("click", () => void send());
+      els.newChatBtn.addEventListener("click", resetChat);
 
       els.prompt.addEventListener("keydown", (e) => {
         if (e.key === "Enter" && !e.shiftKey) {
@@ -525,6 +600,8 @@
       });
 
       loadConfig();
+      loadHistory();
+      renderHistory();
     </script>
   </body>
 </html>
@@ -609,7 +686,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">Clawdbot 网页聊天</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">Bloodz AI Chat</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
