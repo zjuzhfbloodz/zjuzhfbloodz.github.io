@@ -27,8 +27,8 @@
 <meta property="og:site_name" content="Bloodz&#39;s Space">
 <meta property="og:description" content="Bloodz AI Chat            :root {         --bg: #0b1220;         --panel: #121b2d;         --panel-2: #0f1727;         --text: #e6edf7;         --muted: #95a3bb;         --line: #27">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-02-21T16:26:10.204Z">
-<meta property="article:modified_time" content="2026-02-21T16:26:10.204Z">
+<meta property="article:published_time" content="2026-02-21T16:32:38.808Z">
+<meta property="article:modified_time" content="2026-02-21T16:32:38.808Z">
 <meta property="article:author" content="Bloodz Zhao">
 <meta name="twitter:card" content="summary">
 
@@ -404,6 +404,12 @@
         els.error.textContent = msg || "";
       }
 
+      function withTimeout(ms = 30000) {
+        const controller = new AbortController();
+        const timer = setTimeout(() => controller.abort(), ms);
+        return { signal: controller.signal, done: () => clearTimeout(timer) };
+      }
+
       function pushMessage(role, text) {
         const div = document.createElement("div");
         div.className = `msg ${role}`;
@@ -444,17 +450,20 @@
         pushMessage("user", prompt);
         els.prompt.value = "";
         const botNode = pushMessage("bot", "...");
+        const timeout = withTimeout(30000);
 
         try {
           const res = await fetch(`${API_BASE}/v1/chat/completions`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
+            signal: timeout.signal,
             body: JSON.stringify({
               model: "bloodz-chat",
               stream: false,
               messages: history.map((m) => ({ role: m.role, content: m.content })),
             }),
           });
+          timeout.done();
 
           const json = await res.json().catch(() => ({}));
           if (!res.ok) {
@@ -472,7 +481,16 @@
           history.pop();
           saveHistory();
           setBusy(false, "就绪");
-          setError(err instanceof Error ? err.message : String(err));
+          const msg = err instanceof Error ? err.message : String(err);
+          const hint =
+            msg === "Failed to fetch"
+              ? `网络/跨域失败（origin=${location.origin}）`
+              : msg.includes("aborted")
+                ? "请求超时（30s）"
+                : msg;
+          setError(`${hint} | endpoint=${API_BASE}`);
+        } finally {
+          timeout.done();
         }
       }
 
