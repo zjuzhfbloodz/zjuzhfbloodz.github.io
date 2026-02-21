@@ -27,8 +27,8 @@
 <meta property="og:site_name" content="Bloodz&#39;s Space">
 <meta property="og:description" content="Bloodz AI Chat            :root {         --bg: #0b1220;         --panel: #121b2d;         --panel-2: #0f1727;         --text: #e6edf7;         --muted: #95a3bb;         --line: #27">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-02-21T15:56:31.346Z">
-<meta property="article:modified_time" content="2026-02-21T15:56:31.346Z">
+<meta property="article:published_time" content="2026-02-21T16:26:10.204Z">
+<meta property="article:modified_time" content="2026-02-21T16:26:10.204Z">
 <meta property="article:author" content="Bloodz Zhao">
 <meta name="twitter:card" content="summary">
 
@@ -200,7 +200,6 @@
       }
 
       * { box-sizing: border-box; }
-
       body {
         margin: 0;
         color: var(--text);
@@ -235,31 +234,6 @@
       }
 
       .muted { color: var(--muted); }
-
-      .config {
-        display: grid;
-        gap: 10px;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      }
-
-      label {
-        display: grid;
-        gap: 6px;
-        font-size: 13px;
-        color: var(--muted);
-      }
-
-      input {
-        width: 100%;
-        border-radius: 10px;
-        border: 1px solid var(--line);
-        background: #0d1526;
-        color: var(--text);
-        padding: 10px 12px;
-        outline: none;
-      }
-
-      input:focus { border-color: var(--accent); }
 
       .chat {
         height: min(72vh, 780px);
@@ -357,7 +331,7 @@
 
       @media (max-width: 760px) {
         .wrap { padding: 12px; }
-        .chat { height: calc(100vh - 230px); }
+        .chat { height: calc(100vh - 200px); }
         .composer-wrap { grid-template-columns: 1fr; }
         button { height: 42px; }
       }
@@ -367,27 +341,7 @@
     <main class="wrap">
       <section class="card top">
         <h1>Bloodz AI Chat</h1>
-        <div class="muted" style="margin-bottom: 12px">
-          多轮上下文聊天（OpenAI 兼容接口）：<code>/v1/chat/completions</code>
-        </div>
-        <div class="config">
-          <label>
-            API Base URL
-            <input id="baseUrl" placeholder="请填写可访问的 API 地址（例如 https://api.xxx.com/claw-api）" />
-          </label>
-          <label>
-            Gateway Token
-            <input id="token" type="password" placeholder="可留空" />
-          </label>
-          <label>
-            Agent
-            <input id="agentId" placeholder="main" value="main" />
-          </label>
-          <label>
-            Session User
-            <input id="sessionUser" placeholder="blog-visitor-001" />
-          </label>
-        </div>
+        <div class="muted">打开即聊。上下文会保留在当前浏览器。</div>
       </section>
 
       <section class="card chat">
@@ -411,12 +365,11 @@
     </main>
 
     <script>
+      const API_BASE = "https://bloodz-chat-proxy.bloodzchat.workers.dev";
+      const HISTORY_KEY = "bloodz-ai-chat-history";
+
       const $ = (id) => document.getElementById(id);
       const els = {
-        baseUrl: $("baseUrl"),
-        token: $("token"),
-        agentId: $("agentId"),
-        sessionUser: $("sessionUser"),
         messages: $("messages"),
         prompt: $("prompt"),
         sendBtn: $("sendBtn"),
@@ -425,35 +378,7 @@
         newChatBtn: $("newChatBtn"),
       };
 
-      const CONFIG_KEY = "clawdbot-blog-chat-config";
-      const HISTORY_KEY = "clawdbot-blog-chat-history";
-
       let history = [];
-
-      function defaultBaseUrl() {
-        return `${window.location.origin}/claw-api`;
-      }
-
-      function loadConfig() {
-        try {
-          const saved = JSON.parse(localStorage.getItem(CONFIG_KEY) || "{}");
-          els.baseUrl.value = saved.baseUrl || "";
-          if (saved.token) els.token.value = saved.token;
-          if (saved.agentId) els.agentId.value = saved.agentId;
-          if (saved.sessionUser) els.sessionUser.value = saved.sessionUser;
-        } catch {
-          els.baseUrl.value = "";
-        }
-      }
-
-      function saveConfig() {
-        localStorage.setItem(CONFIG_KEY, JSON.stringify({
-          baseUrl: els.baseUrl.value.trim(),
-          token: els.token.value,
-          agentId: (els.agentId.value || "main").trim(),
-          sessionUser: els.sessionUser.value.trim(),
-        }));
-      }
 
       function saveHistory() {
         localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
@@ -491,7 +416,7 @@
       function renderHistory() {
         els.messages.innerHTML = "";
         if (!history.length) {
-          pushMessage("bot", "你好，我是 Bloodz 的 AI 助手。你可以像现在这样连续对话。\n\n提示：点“新对话”可清空上下文。");
+          pushMessage("bot", "你好，我是 Bloodz 的 AI 助手。你可以像现在这样连续对话。\n\n提示：点“新对话”可清空上下文。\n");
           return;
         }
         history.forEach((m) => {
@@ -502,63 +427,30 @@
       function readBotText(json) {
         const choices = Array.isArray(json && json.choices) ? json.choices : [];
         const first = choices[0] || {};
-        const message = first.message || {};
-        const content = message.content;
-        if (typeof content === "string") return content;
-        if (Array.isArray(content)) {
-          return content
-            .map((item) => (item && typeof item.text === "string" ? item.text : ""))
-            .join("\n")
-            .trim();
-        }
-        return "";
+        const m = first.message || {};
+        const c = m.content;
+        return typeof c === "string" ? c : "";
       }
 
       async function send() {
         const prompt = els.prompt.value.trim();
         if (!prompt) return;
 
-        saveConfig();
         setError("");
         setBusy(true, "AI 正在思考...");
 
-        const baseUrl = els.baseUrl.value.trim().replace(/\/$/, "");
-        const token = els.token.value.trim();
-        const agentId = (els.agentId.value || "main").trim();
-        const sessionUser = els.sessionUser.value.trim();
-
-        if (!baseUrl) {
-          setBusy(false, "就绪");
-          setError("请先填写 API Base URL");
-          return;
-        }
-
-        if (/github\.io$/i.test(window.location.hostname) && baseUrl === defaultBaseUrl()) {
-          setBusy(false, "就绪");
-          setError("当前是 GitHub Pages 静态站点，默认同域 /claw-api 不存在。请填你自己的网关 API 地址。");
-          return;
-        }
-
         history.push({ role: "user", content: prompt });
         saveHistory();
-
         pushMessage("user", prompt);
         els.prompt.value = "";
         const botNode = pushMessage("bot", "...");
 
         try {
-          const headers = {
-            "Content-Type": "application/json",
-            "X-Clawdbot-Agent": agentId,
-          };
-          if (token) headers.Authorization = `Bearer ${token}`;
-
-          const res = await fetch(`${baseUrl}/v1/chat/completions`, {
+          const res = await fetch(`${API_BASE}/v1/chat/completions`, {
             method: "POST",
-            headers,
+            headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
-              model: `clawdbot:${agentId}`,
-              user: sessionUser || undefined,
+              model: "bloodz-chat",
               stream: false,
               messages: history.map((m) => ({ role: m.role, content: m.content })),
             }),
@@ -566,10 +458,7 @@
 
           const json = await res.json().catch(() => ({}));
           if (!res.ok) {
-            let detail = (json && json.error && json.error.message) || `${res.status} ${res.statusText}`;
-            if (res.status === 404 && /github\.io$/i.test(window.location.hostname)) {
-              detail = "当前页面在 GitHub Pages，未提供 /claw-api 后端。请填写可访问的 API Base URL。";
-            }
+            const detail = (json && json.error && json.error.message) || `${res.status} ${res.statusText}`;
             throw new Error(detail);
           }
 
@@ -596,7 +485,6 @@
 
       els.sendBtn.addEventListener("click", () => void send());
       els.newChatBtn.addEventListener("click", resetChat);
-
       els.prompt.addEventListener("keydown", (e) => {
         if (e.key === "Enter" && !e.shiftKey) {
           e.preventDefault();
@@ -604,11 +492,6 @@
         }
       });
 
-      [els.baseUrl, els.token, els.agentId, els.sessionUser].forEach((node) => {
-        node.addEventListener("change", saveConfig);
-      });
-
-      loadConfig();
       loadHistory();
       renderHistory();
     </script>
