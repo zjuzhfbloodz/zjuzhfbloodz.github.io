@@ -4,34 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🐕🐱 家庭宠物监控中心</title>
-    <script src="/pets/images-data.js"></script>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+    <script src="/pets/images-data.js" defer></script>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: var(--body-bg-color, #f5f5f5);
             min-height: 100vh;
-            padding: 20px;
         }
         .container {
             max-width: 1400px;
             margin: 0 auto;
+            padding: 20px;
         }
-        header {
-            text-align: center;
+        header.site-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 30px 0;
+            padding: 40px 0;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+            margin-bottom: 30px;
         }
-        header h1 {
+        header.site-header h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
         }
-        header p {
+        header.site-header p {
             font-size: 1.1em;
             opacity: 0.9;
         }
@@ -53,7 +51,7 @@
             border-radius: 15px;
             padding: 25px;
             margin-bottom: 25px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
         .date-selector h3 {
             margin-bottom: 15px;
@@ -82,7 +80,6 @@
         .date-btn.active {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
         }
         .day-section {
             display: none;
@@ -100,7 +97,7 @@
             border-radius: 15px;
             padding: 25px;
             margin-bottom: 25px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
         .day-header h2 {
             color: #333;
@@ -128,13 +125,13 @@
             background: white;
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             transition: all 0.3s;
             cursor: pointer;
         }
         .photo-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
         }
         .photo-card img {
             width: 100%;
@@ -157,12 +154,8 @@
             align-items: center;
             gap: 6px;
         }
-        .status.found {
-            color: #27ae60;
-        }
-        .status.not-found {
-            color: #e74c3c;
-        }
+        .status.found { color: #27ae60; }
+        .status.not-found { color: #e74c3c; }
         .pet-type {
             display: inline-block;
             padding: 3px 10px;
@@ -175,9 +168,8 @@
         .pet-type.pet { background: #4d96ff; color: white; }
         .footer {
             text-align: center;
-            color: white;
+            color: #666;
             padding: 40px 20px;
-            opacity: 0.8;
         }
         .modal {
             display: none;
@@ -192,14 +184,11 @@
             align-items: center;
             padding: 20px;
         }
-        .modal.active {
-            display: flex;
-        }
+        .modal.active { display: flex; }
         .modal img {
             max-width: 95%;
             max-height: 90vh;
             border-radius: 10px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
         }
         .modal-close {
             position: absolute;
@@ -208,68 +197,44 @@
             color: white;
             font-size: 45px;
             cursor: pointer;
-            transition: transform 0.3s;
-        }
-        .modal-close:hover {
-            transform: rotate(90deg);
         }
         .loading {
             text-align: center;
-            color: white;
+            color: #666;
             padding: 50px;
             font-size: 1.2em;
         }
-        /* 统一导航栏样式 */
-        .site-nav {
-            background: rgba(255,255,255,0.95);
-            border-radius: 50px;
-            padding: 10px 30px;
-            display: inline-flex;
-            gap: 5px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-        }
-        .site-nav a {
-            color: #333;
-            text-decoration: none;
-            padding: 8px 16px;
-            border-radius: 20px;
-            transition: all 0.3s;
-            font-size: 0.95em;
-        }
-        .site-nav a:hover {
-            background: #667eea;
-            color: white;
-        }
-        .site-nav a.active {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-        .nav-container {
-            text-align: center;
-            margin-bottom: 20px;
-        }
         @media (max-width: 768px) {
-            header h1 { font-size: 1.8em; }
+            header.site-header h1 { font-size: 1.8em; }
             .gallery { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
             .date-btn { padding: 10px 16px; font-size: 0.9em; }
-            .site-nav { flex-wrap: wrap; justify-content: center; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- 统一导航栏 -->
-        <div class="nav-container">
-            <nav class="site-nav">
-                <a href="/">🏠 首页</a>
-                <a href="/ideas/">💡 Ideas</a>
-                <a href="/pets/" class="active">🐾 Pets</a>
-                <a href="/clawdbot-chat/">💬 Chat</a>
-                <a href="/archives/">📦 归档</a>
+    <!-- 使用与主题一致的导航 -->
+    <header class="site-header">
+        <div class="container">
+            <nav>
+                <ul id="menu" class="main-menu menu">
+                    <li class="menu-item menu-item-home">
+                        <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+                    </li>
+                    <li class="menu-item menu-item-ideas">
+                        <a href="/ideas/" rel="section"><i class="fa fa-lightbulb fa-fw"></i>Ideas</a>
+                    </li>
+                    <li class="menu-item menu-item-pets">
+                        <a href="/pets/" rel="section"><i class="fa fa-paw fa-fw"></i>Pets</a>
+                    </li>
+                    <li class="menu-item menu-item-chat">
+                        <a href="/clawdbot-chat/" rel="section"><i class="fa fa-comments fa-fw"></i>Chat</a>
+                    </li>
+                    <li class="menu-item menu-item-archives">
+                        <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+                    </li>
+                </ul>
             </nav>
-        </div>
-        
-        <header>
+            
             <h1>🐕🐱 家庭宠物监控中心</h1>
             <p>🤖 自动由 OpenClaw 家庭监控生成</p>
             <div class="members">
@@ -277,8 +242,10 @@
                 <span class="member">🐱 Nomi - 三花猫</span>
                 <span class="member">🐱 小义乌 - 英短乳白</span>
             </div>
-        </header>
-        
+        </div>
+    </header>
+    
+    <main class="container">
         <div class="date-selector">
             <h3>📅 选择日期查看</h3>
             <div class="date-buttons" id="dateButtons"></div>
@@ -287,11 +254,11 @@
         <div id="galleryContainer">
             <div class="loading">加载中...</div>
         </div>
-        
-        <div class="footer">
-            <p>💡 每 30 分钟自动更新 | 数据自动同步</p>
-        </div>
-    </div>
+    </main>
+    
+    <footer class="footer">
+        <p>💡 每 30 分钟自动更新 | 数据自动同步</p>
+    </footer>
     
     <div class="modal" id="modal" onclick="closeModal()">
         <span class="modal-close" onclick="event.stopPropagation(); closeModal()">&times;</span>
@@ -302,13 +269,14 @@
         let currentDate = null;
         
         function initPage() {
+            console.log('petImagesData:', typeof petImagesData);
             if (typeof petImagesData === 'undefined') {
-                document.getElementById('galleryContainer').innerHTML = '<div class="loading">⚠️ 数据加载失败，请刷新页面</div>';
+                document.getElementById('galleryContainer').innerHTML = '<div class="loading">⚠️ 数据加载失败，请刷新页面<br><small>如果问题持续，请检查网络</small></div>';
                 return;
             }
             
             const dates = petImagesData.dates;
-            if (dates.length === 0) {
+            if (!dates || dates.length === 0) {
                 document.getElementById('galleryContainer').innerHTML = '<div class="loading">暂无监控数据</div>';
                 return;
             }
@@ -403,8 +371,12 @@
             if (e.key === 'Escape') closeModal();
         });
         
-        // 页面加载完成后初始化
-        document.addEventListener('DOMContentLoaded', initPage);
+        // 初始化
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initPage);
+        } else {
+            initPage();
+        }
     </script>
 </body>
 </html>
