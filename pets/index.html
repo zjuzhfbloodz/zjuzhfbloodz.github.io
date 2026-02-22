@@ -6,7 +6,7 @@
     <title>🐕🐱 家庭宠物监控中心</title>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-    <script src="/pets/images-data.js"></script>
+    <script src="/pets/images-data.js" onload="console.log('Script loaded'); initPage();" onerror="console.log('Script failed'); document.getElementById('galleryContainer').innerHTML = '<div class=\"loading\">⚠️ 数据加载失败，请刷新页面</div>';"></script>
     <style>
         body {
             background: var(--body-bg-color, #f5f5f5);
