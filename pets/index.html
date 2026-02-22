@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🐕🐱 家庭宠物监控中心</title>
     <script src="/pets/images-data.js"></script>
+    <link rel="stylesheet" href="/css/main.css">
     <style>
         * {
             margin: 0;
@@ -137,9 +138,9 @@
         }
         .photo-card img {
             width: 100%;
-            height: 220-fit: cover;
-px;
-            object        }
+            height: 220px;
+            object-fit: cover;
+        }
         .photo-card .info {
             padding: 18px;
         }
@@ -218,17 +219,57 @@ px;
             padding: 50px;
             font-size: 1.2em;
         }
+        /* 统一导航栏样式 */
+        .site-nav {
+            background: rgba(255,255,255,0.95);
+            border-radius: 50px;
+            padding: 10px 30px;
+            display: inline-flex;
+            gap: 5px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .site-nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.3s;
+            font-size: 0.95em;
+        }
+        .site-nav a:hover {
+            background: #667eea;
+            color: white;
+        }
+        .site-nav a.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .nav-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
         @media (max-width: 768px) {
             header h1 { font-size: 1.8em; }
             .gallery { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
             .date-btn { padding: 10px 16px; font-size: 0.9em; }
+            .site-nav { flex-wrap: wrap; justify-content: center; }
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- 统一导航栏 -->
+        <div class="nav-container">
+            <nav class="site-nav">
+                <a href="/">🏠 首页</a>
+                <a href="/ideas/">💡 Ideas</a>
+                <a href="/pets/" class="active">🐾 Pets</a>
+                <a href="/clawdbot-chat/">💬 Chat</a>
+                <a href="/archives/">📦 归档</a>
+            </nav>
+        </div>
+        
         <header>
-            <a href="/" style="color: white; text-decoration: none; font-size: 0.9em;">← 返回主页</a>
             <h1>🐕🐱 家庭宠物监控中心</h1>
             <p>🤖 自动由 OpenClaw 家庭监控生成</p>
             <div class="members">
@@ -329,7 +370,7 @@ px;
                                     <div class="status ${img.found ? 'found' : 'not-found'}">
                                         ${img.found ? '✅ ' : '❌ '}
                                         ${img.found ? getPetName(img.type) : '未找到宠物'}
-                                        ${img.found ? `<span class="pet-type ${img.type}">${getPetTypeName(img.type)}</span>` : ''}
+                                        ${img.found ? \`<span class="pet-type \${img.type}">\${getPetTypeName(img.type)}</span>\` : ''}
                                     </div>
                                 </div>
                             </div>
