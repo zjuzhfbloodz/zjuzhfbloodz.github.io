@@ -34008,6 +34008,15 @@ const petImagesData = {
     "2026-03-02": [
       {
         "date": "2026-03-02",
+        "time": "23:30",
+        "img": "/images/pets/20260302-233000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "画面模糊倾斜，可见金属器皿、电风扇网罩等物品。左上角可能有疑似手指/手掌的局部，但无法确定是否为人。未发现猫或狗。",
+        "petIdentity": null
+      },
+      {
+        "date": "2026-03-02",
         "time": "23:00",
         "img": "/images/pets/20260302-230000-BD0673744.jpg",
         "type": "other",
@@ -38606,14 +38615,14 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 5366,
+    "totalImages": 5367,
     "totalDays": 21,
     "foundCount": 312,
-    "notFoundCount": 5054,
+    "notFoundCount": 5055,
     "personCount": 89,
     "dogCount": 112,
     "catCount": 111,
-    "otherCount": 5054,
+    "otherCount": 5055,
     "badImageCount": 14,
     "boxedCount": 977,
     "confidenceThreshold": 0.5
