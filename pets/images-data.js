@@ -1,6 +1,7 @@
 const petImagesData = {
   "dates": [
     "2026-03-02",
+    "2026-03-03",
     "2026-03-01",
     "2026-02-28",
     "2026-02-27",
@@ -11269,6 +11270,17 @@ const petImagesData = {
         "found": false
       }
     ],
+    "2026-03-03": [
+      {
+        "date": "2026-03-03",
+        "time": "00:00",
+        "img": "/images/pets/20260303-000000-BD0673744.jpg",
+        "type": "person",
+        "found": false,
+        "analysis": "No cat or dog is visible in the image. The photo shows a close-up of a hand or arm and some fabric in the foreground, with a circular fan grille and blurred background objects visible at the lower right.",
+        "petIdentity": null
+      }
+    ],
     "2026-03-01": [
       {
         "date": "2026-03-01",
@@ -15004,14 +15016,14 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2106,
-    "totalDays": 21,
+    "totalImages": 2107,
+    "totalDays": 22,
     "foundCount": 195,
-    "notFoundCount": 1911,
-    "personCount": 51,
+    "notFoundCount": 1912,
+    "personCount": 52,
     "dogCount": 73,
     "catCount": 71,
-    "otherCount": 1911,
+    "otherCount": 1912,
     "badImageCount": 13,
     "boxedCount": 195,
     "deduplicated": true,
