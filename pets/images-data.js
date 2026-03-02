@@ -11273,6 +11273,15 @@ const petImagesData = {
     "2026-03-03": [
       {
         "date": "2026-03-03",
+        "time": "07:30",
+        "img": "/images/pets/20260303-073000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "This image is a low‑light (grayscale/infrared) still from a camera. I do not see a person, cat, or dog in the frame. What is visible: large light‑colored fabric or curtain occupying much of the left and center, a darker object on the right with a reflective or patterned patch, some flat panel‑like surfaces toward the bottom center.",
+        "petIdentity": null
+      },
+      {
+        "date": "2026-03-03",
         "time": "07:00",
         "img": "/images/pets/20260303-070000-BD0673744.jpg",
         "type": "other",
@@ -15115,14 +15124,14 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2118,
+    "totalImages": 2119,
     "totalDays": 22,
     "foundCount": 195,
-    "notFoundCount": 1921,
+    "notFoundCount": 1922,
     "personCount": 52,
     "dogCount": 73,
     "catCount": 71,
-    "otherCount": 1920,
+    "otherCount": 1921,
     "badImageCount": 13,
     "boxedCount": 195,
     "deduplicated": true,
