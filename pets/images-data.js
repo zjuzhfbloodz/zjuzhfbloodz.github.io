@@ -11351,6 +11351,15 @@ const petImagesData = {
         "found": false,
         "analysis": "The image is a grayscale scene dominated by blurred light-gray, draped or folded shapes on the left and center and a darker, textured area at the top-right, with a small logo in the top-left and a timestamp in the bottom-right. No clear person, cat, or dog is visible.",
         "petIdentity": null
+      },
+      {
+        "date": "2026-03-03",
+        "time": "06:00",
+        "img": "/images/pets/20260303-060000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "这是一张黑白（监控/夜视风格）的近距离画面，主要可见布料或覆盖物的细节，右下角有时间戳和左上角有水印。画面中未见任何人、猫、狗或其他可辨认的动物。",
+        "petIdentity": null
       }
     ],
     "2026-03-01": [
@@ -15088,14 +15097,14 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2115,
+    "totalImages": 2116,
     "totalDays": 22,
     "foundCount": 195,
-    "notFoundCount": 1919,
+    "notFoundCount": 1920,
     "personCount": 52,
     "dogCount": 73,
     "catCount": 71,
-    "otherCount": 1919,
+    "otherCount": 1920,
     "badImageCount": 13,
     "boxedCount": 195,
     "deduplicated": true,
