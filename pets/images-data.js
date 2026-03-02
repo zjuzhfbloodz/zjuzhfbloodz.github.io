@@ -11273,6 +11273,15 @@ const petImagesData = {
     "2026-03-03": [
       {
         "date": "2026-03-03",
+        "time": "01:00",
+        "img": "/images/pets/20260303-010000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "The grayscale image shows blurred fabric-like material and a plastic-covered object in low light. There is no visible person, cat, or dog in the scene.",
+        "petIdentity": null
+      },
+      {
+        "date": "2026-03-03",
         "time": "00:30",
         "img": "/images/pets/20260303-003042-BD0673744.jpg",
         "type": "other",
@@ -15025,14 +15034,14 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2108,
+    "totalImages": 2109,
     "totalDays": 22,
     "foundCount": 195,
-    "notFoundCount": 1913,
+    "notFoundCount": 1914,
     "personCount": 52,
     "dogCount": 73,
     "catCount": 71,
-    "otherCount": 1913,
+    "otherCount": 1914,
     "badImageCount": 13,
     "boxedCount": 195,
     "deduplicated": true,
