@@ -11273,6 +11273,15 @@ const petImagesData = {
     "2026-03-03": [
       {
         "date": "2026-03-03",
+        "time": "03:30",
+        "img": "/images/pets/20260303-033017-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "我看不出图中有任何可确认的人物。图像中也没有清晰可辨认的猫（Nomi 或 Ywu）或狗。",
+        "petIdentity": null
+      },
+      {
+        "date": "2026-03-03",
         "time": "02:32",
         "img": "/images/pets/20260303-023237-BD0673744.jpg",
         "type": "other",
@@ -15052,14 +15061,14 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2111,
+    "totalImages": 2112,
     "totalDays": 22,
     "foundCount": 195,
-    "notFoundCount": 1916,
+    "notFoundCount": 1917,
     "personCount": 52,
     "dogCount": 73,
     "catCount": 71,
-    "otherCount": 1916,
+    "otherCount": 1917,
     "badImageCount": 13,
     "boxedCount": 195,
     "deduplicated": true,
