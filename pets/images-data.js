@@ -11273,6 +11273,15 @@ const petImagesData = {
     "2026-03-03": [
       {
         "date": "2026-03-03",
+        "time": "07:00",
+        "img": "/images/pets/20260303-070000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "图像显示褶皱的布料或薄膜状物体，画面偏暗，未检测到人、猫、狗或其他动物",
+        "petIdentity": null
+      },
+      {
+        "date": "2026-03-03",
         "time": "06:30",
         "img": "/images/pets/20260303-063000-BD0673744.jpg",
         "type": "other",
@@ -15106,7 +15115,7 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2117,
+    "totalImages": 2118,
     "totalDays": 22,
     "foundCount": 195,
     "notFoundCount": 1921,
