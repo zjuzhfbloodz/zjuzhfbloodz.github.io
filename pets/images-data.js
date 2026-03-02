@@ -11333,6 +11333,15 @@ const petImagesData = {
         "found": false,
         "analysis": "No cat or dog is visible in the image. The photo shows a close-up of a hand or arm and some fabric in the foreground, with a circular fan grille and blurred background objects visible at the lower right.",
         "petIdentity": null
+      },
+      {
+        "date": "2026-03-03",
+        "time": "04:31",
+        "img": "/images/pets/20260303-043101-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "The image is a grayscale scene dominated by blurred light-gray, draped or folded shapes on the left and center and a darker, textured area at the top-right, with a small logo in the top-left and a timestamp in the bottom-right. No clear person, cat, or dog is visible.",
+        "petIdentity": null
       }
     ],
     "2026-03-01": [
@@ -15070,7 +15079,7 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2113,
+    "totalImages": 2114,
     "totalDays": 22,
     "foundCount": 195,
     "notFoundCount": 1918,
