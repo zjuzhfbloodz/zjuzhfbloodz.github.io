@@ -11273,6 +11273,15 @@ const petImagesData = {
     "2026-03-03": [
       {
         "date": "2026-03-03",
+        "time": "05:00",
+        "img": "/images/pets/20260303-050000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "No person, cat, or dog is visible in the image; it mainly shows blurred fabric or curtains and indistinct dark shapes.",
+        "petIdentity": null
+      },
+      {
+        "date": "2026-03-03",
         "time": "04:00",
         "img": "/images/pets/20260303-040024-BD0673744.jpg",
         "type": "other",
@@ -15079,14 +15088,14 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2114,
+    "totalImages": 2115,
     "totalDays": 22,
     "foundCount": 195,
-    "notFoundCount": 1918,
+    "notFoundCount": 1919,
     "personCount": 52,
     "dogCount": 73,
     "catCount": 71,
-    "otherCount": 1918,
+    "otherCount": 1919,
     "badImageCount": 13,
     "boxedCount": 195,
     "deduplicated": true,
