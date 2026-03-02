@@ -11273,6 +11273,15 @@ const petImagesData = {
     "2026-03-03": [
       {
         "date": "2026-03-03",
+        "time": "04:00",
+        "img": "/images/pets/20260303-040024-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "No people, cats, or dogs are visible in the image. It is a low-light black-and-white close-up of draped fabric or curtains with a textured/patterned surface in the upper right and a timestamp in the lower right.",
+        "petIdentity": null
+      },
+      {
+        "date": "2026-03-03",
         "time": "03:30",
         "img": "/images/pets/20260303-033017-BD0673744.jpg",
         "type": "other",
@@ -15061,14 +15070,14 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2112,
+    "totalImages": 2113,
     "totalDays": 22,
     "foundCount": 195,
-    "notFoundCount": 1917,
+    "notFoundCount": 1918,
     "personCount": 52,
     "dogCount": 73,
     "catCount": 71,
-    "otherCount": 1917,
+    "otherCount": 1918,
     "badImageCount": 13,
     "boxedCount": 195,
     "deduplicated": true,
