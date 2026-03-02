@@ -11273,6 +11273,15 @@ const petImagesData = {
     "2026-03-03": [
       {
         "date": "2026-03-03",
+        "time": "01:30",
+        "img": "/images/pets/20260303-013000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "No — there are no people, cats, or dogs visible in the image.",
+        "petIdentity": null
+      },
+      {
+        "date": "2026-03-03",
         "time": "01:00",
         "img": "/images/pets/20260303-010000-BD0673744.jpg",
         "type": "other",
@@ -15034,14 +15043,14 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2109,
+    "totalImages": 2110,
     "totalDays": 22,
     "foundCount": 195,
-    "notFoundCount": 1914,
+    "notFoundCount": 1915,
     "personCount": 52,
     "dogCount": 73,
     "catCount": 71,
-    "otherCount": 1914,
+    "otherCount": 1915,
     "badImageCount": 13,
     "boxedCount": 195,
     "deduplicated": true,
