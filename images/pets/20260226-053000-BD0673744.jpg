@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>AccessDenied</Code>
+  <Message>You have no right to access this object because of bucket acl.</Message>
+  <RequestId>699F6A37A3F5B23639CC05EC</RequestId>
+  <HostId>open-capture.oss-cn-hangzhou.aliyuncs.com</HostId>
+  <EC>0003-00000001</EC>
+  <RecommendDoc>https://api.aliyun.com/troubleshoot?q=0003-00000001</RecommendDoc>
+</Error>
