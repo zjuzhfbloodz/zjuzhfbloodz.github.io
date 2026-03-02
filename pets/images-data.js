@@ -11273,6 +11273,15 @@ const petImagesData = {
     "2026-03-03": [
       {
         "date": "2026-03-03",
+        "time": "02:32",
+        "img": "/images/pets/20260303-023237-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "这是一张黑白夜视/低光家庭监控画面，左侧近镜头处似有布料或窗帘遮挡，右下角显示时间戳。当前画面未能识别出任何人员或宠物。",
+        "petIdentity": null
+      },
+      {
+        "date": "2026-03-03",
         "time": "01:30",
         "img": "/images/pets/20260303-013000-BD0673744.jpg",
         "type": "other",
@@ -15043,20 +15052,20 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2110,
+    "totalImages": 2111,
     "totalDays": 22,
     "foundCount": 195,
-    "notFoundCount": 1915,
+    "notFoundCount": 1916,
     "personCount": 52,
     "dogCount": 73,
     "catCount": 71,
-    "otherCount": 1915,
+    "otherCount": 1916,
     "badImageCount": 13,
     "boxedCount": 195,
     "deduplicated": true,
     "confidenceThreshold": 0.5
   },
-  "generatedAt": "2026-03-02T15:51:35.400737Z",
+  "generatedAt": "2026-03-02T18:32:37.000000Z",
   "annotatedDir": "/images/pets/annotated/",
   "badImages": [
     "source/images/pets/20260301-033000-BD0673744.jpg",
