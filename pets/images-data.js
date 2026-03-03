@@ -11468,6 +11468,15 @@ const petImagesData = {
         "found": false,
         "analysis": "这是一张室内客厅场景的照片，画面可见沙发、抱枕、茶几，上面有饮料瓶和杂物，中心靠窗/门处有强烈入射光。照片右下角显示时间戳'2026-03-03 09:00:49'。",
         "petIdentity": null
+      },
+      {
+        "date": "2026-03-03",
+        "time": "14:00",
+        "img": "/images/pets/20260303-140000-BD0673744.jpg",
+        "type": "person",
+        "found": false,
+        "analysis": "画面右侧沙发上能看到一名躺着/侧卧的人，头部和上半身部分可见。疑似有一只猫，位于沙发中间偏前靠近被褥处，猫看起来偏灰褐/深灰色调。未见明显的狗。",
+        "petIdentity": "Nomi"
       }
     ],
     "2026-03-01": [
@@ -15205,8 +15214,8 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2128,
-    "personCount": 54,
+    "totalImages": 2129,
+    "personCount": 55,
     "catCount": 73,
     "dogCount": 73
   },
