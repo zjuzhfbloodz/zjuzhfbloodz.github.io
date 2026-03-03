@@ -11273,6 +11273,15 @@ const petImagesData = {
     "2026-03-03": [
       {
         "date": "2026-03-03",
+        "time": "20:04",
+        "img": "/images/pets/20260303-200400-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "analysis": "A white cat with light brown/cream markings is visible on the couch. The cat appears to be Ywu (white with light brown).",
+        "petIdentity": "Ywu"
+      },
+      {
+        "date": "2026-03-03",
         "time": "18:30",
         "img": "/images/pets/20260303-183000-BD0673744.jpg",
         "type": "cat",
@@ -15268,9 +15277,9 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2133,
+    "totalImages": 2134,
     "personCount": 55,
-    "catCount": 75,
+    "catCount": 76,
     "dogCount": 73
   },
   "generatedAt": "2026-03-03T05:00:00.000000Z",
