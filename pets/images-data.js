@@ -11273,6 +11273,15 @@ const petImagesData = {
     "2026-03-03": [
       {
         "date": "2026-03-03",
+        "time": "11:30",
+        "img": "/images/pets/20260303-113000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "室内客厅照片：靠墙有空调，右侧有沙发和茶几，正中偏左窗户处过曝发白。未检测到人、猫、狗。",
+        "petIdentity": null
+      },
+      {
+        "date": "2026-03-03",
         "time": "11:00",
         "img": "/images/pets/20260303-110100-BD0673744.jpg",
         "type": "other",
@@ -15169,18 +15178,10 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2124,
-    "totalDays": 22,
-    "foundCount": 197,
-    "notFoundCount": 1923,
+    "totalImages": 2125,
     "personCount": 53,
-    "dogCount": 73,
     "catCount": 72,
-    "otherCount": 1922,
-    "badImageCount": 13,
-    "boxedCount": 195,
-    "deduplicated": true,
-    "confidenceThreshold": 0.5
+    "dogCount": 73
   },
   "generatedAt": "2026-03-03T03:00:00.000000Z",
   "annotatedDir": "/images/pets/annotated/",
