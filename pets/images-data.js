@@ -11280,6 +11280,15 @@ const petImagesData = {
         "found": false,
         "analysis": "图像为低对比度、模糊的灰度画面，无法看到任何清晰的物体轮廓。",
         "petIdentity": null
+      },
+      {
+        "date": "2026-03-04",
+        "time": "01:00",
+        "img": "/images/pets/20260304-010000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "图像整体为模糊的灰色渐变，画面中没有清晰可辨的物体。未见可识别的人、猫、狗或其他动物；右下角有时间戳（2026-03-04 01:01:02），左上角有一个标识。",
+        "petIdentity": null
       }
     ],
     "2026-03-03": [
@@ -15055,7 +15064,7 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2110,
+    "totalImages": 2111,
     "personCount": 51,
     "catCount": 72,
     "dogCount": 73
