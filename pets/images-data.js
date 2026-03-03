@@ -11273,6 +11273,15 @@ const petImagesData = {
     "2026-03-03": [
       {
         "date": "2026-03-03",
+        "time": "13:00",
+        "img": "/images/pets/20260303-130000-BD0673744.jpg",
+        "type": "person",
+        "found": true,
+        "analysis": "A bedroom/living area with a person-shaped silhouette near a bright opening (window/door). No cat or dog visible.",
+        "petIdentity": null
+      },
+      {
+        "date": "2026-03-03",
         "time": "12:00",
         "img": "/images/pets/20260303-120000-BD0673744.jpg",
         "type": "other",
@@ -15187,12 +15196,12 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2126,
-    "personCount": 53,
+    "totalImages": 2127,
+    "personCount": 54,
     "catCount": 72,
     "dogCount": 73
   },
-  "generatedAt": "2026-03-03T03:00:00.000000Z",
+  "generatedAt": "2026-03-03T05:00:00.000000Z",
   "annotatedDir": "/images/pets/annotated/",
   "badImages": [
     "source/images/pets/20260301-033000-BD0673744.jpg",
