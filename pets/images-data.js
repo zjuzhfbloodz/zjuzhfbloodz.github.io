@@ -11274,6 +11274,15 @@ const petImagesData = {
     '2026-03-04': [
       {
         date: '2026-03-04',
+        time: '04:00',
+        img: '/images/pets/20260304-040000-BD0673744.jpg',
+        type: 'other',
+        found: false,
+        analysis: '图像大部分为模糊的灰色渐变/遮挡画面，无法分辨具体物体或场景。左上角有"萤石"的标志，右下角有时间戳"2026-03-04 04:01:13"。图中未见清晰的人、猫或狗。',
+        petIdentity: null,
+      },
+      {
+        date: '2026-03-04',
         time: '03:00',
         img: '/images/pets/20260304-030000-BD0673744.jpg',
         type: 'other',
@@ -15109,7 +15118,7 @@ const petImagesData = {
     ],
   },
   stats: {
-    totalImages: 2117,
+    totalImages: 2118,
     personCount: 51,
     catCount: 72,
     dogCount: 73,
