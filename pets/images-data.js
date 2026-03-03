@@ -11371,6 +11371,15 @@ const petImagesData = {
         analysis: '我未在图像中明确看到任何人、猫、狗或其他动物。图像主要是模糊的灰色区域，左上角有一个标识，右下角有日期时间戳。',
         petIdentity: null,
       },
+      {
+        date: '2026-03-04',
+        time: '06:30',
+        img: '/images/pets/20260304-063000-BD0673744.jpg',
+        type: 'other',
+        found: false,
+        analysis: 'No person, cat, or dog is visible in the image. The frame is mostly a blurred grayscale area with a timestamp and a small logo in the corners.',
+        petIdentity: null,
+      },
     ],
     '2026-03-03': [
       {
@@ -15145,7 +15154,7 @@ const petImagesData = {
     ],
   },
   stats: {
-    totalImages: 2121,
+    totalImages: 2122,
     personCount: 51,
     catCount: 72,
     dogCount: 73,
