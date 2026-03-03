@@ -11274,6 +11274,15 @@ const petImagesData = {
     '2026-03-04': [
       {
         date: '2026-03-04',
+        time: '02:00',
+        img: '/images/pets/20260304-020000-BD0673744.jpg',
+        type: 'other',
+        found: false,
+        analysis: '图片分析服务暂时不可用',
+        petIdentity: null,
+      },
+      {
+        date: '2026-03-04',
         time: '01:30',
         img: '/images/pets/20260304-013000-BD0673744.jpg',
         type: 'other',
@@ -15073,7 +15082,7 @@ const petImagesData = {
     ],
   },
   stats: {
-    totalImages: 2113,
+    totalImages: 2114,
     personCount: 51,
     catCount: 72,
     dogCount: 73,
