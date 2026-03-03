@@ -11396,6 +11396,15 @@ const petImagesData = {
         "found": true,
         "analysis": "画面中可见一处人体的躯干/胸部部分，右侧有一块带有花纹的布料或衣物。画面中未见猫或狗。",
         "petIdentity": null
+      },
+      {
+        "date": "2026-03-03",
+        "time": "09:00",
+        "img": "/images/pets/20260303-090000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "这是一张室内客厅场景的照片，画面可见沙发、抱枕、茶几，上面有饮料瓶和杂物，中心靠窗/门处有强烈入射光。照片右下角显示时间戳'2026-03-03 09:00:49'。",
+        "petIdentity": null
       }
     ],
     "2026-03-01": [
@@ -15133,14 +15142,14 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2120,
+    "totalImages": 2121,
     "totalDays": 22,
     "foundCount": 196,
-    "notFoundCount": 1922,
+    "notFoundCount": 1923,
     "personCount": 53,
     "dogCount": 73,
     "catCount": 71,
-    "otherCount": 1920,
+    "otherCount": 1921,
     "badImageCount": 13,
     "boxedCount": 195,
     "deduplicated": true,
