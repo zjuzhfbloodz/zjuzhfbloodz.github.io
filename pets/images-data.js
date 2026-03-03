@@ -11273,6 +11273,15 @@ const petImagesData = {
     "2026-03-03": [
       {
         "date": "2026-03-03",
+        "time": "14:30",
+        "img": "/images/pets/20260303-143000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "图片中没有可见的猫或狗。沙发上有一个类似躺着的人或人形物体的轮廓，但面部和细节不可辨，无法确认是否为真实的人。",
+        "petIdentity": null
+      },
+      {
+        "date": "2026-03-03",
         "time": "13:30",
         "img": "/images/pets/20260303-133000-BD0673744.jpg",
         "type": "cat",
@@ -15214,7 +15223,7 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2129,
+    "totalImages": 2130,
     "personCount": 55,
     "catCount": 73,
     "dogCount": 73
