@@ -11362,6 +11362,15 @@ const petImagesData = {
         analysis: 'The image is a mostly blurred gray surface with no clear objects or details visible (a timestamp appears in the lower right). I do not see any person, cat, or dog in the image.',
         petIdentity: null,
       },
+      {
+        date: '2026-03-04',
+        time: '06:00',
+        img: '/images/pets/20260304-060036-BD0673744.jpg',
+        type: 'other',
+        found: false,
+        analysis: '我未在图像中明确看到任何人、猫、狗或其他动物。图像主要是模糊的灰色区域，左上角有一个标识，右下角有日期时间戳。',
+        petIdentity: null,
+      },
     ],
     '2026-03-03': [
       {
@@ -15136,7 +15145,7 @@ const petImagesData = {
     ],
   },
   stats: {
-    totalImages: 2120,
+    totalImages: 2121,
     personCount: 51,
     catCount: 72,
     dogCount: 73,
