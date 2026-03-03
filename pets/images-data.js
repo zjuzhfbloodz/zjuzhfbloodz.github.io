@@ -1,5 +1,6 @@
 const petImagesData = {
   "dates": [
+    "2026-03-04",
     "2026-03-02",
     "2026-03-03",
     "2026-03-01",
@@ -11268,6 +11269,17 @@ const petImagesData = {
         "img": "/images/pets/dog_20260204_010156.jpg",
         "type": "other",
         "found": false
+      }
+    ],
+    "2026-03-04": [
+      {
+        "date": "2026-03-04",
+        "time": "00:30",
+        "img": "/images/pets/20260304-003000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "图像为低对比度、模糊的灰度画面，无法看到任何清晰的物体轮廓。",
+        "petIdentity": null
       }
     ],
     "2026-03-03": [
