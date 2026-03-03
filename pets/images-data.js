@@ -11273,6 +11273,15 @@ const petImagesData = {
     "2026-03-03": [
       {
         "date": "2026-03-03",
+        "time": "22:30",
+        "img": "/images/pets/20260303-223000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "图像为模糊的灰度画面，未见可辨认的人、猫或狗。",
+        "petIdentity": null
+      },
+      {
+        "date": "2026-03-03",
         "time": "22:00",
         "img": "/images/pets/20260303-220000-BD0673744.jpg",
         "type": "other",
@@ -15025,7 +15034,7 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2108,
+    "totalImages": 2109,
     "personCount": 51,
     "catCount": 72,
     "dogCount": 73
