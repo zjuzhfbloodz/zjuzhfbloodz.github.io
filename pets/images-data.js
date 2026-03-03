@@ -11273,6 +11273,15 @@ const petImagesData = {
     "2026-03-03": [
       {
         "date": "2026-03-03",
+        "time": "20:30",
+        "img": "/images/pets/20260303-203000-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "analysis": "A cat is visible on the couch. The cat appears light-colored (white/very pale) with darker patches, but the infrared image is monochrome so I cannot determine if the fur is gray-brown or light brown.",
+        "petIdentity": null
+      },
+      {
+        "date": "2026-03-03",
         "time": "20:04",
         "img": "/images/pets/20260303-200400-BD0673744.jpg",
         "type": "cat",
@@ -15277,9 +15286,9 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2134,
+    "totalImages": 2135,
     "personCount": 55,
-    "catCount": 76,
+    "catCount": 77,
     "dogCount": 73
   },
   "generatedAt": "2026-03-03T05:00:00.000000Z",
