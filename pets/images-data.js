@@ -11273,6 +11273,15 @@ const petImagesData = {
     "2026-03-03": [
       {
         "date": "2026-03-03",
+        "time": "17:00",
+        "img": "/images/pets/20260303-170000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "This image shows a small living room or lounge area. I see a dark (navy/gray) sectional sofa with light-colored cushions, a beige throw pillow or small armchair seat near the window, light-colored curtains partly open to a bright exterior, an air-conditioning unit on the upper right wall, a TV or monitor on the left, and a low table in front of the sofa with bottles, a cup, and some scattered clothing or fabrics. There's also a timestamp in the lower right and a small logo in the upper left. I do not see any person, cat, or dog clearly visible in the image.",
+        "petIdentity": null
+      },
+      {
+        "date": "2026-03-03",
         "time": "15:30",
         "img": "/images/pets/20260303-153000-BD0673744.jpg",
         "type": "other",
