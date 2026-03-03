@@ -11273,6 +11273,15 @@ const petImagesData = {
     "2026-03-03": [
       {
         "date": "2026-03-03",
+        "time": "13:30",
+        "img": "/images/pets/20260303-133000-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "analysis": "画面右侧靠沙发靠背处有一只猫，看起来以白色为主，伴有浅棕/橘色或米色的斑块。",
+        "petIdentity": "Ywu"
+      },
+      {
+        "date": "2026-03-03",
         "time": "13:00",
         "img": "/images/pets/20260303-130000-BD0673744.jpg",
         "type": "person",
@@ -15196,9 +15205,9 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2127,
+    "totalImages": 2128,
     "personCount": 54,
-    "catCount": 72,
+    "catCount": 73,
     "dogCount": 73
   },
   "generatedAt": "2026-03-03T05:00:00.000000Z",
