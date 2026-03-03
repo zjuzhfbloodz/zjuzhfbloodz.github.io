@@ -11274,6 +11274,15 @@ const petImagesData = {
     '2026-03-04': [
       {
         date: '2026-03-04',
+        time: '02:47',
+        img: '/images/pets/20260304-024723-BD0673744.jpg',
+        type: 'other',
+        found: false,
+        analysis: '客厅场景，包含灰色沙发、茶几、电视和椅子，未见人、猫、狗等生物',
+        petIdentity: null,
+      },
+      {
+        date: '2026-03-04',
         time: '02:00',
         img: '/images/pets/20260304-020000-BD0673744.jpg',
         type: 'other',
@@ -15082,7 +15091,7 @@ const petImagesData = {
     ],
   },
   stats: {
-    totalImages: 2114,
+    totalImages: 2115,
     personCount: 51,
     catCount: 72,
     dogCount: 73,
