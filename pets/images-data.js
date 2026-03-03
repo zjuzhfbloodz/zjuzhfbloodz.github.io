@@ -11273,6 +11273,15 @@ const petImagesData = {
     "2026-03-03": [
       {
         "date": "2026-03-03",
+        "time": "11:00",
+        "img": "/images/pets/20260303-110100-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "The image shows a living room with a sofa, coffee table, and a bright open doorway letting in sunlight. There are no visible person, cat, or dog in the scene.",
+        "petIdentity": null
+      },
+      {
+        "date": "2026-03-03",
         "time": "10:30",
         "img": "/images/pets/20260303-103000-BD0673744.jpg",
         "type": "other",
@@ -15160,20 +15169,20 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2123,
+    "totalImages": 2124,
     "totalDays": 22,
     "foundCount": 197,
     "notFoundCount": 1923,
     "personCount": 53,
     "dogCount": 73,
     "catCount": 72,
-    "otherCount": 1921,
+    "otherCount": 1922,
     "badImageCount": 13,
     "boxedCount": 195,
     "deduplicated": true,
     "confidenceThreshold": 0.5
   },
-  "generatedAt": "2026-03-02T18:32:37.000000Z",
+  "generatedAt": "2026-03-03T03:00:00.000000Z",
   "annotatedDir": "/images/pets/annotated/",
   "badImages": [
     "source/images/pets/20260301-033000-BD0673744.jpg",
