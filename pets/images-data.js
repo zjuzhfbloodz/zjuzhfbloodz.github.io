@@ -11273,6 +11273,15 @@ const petImagesData = {
     "2026-03-03": [
       {
         "date": "2026-03-03",
+        "time": "12:00",
+        "img": "/images/pets/20260303-120000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "The image shows a room with a sofa, a table with bottles, and an open door with curtains. There are no visible people, cats, or dogs in the image.",
+        "petIdentity": null
+      },
+      {
+        "date": "2026-03-03",
         "time": "11:30",
         "img": "/images/pets/20260303-113000-BD0673744.jpg",
         "type": "other",
@@ -15178,7 +15187,7 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2125,
+    "totalImages": 2126,
     "personCount": 53,
     "catCount": 72,
     "dogCount": 73
