@@ -11273,6 +11273,15 @@ const petImagesData = {
     "2026-03-03": [
       {
         "date": "2026-03-03",
+        "time": "10:00",
+        "img": "/images/pets/20260303-100000-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "analysis": "一只白猫在地板上，伴有浅棕色花纹。",
+        "petIdentity": "Ywu"
+      },
+      {
+        "date": "2026-03-03",
         "time": "07:30",
         "img": "/images/pets/20260303-073000-BD0673744.jpg",
         "type": "other",
@@ -15142,14 +15151,14 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2121,
+    "totalImages": 2122,
     "totalDays": 22,
-    "foundCount": 196,
-    "notFoundCount": 1923,
+    "foundCount": 197,
+    "notFoundCount": 1922,
     "personCount": 53,
     "dogCount": 73,
-    "catCount": 71,
-    "otherCount": 1921,
+    "catCount": 72,
+    "otherCount": 1920,
     "badImageCount": 13,
     "boxedCount": 195,
     "deduplicated": true,
