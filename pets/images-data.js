@@ -11387,6 +11387,15 @@ const petImagesData = {
         "found": false,
         "analysis": "这是一张黑白（监控/夜视风格）的近距离画面，主要可见布料或覆盖物的细节，右下角有时间戳和左上角有水印。画面中未见任何人、猫、狗或其他可辨认的动物。",
         "petIdentity": null
+      },
+      {
+        "date": "2026-03-03",
+        "time": "08:00",
+        "img": "/images/pets/20260303-080000-BD0673744.jpg",
+        "type": "person",
+        "found": true,
+        "analysis": "画面中可见一处人体的躯干/胸部部分，右侧有一块带有花纹的布料或衣物。画面中未见猫或狗。",
+        "petIdentity": null
       }
     ],
     "2026-03-01": [
@@ -15124,14 +15133,14 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2119,
+    "totalImages": 2120,
     "totalDays": 22,
-    "foundCount": 195,
+    "foundCount": 196,
     "notFoundCount": 1922,
-    "personCount": 52,
+    "personCount": 53,
     "dogCount": 73,
     "catCount": 71,
-    "otherCount": 1921,
+    "otherCount": 1920,
     "badImageCount": 13,
     "boxedCount": 195,
     "deduplicated": true,
