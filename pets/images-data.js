@@ -14989,6 +14989,17 @@ const petImagesData = {
         "found": false
       }
     ],
+    "2026-03-03": [
+      {
+        "date": "2026-03-03",
+        "time": "21:30",
+        "img": "/images/pets/20260303-213025-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "analysis": "一只灰褐色（虎斑色）的猫趴在猫爬架顶层休息。",
+        "petIdentity": "Nomi"
+      }
+    ],
     "2026-02-14": [
       {
         "date": "2026-02-14",
@@ -15295,9 +15306,9 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2135,
+    "totalImages": 2136,
     "personCount": 55,
-    "catCount": 77,
+    "catCount": 78,
     "dogCount": 73
   },
   "generatedAt": "2026-03-03T05:00:00.000000Z",
