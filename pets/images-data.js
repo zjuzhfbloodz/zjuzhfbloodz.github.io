@@ -11273,6 +11273,15 @@ const petImagesData = {
     "2026-03-03": [
       {
         "date": "2026-03-03",
+        "time": "18:30",
+        "img": "/images/pets/20260303-183000-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "analysis": "画面中没有可见的人。在沙发/被褥上靠近画面中偏右的位置，有一个小型的圆卷状物，看起来像是一只卷着的小动物（更像是一只猫），但画面为夜视灰度图且分辨率有限，因此不能完全确定，也有可能是小狗或抱枕/玩偶。总体判断：可能有一只动物（倾向猫），但置信度中等偏低。",
+        "petIdentity": "猫（未确定个体）"
+      },
+      {
+        "date": "2026-03-03",
         "time": "17:30",
         "img": "/images/pets/20260303-173000-BD0673744.jpg",
         "type": "cat",
@@ -15259,9 +15268,9 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2132,
+    "totalImages": 2133,
     "personCount": 55,
-    "catCount": 74,
+    "catCount": 75,
     "dogCount": 73
   },
   "generatedAt": "2026-03-03T05:00:00.000000Z",
