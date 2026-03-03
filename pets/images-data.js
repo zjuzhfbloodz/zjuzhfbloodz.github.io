@@ -11273,290 +11273,20 @@ const petImagesData = {
     "2026-03-03": [
       {
         "date": "2026-03-03",
-        "time": "21:00",
-        "img": "/images/pets/20260303-210000-BD0673744.jpg",
+        "time": "22:00",
+        "img": "/images/pets/20260303-220000-BD0673744.jpg",
         "type": "other",
         "found": false,
-        "analysis": "图中未见可识别的人类、猫或狗。",
+        "analysis": "画面被遮挡或失焦，无可辨认的人、猫、狗。",
         "petIdentity": null
       },
       {
         "date": "2026-03-03",
-        "time": "20:30",
-        "img": "/images/pets/20260303-203000-BD0673744.jpg",
+        "time": "21:30",
+        "img": "/images/pets/20260303-213025-BD0673744.jpg",
         "type": "cat",
         "found": true,
-        "analysis": "A cat is visible on the couch. The cat appears light-colored (white/very pale) with darker patches, but the infrared image is monochrome so I cannot determine if the fur is gray-brown or light brown.",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-03",
-        "time": "20:04",
-        "img": "/images/pets/20260303-200400-BD0673744.jpg",
-        "type": "cat",
-        "found": true,
-        "analysis": "A white cat with light brown/cream markings is visible on the couch. The cat appears to be Ywu (white with light brown).",
-        "petIdentity": "Ywu"
-      },
-      {
-        "date": "2026-03-03",
-        "time": "18:30",
-        "img": "/images/pets/20260303-183000-BD0673744.jpg",
-        "type": "cat",
-        "found": true,
-        "analysis": "A cat is visible on the couch. Its fur appears mostly white with darker gray/brown tabby patches. No person or dog is visible.",
-        "petIdentity": "Ywu"
-      },
-      {
-        "date": "2026-03-03",
-        "time": "17:30",
-        "img": "/images/pets/20260303-173000-BD0673744.jpg",
-        "type": "cat",
-        "found": true,
-        "analysis": "画面中没有可见的人或狗。沙发上靠近中间处有一只猫，毛色总体较深，呈深灰/深褐色，可能带有一些较浅的斑块。",
-        "petIdentity": "Nomi"
-      },
-      {
-        "date": "2026-03-03",
-        "time": "17:00",
-        "img": "/images/pets/20260303-170000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "analysis": "This image shows a small living room or lounge area. I see a dark (navy/gray) sectional sofa with light-colored cushions, a beige throw pillow or small armchair seat near the window, light-colored curtains partly open to a bright exterior, an air-conditioning unit on the upper right wall, a TV or monitor on the left, and a low table in front of the sofa with bottles, a cup, and some scattered clothing or fabrics. There's also a timestamp in the lower right and a small logo in the upper left. I do not see any person, cat, or dog clearly visible in the image.",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-03",
-        "time": "15:30",
-        "img": "/images/pets/20260303-153000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "analysis": "图片中未检测到人、猫、狗等目标。可见画面为室内客厅场景，包括沙发、空调、室内门框等陈设。",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-03",
-        "time": "15:00",
-        "img": "/images/pets/20260303-150000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "analysis": "The photo shows a living room with a sofa, cushions, a coffee table with bottles, and an indistinct light-colored object on the couch that could be a small pet but isn't clearly identifiable.",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-03",
-        "time": "14:30",
-        "img": "/images/pets/20260303-143000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "analysis": "图片中没有可见的猫或狗。沙发上有一个类似躺着的人或人形物体的轮廓，但面部和细节不可辨，无法确认是否为真实的人。",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-03",
-        "time": "13:30",
-        "img": "/images/pets/20260303-133000-BD0673744.jpg",
-        "type": "cat",
-        "found": true,
-        "analysis": "画面右侧靠沙发靠背处有一只猫，看起来以白色为主，伴有浅棕/橘色或米色的斑块。",
-        "petIdentity": "Ywu"
-      },
-      {
-        "date": "2026-03-03",
-        "time": "13:00",
-        "img": "/images/pets/20260303-130000-BD0673744.jpg",
-        "type": "person",
-        "found": true,
-        "analysis": "A bedroom/living area with a person-shaped silhouette near a bright opening (window/door). No cat or dog visible.",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-03",
-        "time": "12:00",
-        "img": "/images/pets/20260303-120000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "analysis": "The image shows a room with a sofa, a table with bottles, and an open door with curtains. There are no visible people, cats, or dogs in the image.",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-03",
-        "time": "11:30",
-        "img": "/images/pets/20260303-113000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "analysis": "室内客厅照片：靠墙有空调，右侧有沙发和茶几，正中偏左窗户处过曝发白。未检测到人、猫、狗。",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-03",
-        "time": "11:00",
-        "img": "/images/pets/20260303-110100-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "analysis": "The image shows a living room with a sofa, coffee table, and a bright open doorway letting in sunlight. There are no visible person, cat, or dog in the scene.",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-03",
-        "time": "10:30",
-        "img": "/images/pets/20260303-103000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "analysis": "我在图像中没有看到任何人或动物；画面主要显示一个室内场景，有沙发、靠枕、小桌和一扇向外亮光的门/阳台。图中未见猫，因此无法确认或描述猫的颜色特征（例如灰褐色或白色+浅棕色）。",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-03",
-        "time": "10:00",
-        "img": "/images/pets/20260303-100000-BD0673744.jpg",
-        "type": "cat",
-        "found": true,
-        "analysis": "一只白猫在地板上，伴有浅棕色花纹。",
-        "petIdentity": "Ywu"
-      },
-      {
-        "date": "2026-03-03",
-        "time": "07:30",
-        "img": "/images/pets/20260303-073000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "analysis": "This image is a low‑light (grayscale/infrared) still from a camera. I do not see a person, cat, or dog in the frame. What is visible: large light‑colored fabric or curtain occupying much of the left and center, a darker object on the right with a reflective or patterned patch, some flat panel‑like surfaces toward the bottom center.",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-03",
-        "time": "07:00",
-        "img": "/images/pets/20260303-070000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "analysis": "图像显示褶皱的布料或薄膜状物体，画面偏暗，未检测到人、猫、狗或其他动物",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-03",
-        "time": "06:30",
-        "img": "/images/pets/20260303-063000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "analysis": "The image is a low-contrast, black-and-white, blurred scene dominated by fabric-like shapes (folded cloth or bedding) and shadows. There is a small logo or watermark in the top-left and a timestamp in the bottom-right. I do not see a clearly identifiable person, cat, or dog in this image.",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-03",
-        "time": "05:00",
-        "img": "/images/pets/20260303-050000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "analysis": "No person, cat, or dog is visible in the image; it mainly shows blurred fabric or curtains and indistinct dark shapes.",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-03",
-        "time": "04:00",
-        "img": "/images/pets/20260303-040024-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "analysis": "No people, cats, or dogs are visible in the image. It is a low-light black-and-white close-up of draped fabric or curtains with a textured/patterned surface in the upper right and a timestamp in the lower right.",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-03",
-        "time": "03:30",
-        "img": "/images/pets/20260303-033017-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "analysis": "我看不出图中有任何可确认的人物。图像中也没有清晰可辨认的猫（Nomi 或 Ywu）或狗。",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-03",
-        "time": "02:32",
-        "img": "/images/pets/20260303-023237-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "analysis": "这是一张黑白夜视/低光家庭监控画面，左侧近镜头处似有布料或窗帘遮挡，右下角显示时间戳。当前画面未能识别出任何人员或宠物。",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-03",
-        "time": "01:30",
-        "img": "/images/pets/20260303-013000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "analysis": "No — there are no people, cats, or dogs visible in the image.",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-03",
-        "time": "01:00",
-        "img": "/images/pets/20260303-010000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "analysis": "The grayscale image shows blurred fabric-like material and a plastic-covered object in low light. There is no visible person, cat, or dog in the scene.",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-03",
-        "time": "00:30",
-        "img": "/images/pets/20260303-003042-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "analysis": "No person, cat, or dog is clearly visible in the image. The frame shows blurred fabric or sheets and a dark textured surface in low-contrast grayscale.",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-03",
-        "time": "00:00",
-        "img": "/images/pets/20260303-000000-BD0673744.jpg",
-        "type": "person",
-        "found": false,
-        "analysis": "No cat or dog is visible in the image. The photo shows a close-up of a hand or arm and some fabric in the foreground, with a circular fan grille and blurred background objects visible at the lower right.",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-03",
-        "time": "04:31",
-        "img": "/images/pets/20260303-043101-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "analysis": "The image is a grayscale scene dominated by blurred light-gray, draped or folded shapes on the left and center and a darker, textured area at the top-right, with a small logo in the top-left and a timestamp in the bottom-right. No clear person, cat, or dog is visible.",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-03",
-        "time": "06:00",
-        "img": "/images/pets/20260303-060000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "analysis": "这是一张黑白（监控/夜视风格）的近距离画面，主要可见布料或覆盖物的细节，右下角有时间戳和左上角有水印。画面中未见任何人、猫、狗或其他可辨认的动物。",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-03",
-        "time": "08:00",
-        "img": "/images/pets/20260303-080000-BD0673744.jpg",
-        "type": "person",
-        "found": true,
-        "analysis": "画面中可见一处人体的躯干/胸部部分，右侧有一块带有花纹的布料或衣物。画面中未见猫或狗。",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-03",
-        "time": "09:00",
-        "img": "/images/pets/20260303-090000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "analysis": "这是一张室内客厅场景的照片，画面可见沙发、抱枕、茶几，上面有饮料瓶和杂物，中心靠窗/门处有强烈入射光。照片右下角显示时间戳'2026-03-03 09:00:49'。",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-03",
-        "time": "14:00",
-        "img": "/images/pets/20260303-140000-BD0673744.jpg",
-        "type": "person",
-        "found": false,
-        "analysis": "画面右侧沙发上能看到一名躺着/侧卧的人，头部和上半身部分可见。疑似有一只猫，位于沙发中间偏前靠近被褥处，猫看起来偏灰褐/深灰色调。未见明显的狗。",
+        "analysis": "一只灰褐色（虎斑色）的猫趴在猫爬架顶层休息。",
         "petIdentity": "Nomi"
       }
     ],
@@ -14989,17 +14719,6 @@ const petImagesData = {
         "found": false
       }
     ],
-    "2026-03-03": [
-      {
-        "date": "2026-03-03",
-        "time": "21:30",
-        "img": "/images/pets/20260303-213025-BD0673744.jpg",
-        "type": "cat",
-        "found": true,
-        "analysis": "一只灰褐色（虎斑色）的猫趴在猫爬架顶层休息。",
-        "petIdentity": "Nomi"
-      }
-    ],
     "2026-02-14": [
       {
         "date": "2026-02-14",
@@ -15306,9 +15025,9 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2136,
-    "personCount": 55,
-    "catCount": 78,
+    "totalImages": 2108,
+    "personCount": 51,
+    "catCount": 72,
     "dogCount": 73
   },
   "generatedAt": "2026-03-03T05:00:00.000000Z",
@@ -15329,3 +15048,5 @@ const petImagesData = {
     "source/images/pets/archive/20260302-003000-BD0673744.jpg"
   ]
 };
+
+export default petImagesData;
