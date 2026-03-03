@@ -11283,6 +11283,15 @@ const petImagesData = {
       },
       {
         date: '2026-03-04',
+        time: '04:30',
+        img: '/images/pets/20260304-043000-BD0673744.jpg',
+        type: 'other',
+        found: false,
+        analysis: '这张图像大部分被模糊或遮挡的灰色区域覆盖，未见任何明显的人、猫或狗。由于画面不清晰，无法识别或判断猫的颜色/花色。',
+        petIdentity: null,
+      },
+      {
+        date: '2026-03-04',
         time: '03:00',
         img: '/images/pets/20260304-030000-BD0673744.jpg',
         type: 'other',
@@ -15118,7 +15127,7 @@ const petImagesData = {
     ],
   },
   stats: {
-    totalImages: 2118,
+    totalImages: 2119,
     personCount: 51,
     catCount: 72,
     dogCount: 73,
