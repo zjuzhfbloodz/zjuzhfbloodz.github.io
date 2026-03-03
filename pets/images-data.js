@@ -11273,6 +11273,15 @@ const petImagesData = {
     "2026-03-03": [
       {
         "date": "2026-03-03",
+        "time": "15:00",
+        "img": "/images/pets/20260303-150000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "The photo shows a living room with a sofa, cushions, a coffee table with bottles, and an indistinct light-colored object on the couch that could be a small pet but isn't clearly identifiable.",
+        "petIdentity": null
+      },
+      {
+        "date": "2026-03-03",
         "time": "14:30",
         "img": "/images/pets/20260303-143000-BD0673744.jpg",
         "type": "other",
@@ -15223,7 +15232,7 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2130,
+    "totalImages": 2131,
     "personCount": 55,
     "catCount": 73,
     "dogCount": 73
