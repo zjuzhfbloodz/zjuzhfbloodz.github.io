@@ -11274,6 +11274,15 @@ const petImagesData = {
     '2026-03-04': [
       {
         date: '2026-03-04',
+        time: '03:00',
+        img: '/images/pets/20260304-030000-BD0673744.jpg',
+        type: 'other',
+        found: false,
+        analysis: '这张图像大部分为模糊的灰色近景/背景。左上角有一个黑色标志，右下角有时间戳"2026-03-04 03:00:18"。画面没有清晰的可辨物体或轮廓。未见人、猫、狗。',
+        petIdentity: null,
+      },
+      {
+        date: '2026-03-04',
         time: '02:47',
         img: '/images/pets/20260304-024723-BD0673744.jpg',
         type: 'other',
@@ -15091,7 +15100,7 @@ const petImagesData = {
     ],
   },
   stats: {
-    totalImages: 2115,
+    totalImages: 2116,
     personCount: 51,
     catCount: 72,
     dogCount: 73,
