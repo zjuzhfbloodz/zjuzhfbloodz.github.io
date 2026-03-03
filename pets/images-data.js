@@ -11273,6 +11273,15 @@ const petImagesData = {
     "2026-03-03": [
       {
         "date": "2026-03-03",
+        "time": "17:30",
+        "img": "/images/pets/20260303-173000-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "analysis": "画面中没有可见的人或狗。沙发上靠近中间处有一只猫，毛色总体较深，呈深灰/深褐色，可能带有一些较浅的斑块。",
+        "petIdentity": "Nomi"
+      },
+      {
+        "date": "2026-03-03",
         "time": "17:00",
         "img": "/images/pets/20260303-170000-BD0673744.jpg",
         "type": "other",
@@ -15250,9 +15259,9 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2131,
+    "totalImages": 2132,
     "personCount": 55,
-    "catCount": 73,
+    "catCount": 74,
     "dogCount": 73
   },
   "generatedAt": "2026-03-03T05:00:00.000000Z",
