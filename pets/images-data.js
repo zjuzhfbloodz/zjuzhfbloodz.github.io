@@ -11274,6 +11274,15 @@ const petImagesData = {
     '2026-03-04': [
       {
         date: '2026-03-04',
+        time: '09:30',
+        img: '/images/pets/20260304-093000-BD0673744.jpg',
+        type: 'cat',
+        found: true,
+        analysis: '画面中可见一只猫（狸花/白色相间）正蜷伏在沙发靠背上。图中未见有人、狗或其他动物。',
+        petIdentity: 'Nomi',
+      },
+      {
+        date: '2026-03-04',
         time: '08:00',
         img: '/images/pets/20260304-080019-BD0673744.jpg',
         type: 'other',
@@ -15189,9 +15198,9 @@ const petImagesData = {
     ],
   },
   stats: {
-    totalImages: 2126,
+    totalImages: 2127,
     personCount: 51,
-    catCount: 73,
+    catCount: 74,
     dogCount: 73,
   },
   generatedAt: '2026-03-03T05:00:00.000000Z',
