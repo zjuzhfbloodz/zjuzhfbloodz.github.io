@@ -11442,6 +11442,14 @@ const petImagesData = {
         type: 'cat',
         analysis: '画面右侧有一只白色/奶油色猫咪',
         petIdentity: 'Ywu'
+      },
+      {
+        date: '2026-03-04',
+        time: '15:00',
+        img: '/images/pets/20260304-150000-BD0673744.jpg',
+        type: 'other',
+        analysis: 'a room with a bed and a lamp',
+        petIdentity: null
       },],
     '2026-03-03': [
       {
@@ -15272,7 +15280,7 @@ const petImagesData = {
     ],
   },
   stats: {
-    totalImages: 2135,
+    totalImages: 2136,
     personCount: 52,
     catCount: 74,
     dogCount: 73,
