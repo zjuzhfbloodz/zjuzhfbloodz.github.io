@@ -11274,6 +11274,15 @@ const petImagesData = {
     '2026-03-04': [
       {
         date: '2026-03-04',
+        time: '14:30',
+        img: '/images/pets/20260304-143028-BD0673744.jpg',
+        type: 'other',
+        found: false,
+        analysis: '这张图片展示的是一间室内房间的场景。画面中能看到沙发、窗户、窗帘、一些衣物和杂物，以及可能的风扇等物品，但没有看到人、猫或狗。',
+        petIdentity: null,
+      },
+      {
+        date: '2026-03-04',
         time: '12:30',
         img: '/images/pets/20260304-123000-BD0673744.jpg',
         type: 'person',
@@ -15263,7 +15272,7 @@ const petImagesData = {
     ],
   },
   stats: {
-    totalImages: 2134,
+    totalImages: 2135,
     personCount: 52,
     catCount: 74,
     dogCount: 73,
