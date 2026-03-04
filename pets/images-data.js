@@ -11469,6 +11469,14 @@ const petImagesData = {
         type: 'other',
         analysis: 'a room with a bed and a lamp',
         petIdentity: null
+      },
+      {
+        date: '2026-03-04',
+        time: '19:30',
+        img: '/images/pets/20260304-193000-BD0673744.jpg',
+        type: 'other',
+        analysis: '画面中没有明显可识别为人的人物，也看不到清晰的猫或狗轮廓。因为这是黑白/红外夜视图像，无法可靠判断若有动物的话其毛色是以灰褐为主还是以白色+浅棕为主。',
+        petIdentity: null
       },],
     '2026-03-03': [
       {
@@ -15353,12 +15361,12 @@ const petImagesData = {
     ],
   },
   stats: {
-    totalImages: 2142,
+    totalImages: 2143,
     personCount: 52,
     catCount: 77,
     dogCount: 73,
   },
-  generatedAt: '2026-03-04T07:30:00.000000Z',
+  generatedAt: '2026-03-04T19:30:00.000000Z',
   annotatedDir: '/images/pets/annotated/',
   badImages: [
     'source/images/pets/20260301-033000-BD0673744.jpg',
