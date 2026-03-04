@@ -11274,6 +11274,15 @@ const petImagesData = {
     '2026-03-04': [
       {
         date: '2026-03-04',
+        time: '20:03',
+        img: '/images/pets/20260304-200344-BD0673744.jpg',
+        type: 'other',
+        found: false,
+        analysis: '这是一张黑白/红外的室内监控画面。画面显示客厅场景，包含沙发（灰色）、茶几、空调出风口、门框等。画面中未看到可识别的人、猫或狗。',
+        petIdentity: null,
+      },
+      {
+        date: '2026-03-04',
         time: '18:30',
         img: '/images/pets/20260304-183000-BD0673744.jpg',
         type: 'other',
@@ -15361,7 +15370,7 @@ const petImagesData = {
     ],
   },
   stats: {
-    totalImages: 2143,
+    totalImages: 2144,
     personCount: 52,
     catCount: 77,
     dogCount: 73,
