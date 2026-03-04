@@ -1,5 +1,6 @@
 const petImagesData = {
   dates: [
+    '2026-03-05',
     '2026-03-04',
     '2026-03-02',
     '2026-03-03',
@@ -15405,13 +15406,24 @@ const petImagesData = {
       },
     ],
   },
+  '2026-03-05': [
+    {
+      date: '2026-03-05',
+      time: '00:30',
+      img: '/images/pets/20260305-003000-BD0673744.jpg',
+      type: 'cat',
+      found: true,
+      analysis: 'A white cat with light brown/tan coloring is lying on a desk. The cat has cream-colored fur and is visible from the side.',
+      petIdentity: 'Ywu',
+    },
+  ],
   stats: {
-    totalImages: 2148,
+    totalImages: 2149,
     personCount: 52,
-    catCount: 77,
+    catCount: 78,
     dogCount: 73,
   },
-  generatedAt: '2026-03-04T19:30:00.000000Z',
+  generatedAt: '2026-03-05T00:30:00.000000Z',
   annotatedDir: '/images/pets/annotated/',
   badImages: [
     'source/images/pets/20260301-033000-BD0673744.jpg',
