@@ -15416,11 +15416,9 @@ const petImagesData = {
       analysis: 'A white cat with light brown/tan coloring is lying on a desk. The cat has cream-colored fur and is visible from the side.',
       petIdentity: 'Ywu',
     },
-  ],
-  stats: {
-    totalImages: 2149,
+  , { date: "2026-03-05", time: "01:00", img: "/images/pets/20260305-010000-BD0673744.jpg", type: "cat", found: true, analysis: "夜视/红外灰度图像，画面中央偏后方、靠地面处有一个蜷缩的模糊物体，看起来像一只躺着/蜷成一团的猫咪。", petIdentity: "猫（未确定个体）" }, stats: { totalImages: 2150,
     personCount: 52,
-    catCount: 78,
+    catCount: 79,
     dogCount: 73,
   },
   generatedAt: '2026-03-05T00:30:00.000000Z',
