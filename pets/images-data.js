@@ -11274,6 +11274,15 @@ const petImagesData = {
     '2026-03-04': [
       {
         date: '2026-03-04',
+        time: '20:30',
+        img: '/images/pets/20260304-203000-BD0673744.jpg',
+        type: 'other',
+        found: false,
+        analysis: '这张红外/夜视图像显示一个室内场景（沙发、靠垫/毯子和前景的一些电子/杂物），右下角有时间戳。画面中没有可辨认的人或明确的动物形体。没有发现猫、狗或其他动物的明显轮廓或特征。',
+        petIdentity: null,
+      },
+      {
+        date: '2026-03-04',
         time: '20:03',
         img: '/images/pets/20260304-200344-BD0673744.jpg',
         type: 'other',
@@ -15370,7 +15379,7 @@ const petImagesData = {
     ],
   },
   stats: {
-    totalImages: 2144,
+    totalImages: 2145,
     personCount: 52,
     catCount: 77,
     dogCount: 73,
