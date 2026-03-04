@@ -15196,9 +15196,20 @@ const petImagesData = {
         found: false,
       },
     ],
+    '2026-03-04': [
+      {
+        date: '2026-03-04',
+        time: '10:01',
+        img: '/images/pets/20260304-100149-BD0673744.jpg',
+        type: 'other',
+        found: false,
+        analysis: 'No person, cat, or dog is visible in the image. It shows a living room with a blue sofa and yellow cushions; a dark bird-like shape is perched near the window/curtain.',
+        petIdentity: null,
+      },
+    ],
   },
   stats: {
-    totalImages: 2127,
+    totalImages: 2128,
     personCount: 51,
     catCount: 74,
     dogCount: 73,
