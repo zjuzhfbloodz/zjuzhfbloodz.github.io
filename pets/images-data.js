@@ -11274,6 +11274,16 @@ const petImagesData = {
     '2026-03-04': [
       {
         date: '2026-03-04',
+        time: '18:30',
+        img: '/images/pets/20260304-183000-BD0673744.jpg',
+        type: 'other',
+        found: false,
+        analysis: '图像显示的是一个室内场景，光线较暗，左前方有一些模糊的物体，背景中似乎有一些家具。图中未明显可见人或动物。',
+        petIdentity: null,
+      },
+
+      {
+        date: '2026-03-04',
         time: '16:00',
         img: '/images/pets/20260304-160000-BD0673744.jpg',
         type: 'other',
