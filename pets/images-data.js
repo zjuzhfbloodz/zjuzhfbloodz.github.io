@@ -11274,6 +11274,15 @@ const petImagesData = {
     '2026-03-04': [
       {
         date: '2026-03-04',
+        time: '21:00',
+        img: '/images/pets/20260304-210000-BD0673744.jpg',
+        type: 'other',
+        found: false,
+        analysis: 'The image appears to be too dark or unclear to determine if there is any person, cat, or dog present.',
+        petIdentity: null,
+      },
+      {
+        date: '2026-03-04',
         time: '20:30',
         img: '/images/pets/20260304-203000-BD0673744.jpg',
         type: 'other',
@@ -15379,7 +15388,7 @@ const petImagesData = {
     ],
   },
   stats: {
-    totalImages: 2145,
+    totalImages: 2146,
     personCount: 52,
     catCount: 77,
     dogCount: 73,
