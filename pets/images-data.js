@@ -11274,6 +11274,15 @@ const petImagesData = {
     '2026-03-04': [
       {
         date: '2026-03-04',
+        time: '08:00',
+        img: '/images/pets/20260304-080019-BD0673744.jpg',
+        type: 'other',
+        found: false,
+        analysis: 'The image is an out-of-focus, low-contrast grayscale frame (with a logo and a timestamp visible) and contains no clearly visible or identifiable person, cat, or dog.',
+        petIdentity: null,
+      },
+      {
+        date: '2026-03-04',
         time: '07:00',
         img: '/images/pets/20260304-070000-BD0673744.jpg',
         type: 'other',
@@ -15172,7 +15181,7 @@ const petImagesData = {
     ],
   },
   stats: {
-    totalImages: 2124,
+    totalImages: 2125,
     personCount: 51,
     catCount: 72,
     dogCount: 73,
