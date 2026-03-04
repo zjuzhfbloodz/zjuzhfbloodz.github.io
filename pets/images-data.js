@@ -11274,6 +11274,15 @@ const petImagesData = {
     '2026-03-04': [
       {
         date: '2026-03-04',
+        time: '12:30',
+        img: '/images/pets/20260304-123000-BD0673744.jpg',
+        type: 'person',
+        found: true,
+        analysis: '画面靠近窗户的床/沙发上有一个被子下的可疑人形体，头部/上半身被遮挡且背光严重，判断为有人。画面中没有清楚的猫或狗形态。',
+        petIdentity: null,
+      },
+      {
+        date: '2026-03-04',
         time: '09:30',
         img: '/images/pets/20260304-093000-BD0673744.jpg',
         type: 'cat',
@@ -15236,8 +15245,8 @@ const petImagesData = {
     ],
   },
   stats: {
-    totalImages: 2131,
-    personCount: 51,
+    totalImages: 2132,
+    personCount: 52,
     catCount: 74,
     dogCount: 73,
   },
