@@ -28,6 +28,7 @@ const petImagesData = {
   ],
   images: {
     '2026-03-06': [
+      {"date":"2026-03-06","time":"07:00","img":"/images/pets/20260306-070006-BD0673744.jpg","type":"other","found":false,"analysis":"图中未见到人、猫或狗。画面显示一块带条纹纹理的布料覆盖的物体、旁边的地板和一个深色矩形物体，右下角有时间戳。","petIdentity":null},
       {"date":"2026-03-06","time":"06:00","img":"/images/pets/20260306-060000-BD0673744.jpg","type":"other","found":false,"analysis":"图中未见清晰可识别的人、猫或狗。画面为夜视灰度图像，显示地板与床垫/靠垫边缘。","petIdentity":null},
       {"date":"2026-03-06","time":"06:30","img":"/images/pets/20260306-063000-BD0673744.jpg","type":"other","found":false,"analysis":"该图为夜视灰度图像，显示室内家具（有条纹的软垫）、地板和深色矩形物体。未检测到人、猫或狗。","petIdentity":null},
       {"date":"2026-03-06","time":"04:01","img":"/images/pets/20260306-040141-BD0673744.jpg","type":"other","found":false,"analysis":"画面中未见清晰可识别的人、猫或狗。该图为夜视黑白画面，无法判断毛色或确认靠枕处的暗点是否为动物。","petIdentity":null},
