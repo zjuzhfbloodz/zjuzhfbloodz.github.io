@@ -28,6 +28,7 @@ const petImagesData = {
   ],
   images: {
     '2026-03-06': [
+      {"date":"2026-03-06","time":"06:00","img":"/images/pets/20260306-060000-BD0673744.jpg","type":"other","found":false,"analysis":"图中未见清晰可识别的人、猫或狗。画面为夜视灰度图像，显示地板与床垫/靠垫边缘。","petIdentity":null},
       {"date":"2026-03-06","time":"04:01","img":"/images/pets/20260306-040141-BD0673744.jpg","type":"other","found":false,"analysis":"画面中未见清晰可识别的人、猫或狗。该图为夜视黑白画面，无法判断毛色或确认靠枕处的暗点是否为动物。","petIdentity":null},
       {"date":"2026-03-06","time":"03:30","img":"/images/pets/20260306-033010-BD0673744.jpg","type":"other","found":false,"analysis":"我没有在图中看到任何人、猫或狗。图像中可见床铺/靠垫和地板的局部。","petIdentity":null},
       {"date":"2026-03-06","time":"03:00","img":"/images/pets/20260306-030000-BD0673744.jpg","type":"other","found":false,"analysis":"该图像为夜视/红外灰度图，主要显示室内地面与家具的部分角落，未见可辨认的人或动物。","petIdentity":null},
@@ -15787,7 +15788,7 @@ const petImagesData = {
       analysis: 'I don't see any person, cat, or dog in this image. What I do see: a low-light/infrared grayscale view showing a light-colored, thinly striped fabric surface (appears to be a cushion or mattress) on the right, a wood-textured floor area on the left, and a dark rectangular object (piece of furniture or a box) near the center with a thin cable or cord running nearby. Timestamp and a small logo appear in the image. No animal features (face, ears, paws, tail) are visible.',
       petIdentity: null,
     },
-  stats: { totalImages: 2195, personCount: 52, catCount: 84, dogCount: 73 },
+  stats: { totalImages: 2196, personCount: 52, catCount: 84, dogCount: 73 },
   generatedAt: '2026-03-05T02:00:00.000000Z',
   annotatedDir: '/images/pets/annotated/',
   badImages: [
