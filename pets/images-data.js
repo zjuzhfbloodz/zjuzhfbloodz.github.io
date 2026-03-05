@@ -28,6 +28,7 @@ const petImagesData = {
   ],
   images: {
     '2026-03-06': [
+      {"date":"2026-03-06","time":"01:00","img":"/images/pets/20260306-010013-BD0673744.jpg","type":"other","found":false,"analysis":"图中没有可见的人物、猫或狗。画面为低光/夜视图像，可见木地板、有条纹的布料物体、深色家具，地面有一根细长物体（可能是线缆）。","petIdentity":null},
       {
         date: '2026-03-06',
         time: '00:30',
@@ -15780,11 +15781,7 @@ const petImagesData = {
       analysis: 'I don't see any person, cat, or dog in this image. What I do see: a low-light/infrared grayscale view showing a light-colored, thinly striped fabric surface (appears to be a cushion or mattress) on the right, a wood-textured floor area on the left, and a dark rectangular object (piece of furniture or a box) near the center with a thin cable or cord running nearby. Timestamp and a small logo appear in the image. No animal features (face, ears, paws, tail) are visible.',
       petIdentity: null,
     },
-  stats: { totalImages: 2188,
-    personCount: 52,
-    catCount: 85,
-    dogCount: 73,
-  },
+  stats: { totalImages: 2191, personCount: 52, catCount: 84, dogCount: 73 },
   generatedAt: '2026-03-05T02:00:00.000000Z',
   annotatedDir: '/images/pets/annotated/',
   badImages: [
