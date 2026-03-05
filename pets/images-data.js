@@ -15409,6 +15409,15 @@ const petImagesData = {
   '2026-03-05': [
     {
       date: '2026-03-05',
+      time: '22:32',
+      img: '/images/pets/20260305-223204-BD0673744.jpg',
+      type: 'other',
+      found: false,
+      analysis: 'I do not see any person, cat, or dog in this image; the frame is a blurred, low-detail grayscale view with no discernible shapes.',
+      petIdentity: null,
+    },
+    {
+      date: '2026-03-05',
       time: '16:07',
       img: '/images/pets/20260305-160701-BD0673744.jpg',
       type: 'other',
@@ -15732,7 +15741,7 @@ const petImagesData = {
       analysis: '图像为模糊、无明显可辨物体的灰度画面。左上角有一个带图形的"萤石"标志，右下角有时间戳"2026-03-05 22:04:25"。图中未见可辨认的人、猫、狗或其他动物。',
       petIdentity: null,
     },
-  stats: { totalImages: 2183,
+  stats: { totalImages: 2184,
     personCount: 52,
     catCount: 85,
     dogCount: 73,
