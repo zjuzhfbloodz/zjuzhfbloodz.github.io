@@ -15409,6 +15409,15 @@ const petImagesData = {
   '2026-03-05': [
     {
       date: '2026-03-05',
+      time: '16:07',
+      img: '/images/pets/20260305-160701-BD0673744.jpg',
+      type: 'other',
+      found: false,
+      analysis: '图像中未见可辨认的人、猫或狗。画面为模糊的灰度/暗色调图像，无法识别出任何明确的物体。',
+      petIdentity: null,
+    },
+    {
+      date: '2026-03-05',
       time: '00:30',
       img: '/images/pets/20260305-003000-BD0673744.jpg',
       type: 'cat',
