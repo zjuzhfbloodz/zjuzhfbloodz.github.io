@@ -28,6 +28,7 @@ const petImagesData = {
   ],
   images: {
     '2026-03-06': [
+      {"date":"2026-03-06","time":"03:30","img":"/images/pets/20260306-033010-BD0673744.jpg","type":"other","found":false,"analysis":"我没有在图中看到任何人、猫或狗。图像中可见床铺/靠垫和地板的局部。","petIdentity":null},
       {"date":"2026-03-06","time":"03:00","img":"/images/pets/20260306-030000-BD0673744.jpg","type":"other","found":false,"analysis":"该图像为夜视/红外灰度图，主要显示室内地面与家具的部分角落，未见可辨认的人或动物。","petIdentity":null},
       {"date":"2026-03-06","time":"02:30","img":"/images/pets/20260306-023000-BD0673744.jpg","type":"other","found":false,"analysis":"This is a low-light (black-and-white) surveillance-style image showing part of a room: a cushioned piece of furniture or mattress on the right, a wooden floor on the left, and a dark rectangular object (box or piece of furniture) near the center. A timestamp and a logo appear on the corners. I do not see any person, cat, or dog in the visible area.","petIdentity":null},
       {"date":"2026-03-06","time":"02:00","img":"/images/pets/20260306-020000-BD0673744.jpg","type":"other","found":false,"analysis":"The image shows a grayscale close-up of a fabric-upholstered cushion or armrest beside a dark rectangular object on a floor, with a timestamp at the lower right and a logo at the upper left. There is no visible person, cat, or dog in the scene.","petIdentity":null},
@@ -15785,7 +15786,7 @@ const petImagesData = {
       analysis: 'I don't see any person, cat, or dog in this image. What I do see: a low-light/infrared grayscale view showing a light-colored, thinly striped fabric surface (appears to be a cushion or mattress) on the right, a wood-textured floor area on the left, and a dark rectangular object (piece of furniture or a box) near the center with a thin cable or cord running nearby. Timestamp and a small logo appear in the image. No animal features (face, ears, paws, tail) are visible.',
       petIdentity: null,
     },
-  stats: { totalImages: 2193, personCount: 52, catCount: 84, dogCount: 73 },
+  stats: { totalImages: 2194, personCount: 52, catCount: 84, dogCount: 73 },
   generatedAt: '2026-03-05T02:00:00.000000Z',
   annotatedDir: '/images/pets/annotated/',
   badImages: [
