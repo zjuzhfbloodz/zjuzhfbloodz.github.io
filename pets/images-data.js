@@ -30,6 +30,15 @@ const petImagesData = {
     '2026-03-06': [
       {
         date: '2026-03-06',
+        time: '00:30',
+        img: '/images/pets/20260306-003049-BD0673744.jpg',
+        type: 'other',
+        found: false,
+        analysis: '图片分析服务暂时不可用',
+        petIdentity: null,
+      },
+      {
+        date: '2026-03-06',
         time: '00:00',
         img: '/images/pets/20260306-000000-BD0673744.jpg',
         type: 'other',
@@ -15771,7 +15780,7 @@ const petImagesData = {
       analysis: 'I don't see any person, cat, or dog in this image. What I do see: a low-light/infrared grayscale view showing a light-colored, thinly striped fabric surface (appears to be a cushion or mattress) on the right, a wood-textured floor area on the left, and a dark rectangular object (piece of furniture or a box) near the center with a thin cable or cord running nearby. Timestamp and a small logo appear in the image. No animal features (face, ears, paws, tail) are visible.',
       petIdentity: null,
     },
-  stats: { totalImages: 2187,
+  stats: { totalImages: 2188,
     personCount: 52,
     catCount: 85,
     dogCount: 73,
