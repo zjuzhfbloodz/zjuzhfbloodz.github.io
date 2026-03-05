@@ -28,6 +28,7 @@ const petImagesData = {
   ],
   images: {
     '2026-03-06': [
+      {"date":"2026-03-06","time":"02:00","img":"/images/pets/20260306-020000-BD0673744.jpg","type":"other","found":false,"analysis":"The image shows a grayscale close-up of a fabric-upholstered cushion or armrest beside a dark rectangular object on a floor, with a timestamp at the lower right and a logo at the upper left. There is no visible person, cat, or dog in the scene.","petIdentity":null},
       {"date":"2026-03-06","time":"01:30","img":"/images/pets/20250306-013000-BD0673744.jpg","type":"other","found":false,"analysis":"图片分析服务暂时不可用","petIdentity":null},
       {"date":"2026-03-06","time":"01:00","img":"/images/pets/20260306-010013-BD0673744.jpg","type":"other","found":false,"analysis":"图中没有可见的人物、猫或狗。画面为低光/夜视图像，可见木地板、有条纹的布料物体、深色家具，地面有一根细长物体（可能是线缆）。","petIdentity":null},
       {
