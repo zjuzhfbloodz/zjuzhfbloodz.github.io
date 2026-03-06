@@ -15006,6 +15006,15 @@ const petImagesData = {
     "2026-03-07": [
       {
         "date": "2026-03-07",
+        "time": "03:30",
+        "img": "/images/pets/20260307-033024-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "analysis": "画面中没有人员或狗，但可以看到一只猫。猫的毛色主要以灰褐色为主。",
+        "petIdentity": "Nomi"
+      },
+      {
+        "date": "2026-03-07",
         "time": "01:00",
         "img": "/images/pets/20260307-010000-BD0673744.jpg",
         "type": "other",
@@ -15043,11 +15052,11 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2110,
+    "totalImages": 2111,
     "personCount": 52,
-    "catCount": 71,
+    "catCount": 72,
     "dogCount": 73,
-    "lastUpdated": "2026-03-06T19:02:14.938Z"
+    "lastUpdated": "2026-03-06T19:32:58.860Z"
   },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
   "annotatedDir": "/images/pets/annotated/",
