@@ -1,4 +1,3 @@
-// 自动修复生成
 const petImagesData = {
   "dates": [
     "2026-03-06",
@@ -30,6 +29,15 @@ const petImagesData = {
   ],
   "images": {
     "2026-03-06": [
+      {
+        "date": "2026-03-06",
+        "time": "10:30",
+        "img": "/images/pets/20260306-103045-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "analysis": "A living room with a sofa and a bright window; a small cat is curled up on the sofa. No person or dog is visible; the cat appears mostly white with light gray patches.",
+        "petIdentity": "Ywu"
+      },
       {
         "date": "2026-03-06",
         "time": "10:00",
@@ -19190,11 +19198,10 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2123,
+    "totalImages": 2124,
     "personCount": 0,
-    "catCount": 0,
+    "catCount": 1,
     "dogCount": 0
   },
-  "generatedAt": "2026-03-06T02:17:20.907411+00:00"
+  "generatedAt": "2026-03-06T02:34:13.183Z"
 };
-if (typeof window !== "undefined") window.petImagesData = petImagesData;
