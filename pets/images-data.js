@@ -31,6 +31,15 @@ const petImagesData = {
     "2026-03-06": [
       {
         "date": "2026-03-06",
+        "time": "12:00",
+        "img": "/images/pets/20260306-120000-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "analysis": "图中在沙发左侧坐垫上有一只浅色小动物（接近白色或浅米色），卷伏着躺着，体型偏小。图像细节不足以明确判断是猫还是其他小动物。",
+        "petIdentity": "猫（未确定个体）"
+      },
+      {
+        "date": "2026-03-06",
         "time": "11:30",
         "img": "/images/pets/20260306-113000-BD0673744.jpg",
         "type": "other",
@@ -19216,9 +19225,9 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2125,
+    "totalImages": 2126,
     "personCount": 0,
-    "catCount": 1,
+    "catCount": 2,
     "dogCount": 0
   },
   "generatedAt": "2026-03-06T03:02:14.212Z"
