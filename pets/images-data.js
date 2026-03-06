@@ -15006,6 +15006,15 @@ const petImagesData = {
     "2026-03-07": [
       {
         "date": "2026-03-07",
+        "time": "06:00",
+        "img": "/images/pets/20260307-060000-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "analysis": "房间里有一个沙发和一些家具。沙发上有一只猫，它的颜色似乎是白色和浅棕色相间。",
+        "petIdentity": "Ywu"
+      },
+      {
+        "date": "2026-03-07",
         "time": "03:30",
         "img": "/images/pets/20260307-033024-BD0673744.jpg",
         "type": "cat",
@@ -15061,11 +15070,11 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2111,
+    "totalImages": 2112,
     "personCount": 52,
-    "catCount": 72,
+    "catCount": 73,
     "dogCount": 73,
-    "lastUpdated": "2026-03-07T04:00:00.000Z"
+    "lastUpdated": "2026-03-07T06:00:00.000Z"
   },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
   "annotatedDir": "/images/pets/annotated/",
