@@ -29,6 +29,7 @@ const petImagesData = {
   ],
   "images": {
     "2026-03-06": [
+      {"date":"2026-03-06","time":"22:30","img":"/images/pets/20260306-223030-BD0673744.jpg","type":"cat","found":true,"analysis":"画面中可以看到一个室内环境。视角中有一张沙发，上面放着几个靠垫和一些杂物。沙发附近有一个小桌子，桌上有一些物品。窗边挂着窗帘，窗外可以看到晾晒的衣物。在沙发靠垫旁边，有一个白色和浅棕色为主的猫，它靠在沙发上。没有看到狗或人。","petIdentity":"Ywu"},
       {
         "date": "2026-03-06",
         "time": "22:00",
@@ -19369,11 +19370,11 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2143,
+    "totalImages": 2144,
     "personCount": 0,
-    "catCount": 11,
+    "catCount": 12,
     "dogCount": 0,
-    "lastUpdated": "2026-03-06T14:02:21.564Z"
+    "lastUpdated": "2026-03-06T14:41:12.173Z"
   },
   "generatedAt": "2026-03-06T12:32:05.242Z"
 };
