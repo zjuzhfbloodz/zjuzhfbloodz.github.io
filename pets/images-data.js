@@ -39,6 +39,14 @@ const petImagesData = {
         "petIdentity": "Ywu"
       },{
         "date": "2026-03-06",
+        "time": "18:30",
+        "img": "/images/pets/20260306-183000-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "analysis": "The image shows a room with a window, curtains, and some furniture. There is a cat sitting on the windowsill, appearing to look outside. The fur color patterns of the cat are not discernible due to the grayscale and low-light nature of the image.",
+        "petIdentity": "猫（未确定个体）"
+      },{
+        "date": "2026-03-06",
         "time": "16:30",
         "img": "/images/pets/20260306-163000-BD0673744.jpg",
         "type": "other",
