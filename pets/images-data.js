@@ -15021,15 +15021,24 @@ const petImagesData = {
         "found": false,
         "analysis": "The image shows a room with a sofa, curtains, and various items like a drawer and some cans on a table. There is no person, cat, or dog visible in the image.",
         "petIdentity": null
+      },
+      {
+        "date": "2026-03-07",
+        "time": "02:30",
+        "img": "/images/pets/20260307-023000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "房间内部场景，有床/沙发、枕头、被子、柜子、窗户、衣物、空调，未检测到人/猫/狗",
+        "petIdentity": null
       }
     ]
   },
   "stats": {
-    "totalImages": 2108,
+    "totalImages": 2109,
     "personCount": 51,
     "catCount": 71,
     "dogCount": 73,
-    "lastUpdated": "2026-03-06T18:02:59.275Z"
+    "lastUpdated": "2026-03-06T18:32:41.559Z"
   },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
   "annotatedDir": "/images/pets/annotated/",
