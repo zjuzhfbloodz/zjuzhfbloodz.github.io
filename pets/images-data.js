@@ -31,6 +31,15 @@ const petImagesData = {
     "2026-03-06": [
       {
         "date": "2026-03-06",
+        "time": "11:00",
+        "img": "/images/pets/20260306-110000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "画面中没有明显可见的人。画面中也未见明确的猫或狗。",
+        "petIdentity": null
+      },
+      {
+        "date": "2026-03-06",
         "time": "10:30",
         "img": "/images/pets/20260306-103045-BD0673744.jpg",
         "type": "cat",
@@ -19198,10 +19207,10 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2124,
+    "totalImages": 2125,
     "personCount": 0,
     "catCount": 1,
     "dogCount": 0
   },
-  "generatedAt": "2026-03-06T02:34:13.183Z"
+  "generatedAt": "2026-03-06T03:02:14.212Z"
 };
