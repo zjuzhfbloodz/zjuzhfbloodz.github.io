@@ -31,6 +31,15 @@ const petImagesData = {
     "2026-03-06": [
       {
         "date": "2026-03-06",
+        "time": "13:00",
+        "img": "/images/pets/20260306-130000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "The image shows an interior room with: A sofa with multiple cushions and clothing or fabric items on it. A set of light-colored curtains covering a bright doorway or window. A chest of drawers or shelving unit on the left with items on top. An air-conditioning unit mounted high on the right wall. A small waste bin or mesh basket near the sofa. No person, cat, or dog is visible in the image.",
+        "petIdentity": null
+      },
+      {
+        "date": "2026-03-06",
         "time": "12:30",
         "img": "/images/pets/20260306-123000-BD0673744.jpg",
         "type": "other",
@@ -19234,10 +19243,10 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2127,
+    "totalImages": 2129,
     "personCount": 0,
     "catCount": 2,
     "dogCount": 0
   },
-  "generatedAt": "2026-03-06T04:30:00.000Z"
+  "generatedAt": "2026-03-06T05:03:49.437Z"
 };
