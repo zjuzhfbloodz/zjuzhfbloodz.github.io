@@ -15066,15 +15066,24 @@ const petImagesData = {
         "found": false,
         "analysis": "The image shows an indoor setting with a couch, pillows, and a curtain-covered window. There is no person, cat, or dog visible in the image.",
         "petIdentity": null
+      },
+      {
+        "date": "2026-03-07",
+        "time": "06:30",
+        "img": "/images/pets/20260307-063000-BD0673744.jpg",
+        "type": "dog",
+        "found": true,
+        "analysis": "The image shows an interior of a room with a couch that has pillows and a blanket on it. On the couch, there is a small animal with a distinctive head shape, which could be a dog.",
+        "petIdentity": null
       }
     ]
   },
   "stats": {
-    "totalImages": 2112,
+    "totalImages": 2113,
     "personCount": 52,
     "catCount": 73,
-    "dogCount": 73,
-    "lastUpdated": "2026-03-07T06:00:00.000Z"
+    "dogCount": 74,
+    "lastUpdated": "2026-03-07T06:30:00.000Z"
   },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
   "annotatedDir": "/images/pets/annotated/",
