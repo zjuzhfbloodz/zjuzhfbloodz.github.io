@@ -29,6 +29,23 @@ const petImagesData = {
   ],
   "images": {
     "2026-03-06": [
+            {
+        "date": "2026-03-06",
+        "time": "17:02",
+        "img": "/images/pets/20260306-170222-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "analysis": "A white cat with light brown patches is lying on the couch.",
+        "petIdentity": "Ywu"
+      },{
+        "date": "2026-03-06",
+        "time": "16:30",
+        "img": "/images/pets/20260306-163000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "图像中没有发现任何清晰可见的人。沙发上的靠垫和衣物堆可能产生类似动物的轮廓，但没有能被自信地识别为猫或狗的明显动物特征。",
+        "petIdentity": null
+      },
       {
         "date": "2026-03-06",
         "time": "16:01",
@@ -19288,9 +19305,9 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2134,
+    "totalImages": 2135,
     "personCount": 0,
-    "catCount": 5,
+    "catCount": 6,
     "dogCount": 0
   },
   "generatedAt": "2026-03-06T08:04:55.877984Z"
