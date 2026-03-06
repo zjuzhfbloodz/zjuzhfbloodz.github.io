@@ -15012,15 +15012,24 @@ const petImagesData = {
         "found": false,
         "analysis": "The image shows a room with a sofa, pillows, and some cluttered items, including a blanket and a small object on the sofa. A set of curtains covers a window, and there is a piece of furniture such as a dresser with items on top to the left. There are no people, cats, or dogs visible in the image.",
         "petIdentity": null
+      },
+      {
+        "date": "2026-03-07",
+        "time": "02:00",
+        "img": "/images/pets/20260307-020000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "The image shows a room with a sofa, curtains, and various items like a drawer and some cans on a table. There is no person, cat, or dog visible in the image.",
+        "petIdentity": null
       }
     ]
   },
   "stats": {
-    "totalImages": 2107,
+    "totalImages": 2108,
     "personCount": 51,
     "catCount": 71,
     "dogCount": 73,
-    "lastUpdated": "2026-03-06T17:03:31.615Z"
+    "lastUpdated": "2026-03-06T18:02:59.275Z"
   },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
   "annotatedDir": "/images/pets/annotated/",
