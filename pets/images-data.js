@@ -28,6 +28,7 @@ const petImagesData = {
   ],
   images: {
     '2026-03-06': [
+      {"date":"2026-03-06","time":"10:00","img":"/images/pets/20260306-100000-BD0673744.jpg","type":"other","found":false,"analysis":"I don't see any people, cats, or dogs in this image. The scene shows a living room with a couch, pillows and blankets, a bright open doorway/curtain letting in daylight, and some small items on a table and the sofa; no animals are visible in the frame.","petIdentity":null},
       {"date":"2026-03-06","time":"09:30","img":"/images/pets/20260306-093031-BD0673744.jpg","type":"cat","found":true,"analysis":"画面左下角近景可见一只猫，毛色以白色为主，头部和耳朵处有深色（黑或深灰）斑块。","petIdentity":"猫（未确定个体）"},
       {"date":"2026-03-06","time":"09:00","img":"/images/pets/20260306-090000-BD0673744.jpg","type":"cat","found":true,"analysis":"图像中可见一只猫 partial visible，仅显示头部/耳朵和一小块毛皮，位于画面右侧座位处。该图为夜视/红外灰度图，无法判断实际毛色。","petIdentity":"猫（未确定个体）"},
       {"date":"2026-03-06","time":"08:30","img":"/images/pets/20260306-083000-BD0673744.jpg","type":"other","found":false,"analysis":"No person, cat, or dog is visible in the image. The scene shows part of a floor and nearby upholstered furniture.","petIdentity":null},
@@ -15794,7 +15795,7 @@ const petImagesData = {
       analysis: 'I don't see any person, cat, or dog in this image. What I do see: a low-light/infrared grayscale view showing a light-colored, thinly striped fabric surface (appears to be a cushion or mattress) on the right, a wood-textured floor area on the left, and a dark rectangular object (piece of furniture or a box) near the center with a thin cable or cord running nearby. Timestamp and a small logo appear in the image. No animal features (face, ears, paws, tail) are visible.',
       petIdentity: null,
     },
-  stats: { totalImages: 2200, personCount: 52, catCount: 86, dogCount: 73 },
+  stats: { totalImages: 2201, personCount: 52, catCount: 86, dogCount: 73 },
   generatedAt: '2026-03-05T02:00:00.000000Z',
   annotatedDir: '/images/pets/annotated/',
   badImages: [
