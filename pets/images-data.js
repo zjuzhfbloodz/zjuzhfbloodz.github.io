@@ -29,7 +29,16 @@ const petImagesData = {
   ],
   "images": {
     "2026-03-06": [
-            {
+      {
+        "date": "2026-03-06",
+        "time": "19:00",
+        "img": "/images/pets/20260306-190000-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "analysis": "图片中有一只猫，毛色特征为白色和浅棕色。场景似乎是一个室内的房间。",
+        "petIdentity": "Ywu"
+      },
+      {
         "date": "2026-03-06",
         "time": "17:02",
         "img": "/images/pets/20260306-170222-BD0673744.jpg",
@@ -37,7 +46,8 @@ const petImagesData = {
         "found": true,
         "analysis": "A white cat with light brown patches is lying on the couch.",
         "petIdentity": "Ywu"
-      },{
+      },
+      {
         "date": "2026-03-06",
         "time": "18:30",
         "img": "/images/pets/20260306-183000-BD0673744.jpg",
@@ -45,7 +55,8 @@ const petImagesData = {
         "found": true,
         "analysis": "The image shows a room with a window, curtains, and some furniture. There is a cat sitting on the windowsill, appearing to look outside. The fur color patterns of the cat are not discernible due to the grayscale and low-light nature of the image.",
         "petIdentity": "猫（未确定个体）"
-      },{
+      },
+      {
         "date": "2026-03-06",
         "time": "16:30",
         "img": "/images/pets/20260306-163000-BD0673744.jpg",
@@ -19313,10 +19324,10 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2135,
+    "totalImages": 2136,
     "personCount": 0,
-    "catCount": 6,
+    "catCount": 7,
     "dogCount": 0
   },
-  "generatedAt": "2026-03-06T08:04:55.877984Z"
+  "generatedAt": "2026-03-06T11:02:29.738Z"
 };
