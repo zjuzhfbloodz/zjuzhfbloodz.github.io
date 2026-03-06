@@ -15030,15 +15030,24 @@ const petImagesData = {
         "found": false,
         "analysis": "房间内部场景，有床/沙发、枕头、被子、柜子、窗户、衣物、空调，未检测到人/猫/狗",
         "petIdentity": null
+      },
+      {
+        "date": "2026-03-07",
+        "time": "03:01",
+        "img": "/images/pets/20260307-030103-BD0673744.jpg",
+        "type": "person",
+        "found": true,
+        "analysis": "The image shows a room with several furniture items, including a sofa and a table with some objects on it. There is a curtain in front of a window. A person is partially visible in the window, outside on a balcony. There is a cat on the sofa with a white and dark fur color pattern.",
+        "petIdentity": null
       }
     ]
   },
   "stats": {
-    "totalImages": 2109,
-    "personCount": 51,
+    "totalImages": 2110,
+    "personCount": 52,
     "catCount": 71,
     "dogCount": 73,
-    "lastUpdated": "2026-03-06T18:32:41.559Z"
+    "lastUpdated": "2026-03-06T19:02:14.938Z"
   },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
   "annotatedDir": "/images/pets/annotated/",
