@@ -31,6 +31,15 @@ const petImagesData = {
     "2026-03-06": [
       {
         "date": "2026-03-06",
+        "time": "20:30",
+        "img": "/images/pets/20260306-203000-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "analysis": "The image shows a living room setting with a couch and curtains. There is a cat in the right side of the image, and it seems to have a gray-brown color pattern.",
+        "petIdentity": "Nomi"
+      },
+      {
+        "date": "2026-03-06",
         "time": "20:00",
         "img": "/images/pets/20260306-200000-BD0673744.jpg",
         "type": "other",
@@ -19342,10 +19351,10 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2138,
+    "totalImages": 2139,
     "personCount": 0,
-    "catCount": 8,
+    "catCount": 9,
     "dogCount": 0
   },
-  "generatedAt": "2026-03-06T12:03:40.942Z"
+  "generatedAt": "2026-03-06T12:32:05.242Z"
 };
