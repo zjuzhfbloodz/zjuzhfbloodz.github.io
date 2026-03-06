@@ -29,8 +29,33 @@ const petImagesData = {
   ],
   "images": {
     "2026-03-06": [
-      {"date":"2026-03-06","time":"23:00","img":"/images/pets/20260306-230000-BD0673744.jpg","type":"other","found":false,"analysis":"这张图片中：1) 没有人。2) 没有猫。3) 没有狗。图中是一个室内场景，有窗帘、沙发和一些家具。","petIdentity":null},
-      {"date":"2026-03-06","time":"22:30","img":"/images/pets/20260306-223030-BD0673744.jpg","type":"cat","found":true,"analysis":"画面中可以看到一个室内环境。视角中有一张沙发，上面放着几个靠垫和一些杂物。沙发附近有一个小桌子，桌上有一些物品。窗边挂着窗帘，窗外可以看到晾晒的衣物。在沙发靠垫旁边，有一个白色和浅棕色为主的猫，它靠在沙发上。没有看到狗或人。","petIdentity":"Ywu"},
+      {
+        "date": "2026-03-06",
+        "time": "23:30",
+        "img": "/images/pets/20260306-233300-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "analysis": "The image depicts an indoor living room scene. In the room, there is a light-colored cat sitting on top of a dresser or cabinet on the left side.",
+        "petIdentity": "Ywu"
+      },
+      {
+        "date": "2026-03-06",
+        "time": "23:00",
+        "img": "/images/pets/20260306-230000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "这张图片中：1) 没有人。2) 没有猫。3) 没有狗。图中是一个室内场景，有窗帘、沙发和一些家具。",
+        "petIdentity": null
+      },
+      {
+        "date": "2026-03-06",
+        "time": "22:30",
+        "img": "/images/pets/20260306-223030-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "analysis": "画面中可以看到一个室内环境。视角中有一张沙发，上面放着几个靠垫和一些杂物。沙发附近有一个小桌子，桌上有一些物品。窗边挂着窗帘，窗外可以看到晾晒的衣物。在沙发靠垫旁边，有一个白色和浅棕色为主的猫，它靠在沙发上。没有看到狗或人。",
+        "petIdentity": "Ywu"
+      },
       {
         "date": "2026-03-06",
         "time": "22:00",
@@ -19379,4 +19404,3 @@ const petImagesData = {
   },
   "generatedAt": "2026-03-06T12:32:05.242Z"
 };
-module.exports = petImagesData;
