@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>SignatureDoesNotMatch</Code>
+  <Message>The request signature we calculated does not match the signature you provided. Check your key and signing method.</Message>
+  <RequestId>69A993D4A38DE837378253EF</RequestId>
+  <HostId>open-capture.oss-cn-hangzhou.aliyuncs.com</HostId>
+  <OSSAccessKeyId>LTAI5tA737AgARqFm7DvPmwS</OSSAccessKeyId>
+  <SignatureProvided>LQ6ow6AoLbFyBCDusfiZqmnzmW0=</SignatureProvided>
+  <StringToSign>GET
+
+
+1772807475
+/open-capture/opst/1/open_capture/3/003vAL5Ky0QUO6BmgqbsnHm08yHWYw3.jpg</StringToSign>
+  <StringToSignBytes>47 45 54 0A 0A 0A 31 37 37 32 38 30 37 34 37 35 0A 2F 6F 70 65 6E 2D 63 61 70 74 75 72 65 2F 6F 70 73 74 2F 31 2F 6F 70 65 6E 5F 63 61 70 74 75 72 65 2F 33 2F 30 30 33 76 41 4C 35 4B 79 30 51 55 4F 36 42 6D 67 71 62 73 6E 48 6D 30 38 79 48 57 59 77 33 2E 6A 70 67 </StringToSignBytes>
+  <EC>0002-00000040</EC>
+  <RecommendDoc>https://api.aliyun.com/troubleshoot?q=0002-00000040</RecommendDoc>
+</Error>
