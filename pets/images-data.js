@@ -31,6 +31,15 @@ const petImagesData = {
     "2026-03-06": [
       {
         "date": "2026-03-06",
+        "time": "14:00",
+        "img": "/images/pets/20260306-140000-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "analysis": "A living room scene with a sofa, window with curtains, and a small cat curled up on the couch (white with light brown patches). No person or dog visible.",
+        "petIdentity": "Ywu"
+      },
+      {
+        "date": "2026-03-06",
         "time": "13:30",
         "img": "/images/pets/20260306-133000-BD0673744.jpg",
         "type": "cat",
@@ -19252,10 +19261,11 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2130,
+    "totalImages": 2131,
     "personCount": 0,
-    "catCount": 3,
-    "dogCount": 0
+    "catCount": 4,
+    "dogCount": 0,
+    "lastUpdate": "2026-03-06T06:03:39.118Z"
   },
   "generatedAt": "2026-03-06T05:03:49.437Z"
 };
