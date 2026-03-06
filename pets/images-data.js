@@ -31,6 +31,15 @@ const petImagesData = {
     "2026-03-06": [
       {
         "date": "2026-03-06",
+        "time": "19:30",
+        "img": "/images/pets/20260306-193000-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "analysis": "这张图片中有一只猫在沙发上。猫的毛色以灰褐色为主。",
+        "petIdentity": "Nomi"
+      },
+      {
+        "date": "2026-03-06",
         "time": "19:00",
         "img": "/images/pets/20260306-190000-BD0673744.jpg",
         "type": "cat",
@@ -107,7 +116,7 @@ const petImagesData = {
         "img": "/images/pets/20260306-133000-BD0673744.jpg",
         "type": "cat",
         "found": true,
-        "analysis": "No person is visible in the room. A cat is lying on the couch near the window; it appears light-colored (cream/white) with some darker brown patches.",
+        "analysis": "No person is visible in the room. A cat is lying on the couch near the window it appears light-colored (cream/white) with some darker brown patches.",
         "petIdentity": "Ywu"
       },
       {
@@ -161,7 +170,7 @@ const petImagesData = {
         "img": "/images/pets/20260306-103045-BD0673744.jpg",
         "type": "cat",
         "found": true,
-        "analysis": "A living room with a sofa and a bright window; a small cat is curled up on the sofa. No person or dog is visible; the cat appears mostly white with light gray patches.",
+        "analysis": "A living room with a sofa and a bright window a small cat is curled up on the sofa. No person or dog is visible the cat appears mostly white with light gray patches.",
         "petIdentity": "Ywu"
       },
       {
@@ -19324,10 +19333,10 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2136,
+    "totalImages": 2137,
     "personCount": 0,
-    "catCount": 7,
+    "catCount": 8,
     "dogCount": 0
   },
-  "generatedAt": "2026-03-06T11:02:29.738Z"
+  "generatedAt": "2026-03-06T11:33:52.206478Z"
 };
