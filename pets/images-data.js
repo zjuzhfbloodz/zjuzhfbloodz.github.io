@@ -31,6 +31,15 @@ const petImagesData = {
     "2026-03-06": [
       {
         "date": "2026-03-06",
+        "time": "16:01",
+        "img": "/images/pets/20260306-160111-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "analysis": "The image depicts a living room with a couch and a window that has curtains partially drawn. There is a cat with gray and brown color patterns climbing on the curtain in front of the window. The room contains various items, including a cup and a pillow, date displayed in the and the time and corner is 2026-03-06 at 16:01:21.",
+        "petIdentity": "Nomi"
+      },
+      {
+        "date": "2026-03-06",
         "time": "15:00",
         "img": "/images/pets/20260306-150000-BD0673744.jpg",
         "type": "other",
@@ -19279,10 +19288,10 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2133,
+    "totalImages": 2134,
     "personCount": 0,
-    "catCount": 4,
+    "catCount": 5,
     "dogCount": 0
   },
-  "generatedAt": "2026-03-06T05:03:49.437Z"
+  "generatedAt": "2026-03-06T08:04:55.877984Z"
 };
