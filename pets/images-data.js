@@ -31,6 +31,15 @@ const petImagesData = {
     "2026-03-06": [
       {
         "date": "2026-03-06",
+        "time": "13:30",
+        "img": "/images/pets/20260306-133000-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "analysis": "No person is visible in the room. A cat is lying on the couch near the window; it appears light-colored (cream/white) with some darker brown patches.",
+        "petIdentity": "Ywu"
+      },
+      {
+        "date": "2026-03-06",
         "time": "13:00",
         "img": "/images/pets/20260306-130000-BD0673744.jpg",
         "type": "other",
@@ -19243,9 +19252,9 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2129,
+    "totalImages": 2130,
     "personCount": 0,
-    "catCount": 2,
+    "catCount": 3,
     "dogCount": 0
   },
   "generatedAt": "2026-03-06T05:03:49.437Z"
