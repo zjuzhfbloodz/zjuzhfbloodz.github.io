@@ -31,6 +31,15 @@ const petImagesData = {
     "2026-03-06": [
       {
         "date": "2026-03-06",
+        "time": "20:00",
+        "img": "/images/pets/20260306-200000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "",
+        "petIdentity": null
+      },
+      {
+        "date": "2026-03-06",
         "time": "19:30",
         "img": "/images/pets/20260306-193000-BD0673744.jpg",
         "type": "cat",
@@ -19333,10 +19342,10 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2137,
+    "totalImages": 2138,
     "personCount": 0,
     "catCount": 8,
     "dogCount": 0
   },
-  "generatedAt": "2026-03-06T11:33:52.206478Z"
+  "generatedAt": "2026-03-06T12:03:40.942Z"
 };
