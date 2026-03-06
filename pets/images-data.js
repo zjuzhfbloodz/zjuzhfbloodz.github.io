@@ -31,6 +31,15 @@ const petImagesData = {
     "2026-03-06": [
       {
         "date": "2026-03-06",
+        "time": "22:00",
+        "img": "/images/pets/20260306-220000-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "analysis": "画面中有一只猫。它主要是白色加浅棕色。",
+        "petIdentity": "Ywu"
+      },
+      {
+        "date": "2026-03-06",
         "time": "21:00",
         "img": "/images/pets/20260306-210000-BD0673744.jpg",
         "type": "other",
@@ -19360,11 +19369,11 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2142,
+    "totalImages": 2143,
     "personCount": 0,
-    "catCount": 10,
+    "catCount": 11,
     "dogCount": 0,
-    "lastUpdated": "2026-03-06T13:02:59.511Z"
+    "lastUpdated": "2026-03-06T14:02:21.564Z"
   },
   "generatedAt": "2026-03-06T12:32:05.242Z"
 };
