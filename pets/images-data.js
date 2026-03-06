@@ -31,6 +31,15 @@ const petImagesData = {
     "2026-03-06": [
       {
         "date": "2026-03-06",
+        "time": "11:30",
+        "img": "/images/pets/20260306-113000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "图中未见任何清晰可辨的人物。画面内也没有任何我能够确定为猫或狗的动物。",
+        "petIdentity": null
+      },
+      {
+        "date": "2026-03-06",
         "time": "11:00",
         "img": "/images/pets/20260306-110000-BD0673744.jpg",
         "type": "other",
