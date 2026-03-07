@@ -15055,15 +15055,29 @@ const petImagesData = {
           "person"
         ],
         "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-03-07",
+        "time": "22:30",
+        "img": "/images/pets/20260307-223043-BD0673744.jpg",
+        "type": "person",
+        "found": true,
+        "boxedImg": "/images/pets/annotated/20260307-223043-BD0673744.jpg",
+        "analysis": "image工具：照片不够清晰，无法确定是否有人或动物。YOLO：检测到1个person（类别0）。结论：检测到人（优先级高于猫狗）。",
+        "petIdentity": null,
+        "yoloClasses": [
+          "person"
+        ],
+        "decisionSource": "yolo"
       }
     ]
   },
   "stats": {
-    "totalImages": 2109,
+    "totalImages": 2110,
     "totalDays": 21,
-    "foundCount": 195,
+    "foundCount": 196,
     "notFoundCount": 1911,
-    "personCount": 53,
+    "personCount": 54,
     "dogCount": 73,
     "catCount": 71,
     "otherCount": 1912,
