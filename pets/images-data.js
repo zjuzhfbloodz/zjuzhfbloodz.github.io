@@ -15006,6 +15006,18 @@ const petImagesData = {
     "2026-03-07": [
       {
         "date": "2026-03-07",
+        "time": "13:00",
+        "img": "/images/pets/20260307-130000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "图片中有一个室内场景，可以看到沙发、窗户和一些家具。没有明显看见有人、猫或狗。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-07",
         "time": "11:30",
         "img": "/images/pets/20260307-113000-BD0673744.jpg",
         "type": "other",
@@ -15151,11 +15163,10 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2119,
+    "totalImages": 2122,
     "personCount": 52,
-    "catCount": 75,
-    "dogCount": 74,
-    "lastUpdated": "2026-03-07T12:33:49.345564Z"
+    "catCount": 76,
+    "dogCount": 74
   },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
   "annotatedDir": "/images/pets/annotated/",
