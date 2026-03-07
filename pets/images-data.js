@@ -15006,6 +15006,18 @@ const petImagesData = {
     "2026-03-07": [
       {
         "date": "2026-03-07",
+        "time": "14:00",
+        "img": "/images/pets/20260307-140000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：房间内有沙发、抱枕、窗帘、空调等家具，未检测到人/猫/狗。YOLO：未检测到目标（no detections）。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-07",
         "time": "13:00",
         "img": "/images/pets/20260307-130000-BD0673744.jpg",
         "type": "other",
