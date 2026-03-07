@@ -1,5 +1,6 @@
 const petImagesData = {
   "dates": [
+    "2026-03-07",
     "2026-03-02",
     "2026-03-01",
     "2026-02-28",
@@ -20,72 +21,9 @@ const petImagesData = {
     "2026-02-05",
     "2026-02-04",
     "2026-02-03",
-    "2026-02-02",
-    "2026-03-07"
+    "2026-02-02"
   ],
   "images": {
-    "2026-03-07": [
-      {
-        "date": "2026-03-07",
-        "time": "18:30",
-        "img": "/images/pets/20260307-183037-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": "/images/pets/annotated/20260307-183037-BD0673744.jpg",
-        "analysis": "image工具：室内场景。可以看到沙发、靠垫、窗帘、空调和桌上的杂物。没有明显可见的人、猫或狗。YOLO：未检测到目标（person/cat/dog）。",
-        "petIdentity": null,
-        "yoloClasses": [{"date":"2026-03-07","time":"19:30","img":"/images/pets/20260307-193000-BD0673744.jpg","type":"other","found":false,"boxedImg":"/images/pets/annotated/20260307-193000-BD0673744.jpg","analysis":"image工具：图像模糊，无法清晰辨认内容，包括是否有任何人、猫、狗或其他宠物。YOLO：未检测到目标（person/cat/dog）。","petIdentity":null,"yoloClasses":[],"decisionSource":"both"},],
-        "decisionSource": "both"
-      },
-      {
-        "date": "2026-03-07",
-        "time": "16:30",
-        "img": "/images/pets/20260307-163000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": "/images/pets/annotated/20260307-163000-BD0673744.jpg",
-        "analysis": "image工具：室内场景。可以看到一个沙发，靠垫，窗帘，空调和一些杂物。窗子透进光线，外面似乎有阳台。没有明显可见的人、猫或狗。YOLO：未检测到目标（person/cat/dog）。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both"
-      },
-      {
-        "date": "2026-03-07",
-        "time": "16:00",
-        "img": "/images/pets/20260307-160000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": "/images/pets/annotated/20260307-160000-BD0673744.jpg",
-        "analysis": "image工具：室内照片，显示了一间客厅的部分。房间内有一张深色的沙发，上面放着一些靠垫和毯子。墙上似乎有一个空调。窗户上挂着窗帘，光线从窗户透进来，室内的一部分显得很亮。窗户旁边有一个小柜子。照片没有显示任何人、猫、狗或其他明显的动物。YOLO：未检测到目标（person/cat/dog）。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both"
-      },
-      {
-        "date": "2026-03-07",
-        "time": "15:30",
-        "img": "/images/pets/20260307-153000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "image工具和YOLO均未检测到人/猫/狗。image工具：室内环境，阳光充足，有沙发等家居物品。YOLO：未检测到目标（person/cat/dog）。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both"
-      },
-      {
-        "date": "2026-03-07",
-        "time": "15:00",
-        "img": "/images/pets/20250307-150000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": "/images/pets/annotated/20250307-150000-BD0673744.jpg",
-        "analysis": "image工具：房间内部，有沙发、枕头、空调、窗帘、桌子、抽屉柜等家居物品。未检测到人/猫/狗。YOLO：未检测到目标（person/cat/dog）。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both"
-      }
-    ],
     "2026-02-05": [
       {
         "date": "2026-02-05",
@@ -15064,14 +15002,35 @@ const petImagesData = {
         "type": "other",
         "found": false
       }
+    ],
+    "2026-03-07": [
+      {
+        "date": "2026-03-07",
+        "time": "20:00",
+        "img": "/images/pets/20260307-200037-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": "/images/pets/annotated/20260307-200037-BD0673744.jpg",
+        "analysis": "image工具：图像模糊且不清晰。没有明显可见的人、猫、狗或其他动物。YOLO：未检测到目标（person/cat/dog）。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      }
     ]
   },
   "stats": {
-    "totalImages": 2111,
+    "totalImages": 2107,
+    "totalDays": 21,
+    "foundCount": 195,
+    "notFoundCount": 1911,
     "personCount": 51,
-    "catCount": 71,
     "dogCount": 73,
-    "lastUpdated": "2026-03-07T10:33:06.765Z"
+    "catCount": 71,
+    "otherCount": 1912,
+    "badImageCount": 13,
+    "boxedCount": 195,
+    "deduplicated": true,
+    "confidenceThreshold": 0.5
   },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
   "annotatedDir": "/images/pets/annotated/",
@@ -15091,3 +15050,5 @@ const petImagesData = {
     "source/images/pets/archive/20260302-003000-BD0673744.jpg"
   ]
 };
+
+export default petImagesData;
