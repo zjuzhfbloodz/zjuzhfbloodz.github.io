@@ -28,6 +28,18 @@ const petImagesData = {
     "2026-03-08": [
       {
         "date": "2026-03-08",
+        "time": "05:01",
+        "img": "/images/pets/20260308-050142-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：图像大部分被遮挡，模糊不清，无法识别是否有人、猫、狗。YOLO：未检测到目标（person/cat/dog）。结论：未检测到任何目标。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-08",
         "time": "04:30",
         "img": "/images/pets/20260308-043000-BD0673744.jpg",
         "type": "other",
@@ -15184,18 +15196,10 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2120,
-    "totalDays": 21,
-    "foundCount": 196,
-    "notFoundCount": 1916,
+    "totalImages": 2121,
     "personCount": 54,
-    "dogCount": 73,
     "catCount": 71,
-    "otherCount": 1919,
-    "badImageCount": 13,
-    "boxedCount": 195,
-    "deduplicated": true,
-    "confidenceThreshold": 0.5
+    "dogCount": 73
   },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
   "annotatedDir": "/images/pets/annotated/",
