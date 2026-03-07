@@ -27,6 +27,18 @@ const petImagesData = {
     "2026-03-07": [
       {
         "date": "2026-03-07",
+        "time": "16:00",
+        "img": "/images/pets/20260307-160000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": "/images/pets/annotated/20260307-160000-BD0673744.jpg",
+        "analysis": "image工具：室内照片，显示了一间客厅的部分。房间内有一张深色的沙发，上面放着一些靠垫和毯子。墙上似乎有一个空调。窗户上挂着窗帘，光线从窗户透进来，室内的一部分显得很亮。窗户旁边有一个小柜子。照片没有显示任何人、猫、狗或其他明显的动物。YOLO：未检测到目标（person/cat/dog）。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-07",
         "time": "15:30",
         "img": "/images/pets/20260307-153000-BD0673744.jpg",
         "type": "other",
@@ -15031,7 +15043,7 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2108,
+    "totalImages": 2109,
     "personCount": 51,
     "catCount": 71,
     "dogCount": 73
