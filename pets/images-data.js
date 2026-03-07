@@ -24,7 +24,19 @@ const petImagesData = {
     "2026-03-07"
   ],
   "images": {
-        "2026-03-07": [
+    "2026-03-07": [
+      {
+        "date": "2026-03-07",
+        "time": "15:30",
+        "img": "/images/pets/20260307-153000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具和YOLO均未检测到人/猫/狗。image工具：室内环境，阳光充足，有沙发等家居物品。YOLO：未检测到目标（person/cat/dog）。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
       {
         "date": "2026-03-07",
         "time": "15:00",
@@ -38,7 +50,7 @@ const petImagesData = {
         "decisionSource": "both"
       }
     ],
-"2026-02-05": [
+    "2026-02-05": [
       {
         "date": "2026-02-05",
         "time": "23:59",
@@ -15019,18 +15031,10 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2106,
-    "totalDays": 21,
-    "foundCount": 195,
-    "notFoundCount": 1911,
+    "totalImages": 2108,
     "personCount": 51,
-    "dogCount": 73,
     "catCount": 71,
-    "otherCount": 1911,
-    "badImageCount": 13,
-    "boxedCount": 195,
-    "deduplicated": true,
-    "confidenceThreshold": 0.5
+    "dogCount": 73
   },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
   "annotatedDir": "/images/pets/annotated/",
