@@ -15183,11 +15183,23 @@ const petImagesData = {
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-07",
+        "time": "14:30",
+        "img": "/images/pets/20260307-143028-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": "/images/pets/annotated/20260307-143028-BD0673744.jpg",
+        "analysis": "image工具：房间内部，有沙发、枕头、空调、窗帘、桌子、抽屉柜等家居物品。未检测到人/猫/狗。YOLO：未检测到目标（person/cat/dog）。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
       }
     ]
   },
   "stats": {
-    "totalImages": 2123,
+    "totalImages": 2124,
     "personCount": 52,
     "catCount": 76,
     "dogCount": 74
