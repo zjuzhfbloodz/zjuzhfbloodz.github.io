@@ -15081,18 +15081,30 @@ const petImagesData = {
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-07",
+        "time": "23:30",
+        "img": "/images/pets/20250307-233000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：图像模糊，呈现粉、黄、白、蓝等颜色区域，有白色Logo和中文文字，时间戳显示2026-03-07 23:31:52。未发现明显的人、猫、狗。YOLO：未检测到目标（person/cat/dog）。结论：未检测到任何目标。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
       }
     ]
   },
   "stats": {
-    "totalImages": 2111,
+    "totalImages": 2112,
     "totalDays": 21,
     "foundCount": 196,
-    "notFoundCount": 1912,
+    "notFoundCount": 1913,
     "personCount": 54,
     "dogCount": 73,
     "catCount": 71,
-    "otherCount": 1913,
+    "otherCount": 1914,
     "badImageCount": 13,
     "boxedCount": 195,
     "deduplicated": true,
