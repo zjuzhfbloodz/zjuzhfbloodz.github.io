@@ -15015,8 +15015,7 @@ const petImagesData = {
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
-      }
-,
+      },
       {
         "date": "2026-03-07",
         "time": "20:30",
@@ -15028,8 +15027,7 @@ const petImagesData = {
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
-      }
-,
+      },
       {
         "date": "2026-03-07",
         "time": "21:00",
@@ -15039,16 +15037,33 @@ const petImagesData = {
         "boxedImg": "/images/pets/annotated/20260307-210033-BD0673744.jpg",
         "analysis": "image工具：图像模糊，无法识别出具体的人、猫、狗或其他动物。YOLO：检测到1个person（类别0）。结论：检测到人。",
         "petIdentity": null,
-        "yoloClasses": ["person"],
+        "yoloClasses": [
+          "person"
+        ],
         "decisionSource": "yolo"
-      }    ]
+      },
+      {
+        "date": "2026-03-07",
+        "time": "22:00",
+        "img": "/images/pets/20260307-220012-BD0673744.jpg",
+        "type": "person",
+        "found": true,
+        "boxedImg": "/images/pets/annotated/20260307-220012-BD0673744.jpg",
+        "analysis": "image工具：图像模糊，难以辨认具体细节，没有明显可见的人、猫、狗。YOLO：检测到1个person（类别0）。结论：检测到人。",
+        "petIdentity": null,
+        "yoloClasses": [
+          "person"
+        ],
+        "decisionSource": "yolo"
+      }
+    ]
   },
   "stats": {
-    "totalImages": 2108,
+    "totalImages": 2109,
     "totalDays": 21,
     "foundCount": 195,
     "notFoundCount": 1911,
-    "personCount": 52,
+    "personCount": 53,
     "dogCount": 73,
     "catCount": 71,
     "otherCount": 1912,
