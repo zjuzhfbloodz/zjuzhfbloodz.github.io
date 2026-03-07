@@ -15006,12 +15006,24 @@ const petImagesData = {
     "2026-03-07": [
       {
         "date": "2026-03-07",
+        "time": "11:30",
+        "img": "/images/pets/20260307-113000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image\u5de5\u5177\uff1a\u5ba4\u5185\u73af\u5883\uff0c\u6c99\u53d1\u3001\u9760\u57ab\u3001\u8336\u51e0\u3001\u7a97\u6237\u3001\u7a7a\u8c03\uff1b\u672a\u68c0\u6d4b\u5230\u4eba/\u732b/\u72d7\u3002YOLO\u68c0\u6d4b\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\u3002\u7ed3\u8bba\uff1a\u65e0\u4eba\u5458/\u5ba0\u7269\u51fa\u73b0\u3002",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-07",
         "time": "10:30",
         "img": "/images/pets/20260307-103000-BD0673744.jpg",
         "type": "cat",
         "found": true,
-        "analysis": "室内环境，窗户带浅色窗帘，沙发上有一只浅色的猫，未见人/狗",
-        "petIdentity": "猫（未确定个体）"
+        "analysis": "\u5ba4\u5185\u73af\u5883\uff0c\u7a97\u6237\u5e26\u6d45\u8272\u7a97\u5e18\uff0c\u6c99\u53d1\u4e0a\u6709\u4e00\u53ea\u6d45\u8272\u7684\u732b\uff0c\u672a\u89c1\u4eba/\u72d7",
+        "petIdentity": "\u732b\uff08\u672a\u786e\u5b9a\u4e2a\u4f53\uff09"
       },
       {
         "date": "2026-03-07",
@@ -15028,7 +15040,7 @@ const petImagesData = {
         "img": "/images/pets/20260307-093000-BD0673744.jpg",
         "type": "cat",
         "found": true,
-        "analysis": "沙发上坐着一只猫",
+        "analysis": "\u6c99\u53d1\u4e0a\u5750\u7740\u4e00\u53ea\u732b",
         "petIdentity": "Ywu"
       },
       {
@@ -15037,7 +15049,7 @@ const petImagesData = {
         "img": "/images/pets/20260307-060000-BD0673744.jpg",
         "type": "cat",
         "found": true,
-        "analysis": "房间里有一个沙发和一些家具。沙发上有一只猫，它的颜色似乎是白色和浅棕色相间。",
+        "analysis": "\u623f\u95f4\u91cc\u6709\u4e00\u4e2a\u6c99\u53d1\u548c\u4e00\u4e9b\u5bb6\u5177\u3002\u6c99\u53d1\u4e0a\u6709\u4e00\u53ea\u732b\uff0c\u5b83\u7684\u989c\u8272\u4f3c\u4e4e\u662f\u767d\u8272\u548c\u6d45\u68d5\u8272\u76f8\u95f4\u3002",
         "petIdentity": "Ywu"
       },
       {
@@ -15046,7 +15058,7 @@ const petImagesData = {
         "img": "/images/pets/20260307-033024-BD0673744.jpg",
         "type": "cat",
         "found": true,
-        "analysis": "画面中没有人员或狗，但可以看到一只猫。猫的毛色主要以灰褐色为主。",
+        "analysis": "\u753b\u9762\u4e2d\u6ca1\u6709\u4eba\u5458\u6216\u72d7\uff0c\u4f46\u53ef\u4ee5\u770b\u5230\u4e00\u53ea\u732b\u3002\u732b\u7684\u6bdb\u8272\u4e3b\u8981\u4ee5\u7070\u8910\u8272\u4e3a\u4e3b\u3002",
         "petIdentity": "Nomi"
       },
       {
@@ -15073,7 +15085,7 @@ const petImagesData = {
         "img": "/images/pets/20260307-023000-BD0673744.jpg",
         "type": "other",
         "found": false,
-        "analysis": "房间内部场景，有床/沙发、枕头、被子、柜子、窗户、衣物、空调，未检测到人/猫/狗",
+        "analysis": "\u623f\u95f4\u5185\u90e8\u573a\u666f\uff0c\u6709\u5e8a/\u6c99\u53d1\u3001\u6795\u5934\u3001\u88ab\u5b50\u3001\u67dc\u5b50\u3001\u7a97\u6237\u3001\u8863\u7269\u3001\u7a7a\u8c03\uff0c\u672a\u68c0\u6d4b\u5230\u4eba/\u732b/\u72d7",
         "petIdentity": null
       },
       {
@@ -15115,11 +15127,11 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2116,
+    "totalImages": 2117,
     "personCount": 52,
     "catCount": 74,
     "dogCount": 74,
-    "lastUpdated": "2026-03-07T02:32:40.026Z"
+    "lastUpdated": "2026-03-07T03:33:07.716873Z"
   },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
   "annotatedDir": "/images/pets/annotated/",
