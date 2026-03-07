@@ -15006,6 +15006,15 @@ const petImagesData = {
     "2026-03-07": [
       {
         "date": "2026-03-07",
+        "time": "10:00",
+        "img": "/images/pets/20260307-100001-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "The image shows a room with a couch, some furniture, and a window with curtains. There is no visible person, cat, or dog in the image.",
+        "petIdentity": null
+      },
+      {
+        "date": "2026-03-07",
         "time": "09:30",
         "img": "/images/pets/20260307-093000-BD0673744.jpg",
         "type": "cat",
@@ -15097,11 +15106,11 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2114,
+    "totalImages": 2115,
     "personCount": 52,
     "catCount": 73,
     "dogCount": 74,
-    "lastUpdated": "2026-03-07T00:33:55.000Z"
+    "lastUpdated": "2026-03-07T02:00:01.000Z"
   },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
   "annotatedDir": "/images/pets/annotated/",
