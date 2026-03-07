@@ -15018,6 +15018,18 @@ const petImagesData = {
       },
       {
         "date": "2026-03-07",
+        "time": "13:34",
+        "img": "/images/pets/20260307-133418-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": "/images/pets/annotated/20260307-133418-BD0673744.jpg",
+        "analysis": "image工具：YOLO检测未通过（API无key），YOLO运行结果：未检测到人/猫/狗。结论：无检测到目标。注：本次使用13:00的缓存图片（EZVIZ API token过期）。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-03-07",
         "time": "11:30",
         "img": "/images/pets/20260307-113000-BD0673744.jpg",
         "type": "other",
@@ -15163,7 +15175,7 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2122,
+    "totalImages": 2123,
     "personCount": 52,
     "catCount": 76,
     "dogCount": 74
