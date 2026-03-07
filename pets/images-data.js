@@ -27,6 +27,18 @@ const petImagesData = {
     "2026-03-07": [
       {
         "date": "2026-03-07",
+        "time": "18:30",
+        "img": "/images/pets/20260307-183037-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": "/images/pets/annotated/20260307-183037-BD0673744.jpg",
+        "analysis": "image工具：室内场景。可以看到沙发、靠垫、窗帘、空调和桌上的杂物。没有明显可见的人、猫或狗。YOLO：未检测到目标（person/cat/dog）。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-07",
         "time": "16:30",
         "img": "/images/pets/20260307-163000-BD0673744.jpg",
         "type": "other",
@@ -15055,10 +15067,11 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2110,
+    "totalImages": 2111,
     "personCount": 51,
     "catCount": 71,
-    "dogCount": 73
+    "dogCount": 73,
+    "lastUpdated": "2026-03-07T10:33:06.765Z"
   },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
   "annotatedDir": "/images/pets/annotated/",
