@@ -15006,6 +15006,15 @@ const petImagesData = {
     "2026-03-07": [
       {
         "date": "2026-03-07",
+        "time": "10:30",
+        "img": "/images/pets/20260307-103000-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "analysis": "室内环境，窗户带浅色窗帘，沙发上有一只浅色的猫，未见人/狗",
+        "petIdentity": "猫（未确定个体）"
+      },
+      {
+        "date": "2026-03-07",
         "time": "10:00",
         "img": "/images/pets/20260307-100001-BD0673744.jpg",
         "type": "other",
@@ -15106,11 +15115,11 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2115,
+    "totalImages": 2116,
     "personCount": 52,
-    "catCount": 73,
+    "catCount": 74,
     "dogCount": 74,
-    "lastUpdated": "2026-03-07T02:00:01.000Z"
+    "lastUpdated": "2026-03-07T02:32:40.026Z"
   },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
   "annotatedDir": "/images/pets/annotated/",
