@@ -1,6 +1,5 @@
 const petImagesData = {
   "dates": [
-    "2026-03-07",
     "2026-03-02",
     "2026-03-01",
     "2026-02-28",
@@ -21,10 +20,25 @@ const petImagesData = {
     "2026-02-05",
     "2026-02-04",
     "2026-02-03",
-    "2026-02-02"
+    "2026-02-02",
+    "2026-03-07"
   ],
   "images": {
-    "2026-02-05": [
+        "2026-03-07": [
+      {
+        "date": "2026-03-07",
+        "time": "15:00",
+        "img": "/images/pets/20250307-150000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": "/images/pets/annotated/20250307-150000-BD0673744.jpg",
+        "analysis": "image工具：房间内部，有沙发、枕头、空调、窗帘、桌子、抽屉柜等家居物品。未检测到人/猫/狗。YOLO：未检测到目标（person/cat/dog）。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      }
+    ],
+"2026-02-05": [
       {
         "date": "2026-02-05",
         "time": "23:59",
@@ -15002,207 +15016,21 @@ const petImagesData = {
         "type": "other",
         "found": false
       }
-    ],
-    "2026-03-07": [
-      {
-        "date": "2026-03-07",
-        "time": "14:00",
-        "img": "/images/pets/20260307-140000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "image工具：房间内有沙发、抱枕、窗帘、空调等家具，未检测到人/猫/狗。YOLO：未检测到目标（no detections）。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both"
-      },
-      {
-        "date": "2026-03-07",
-        "time": "13:00",
-        "img": "/images/pets/20260307-130000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "图片中有一个室内场景，可以看到沙发、窗户和一些家具。没有明显看见有人、猫或狗。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both"
-      },
-      {
-        "date": "2026-03-07",
-        "time": "13:34",
-        "img": "/images/pets/20260307-133418-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": "/images/pets/annotated/20260307-133418-BD0673744.jpg",
-        "analysis": "image工具：YOLO检测未通过（API无key），YOLO运行结果：未检测到人/猫/狗。结论：无检测到目标。注：本次使用13:00的缓存图片（EZVIZ API token过期）。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo"
-      },
-      {
-        "date": "2026-03-07",
-        "time": "11:30",
-        "img": "/images/pets/20260307-113000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "image工具：室内环境，沙发、靠垫、茶几、窗户、空调；未检测到人/猫/狗。YOLO检测：未检测到任何目标。结论：无人员/宠物出现。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both"
-      },
-      {
-        "date": "2026-03-07",
-        "time": "10:30",
-        "img": "/images/pets/20260307-103000-BD0673744.jpg",
-        "type": "cat",
-        "found": true,
-        "analysis": "室内环境，窗户带浅色窗帘，沙发上有一只浅色的猫，未见人/狗",
-        "petIdentity": "猫（未确定个体）"
-      },
-      {
-        "date": "2026-03-07",
-        "time": "10:00",
-        "img": "/images/pets/20260307-100001-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "analysis": "The image shows a room with a couch, some furniture, and a window with curtains. There is no visible person, cat, or dog in the image.",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-07",
-        "time": "09:30",
-        "img": "/images/pets/20260307-093000-BD0673744.jpg",
-        "type": "cat",
-        "found": true,
-        "analysis": "沙发上坐着一只猫",
-        "petIdentity": "Ywu"
-      },
-      {
-        "date": "2026-03-07",
-        "time": "06:00",
-        "img": "/images/pets/20260307-060000-BD0673744.jpg",
-        "type": "cat",
-        "found": true,
-        "analysis": "房间里有一个沙发和一些家具。沙发上有一只猫，它的颜色似乎是白色和浅棕色相间。",
-        "petIdentity": "Ywu"
-      },
-      {
-        "date": "2026-03-07",
-        "time": "03:30",
-        "img": "/images/pets/20260307-033024-BD0673744.jpg",
-        "type": "cat",
-        "found": true,
-        "analysis": "画面中没有人员或狗，但可以看到一只猫。猫的毛色主要以灰褐色为主。",
-        "petIdentity": "Nomi"
-      },
-      {
-        "date": "2026-03-07",
-        "time": "01:00",
-        "img": "/images/pets/20260307-010000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "analysis": "The image shows a room with a sofa, pillows, and some cluttered items, including a blanket and a small object on the sofa. A set of curtains covers a window, and there is a piece of furniture such as a dresser with items on top to the left. There are no people, cats, or dogs visible in the image.",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-07",
-        "time": "02:00",
-        "img": "/images/pets/20260307-020000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "analysis": "The image shows a room with a sofa, curtains, and various items like a drawer and some cans on a table. There is no person, cat, or dog visible in the image.",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-07",
-        "time": "02:30",
-        "img": "/images/pets/20260307-023000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "analysis": "房间内部场景，有床/沙发、枕头、被子、柜子、窗户、衣物、空调，未检测到人/猫/狗",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-07",
-        "time": "03:01",
-        "img": "/images/pets/20260307-030103-BD0673744.jpg",
-        "type": "person",
-        "found": true,
-        "analysis": "The image shows a room with several furniture items, including a sofa and a table with some objects on it. There is a curtain in front of a window. A person is partially visible in the window, outside on a balcony. There is a cat on the sofa with a white and dark fur color pattern.",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-07",
-        "time": "04:00",
-        "img": "/images/pets/20260307-040000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "analysis": "The image shows an indoor setting with a couch, pillows, and a curtain-covered window. There is no person, cat, or dog visible in the image.",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-07",
-        "time": "06:30",
-        "img": "/images/pets/20260307-063000-BD0673744.jpg",
-        "type": "dog",
-        "found": true,
-        "analysis": "The image shows an interior of a room with a couch that has pillows and a blanket on it. On the couch, there is a small animal with a distinctive head shape, which could be a dog.",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-07",
-        "time": "08:33",
-        "img": "/images/pets/20260307-083355-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "analysis": "A living room with sofa and small table, curtains drawn with sunlight. No person, cat, or dog visible.",
-        "petIdentity": null
-      },
-      {
-        "date": "2026-03-07",
-        "time": "12:00",
-        "img": "/images/pets/20260307-120000-BD0673744.jpg",
-        "type": "cat",
-        "found": true,
-        "boxedImg": null,
-        "analysis": "image工具检测到一只猫（深色毛色），YOLO未检测到目标。image与YOLO结论冲突，遵循\"任一检测到则采用\"规则最终判定为cat。",
-        "petIdentity": "猫（未确定个体）",
-        "yoloClasses": [],
-        "decisionSource": "image"
-      },
-      {
-        "date": "2026-03-07",
-        "time": "12:32",
-        "img": "/images/pets/20260307-123218-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": "/images/pets/annotated/20260307-123218-BD0673744.jpg",
-        "analysis": "image工具：房间内部，有沙发、枕头、窗帘、桌子上的杯子等家居物品。未检测到人/猫/狗。YOLO：未检测到目标。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both"
-      },
-      {
-        "date": "2026-03-07",
-        "time": "14:30",
-        "img": "/images/pets/20260307-143028-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": "/images/pets/annotated/20260307-143028-BD0673744.jpg",
-        "analysis": "image工具：房间内部，有沙发、枕头、空调、窗帘、桌子、抽屉柜等家居物品。未检测到人/猫/狗。YOLO：未检测到目标（person/cat/dog）。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both"
-      }
     ]
   },
   "stats": {
-    "totalImages": 2124,
-    "personCount": 52,
-    "catCount": 76,
-    "dogCount": 74
+    "totalImages": 2106,
+    "totalDays": 21,
+    "foundCount": 195,
+    "notFoundCount": 1911,
+    "personCount": 51,
+    "dogCount": 73,
+    "catCount": 71,
+    "otherCount": 1911,
+    "badImageCount": 13,
+    "boxedCount": 195,
+    "deduplicated": true,
+    "confidenceThreshold": 0.5
   },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
   "annotatedDir": "/images/pets/annotated/",
