@@ -15123,15 +15123,27 @@ const petImagesData = {
         "found": false,
         "analysis": "A living room with sofa and small table, curtains drawn with sunlight. No person, cat, or dog visible.",
         "petIdentity": null
+      },
+      {
+        "date": "2026-03-07",
+        "time": "12:00",
+        "img": "/images/pets/20260307-120000-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "boxedImg": null,
+        "analysis": "image工具检测到一只猫（深色毛色），YOLO未检测到目标。image与YOLO结论冲突，遵循\"任一检测到则采用\"规则最终判定为cat。",
+        "petIdentity": "猫（未确定个体）",
+        "yoloClasses": [],
+        "decisionSource": "image"
       }
     ]
   },
   "stats": {
-    "totalImages": 2117,
+    "totalImages": 2118,
     "personCount": 52,
-    "catCount": 74,
+    "catCount": 75,
     "dogCount": 74,
-    "lastUpdated": "2026-03-07T03:33:07.716873Z"
+    "lastUpdated": "2026-03-07T04:00:00.000000Z"
   },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
   "annotatedDir": "/images/pets/annotated/",
