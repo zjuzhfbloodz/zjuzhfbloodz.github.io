@@ -15075,15 +15075,24 @@ const petImagesData = {
         "found": true,
         "analysis": "The image shows an interior of a room with a couch that has pillows and a blanket on it. On the couch, there is a small animal with a distinctive head shape, which could be a dog.",
         "petIdentity": null
+      },
+      {
+        "date": "2026-03-07",
+        "time": "08:33",
+        "img": "/images/pets/20260307-083355-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "analysis": "A living room with sofa and small table, curtains drawn with sunlight. No person, cat, or dog visible.",
+        "petIdentity": null
       }
     ]
   },
   "stats": {
-    "totalImages": 2113,
+    "totalImages": 2114,
     "personCount": 52,
     "catCount": 73,
     "dogCount": 74,
-    "lastUpdated": "2026-03-07T06:30:00.000Z"
+    "lastUpdated": "2026-03-07T00:33:55.000Z"
   },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
   "annotatedDir": "/images/pets/annotated/",
@@ -15103,4 +15112,3 @@ const petImagesData = {
     "source/images/pets/archive/20260302-003000-BD0673744.jpg"
   ]
 };
-module.exports = petImagesData;
