@@ -35,6 +35,17 @@ const petImagesData = {
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
+      },,
+      {
+        "date": "2026-03-09",
+        "time": "06:00",
+        "img": "/images/pets/20260309-060024-BD0673744.jpg",
+        "type": "other",
+        "boxedImg": null,
+        "analysis": "image视觉识别和YOLO目标检测均未检测到人/猫/狗。图片模糊失焦，无法识别具体内容。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
       },
       {
         "date": "2026-03-09",
@@ -15095,11 +15106,11 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2112,
+    "totalImages": 2113,
     "personCount": 51,
     "catCount": 71,
     "dogCount": 73,
-    "lastUpdated": "2026-03-09T05:30:00.000Z"
+    "lastUpdated": "2026-03-09T06:00:24.000Z"
   },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
   "annotatedDir": "/images/pets/annotated/",
