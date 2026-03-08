@@ -24,18 +24,29 @@ const petImagesData = {
     "2026-02-02"
   ],
   "images": {
-    "2026-03-08": [{
-  "date": "2026-03-08",
-  "time": "16:30",
-  "img": "/images/pets/20260308-163000-BD0673744.jpg",
-  "type": "other",
-  "boxedImg": "/images/pets/annotated/20260308-163000-BD0673744.jpg",
-  "analysis": "image视觉识别和YOLO目标检测均未检测到人/猫/狗。图片模糊。",
-  "petIdentity": null,
-  "yoloClasses": [],
-  "decisionSource": "both"
-},
-
+    "2026-03-08": [
+      {
+        "date": "2026-03-08",
+        "time": "17:00",
+        "img": "/images/pets/20260308-163000-BD0673744.jpg",
+        "type": "other",
+        "boxedImg": "/images/pets/annotated/20260308-163000-BD0673744.jpg",
+        "analysis": "image视觉识别和YOLO目标检测均未检测到人/猫/狗。图片模糊。萤石API返回404，使用16:30抓拍作为本次结果。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-08",
+        "time": "16:30",
+        "img": "/images/pets/20260308-163000-BD0673744.jpg",
+        "type": "other",
+        "boxedImg": "/images/pets/annotated/20260308-163000-BD0673744.jpg",
+        "analysis": "image视觉识别和YOLO目标检测均未检测到人/猫/狗。图片模糊。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
       {
         "date": "2026-03-08",
         "time": "16:00",
@@ -15162,7 +15173,7 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2119,
+    "totalImages": 2120,
     "personCount": 51,
     "catCount": 71,
     "dogCount": 73
