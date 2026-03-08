@@ -28,6 +28,18 @@ const petImagesData = {
     2026-03-08: [
       {
         date: "2026-03-08",
+        time: "08:30",
+        img: "/images/pets/20260308-083000-BD0673744.jpg",
+        type: "other",
+        found: false,
+        boxedImg: null,
+        analysis: "image工具：图片模糊，未能清晰辨认任何内容。YOLO：未检测到目标（person/cat/dog）。结论：未检测到任何目标。",
+        petIdentity: null,
+        yoloClasses: [],
+        decisionSource: "both"
+      },
+      {
+        date: "2026-03-08",
         time: "08:00",
         img: "/images/pets/20260308-080000-BD0673744.jpg",
         type: "other",
@@ -15256,7 +15268,7 @@ const petImagesData = {
     ]
   },
   stats: {
-    totalImages: 2126,
+    totalImages: 2127,
     personCount: 54,
     catCount: 71,
     dogCount: 73
