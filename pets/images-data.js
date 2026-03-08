@@ -25,7 +25,17 @@ const petImagesData = {
   ],
   "images": {
     "2026-03-08": [
-
+      {
+        "date": "2026-03-08",
+        "time": "22:01",
+        "img": "/images/pets/20260308-220149-BD0673744.jpg",
+        "type": "other",
+        "boxedImg": "/images/pets/annotated/20260308-220149-BD0673744.jpg",
+        "analysis": "YOLO目标检测未检测到人/猫/狗。image工具不可用（缺少API key）。画面中未发现明显目标。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
       {
         "date": "2026-03-08",
         "time": "21:30",
@@ -24739,7 +24749,7 @@ const petImagesData = {
     }
   ],
   "stats": {
-    "totalImages": 3515,
+    "totalImages": 3516,
     "personCount": 54,
     "catCount": 65,
     "dogCount": 86
