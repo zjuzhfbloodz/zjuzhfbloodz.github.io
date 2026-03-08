@@ -1,4 +1,4 @@
-const petImagesData = {
+petImagesData = {
   "dates": [
     "2026-03-09",
     "2026-03-02",
@@ -25,6 +25,17 @@ const petImagesData = {
   ],
   "images": {
     "2026-03-09": [
+      {
+        "date": "2026-03-09",
+        "time": "07:00",
+        "img": "/images/pets/20260309-070000-BD0673744.jpg",
+        "type": "other",
+        "boxedImg": null,
+        "analysis": "image视觉识别和YOLO目标检测均未检测到人/猫/狗。图片模糊失焦，无法识别具体内容。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
       {
         "date": "2026-03-09",
         "time": "06:30",
@@ -15117,11 +15128,10 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2114,
+    "totalImages": 2117,
     "personCount": 51,
     "catCount": 71,
-    "dogCount": 73,
-    "lastUpdated": "2026-03-08T22:33:17.652Z"
+    "dogCount": 73
   },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
   "annotatedDir": "/images/pets/annotated/",
