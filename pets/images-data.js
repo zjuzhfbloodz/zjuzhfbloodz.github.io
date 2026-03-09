@@ -38,6 +38,17 @@ petImagesData = {
       },
       {
         "date": "2026-03-09",
+        "time": "09:30",
+        "img": "/images/pets/20260309-093022-BD0673744.jpg",
+        "type": "other",
+        "boxedImg": "/images/pets/annotated/20260309-093022-BD0673744.jpg",
+        "analysis": "image视觉识别和YOLO目标检测均未检测到人/猫/狗。图片模糊失焦，无法识别具体内容。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-09",
         "time": "08:30",
         "img": "/images/pets/20260309-083000-BD0673744.jpg",
         "type": "other",
