@@ -11271,6 +11271,19 @@ const petImagesData = {
       }
     ],
     "2026-03-09": [
+      
+      {
+        "date": "2026-03-09",
+        "time": "21:00",
+        "img": "/images/pets/20260309-210000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具与YOLO均未检测到任何人/猫/狗，图片模糊",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
       {
         "date": "2026-03-09",
         "time": "20:00",
