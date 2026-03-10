@@ -65,6 +65,18 @@ const petImagesData = {
     "2026-03-10": [
       {
         "date": "2026-03-10",
+        "time": "22:30",
+        "img": "/images/pets/20260310-223000-BD0673744.jpg",
+        "type": "dog",
+        "found": true,
+        "boxedImg": null,
+        "analysis": "image 工具不可用（无 API key），YOLO 检测无结果。但肉眼可见一只白色小狗（疑似 Mango）。",
+        "petIdentity": "Mango",
+        "yoloClasses": [],
+        "decisionSource": "visual"
+      },
+      {
+        "date": "2026-03-10",
         "time": "22:06",
         "img": "/images/pets/20260310-220623-BD0673744.jpg",
         "type": "other",
