@@ -28,6 +28,18 @@ const petImagesData = {
     "2026-03-12": [
       {
         "date": "2026-03-12",
+        "time": "02:00",
+        "img": "/images/pets/20260312-020000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "YOLO和image工具均未识别到人/猫/狗（图像模糊，无清晰可辨认的主体）。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-12",
         "time": "01:34",
         "img": "/images/pets/20260312-013438-BD0673744.jpg",
         "type": "other",
