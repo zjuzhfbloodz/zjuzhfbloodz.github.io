@@ -28,8 +28,20 @@ const petImagesData = {
     "2026-03-11": [
       {
         "date": "2026-03-11",
-        "time": "20:02",
-        "img": "/images/pets/20260311-200200-BD0673744.jpg",
+        "time": "19:30",
+        "img": "/images/pets/20260311-193000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "YOLO检测结果：无检测到目标（no detections）。image工具未能识别。判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-03-11",
+        "time": "20:30",
+        "img": "/images/pets/20260311-203000-BD0673744.jpg",
         "type": "other",
         "found": false,
         "boxedImg": null,
@@ -15237,20 +15249,6 @@ const petImagesData = {
         "type": "other",
         "found": false
       }
-    ],
-    "2026-03-11": [
-      {
-        "date": "2026-03-11",
-        "time": "19:30",
-        "img": "/images/pets/20260311-193000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "YOLO检测结果：无检测到目标（no detections）。image工具未能识别。判定为other。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo"
-      }
     ]
   },
   "stats": {
@@ -15278,3 +15276,4 @@ const petImagesData = {
     "source/images/pets/archive/20260302-003000-BD0673744.jpg"
   ]
 };
+export default petImagesData;
