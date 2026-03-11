@@ -28,6 +28,18 @@ const petImagesData = {
     "2026-03-12": [
       {
         "date": "2026-03-12",
+        "time": "03:34",
+        "img": "/images/pets/20260312-033456-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：照片非常模糊，几乎无法分辨具体的内容。画面中没有明显的人、猫、狗或其他宠物。整体色调较暗，未能提供清晰的细节。YOLO：未检测到人/猫/狗。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-12",
         "time": "02:30",
         "img": "/images/pets/20260312-023024-BD0673744.jpg",
         "type": "other",
@@ -15082,11 +15094,11 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2112,
+    "totalImages": 2113,
     "personCount": 51,
     "catCount": 71,
     "dogCount": 73,
-    "lastUpdated": "2026-03-11T18:32:45.257Z"
+    "lastUpdated": "2026-03-11T19:36:38.408Z"
   },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
   "annotatedDir": "/images/pets/annotated/",
@@ -15106,3 +15118,5 @@ const petImagesData = {
     "source/images/pets/archive/20260302-003000-BD0673744.jpg"
   ]
 };
+
+export default petImagesData;
