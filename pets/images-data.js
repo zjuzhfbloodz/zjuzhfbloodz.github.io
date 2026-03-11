@@ -15006,12 +15006,24 @@ const petImagesData = {
     "2026-03-11": [
       {
         "date": "2026-03-11",
+        "time": "15:30",
+        "img": "/images/pets/20260311-153000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": "/images/pets/annotated/20260311-153000-BD0673744.jpg",
+        "analysis": "image工具：图片模糊，无法确认是否有人/猫/狗。YOLO：无检测到目标。综合判定: other",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-11",
         "time": "15:00",
         "img": "/images/pets/20260311-150000-BD0673744.jpg",
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "\u753b\u9762\u6a21\u7cca\uff0cimage\u8bc6\u522b\u4e0eYOLO\u5747\u672a\u68c0\u6d4b\u5230\u4eba/\u732b/\u72d7",
+        "analysis": "画面模糊，image识别与YOLO均未检测到人/猫/狗",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15035,7 +15047,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\u4e0d\u53ef\u7528\uff08API\u914d\u7f6e\u95ee\u9898\uff09\u3002YOLO: \u65e0\u68c0\u6d4b\u5230\u76ee\u6807(person/cat/dog)\u3002\u7efc\u5408\u5224\u5b9a: other",
+        "analysis": "image工具不可用（API配置问题）。YOLO: 无检测到目标(person/cat/dog)。综合判定: other",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
@@ -15047,7 +15059,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": "/images/pets/annotated/20260311-130000-BD0673744.jpg",
-        "analysis": "image\u5de5\u5177: \u56fe\u7247\u6a21\u7cca\uff0c\u7f3a\u4e4f\u6e05\u6670\u7ec6\u8282\uff0c\u65e0\u6cd5\u8bc6\u522b\u4eba\u3001\u732b\u3001\u72d7\u3002YOLO: \u65e0\u68c0\u6d4b\u5230\u76ee\u6807\u3002\u7efc\u5408\u5224\u5b9a: other",
+        "analysis": "image工具: 图片模糊，缺乏清晰细节，无法识别人、猫、狗。YOLO: 无检测到目标。综合判定: other",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15059,7 +15071,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\uff1a\u8c03\u7528\u5931\u8d25\uff08403\u9519\u8bef\uff09\u3002YOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\uff08no detections\uff09\u3002\u6700\u7ec8\u91c7\u7528YOLO\u7ed3\u679c\u5224\u5b9a\u4e3aother\u3002",
+        "analysis": "image工具：调用失败（403错误）。YOLO：未检测到任何目标（no detections）。最终采用YOLO结果判定为other。",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
@@ -15071,7 +15083,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\u4e0d\u53ef\u7528\u3002YOLO: \u65e0\u68c0\u6d4b\u5230\u76ee\u6807(person/cat/dog)\u3002",
+        "analysis": "image工具不可用。YOLO: 无检测到目标(person/cat/dog)。",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
@@ -15083,7 +15095,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177: \u56fe\u7247\u6a21\u7cca\uff0c\u65e0\u6cd5\u8fa8\u8ba4\u4eba\u3001\u732b\u3001\u72d7\u6216\u5176\u4ed6\u52a8\u7269\u3002YOLO: \u65e0\u68c0\u6d4b\u5230\u76ee\u6807\u3002",
+        "analysis": "image工具: 图片模糊，无法辨认人、猫、狗或其他动物。YOLO: 无检测到目标。",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15095,7 +15107,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image: \u6a21\u7cca\uff0c\u672a\u68c0\u6d4b\u5230\u76ee\u6807\u3002YOLO: \u65e0\u68c0\u6d4b\u3002",
+        "analysis": "image: 模糊，未检测到目标。YOLO: 无检测。",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15107,7 +15119,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": "/images/pets/annotated/20260311-083000-BD0673744.jpg",
-        "analysis": "image\u5de5\u5177: \u56fe\u7247\u6a21\u7cca\uff0c\u65e0\u6cd5\u786e\u8ba4\u662f\u5426\u6709\u4efb\u4f55\u4eba/\u732b/\u72d7\u3002YOLO: \u65e0\u68c0\u6d4b\u5230\u76ee\u6807\u3002\u7efc\u5408\u5224\u5b9a: other",
+        "analysis": "image工具: 图片模糊，无法确认是否有任何人/猫/狗。YOLO: 无检测到目标。综合判定: other",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15119,7 +15131,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\uff1a\u56fe\u50cf\u6a21\u7cca\uff0c\u6ca1\u6709\u660e\u663e\u7684\u53ef\u8bc6\u522b\u7279\u5f81\u3002YOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\u3002",
+        "analysis": "image工具：图像模糊，没有明显的可识别特征。YOLO：未检测到任何目标。",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15131,7 +15143,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "\u56fe\u7247\u6a21\u7cca\uff0c\u672a\u68c0\u6d4b\u5230\u4eba\u3001\u732b\u3001\u72d7\u7b49\u76ee\u6807\u3002image\u5de5\u5177\u8bc6\u522b\uff1a\u56fe\u7247\u6a21\u7cca\u4e14\u6ca1\u6709\u660e\u663e\u7684\u5f62\u8c61\uff0c\u6ca1\u6709\u4eba\u3001\u732b\u3001\u72d7\u6216\u5176\u4ed6\u52a8\u7269\u53ef\u89c1\uff1bYOLO\u68c0\u6d4b\uff1a\u65e0\u68c0\u6d4b\u7ed3\u679c\u3002",
+        "analysis": "图片模糊，未检测到人、猫、狗等目标。image工具识别：图片模糊且没有明显的形象，没有人、猫、狗或其他动物可见；YOLO检测：无检测结果。",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15139,12 +15151,12 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2117,
+    "totalImages": 2118,
     "personCount": 51,
     "catCount": 71,
     "dogCount": 73
   },
-  "generatedAt": "2026-03-11T06:03:44.734Z",
+  "generatedAt": "2026-03-11T07:34:40.179Z",
   "annotatedDir": "/images/pets/annotated/",
   "badImages": [
     "source/images/pets/20260301-033000-BD0673744.jpg",
