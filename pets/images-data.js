@@ -15006,6 +15006,18 @@ const petImagesData = {
     "2026-03-11": [
       {
         "date": "2026-03-11",
+        "time": "16:01",
+        "img": "/images/pets/20260311-160119-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "Image analysis: blurry/out-of-focus, no discernible details. YOLO: no detections. Both methods agree: no person/cat/dog detected.",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-11",
         "time": "15:30",
         "img": "/images/pets/20260311-153000-BD0673744.jpg",
         "type": "other",
@@ -15151,7 +15163,7 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2118,
+    "totalImages": 2119,
     "personCount": 51,
     "catCount": 71,
     "dogCount": 73
