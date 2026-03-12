@@ -15480,6 +15480,18 @@ const petImagesData = {
     "2026-03-13": [
       {
         "date": "2026-03-13",
+        "time": "03:00",
+        "img": "/images/pets/20260313-030000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": "/images/pets/annotated/20260313-030000-BD0673744.jpg",
+        "analysis": "image工具因API地区限制不可用。YOLO检测：无检测结果（conf=0.25, classes=0,15,16）。房间内空无一人（沙发、桌子、凳子可见），未检测到人/猫/狗。最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-03-13",
         "time": "02:30",
         "img": "/images/pets/20260313-023000-BD0673744.jpg",
         "type": "other",
