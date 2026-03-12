@@ -28,6 +28,18 @@ const petImagesData = {
     "2026-03-12": [
       {
         "date": "2026-03-12",
+        "time": "19:00",
+        "img": "/images/pets/20260312-190000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：图片模糊，显示灰色调，无可辨别形状或物体。无人、猫、狗可见。YOLO检测：无检测结果（conf=0.25, classes=0,15,16）。最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-12",
         "time": "18:30",
         "img": "/images/pets/20260312-183033-BD0673744.jpg",
         "type": "other",
@@ -280,18 +292,6 @@ const petImagesData = {
       },
       {
         "date": "2026-03-12",
-        "time": "05:00",
-        "img": "/images/pets/20260312-050000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "YOLO检测未识别到人/猫/狗（image工具因API配置问题不可用，仅基于YOLO结果判定为other）",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo"
-      },
-      {
-        "date": "2026-03-12",
         "time": "05:30",
         "img": "/images/pets/20260312-053316-BD0673744.jpg",
         "type": "other",
@@ -301,6 +301,18 @@ const petImagesData = {
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-12",
+        "time": "05:00",
+        "img": "/images/pets/20260312-050000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "YOLO检测未识别到人/猫/狗（image工具因API配置问题不可用，仅基于YOLO结果判定为other）",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
       },
       {
         "date": "2026-03-12",
@@ -15404,7 +15416,7 @@ const petImagesData = {
     "source/images/pets/20260226-130000-BD0673744.jpg",
     "source/images/pets/archive/20260302-003000-BD0673744.jpg"
   ],
-  "totalImages": 2137,
+  "totalImages": 2138,
   "personCount": 51,
   "catCount": 71,
   "dogCount": 73
