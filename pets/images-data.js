@@ -26,6 +26,18 @@ const petImagesData = {
   ],
   "images": {
     "2026-03-12": [
+{
+        "date": "2026-03-12",
+        "time": "17:30",
+        "img": "/images/pets/20260312-173000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": "/images/pets/annotated/20260312-173000-BD0673744.jpg",
+        "analysis": "image工具：图片模糊，难以辨认，没有清晰的可识别物体或细节。YOLO检测：无检测结果（no detections）。最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
       {
         "date": "2026-03-12",
         "time": "17:03",
