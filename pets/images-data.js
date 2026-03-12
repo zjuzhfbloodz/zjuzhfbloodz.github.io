@@ -15529,7 +15529,7 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2146,
+    "totalImages": 2147,
     "personCount": 51,
     "catCount": 71,
     "dogCount": 73,
@@ -15552,7 +15552,7 @@ const petImagesData = {
     "source/images/pets/20260226-130000-BD0673744.jpg",
     "source/images/pets/archive/20260302-003000-BD0673744.jpg"
   ],
-  "totalImages": 2146,
+  "totalImages": 2147,
   "personCount": 51,
   "catCount": 71,
   "dogCount": 73
