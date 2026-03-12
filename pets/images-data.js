@@ -28,6 +28,18 @@ const petImagesData = {
     "2026-03-12": [
       {
         "date": "2026-03-12",
+        "time": "12:30",
+        "img": "/images/pets/20260312-123000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": "/images/pets/annotated/20260312-123000-BD0673744.jpg",
+        "analysis": "image工具：图片模糊/黑白，无法清晰辨别是否存在人、猫或狗。YOLO检测：无检测结果（conf=0.25, classes=0,15,16）。最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-12",
         "time": "12:00",
         "img": "/images/pets/20260312-120000-BD0673744.jpg",
         "type": "other",
