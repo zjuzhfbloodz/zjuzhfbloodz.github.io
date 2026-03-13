@@ -25,33 +25,105 @@ const petImagesData = {
   ],
   "images": {
     "2026-03-13": [
-    {
-  "date": "2026-03-13",
-  "time": "19:00",
-  "img": "/images/pets/20260313-190000-BD0673744.jpg",
-  "type": "person",
-  "found": true,
-  "boxedImg": null,
-  "analysis": "BLIP检测到人（a man in a suit and tie is looking at his phone），YOLO未检测到任何目标。冲突与最终采用规则：image检测到person，采用person",
-  "petIdentity": null,
-  "yoloClasses": [],
-  "decisionSource": "image"
-}
-  ],
+      {
+        "date": "2026-03-13",
+        "time": "14:31",
+        "img": "/images/pets/20260313-143115-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具不可用，YOLO检测：无检测结果（conf=0.25, classes=0,15,16）。最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-03-13",
+        "time": "16:00",
+        "img": "/images/pets/20260313-160000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具不可用，YOLO检测：无检测结果（no detections）。最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-03-13",
+        "time": "16:00",
+        "img": "/images/pets/20260313-160000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具不可用，YOLO检测：无检测结果（no detections）。最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-03-13",
+        "time": "16:30",
+        "img": "/images/pets/20260313-163000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "YOLO和image模型均未检测到人/猫/狗。image工具因API限制不可用，YOLO报告无检测。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-03-13",
+        "time": "17:01",
+        "img": "/images/pets/20260313-170107-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "YOLO检测无结果（no detections）。画面显示客厅场景，无人/猫/狗。image工具因API限制不可用。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-03-13",
+        "time": "17:30",
+        "img": "/images/pets/20260313-173000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具不可用（API地区限制），YOLO检测：无检测结果（no detections）。最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-03-13",
+        "time": "19:30",
+        "img": "/images/pets/20260313-193015-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具不可用，YOLO检测：无检测结果（conf=0.25, classes=0,15,16）。最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      }
+    ],
     "2026-02-05": [
       {
-  "date": "2026-03-13",
-  "time": "18:00",
-  "img": "/images/pets/20260313-180000-BD0673744.jpg",
-  "type": "other",
-  "found": false,
-  "boxedImg": null,
-  "analysis": "YOLO未检测到人/猫/狗",
-  "petIdentity": null,
-  "yoloClasses": [],
-  "decisionSource": "yolo"
-},
-{
+        "date": "2026-03-13",
+        "time": "18:00",
+        "img": "/images/pets/20260313-180000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "YOLO未检测到人/猫/狗",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
         "date": "2026-02-05",
         "time": "23:59",
         "img": "/images/pets/pet_20260205_235951.jpg",
@@ -15028,91 +15100,17 @@ const petImagesData = {
         "type": "other",
         "found": false
       }
-    ],
-    "2026-03-13": [      
-{
-        "date": "2026-03-13",
-        "time": "17:30",
-        "img": "/images/pets/20260313-173000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "image工具不可用（API地区限制），YOLO检测：无检测结果（no detections）。最终判定为other。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo"
-      },
-      {
-        "date": "2026-03-13",
-        "time": "17:01",
-        "img": "/images/pets/20260313-170107-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "YOLO检测无结果（no detections）。画面显示客厅场景，无人/猫/狗。image工具因API限制不可用。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo"
-      },
-      {
-        "date": "2026-03-13",
-        "time": "16:30",
-        "img": "/images/pets/20260313-163000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "YOLO和image模型均未检测到人/猫/狗。image工具因API限制不可用，YOLO报告无检测。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo"
-      },
-      {
-        "date": "2026-03-13",
-        "time": "16:00",
-        "img": "/images/pets/20260313-160000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "image工具不可用，YOLO检测：无检测结果（no detections）。最终判定为other。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo"
-      },
-      {
-        "date": "2026-03-13",
-        "time": "16:00",
-        "img": "/images/pets/20260313-160000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "image工具不可用，YOLO检测：无检测结果（no detections）。最终判定为other。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo"
-      },
-      {
-        "date": "2026-03-13",
-        "time": "14:31",
-        "img": "/images/pets/20260313-143115-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "image工具不可用，YOLO检测：无检测结果（conf=0.25, classes=0,15,16）。最终判定为other。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo"
-      }
     ]
   },
   "stats": {
-    "totalImages": 2111,
+    "totalImages": 2112,
     "totalDays": 21,
     "foundCount": 195,
-    "notFoundCount": 1914,
+    "notFoundCount": 1915,
     "personCount": 51,
     "dogCount": 73,
     "catCount": 71,
-    "otherCount": 1915,
+    "otherCount": 1916,
     "badImageCount": 13,
     "boxedCount": 195,
     "deduplicated": true,
