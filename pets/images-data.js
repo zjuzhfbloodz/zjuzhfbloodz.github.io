@@ -15003,7 +15003,18 @@ const petImagesData = {
         "found": false
       }
     ],
-    "2026-03-13": [
+    "2026-03-13": [{
+        "date": "2026-03-13",
+        "time": "16:30",
+        "img": "/images/pets/20260313-163000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "YOLO和image模型均未检测到人/猫/狗。image工具因API限制不可用，YOLO报告无检测。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
       {
         "date": "2026-03-13",
         "time": "16:00",
