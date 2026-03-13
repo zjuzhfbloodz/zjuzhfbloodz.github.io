@@ -15504,60 +15504,12 @@ const petImagesData = {
     "2026-03-13": [
       {
         "date": "2026-03-13",
-        "time": "10:30",
-        "img": "/images/pets/20260313-103000-BD0673744.jpg",
+        "time": "01:30",
+        "img": "/images/pets/20260313-013000-BD0673744.jpg",
         "type": "other",
         "found": false,
-        "boxedImg": null,
-        "analysis": "image工具因API地区限制不可用。YOLO检测：无检测结果（conf=0.25, classes=0,15,16）。最终判定为other。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo"
-      },
-      {
-        "date": "2026-03-13",
-        "time": "09:30",
-        "img": "/images/pets/20260313-093000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "image工具因API地区限制不可用。YOLO检测：无检测结果（conf=0.25, classes=0,15,16）。最终判定为other。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo"
-      },
-      {
-        "date": "2026-03-13",
-        "time": "08:30",
-        "img": "/images/pets/20260313-083024-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "image工具因模型不支持无法使用。YOLO检测：无检测结果（conf=0.25, classes=0,15,16）。最终判定为other。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo"
-      },
-      {
-        "date": "2026-03-13",
-        "time": "03:00",
-        "img": "/images/pets/20260313-030000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": "/images/pets/annotated/20260313-030000-BD0673744.jpg",
-        "analysis": "image工具因API地区限制不可用。YOLO检测：无检测结果（conf=0.25, classes=0,15,16）。房间内空无一人（沙发、桌子、凳子可见），未检测到人/猫/狗。最终判定为other。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo"
-      },
-      {
-        "date": "2026-03-13",
-        "time": "02:30",
-        "img": "/images/pets/20260313-023000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": "/images/pets/annotated/20260313-023000-BD0673744.jpg",
-        "analysis": "image工具因API地区限制不可用。YOLO检测：无检测结果（conf=0.25, classes=0,15,16）。最终判定为other。",
+        "boxedImg": "/images/pets/annotated/20260313-013000-BD0673744.jpg",
+        "analysis": "image工具因API配置问题不可用。YOLO检测：无检测结果（conf=0.25, classes=0,15,16）。最终判定为other。",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
@@ -15576,12 +15528,24 @@ const petImagesData = {
       },
       {
         "date": "2026-03-13",
-        "time": "01:30",
-        "img": "/images/pets/20260313-013000-BD0673744.jpg",
+        "time": "02:30",
+        "img": "/images/pets/20260313-023000-BD0673744.jpg",
         "type": "other",
         "found": false,
-        "boxedImg": "/images/pets/annotated/20260313-013000-BD0673744.jpg",
-        "analysis": "image工具因API配置问题不可用。YOLO检测：无检测结果（conf=0.25, classes=0,15,16）。最终判定为other。",
+        "boxedImg": "/images/pets/annotated/20260313-023000-BD0673744.jpg",
+        "analysis": "image工具因API地区限制不可用。YOLO检测：无检测结果（conf=0.25, classes=0,15,16）。最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-03-13",
+        "time": "03:00",
+        "img": "/images/pets/20260313-030000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": "/images/pets/annotated/20260313-030000-BD0673744.jpg",
+        "analysis": "image工具因API地区限制不可用。YOLO检测：无检测结果（conf=0.25, classes=0,15,16）。房间内空无一人（沙发、桌子、凳子可见），未检测到人/猫/狗。最终判定为other。",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
@@ -15612,11 +15576,35 @@ const petImagesData = {
       },
       {
         "date": "2026-03-13",
+        "time": "08:30",
+        "img": "/images/pets/20260313-083024-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具因模型不支持无法使用。YOLO检测：无检测结果（conf=0.25, classes=0,15,16）。最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-03-13",
         "time": "09:00",
         "img": "/images/pets/20260313-090000-BD0673744.jpg",
         "type": "other",
         "found": false,
         "boxedImg": "/images/pets/annotated/20260313-090000-BD0673744.jpg",
+        "analysis": "image工具因API地区限制不可用。YOLO检测：无检测结果（conf=0.25, classes=0,15,16）。最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-03-13",
+        "time": "09:30",
+        "img": "/images/pets/20260313-093000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
         "analysis": "image工具因API地区限制不可用。YOLO检测：无检测结果（conf=0.25, classes=0,15,16）。最终判定为other。",
         "petIdentity": null,
         "yoloClasses": [],
@@ -15633,6 +15621,30 @@ const petImagesData = {
         "petIdentity": "Nomi",
         "yoloClasses": [],
         "decisionSource": "visual-conflict"
+      },
+      {
+        "date": "2026-03-13",
+        "time": "10:30",
+        "img": "/images/pets/20260313-103000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具因API地区限制不可用。YOLO检测：无检测结果（conf=0.25, classes=0,15,16）。最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-03-13",
+        "time": "11:00",
+        "img": "/images/pets/20260313-110000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具因API地区限制不可用。YOLO检测：无检测结果（conf=0.25, classes=0,15,16）。最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
       }
     ]
   },
@@ -15659,7 +15671,7 @@ const petImagesData = {
     "source/images/pets/20260226-130000-BD0673744.jpg",
     "source/images/pets/archive/20260302-003000-BD0673744.jpg"
   ],
-  "totalImages": 2156,
+  "totalImages": 2157,
   "personCount": 51,
   "catCount": 71,
   "dogCount": 73
