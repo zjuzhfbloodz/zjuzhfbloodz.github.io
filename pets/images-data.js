@@ -15003,7 +15003,20 @@ const petImagesData = {
         "found": false
       }
     ],
-    "2026-03-13": [{
+    "2026-03-13": [
+      {
+        "date": "2026-03-13",
+        "time": "17:01",
+        "img": "/images/pets/20260313-170107-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "YOLO检测无结果（no detections）。画面显示客厅场景，无人/猫/狗。image工具因API限制不可用。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
         "date": "2026-03-13",
         "time": "16:30",
         "img": "/images/pets/20260313-163000-BD0673744.jpg",
@@ -15054,20 +15067,20 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2108,
+    "totalImages": 2109,
     "totalDays": 21,
     "foundCount": 195,
-    "notFoundCount": 1912,
+    "notFoundCount": 1913,
     "personCount": 51,
     "dogCount": 73,
     "catCount": 71,
-    "otherCount": 1912,
+    "otherCount": 1913,
     "badImageCount": 13,
     "boxedCount": 195,
     "deduplicated": true,
     "confidenceThreshold": 0.5
   },
-  "generatedAt": "2026-03-13T06:00:00.000Z",
+  "generatedAt": "2026-03-13T09:04:12.875Z",
   "annotatedDir": "/images/pets/annotated/",
   "badImages": [
     "source/images/pets/20260301-033000-BD0673744.jpg",
