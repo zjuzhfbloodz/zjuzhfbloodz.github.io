@@ -24,6 +24,20 @@ const petImagesData = {
     "2026-02-02"
   ],
   "images": {
+    "2026-03-13": [
+    {
+  "date": "2026-03-13",
+  "time": "19:00",
+  "img": "/images/pets/20260313-190000-BD0673744.jpg",
+  "type": "person",
+  "found": true,
+  "boxedImg": null,
+  "analysis": "BLIP检测到人（a man in a suit and tie is looking at his phone），YOLO未检测到任何目标。冲突与最终采用规则：image检测到person，采用person",
+  "petIdentity": null,
+  "yoloClasses": [],
+  "decisionSource": "image"
+}
+  ],
     "2026-02-05": [
       {
   "date": "2026-03-13",
@@ -15015,7 +15029,8 @@ const petImagesData = {
         "found": false
       }
     ],
-    "2026-03-13": [      {
+    "2026-03-13": [      
+{
         "date": "2026-03-13",
         "time": "17:30",
         "img": "/images/pets/20260313-173000-BD0673744.jpg",
