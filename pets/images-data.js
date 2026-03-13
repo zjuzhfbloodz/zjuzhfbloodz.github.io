@@ -15609,16 +15609,28 @@ const petImagesData = {
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-03-13",
+        "time": "10:00",
+        "img": "/images/pets/20260313-100000-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "boxedImg": null,
+        "analysis": "image工具因API地区限制不可用。基于直接目视确认：窗台上有一只灰褐色猫（Nomi）。YOLO检测：无检测结果。最终判定为cat。",
+        "petIdentity": "Nomi",
+        "yoloClasses": [],
+        "decisionSource": "visual-conflict"
       }
     ]
   },
   "stats": {
-    "totalImages": 2155,
+    "totalImages": 2156,
     "personCount": 51,
-    "catCount": 71,
+    "catCount": 72,
     "dogCount": 73
   },
-  "generatedAt": "2026-03-13T01:05:06.513Z",
+  "generatedAt": "2026-03-13T02:03:50.399Z",
   "annotatedDir": "/images/pets/annotated/",
   "badImages": [
     "source/images/pets/20260301-033000-BD0673744.jpg",
