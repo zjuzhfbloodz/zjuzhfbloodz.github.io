@@ -27,6 +27,18 @@ const petImagesData = {
     "2026-03-13": [
       {
         "date": "2026-03-13",
+        "time": "21:02",
+        "img": "/images/pets/20260313-210204-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具不可用（API地区限制），YOLO检测：无检测结果（no detections）。最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-03-13",
         "time": "20:03",
         "img": "/images/pets/20260313-200339-BD0673744.jpg",
         "type": "other",
@@ -15115,35 +15127,10 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2112,
-    "totalDays": 21,
-    "foundCount": 195,
-    "notFoundCount": 1915,
+    "totalImages": 2116,
     "personCount": 51,
-    "dogCount": 73,
     "catCount": 71,
-    "otherCount": 1916,
-    "badImageCount": 13,
-    "boxedCount": 195,
-    "deduplicated": true,
-    "confidenceThreshold": 0.5
-  },
-  "generatedAt": "2026-03-13T09:33:54.674Z",
-  "annotatedDir": "/images/pets/annotated/",
-  "badImages": [
-    "source/images/pets/20260301-033000-BD0673744.jpg",
-    "source/images/pets/20260228-020023-BD0673744.jpg",
-    "source/images/pets/20260301-163016-BD0673744.jpg",
-    "source/images/pets/20260301-163056-BD0673744.jpg",
-    "source/images/pets/20260226-050000-BD0673744.jpg",
-    "source/images/pets/20260227-163000-BD0673744.jpg",
-    "source/images/pets/20260226-190017-BD0673744.jpg",
-    "source/images/pets/20260301-033100-BD0673744.jpg",
-    "source/images/pets/20260301-033050-BD0673744.jpg",
-    "source/images/pets/20260228-233000-BD0673744.jpg",
-    "source/images/pets/20260226-053000-BD0673744.jpg",
-    "source/images/pets/20260226-130000-BD0673744.jpg",
-    "source/images/pets/archive/20260302-003000-BD0673744.jpg"
-  ]
+    "dogCount": 73
+  }
 };
 export default petImagesData;
