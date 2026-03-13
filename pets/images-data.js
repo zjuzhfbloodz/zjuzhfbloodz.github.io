@@ -28,6 +28,18 @@ const petImagesData = {
     "2026-03-14": [
       {
         "date": "2026-03-14",
+        "time": "07:30",
+        "img": "/images/pets/20260314-073000-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "boxedImg": "/images/pets/annotated/20260314-073000-BD0673744.jpg",
+        "analysis": "图片显示一只灰褐色猫咪侧躺在客厅地上，背部面向镜头。image工具因API地区限制不可用(403)，YOLO检测：无检测结果（no detections）。根据图片确认有猫，采用图片分析结果。",
+        "petIdentity": "Nomi",
+        "yoloClasses": [],
+        "decisionSource": "image"
+      },
+      {
+        "date": "2026-03-14",
         "time": "07:01",
         "img": "/images/pets/20260314-070113-BD0673744.jpg",
         "type": "other",
@@ -15346,9 +15358,9 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2134,
+    "totalImages": 2135,
     "personCount": 51,
-    "catCount": 71,
+    "catCount": 72,
     "dogCount": 73
   }
 };
