@@ -15849,13 +15849,25 @@ const petImagesData = {
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-03-15",
+        "time": "07:30",
+        "img": "/images/pets/20260315-073008-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "boxedImg": null,
+        "analysis": "image工具检测失败（API超时），YOLO检测：无检测结果（no detections）。图片确认有猫（白色为主，浅橙色/奶油色花纹在耳朵和脸部），根据图片确认有猫。",
+        "petIdentity": "Ywu",
+        "yoloClasses": [],
+        "decisionSource": "image"
       }
     ]
   },
   "stats": {
-    "totalImages": 2176,
+    "totalImages": 2177,
     "personCount": 51,
-    "catCount": 72,
+    "catCount": 73,
     "dogCount": 73
   }
 };
