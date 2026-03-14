@@ -15708,6 +15708,18 @@ const petImagesData = {
     "2026-03-15": [
       {
         "date": "2026-03-15",
+        "time": "02:30",
+        "img": "/images/pets/20260315-023000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具检测失败（API timeout），YOLO检测：无检测结果（no detections）。画面显示地板和灰尘，无人/猫/狗。最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-03-15",
         "time": "02:03",
         "img": "/images/pets/20260315-020329-BD0673744.jpg",
         "type": "other",
@@ -15745,10 +15757,10 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2166,
+    "totalImages": 2167,
     "personCount": 51,
     "catCount": 72,
     "dogCount": 73,
-    "lastUpdated": "2026-03-14T18:12:27.807Z"
+    "lastUpdated": "2026-03-14T18:35:33.528Z"
   }
 };
