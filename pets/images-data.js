@@ -15708,6 +15708,18 @@ const petImagesData = {
     "2026-03-15": [
       {
         "date": "2026-03-15",
+        "time": "06:00",
+        "img": "/images/pets/20260315-060000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": "/images/pets/annotated/20260315-060000-BD0673744.jpg",
+        "analysis": "image工具检测失败（API超时），YOLO检测：无检测结果（no detections）。最终判定为other。视觉观察：画面中有白色西高地白梗（Mango）在沙发上睡觉，右侧有一只白色/奶油色猫咪（Ywu）在睡觉。自动检测工具未能识别。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-03-15",
         "time": "04:30",
         "img": "/images/pets/20260315-043000-BD0673744.jpg",
         "type": "other",
@@ -15817,7 +15829,7 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2172,
+    "totalImages": 2174,
     "personCount": 51,
     "catCount": 72,
     "dogCount": 73
