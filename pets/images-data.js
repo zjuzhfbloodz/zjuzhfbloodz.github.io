@@ -1,6 +1,5 @@
 const petImagesData = {
   "dates": [
-    "2026-03-15",
     "2026-03-02",
     "2026-03-01",
     "2026-02-28",
@@ -24,116 +23,6 @@ const petImagesData = {
     "2026-02-02"
   ],
   "images": {
-    "2026-03-15": [
-      {
-        "date": "2026-03-15",
-        "time": "16:00",
-        "img": "/images/pets/20260315-160003-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": "/images/pets/annotated/20260315-160003-BD0673744.jpg",
-        "analysis": "image工具连续超时失败（API timeout），YOLO检测：无检测结果（no detections）。最终判定为other。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo"
-      },
-      {
-        "date": "2026-03-15",
-        "time": "15:30",
-        "img": "/images/pets/20260315-153000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "image工具连续超时失败（API timeout），YOLO检测：无检测结果（no detections）。最终判定为other。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo"
-      },
-      {
-        "date": "2026-03-15",
-        "time": "15:00",
-        "img": "/images/pets/20260315-150000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "image工具连续超时失败（API timeout），YOLO检测：无检测结果（no detections）。最终判定为other。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo"
-      },
-      {
-        "date": "2026-03-15",
-        "time": "14:30",
-        "img": "/images/pets/20260315-143000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "image工具连续超时失败（API timeout），YOLO检测：无检测结果（no detections）。最终判定为other。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo"
-      },
-      {
-        "date": "2026-03-15",
-        "time": "14:00",
-        "img": "/images/pets/20260315-140008-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "image工具连续超时失败（API timeout），YOLO检测：无检测结果（no detections）。最终判定为other。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo"
-      },
-      {
-        "date": "2026-03-15",
-        "time": "13:31",
-        "img": "/images/pets/20260315-133140-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "image工具连续超时失败（API timeout），YOLO检测：无检测结果（no detections）。最终判定为other。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo"
-      },
-      {
-        "date": "2026-03-15",
-        "time": "13:00",
-        "img": "/images/pets/20260315-130024-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "image工具连续超时失败（API timeout），YOLO检测：无检测结果（no detections）。最终判定为other。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo"
-      },
-      {
-        "date": "2026-03-15",
-        "time": "12:30",
-        "img": "/images/pets/20260315-123045-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "image工具识别失败（API超时），YOLO检测：无检测结果（no detections）。最终判定为other。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo"
-      },
-      {
-        "date": "2026-03-15",
-        "time": "12:00",
-        "img": "/images/pets/20260315-120000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "image工具识别失败（API超时），YOLO检测：无检测结果（no detections）。最终判定为other。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo"
-      }
-    ],
     "2026-02-05": [
       {
         "date": "2026-02-05",
@@ -15115,14 +15004,14 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2112,
+    "totalImages": 2106,
     "totalDays": 21,
     "foundCount": 195,
-    "notFoundCount": 1914,
+    "notFoundCount": 1911,
     "personCount": 51,
     "dogCount": 73,
     "catCount": 71,
-    "otherCount": 1916,
+    "otherCount": 1911,
     "badImageCount": 13,
     "boxedCount": 195,
     "deduplicated": true,
