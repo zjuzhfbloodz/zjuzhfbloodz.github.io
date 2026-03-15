@@ -15062,12 +15062,23 @@ const petImagesData = {
         "analysis": "image工具连续超时失败（API timeout），YOLO检测：无检测结果（no detections）。最终判定为other。",
         "petIdentity": null,
         "yoloClasses": [],
+      },
+      {
+        "date": "2026-03-15",
+        "time": "19:30",
+        "img": "/images/pets/20260315-193024-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image分析：图像模糊，未能识别出人物或宠物。YOLO检测：无检测结果（no detections）。最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
         "decisionSource": "yolo"
       }
     ]
   },
   "stats": {
-    "totalImages": 2111,
+    "totalImages": 2112,
     "personCount": 51,
     "catCount": 71,
     "dogCount": 73
