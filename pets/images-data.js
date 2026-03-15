@@ -24,18 +24,30 @@ const petImagesData = {
   ],
   "images": {
     "2026-03-16": [
-    {
-      "date": "2026-03-16",
-      "time": "02:00",
-      "img": "/images/pets/20260316-020000-BD0673744.jpg",
-      "type": "other",
-      "found": false,
-      "boxedImg": null,
-      "analysis": "image工具：图片模糊，无法确定是否有任何人或动物。YOLO检测：无检测结果（no detections）。最终判定为other。",
-      "petIdentity": null,
-      "yoloClasses": [],
-      "decisionSource": "both"
-    },
+      {
+        "date": "2026-03-16",
+        "time": "02:30",
+        "img": "/images/pets/20260316-023041-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：图片模糊，无法确定是否有任何人或动物。YOLO检测：无检测结果（no detections）。最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-16",
+        "time": "02:00",
+        "img": "/images/pets/20260316-020000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：图片模糊，无法确定是否有任何人或动物。YOLO检测：无检测结果（no detections）。最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
       {
         "date": "2026-03-16",
         "time": "01:00",
@@ -15042,7 +15054,7 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2108,
+    "totalImages": 2110,
     "personCount": 51,
     "catCount": 71,
     "dogCount": 73
