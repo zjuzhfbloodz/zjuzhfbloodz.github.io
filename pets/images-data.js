@@ -39,6 +39,18 @@ petImagesData = {
       },
       {
         "date": "2026-03-16",
+        "time": "05:31",
+        "img": "/images/pets/20260316-053112-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：图像模糊且缺乏清晰细节。没有可辨别的人、猫或狗。看起来是抽象或不清晰的场景，可能有一些形状和阴影。YOLO检测：无检测结果（no detections）。最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-16",
         "time": "04:00",
         "img": "/images/pets/20260316-040000-BD0673744.jpg",
         "type": "cat",
