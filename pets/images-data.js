@@ -27,6 +27,18 @@ petImagesData = {
     "2026-03-16": [
       {
         "date": "2026-03-16",
+        "time": "06:00",
+        "img": "/images/pets/20260316-060013-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：图像模糊，主要是灰色调，没有可识别的人、猫、狗。YOLO检测：无检测结果（no detections）。最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-16",
         "time": "05:00",
         "img": "/images/pets/20260316-050000-BD0673744.jpg",
         "type": "other",
