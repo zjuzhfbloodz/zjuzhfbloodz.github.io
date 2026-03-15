@@ -2795,6 +2795,17 @@ const petImagesData = {
         "img": "/images/pets/pet_20260205_200005.jpg",
         "type": "other",
         "found": false
+      }, {
+        "date": "2026-03-15",
+        "time": "21:01",
+        "img": "/images/pets/20260315-210104-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": "/images/pets/annotated/20260315-210104-BD0673744.jpg",
+        "analysis": "image工具：图像模糊，没有明显显示人、猫、狗或其他宠物。YOLO检测：无检测结果（no detections）。最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
       },
       {
         "date": "2026-02-05",
@@ -15090,7 +15101,7 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2113,
+    "totalImages": 2114,
     "personCount": 51,
     "catCount": 71,
     "dogCount": 73
