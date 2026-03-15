@@ -26,6 +26,7 @@ petImagesData = {
   "images": {
     "2026-03-16": [
       {"date":"2026-03-16","time":"04:00","img":"/images/pets/20260316-040000-BD0673744.jpg","type":"cat","found":true,"boxedImg":null,"analysis":"image工具：画面中有一只白色带浅棕色斑点的猫坐在沙发上。YOLO检测：无检测结果（no detections）。冲突说明：YOLO未检测到猫，但肉眼可见有猫（白色+浅棕色，判定为Ywu）。最终采用image结果，判定为cat。","petIdentity":"Ywu","yoloClasses":[],"decisionSource":"conflict-resolved"},
+      {"date":"2026-03-16","time":"04:30","img":"/images/pets/20260316-043000-BD0673744.jpg","type":"other","found":false,"boxedImg":null,"analysis":"image工具：这张照片比较模糊，无法明确看出具体内容。没有明显可识别的人、猫或狗的特征。YOLO检测：无检测结果（no detections）。最终判定为other。","petIdentity":null,"yoloClasses":[],"decisionSource":"both"},
       {
         "date": "2026-03-16",
         "time": "03:31",
@@ -15080,11 +15081,11 @@ petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2113,
+    "totalImages": 2114,
     "personCount": 51,
     "catCount": 72,
     "dogCount": 73,
-    "lastUpdated": "2026-03-15T20:04:09.596Z"
+    "lastUpdated": "2026-03-16T04:32:00.000Z"
   },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
   "annotatedDir": "/images/pets/annotated/",
