@@ -1,6 +1,5 @@
 const petImagesData = {
-  "dates": ["2026-03-16",
-    "2026-03-15",
+  "dates": [
     "2026-03-02",
     "2026-03-01",
     "2026-02-28",
@@ -24,46 +23,21 @@ const petImagesData = {
     "2026-02-02"
   ],
   "images": {
-  "2026-03-16": [
-    {
-      "date": "2026-03-16",
-      "time": "00:35",
-      "img": "/images/pets/20260316-003543-BD0673744.jpg",
-      "type": "other",
-      "found": false,
-      "boxedImg": null,
-      "analysis": "image工具：模糊不清，无法确定是否有人/猫/狗。YOLO检测：无检测结果（no detections）。最终判定为other。",
-      "petIdentity": null,
-      "yoloClasses": [],
-      "decisionSource": "both"
-    },
-    {
-      "date": "2026-03-16",
-      "time": "00:39",
-      "img": "/images/pets/20260316-003930-BD0673744.jpg",
-      "type": "other",
-      "found": false,
-      "boxedImg": null,
-      "analysis": "image工具：图像昏暗，模糊可见家具摆设，未发现明显的人、猫、狗轮廓。YOLO检测：无检测结果（no detections）。最终判定为other。",
-      "petIdentity": null,
-      "yoloClasses": [],
-      "decisionSource": "both"
-    }
-  ],
-  "2026-03-15": [
-    {
-      "date": "2026-03-15",
-      "time": "23:30",
-      "img": "/images/pets/20260315-233000-BD0673744.jpg",
-      "type": "other",
-      "found": false,
-      "boxedImg": null,
-      "analysis": "image工具：图像模糊，没有明显显示人、猫、狗或其他宠物特征。YOLO检测：无检测结果（no detections）。最终判定为other。",
-      "petIdentity": null,
-      "yoloClasses": [],
-      "decisionSource": "both"
-    }
-  ],    "2026-02-05": [
+    "2026-03-16": [
+        {
+            "date": "2026-03-16",
+            "time": "01:00",
+            "img": "/images/pets/20260316-010000-BD0673744.jpg",
+            "type": "other",
+            "found": false,
+            "boxedImg": null,
+            "analysis": "image工具：图像模糊，主要呈现灰色和黑色调，没有可识别的人、猫、狗或其他动物。有时间戳显示2026-03-16 01:00:39。YOLO检测：无检测结果（no detections）。最终判定为other。",
+            "petIdentity": null,
+            "yoloClasses": [],
+            "decisionSource": "both"
+        }
+    ],
+    "2026-02-05": [
       {
         "date": "2026-02-05",
         "time": "23:59",
@@ -15044,14 +15018,14 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2107,
+    "totalImages": 2106,
     "totalDays": 21,
     "foundCount": 195,
-    "notFoundCount": 1912,
+    "notFoundCount": 1911,
     "personCount": 51,
     "dogCount": 73,
     "catCount": 71,
-    "otherCount": 1912,
+    "otherCount": 1911,
     "badImageCount": 13,
     "boxedCount": 195,
     "deduplicated": true,
