@@ -15392,10 +15392,22 @@ const petImagesData = {
         "yoloClasses": [],
         "decisionSource": "yolo"
       }
-    ]
+    ,
+      {
+        "date": "2026-03-17",
+        "time": "05:00",
+        "img": "/images/pets/20260317-050000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": "/images/pets/annotated/20260317-050000-BD0673744.jpg",
+        "analysis": "image工具：图片模糊，无法清晰辨识其中的事物，背景似乎有一些不明确的形状。YOLO检测：无检测结果（no detections）。两者均未检测到目标，最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      }]
   },
   "stats": {
-    "totalImages": 2135,
+    "totalImages": 2136,
     "personCount": 51,
     "catCount": 71,
     "dogCount": 73,
