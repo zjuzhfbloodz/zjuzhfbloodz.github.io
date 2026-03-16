@@ -15045,6 +15045,18 @@ const petImagesData = {
     "2026-03-16": [
       {
         "date": "2026-03-16",
+        "time": "18:30",
+        "img": "/images/pets/20260316-183000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image识别：图片模糊无法辨认；YOLO检测：无检测结果",
+        "yoloClasses": [],
+        "decisionSource": "both",
+        "petIdentity": null
+      },
+      {
+        "date": "2026-03-16",
         "time": "18:00",
         "img": "/images/pets/20260316-180033-BD0673744.jpg",
         "type": "other",
@@ -15214,7 +15226,7 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2123,
+    "totalImages": 2124,
     "personCount": 51,
     "catCount": 71,
     "dogCount": 73
