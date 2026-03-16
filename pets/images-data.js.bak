@@ -1,5 +1,6 @@
 const petImagesData = {
   "dates": [
+    "2026-03-16",
     "2026-03-15",
     "2026-03-02",
     "2026-03-01",
@@ -15040,21 +15041,148 @@ const petImagesData = {
         "yoloClasses": [],
         "decisionSource": "yolo"
       }
+    ],
+    "2026-03-16": [
+      {
+        "date": "2026-03-16",
+        "time": "15:31",
+        "img": "/images/pets/20260316-153110-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "Image 工具与 YOLO 均未检测到人/猫/狗。画面非常模糊，无法确定是否有任何可识别目标。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "none"
+      },
+      {
+        "date": "2026-03-16",
+        "time": "15:00",
+        "img": "/images/pets/20260316-150000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": "/images/pets/annotated/20260316-150000-BD0673744.jpg",
+        "analysis": "image工具：API调用失败（OpenAI API Key问题），无法获取图像分析结果。YOLO检测：无检测结果（no detections）。最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-03-16",
+        "time": "14:30",
+        "img": "/images/pets/20260316-143000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image通道: 图像模糊，看不清具体内容。YOLO通道: 无检测（no detections）。结论: 未检测到人/猫/狗。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-16",
+        "time": "14:00",
+        "img": "/images/pets/20260316-140000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：图像模糊，缺乏清晰细节，未检测到人、猫、狗。YOLO检测：无检测结果（no detections）。最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-16",
+        "time": "13:30",
+        "img": "/images/pets/20260316-133000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "图片模糊，无法清晰识别内容。image工具描述为非常模糊，无法确定是否有人、猫或狗。YOLO检测结果为no detections。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-16",
+        "time": "13:00",
+        "img": "/images/pets/20260316-130000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：图片模糊且不清晰，无法确认其中是否有任何人或动物。YOLO检测：无检测结果（no detections）。最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-16",
+        "time": "12:30",
+        "img": "/images/pets/20260316-123000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：图像模糊，缺乏清晰细节，无法辨认是否有具体人物、猫或狗。YOLO检测：无检测结果（no detections）。最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-16",
+        "time": "12:00",
+        "img": "/images/pets/20260316-120000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：图像模糊，无法确定其中是否有人、猫或狗。YOLO检测：无检测结果（no detections）。最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-16",
+        "time": "11:00",
+        "img": "/images/pets/20260316-110000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：图像模糊，无法清晰辨认具体内容，未检测到人、猫、狗。YOLO检测：无检测结果（no detections）。最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-16",
+        "time": "10:00",
+        "img": "/images/pets/20260316-100000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：图像模糊，无法清晰辨认具体内容，未检测到人、猫、狗。YOLO检测：无检测结果（no detections）。最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-16",
+        "time": "09:30",
+        "img": "/images/pets/20260316-093000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：图像模糊，无法清晰辨认具体内容，未检测到人、猫、狗。YOLO检测：无检测结果（no detections）。最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      }
     ]
   },
   "stats": {
-    "totalImages": 2109,
-    "totalDays": 21,
-    "foundCount": 195,
-    "notFoundCount": 1912,
+    "totalImages": 2120,
     "personCount": 51,
-    "dogCount": 73,
     "catCount": 71,
-    "otherCount": 1914,
-    "badImageCount": 13,
-    "boxedCount": 195,
-    "deduplicated": true,
-    "confidenceThreshold": 0.5
+    "dogCount": 73,
+    "lastUpdated": "2026-03-16T07:32:39.073Z"
   },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
   "annotatedDir": "/images/pets/annotated/",
@@ -15074,3 +15202,4 @@ const petImagesData = {
     "source/images/pets/archive/20260302-003000-BD0673744.jpg"
   ]
 };
+export default petImagesData;
