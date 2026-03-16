@@ -15286,6 +15286,18 @@ const petImagesData = {
       }
     ],
     "2026-03-17": [
+      {
+        "date": "2026-03-17",
+        "time": "03:30",
+        "img": "/images/pets/20260317-033000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：未检测到人/猫/狗。YOLO检测：无检测结果（no detections）。两者均未检测到目标，最终判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
 {
         "date": "2026-03-17",
         "time": "03:00",
@@ -15360,11 +15372,11 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2133,
+    "totalImages": 2134,
     "personCount": 51,
     "catCount": 71,
     "dogCount": 73,
-    "lastUpdated": "2026-03-17T02:34:00.000Z"
+    "lastUpdated": "2026-03-16T19:37:59.385Z"
   },
   "annotatedDir": "",
   "badImages": [],
