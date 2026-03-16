@@ -15288,6 +15288,17 @@ const petImagesData = {
     "2026-03-17": [
       {
         "date": "2026-03-17",
+        "time": "04:33",
+        "img": "/images/pets/20250317-043300-BD0673744.jpg",
+        "type": "other",
+        "boxedImg": "/images/pets/annotated/20250317-043300-BD0673744.jpg",
+        "analysis": "Image blurry/obscured; image tool: no clear person/cat/dog detected; YOLO: no detections. Type=other.",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-17",
         "time": "04:00",
         "img": "/images/pets/20260317-040013-BD0673744.jpg",
         "type": "other",
@@ -15310,7 +15321,7 @@ const petImagesData = {
         "yoloClasses": [],
         "decisionSource": "both"
       },
-{
+      {
         "date": "2026-03-17",
         "time": "03:00",
         "img": "/images/pets/20260317-030000-BD0673744.jpg",
@@ -15384,11 +15395,11 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2134,
+    "totalImages": 2135,
     "personCount": 51,
     "catCount": 71,
     "dogCount": 73,
-    "lastUpdated": "2026-03-16T19:37:59.385Z"
+    "lastUpdated": "2026-03-16T20:35:10.533Z"
   },
   "annotatedDir": "",
   "badImages": [],
