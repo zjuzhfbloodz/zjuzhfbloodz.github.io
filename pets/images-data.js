@@ -15076,14 +15076,25 @@ const petImagesData = {
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-18",
+        "time": "01:30",
+        "img": "/images/pets/20260318-013000-BD0673744.jpg",
+        "type": "other",
+        "boxedImg": null,
+        "analysis": "Image analysis: blurry, no discernible person/cat/dog. YOLO: no detections.",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
       }
     ]
   },
   "stats": {
-    "totalImages": 2112,
+    "totalImages": 2113,
     "totalDays": 21,
     "foundCount": 195,
-    "notFoundCount": 1915,
+    "notFoundCount": 1916,
     "personCount": 51,
     "dogCount": 73,
     "catCount": 71,
