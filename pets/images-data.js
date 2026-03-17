@@ -1,5 +1,6 @@
 const petImagesData = {
   "dates": [
+    "2026-03-18",
     "2026-03-17",
     "2026-03-02",
     "2026-03-01",
@@ -15052,17 +15053,30 @@ const petImagesData = {
         "type": "other",
         "found": false
       }
+    ],
+    "2026-03-18": [
+      {
+        "date": "2026-03-18",
+        "time": "00:00",
+        "img": "/images/pets/20260318-000000-BD0673744.jpg",
+        "type": "other",
+        "boxedImg": null,
+        "analysis": "Image analysis: blurry, no discernible person/cat/dog. YOLO: no detections.",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      }
     ]
   },
   "stats": {
-    "totalImages": 2110,
+    "totalImages": 2111,
     "totalDays": 21,
     "foundCount": 195,
-    "notFoundCount": 1914,
+    "notFoundCount": 1915,
     "personCount": 51,
     "dogCount": 73,
     "catCount": 71,
-    "otherCount": 1915,
+    "otherCount": 1916,
     "badImageCount": 13,
     "boxedCount": 195,
     "deduplicated": true,
