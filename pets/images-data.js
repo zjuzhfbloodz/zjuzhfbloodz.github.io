@@ -15590,16 +15590,28 @@ const petImagesData = {
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-17",
+        "time": "16:00",
+        "img": "/images/pets/20260317-160000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具(CLIP): 检测到低置信度-人42.86%/狗29.44%/猫20.28%，未达确认阈值。YOLO检测：无检测结果。两者均未确认检测到目标，判定为other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
       }
     ]
   },
   "stats": {
-    "totalImages": 2155,
+    "totalImages": 2156,
     "personCount": 51,
     "catCount": 71,
     "dogCount": 73
   },
   "annotatedDir": "",
   "badImages": [],
-  "generatedAt": ""
+  "generatedAt": "2026-03-17T08:12:20.461Z"
 };
