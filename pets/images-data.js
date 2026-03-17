@@ -3157,7 +3157,7 @@ const petImagesData = {
         "found": true,
         "boxedImg": "/images/pets/annotated/pet_20260205_000147.jpg"
       }
-    ],
+    ,{"date":"2026-03-18","time":"05:00","img":"/images/pets/20260318-050018-BD0673744.jpg","type":"other","found":false,"boxedImg":null,"analysis":"image: 未识别到人/猫/狗; YOLO: 无检测","petIdentity":null,"yoloClasses":[],"decisionSource":"both"}],
     "2026-02-10": [
       {
         "date": "2026-02-10",
