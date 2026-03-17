@@ -15288,6 +15288,17 @@ const petImagesData = {
     "2026-03-17": [
       {
         "date": "2026-03-17",
+        "time": "18:00",
+        "img": "/images/pets/20260317-180000-BD0673744.jpg",
+        "type": "other",
+        "boxedImg": null,
+        "analysis": "image: 未检测到人/猫/狗（画面模糊，仅见物体/光影细节）; YOLO: 无检测",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-17",
         "time": "17:40",
         "img": "/images/pets/20260317-174045-BD0673744.jpg",
         "type": "other",
