@@ -12728,7 +12728,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": "/images/pets/annotated/20260317-233654-BD0673744.jpg",
-        "analysis": "YOLO: 无检测; image tool unavailable",
+        "analysis": "YOLO: \u65e0\u68c0\u6d4b; image tool unavailable",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
@@ -12740,7 +12740,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "YOLO未检测到人/猫/狗",
+        "analysis": "YOLO\u672a\u68c0\u6d4b\u5230\u4eba/\u732b/\u72d7",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
@@ -12751,7 +12751,7 @@ const petImagesData = {
         "img": "/images/pets/20260317-213046-BD0673744.jpg",
         "type": "other",
         "boxedImg": null,
-        "analysis": "image: 图片模糊，仅见灰色背景，无法明确分辨是否有人或宠物；YOLO: 无检测",
+        "analysis": "image: \u56fe\u7247\u6a21\u7cca\uff0c\u4ec5\u89c1\u7070\u8272\u80cc\u666f\uff0c\u65e0\u6cd5\u660e\u786e\u5206\u8fa8\u662f\u5426\u6709\u4eba\u6216\u5ba0\u7269\uff1bYOLO: \u65e0\u68c0\u6d4b",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both",
@@ -12763,7 +12763,7 @@ const petImagesData = {
         "img": "/images/pets/20260317-200619-BD0673744.jpg",
         "type": "other",
         "boxedImg": "/images/pets/annotated/20260317-200619-BD0673744.jpg",
-        "analysis": "image: 图片模糊无法识别; YOLO: 无检测",
+        "analysis": "image: \u56fe\u7247\u6a21\u7cca\u65e0\u6cd5\u8bc6\u522b; YOLO: \u65e0\u68c0\u6d4b",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both",
@@ -15065,18 +15065,29 @@ const petImagesData = {
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-18",
+        "time": "00:30",
+        "img": "/images/pets/20260318-003000-BD0673744.jpg",
+        "type": "other",
+        "boxedImg": null,
+        "analysis": "Image analysis: blurry, no discernible person/cat/dog. YOLO: no detections.",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
       }
     ]
   },
   "stats": {
-    "totalImages": 2111,
+    "totalImages": 2112,
     "totalDays": 21,
     "foundCount": 195,
     "notFoundCount": 1915,
     "personCount": 51,
     "dogCount": 73,
     "catCount": 71,
-    "otherCount": 1916,
+    "otherCount": 1917,
     "badImageCount": 13,
     "boxedCount": 195,
     "deduplicated": true,
