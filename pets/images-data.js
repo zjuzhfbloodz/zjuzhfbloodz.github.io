@@ -1,8 +1,6 @@
 const petImagesData = {
   "dates": [
     "2026-03-19",
-    "2026-03-18",
-    "2026-03-17",
     "2026-03-02",
     "2026-03-01",
     "2026-02-28",
@@ -26,6 +24,20 @@ const petImagesData = {
     "2026-02-02"
   ],
   "images": {
+    "2026-03-19": [
+      {
+        "date": "2026-03-19",
+        "time": "03:00",
+        "img": "/images/pets/20260319-030000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image: 图像模糊，未识别到人/猫/狗; YOLO:无检测",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      }
+    ],
     "2026-02-05": [
       {
         "date": "2026-02-05",
@@ -3157,31 +3169,7 @@ const petImagesData = {
         "type": "dog",
         "found": true,
         "boxedImg": "/images/pets/annotated/pet_20260205_000147.jpg"
-      },
-      {
-        "date": "2026-03-18",
-        "time": "05:00",
-        "img": "/images/pets/20260318-050018-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "image: 未识别到人/猫/狗; YOLO: 无检测",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both"
-      },
-      {
-        "date": "2026-03-18",
-        "time": "05:30",
-        "img": "/images/pets/20260318-053000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "image: 图像模糊，无法确定是否有人/猫/狗; YOLO: 无检测",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both"
-      },
+      }
     ],
     "2026-02-10": [
       {
@@ -3537,7 +3525,7 @@ const petImagesData = {
         "img": "/images/pets/pet_20260210_000045.jpg",
         "type": "other",
         "found": false
-      },
+      }
     ],
     "2026-02-06": [
       {
@@ -10318,7 +10306,7 @@ const petImagesData = {
         "img": "/images/pets/pet_20260206_000002.jpg",
         "type": "other",
         "found": false
-      },
+      }
     ],
     "2026-02-07": [
       {
@@ -10649,7 +10637,7 @@ const petImagesData = {
         "img": "/images/pets/pet_20260207_000135.jpg",
         "type": "other",
         "found": false
-      },
+      }
     ],
     "2026-02-12": [
       {
@@ -10989,7 +10977,7 @@ const petImagesData = {
         "img": "/images/pets/pet_20260212_000130.jpg",
         "type": "other",
         "found": false
-      },
+      }
     ],
     "2026-02-04": [
       {
@@ -11294,7 +11282,7 @@ const petImagesData = {
         "img": "/images/pets/dog_20260204_010156.jpg",
         "type": "other",
         "found": false
-      },
+      }
     ],
     "2026-03-01": [
       {
@@ -11564,7 +11552,7 @@ const petImagesData = {
         "img": "/images/pets/20260301-000000-BD0673744.jpg",
         "type": "other",
         "found": false
-      },
+      }
     ],
     "2026-02-27": [
       {
@@ -11804,7 +11792,7 @@ const petImagesData = {
         "img": "/images/pets/20260227-013000-BD0673744.jpg",
         "type": "other",
         "found": false
-      },
+      }
     ],
     "2026-02-03": [
       {
@@ -12397,7 +12385,7 @@ const petImagesData = {
         "img": "/images/pets/pet_20260203_000104.jpg",
         "type": "other",
         "found": false
-      },
+      }
     ],
     "2026-02-11": [
       {
@@ -12743,57 +12731,7 @@ const petImagesData = {
         "img": "/images/pets/pet_20260211_000126.jpg",
         "type": "other",
         "found": false
-      },
-    ],
-    "2026-03-17": [
-      {
-        "date": "2026-03-17",
-        "time": "23:36",
-        "img": "/images/pets/20260317-233654-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": "/images/pets/annotated/20260317-233654-BD0673744.jpg",
-        "analysis": "YOLO: 无检测; image tool unavailable",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo"
-      },
-      {
-        "date": "2026-03-17",
-        "time": "23:00",
-        "img": "/images/pets/20260317-230000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "YOLO未检测到人/猫/狗",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo"
-      },
-      {
-        "date": "2026-03-17",
-        "time": "21:30",
-        "img": "/images/pets/20260317-213046-BD0673744.jpg",
-        "type": "other",
-        "boxedImg": null,
-        "analysis": "image: 图片模糊，仅见灰色背景，无法明确分辨是否有人或宠物；YOLO: 无检测",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both",
-        "found": false
-      },
-      {
-        "date": "2026-03-17",
-        "time": "20:06",
-        "img": "/images/pets/20260317-200619-BD0673744.jpg",
-        "type": "other",
-        "boxedImg": "/images/pets/annotated/20260317-200619-BD0673744.jpg",
-        "analysis": "image: 图片模糊无法识别; YOLO: 无检测",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both",
-        "found": false
-      },
+      }
     ],
     "2026-03-02": [
       {
@@ -13075,7 +13013,7 @@ const petImagesData = {
         "img": "/images/pets/20260302-000000-BD0673744.jpg",
         "type": "other",
         "found": false
-      },
+      }
     ],
     "2026-02-09": [
       {
@@ -13421,7 +13359,7 @@ const petImagesData = {
         "img": "/images/pets/pet_20260209_000055.jpg",
         "type": "other",
         "found": false
-      },
+      }
     ],
     "2026-02-08": [
       {
@@ -13759,7 +13697,7 @@ const petImagesData = {
         "img": "/images/pets/pet_20260208_000102.jpg",
         "type": "other",
         "found": false
-      },
+      }
     ],
     "2026-02-26": [
       {
@@ -13965,7 +13903,7 @@ const petImagesData = {
         "img": "/images/pets/20260226-003000-BD0673744.jpg",
         "type": "other",
         "found": false
-      },
+      }
     ],
     "2026-02-28": [
       {
@@ -14200,7 +14138,7 @@ const petImagesData = {
         "img": "/images/pets/20260228-010000-BD0673744.jpg",
         "type": "other",
         "found": false
-      },
+      }
     ],
     "2026-02-13": [
       {
@@ -14540,7 +14478,7 @@ const petImagesData = {
         "img": "/images/pets/pet_20260213_000117.jpg",
         "type": "other",
         "found": false
-      },
+      }
     ],
     "2026-02-02": [
       {
@@ -14683,7 +14621,7 @@ const petImagesData = {
         "img": "/images/pets/dog_20260202_141029.jpg",
         "type": "other",
         "found": false
-      },
+      }
     ],
     "2026-02-25": [
       {
@@ -14773,7 +14711,7 @@ const petImagesData = {
         "img": "/images/pets/archive/pet_20260225_004000.jpg",
         "type": "other",
         "found": false
-      },
+      }
     ],
     "2026-02-14": [
       {
@@ -14827,7 +14765,7 @@ const petImagesData = {
         "type": "person",
         "found": true,
         "boxedImg": "/images/pets/annotated/pet_20260214_000119.jpg"
-      },
+      }
     ],
     "2026-02-23": [
       {
@@ -14851,7 +14789,7 @@ const petImagesData = {
         "type": "person",
         "found": true,
         "boxedImg": "/images/pets/annotated/20260223-113620-BD0673744.jpg"
-      },
+      }
     ],
     "2026-02-24": [
       {
@@ -15077,207 +15015,22 @@ const petImagesData = {
         "img": "/images/pets/archive/20260224-013038-BD0673744.jpg",
         "type": "other",
         "found": false
-      },
-    ],
-    "2026-03-18": [
-      {
-        "date": "2026-03-18",
-        "time": "08:00",
-        "img": "/images/pets/20260318-080000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "image: 图像模糊，难以确定; YOLO: 无检测",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both"
-      },
-      {
-        "date": "2026-03-18",
-        "time": "06:31",
-        "img": "/images/pets/20260318-063151-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "image: API不可用，未能识别; YOLO: 无检测",
-        "petIdentity": null,
-        "yoloClasses": [
-          null,
-          {
-            "date": "2026-03-18",
-            "time": "07:30",
-            "img": "/images/pets/20260318-073000-BD0673744.jpg",
-            "type": "other",
-            "found": false,
-            "boxedImg": null,
-            "analysis": "image: 图片模糊，未识别到人/猫/狗; YOLO: 无检测",
-            "petIdentity": null,
-            "yoloClasses": [],
-            "decisionSource": "both"
-          },
-        ],
-        "decisionSource": "yolo"
-      },
-      {
-        "date": "2026-03-18",
-        "time": "06:00",
-        "img": "/images/pets/20260318-060000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "image: 图像模糊，未识别到人/猫/狗; YOLO: 无检测",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both"
-      },
-      {
-        "date": "2026-03-18",
-        "time": "00:00",
-        "img": "/images/pets/20260318-000000-BD0673744.jpg",
-        "type": "other",
-        "boxedImg": null,
-        "analysis": "Image analysis: blurry, no discernible person/cat/dog. YOLO: no detections.",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both"
-      },
-      {
-        "date": "2026-03-18",
-        "time": "00:30",
-        "img": "/images/pets/20260318-003000-BD0673744.jpg",
-        "type": "other",
-        "boxedImg": null,
-        "analysis": "Image analysis: blurry, no discernible person/cat/dog. YOLO: no detections.",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both"
-      },
-      {
-        "date": "2026-03-18",
-        "time": "01:30",
-        "img": "/images/pets/20260318-013000-BD0673744.jpg",
-        "type": "other",
-        "boxedImg": null,
-        "analysis": "Image analysis: blurry, no discernible person/cat/dog. YOLO: no detections.",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both"
-      },
-      {
-        "date": "2026-03-18",
-        "time": "02:30",
-        "img": "/images/pets/20260318-023000-BD0673744.jpg",
-        "type": "other",
-        "boxedImg": null,
-        "analysis": "Image analysis: blurry, no discernible person/cat/dog. YOLO: no detections.",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both"
-      },
-      {
-        "date": "2026-03-18",
-        "time": "03:31",
-        "img": "/images/pets/20260318-033128-BD0673744.jpg",
-        "type": "other",
-        "boxedImg": null,
-        "analysis": "Image tool unavailable (no API key). YOLO: no detections (person/cat/dog). Manual review: empty room with furniture, no pets detected.",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo"
-      },
-      {
-        "date": "2026-03-18",
-        "time": "04:30",
-        "img": "/images/pets/20260318-043000-BD0673744.jpg",
-        "type": "other",
-        "boxedImg": null,
-        "analysis": "Image tool unavailable (no API key). YOLO: no detections (person/cat/dog).",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo"
-      },
-      {
-        "date": "2026-03-18",
-        "time": "07:00",
-        "img": "/images/pets/20260318-070001-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "image: 图片模糊，未识别到人/猫/狗; YOLO: 无检测",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both"
-      },
-      {
-        "date": "2026-03-18",
-        "time": "22:07",
-        "img": "/images/pets/20260318-220714-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "image: 图片模糊，未识别到人/猫/狗; YOLO: 无检测",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both"
-      },
-      {
-        "date": "2026-03-18",
-        "time": "23:00",
-        "img": "/images/pets/20260318-230000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "image: 图片模糊，未识别到人/猫/狗; YOLO: 无检测",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both"
-      },
-    ],
-    "2026-03-19": [
-      {
-        "date": "2026-03-19",
-        "time": "02:31",
-        "img": "/images/pets/20260319-023152-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "image: 图片模糊，未识别到人/猫/狗; YOLO: 无检测",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both"
-      },
-      {
-        "date": "2026-03-19",
-        "time": "02:00",
-        "img": "/images/pets/20260319-020000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "image: 图像模糊，无法确定是否有人/猫/狗; YOLO: 无检测",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both"
-      },
-      {
-        "date": "2026-03-19",
-        "time": "00:31",
-        "img": "/images/pets/20260319-003118-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "image: 照片模糊不清，无法辨别具体内容或任何人物、动物、宠物的存在; YOLO: 无检测",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both"
       }
     ]
   },
   "stats": {
-    "totalImages": 2126,
+    "totalImages": 2106,
+    "totalDays": 21,
+    "foundCount": 195,
+    "notFoundCount": 1911,
     "personCount": 51,
-    "catCount": 71,
     "dogCount": 73,
-    "lastUpdated": "2026-03-18T18:30:00.000Z"
+    "catCount": 71,
+    "otherCount": 1911,
+    "badImageCount": 13,
+    "boxedCount": 195,
+    "deduplicated": true,
+    "confidenceThreshold": 0.5
   },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
   "annotatedDir": "/images/pets/annotated/",
@@ -15297,5 +15050,3 @@ const petImagesData = {
     "source/images/pets/archive/20260302-003000-BD0673744.jpg"
   ]
 };
-
-export default petImagesData;
