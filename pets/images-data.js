@@ -15230,11 +15230,23 @@ const petImagesData = {
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-18",
+        "time": "09:30",
+        "img": "/images/pets/20260318-093000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": "/images/pets/annotated/20260318-093000-BD0673744.jpg",
+        "analysis": "image: 图片模糊，无法确定是否有人类、猫或狗; YOLO: 无检测",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
       }
     ]
   },
   "stats": {
-    "totalImages": 2124,
+    "totalImages": 2125,
     "personCount": 51,
     "catCount": 71,
     "dogCount": 73
