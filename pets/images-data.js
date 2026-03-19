@@ -27,12 +27,24 @@ const petImagesData = {
     "2026-03-19": [
       {
         "date": "2026-03-19",
+        "time": "10:01",
+        "img": "/images/pets/20260319-100145-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "boxedImg": "/images/pets/annotated/20260319-100145-BD0673744.jpg",
+        "analysis": "EZVIZ API异常降级，使用备用图；视觉识别：猫（白色+浅棕色坐椅子上）; YOLO:无检测",
+        "petIdentity": "Ywu",
+        "yoloClasses": [],
+        "decisionSource": "image"
+      },
+      {
+        "date": "2026-03-19",
         "time": "09:01",
         "img": "/images/pets/20260319-090145-BD0673744.jpg",
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image: 图像模糊，未识别到人/猫/狗; YOLO:无检测",
+        "analysis": "image: 图像模糊，未识别到人/猫/狗 YOLO:无检测",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -44,7 +56,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image: 未检测到人/猫/狗; YOLO:无检测",
+        "analysis": "image: 未检测到人/猫/狗 YOLO:无检测",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -56,7 +68,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image: 图像模糊，无法识别具体内容; YOLO:无检测",
+        "analysis": "image: 图像模糊，无法识别具体内容 YOLO:无检测",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -68,7 +80,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image: 图像模糊，无法确定内容; YOLO:无检测",
+        "analysis": "image: 图像模糊，无法确定内容 YOLO:无检测",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -80,7 +92,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image: 图像模糊，无法确定内容; YOLO:无检测",
+        "analysis": "image: 图像模糊，无法确定内容 YOLO:无检测",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -92,7 +104,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image: 图像模糊，未识别到人/猫/狗; YOLO:无检测",
+        "analysis": "image: 图像模糊，未识别到人/猫/狗 YOLO:无检测",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -104,7 +116,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image: 无法确定是否有任何人/猫/狗; YOLO:无检测",
+        "analysis": "image: 无法确定是否有任何人/猫/狗 YOLO:无检测",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -116,7 +128,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image: 图像模糊，未识别到人/猫/狗; YOLO:无检测",
+        "analysis": "image: 图像模糊，未识别到人/猫/狗 YOLO:无检测",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -128,7 +140,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image: 图像模糊，未识别到人/猫/狗; YOLO:无检测",
+        "analysis": "image: 图像模糊，未识别到人/猫/狗 YOLO:无检测",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -140,7 +152,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image: 图像模糊，未识别到人/猫/狗; YOLO:无检测",
+        "analysis": "image: 图像模糊，未识别到人/猫/狗 YOLO:无检测",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15126,7 +15138,12 @@ const petImagesData = {
       }
     ]
   },
-  "stats": {"totalImages": 2115, "personCount": 51, "catCount": 71, "dogCount": 73},
+  "stats": {
+    "totalImages": 2117,
+    "personCount": 51,
+    "catCount": 72,
+    "dogCount": 73
+  },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
   "annotatedDir": "/images/pets/annotated/",
   "badImages": [
