@@ -28,12 +28,24 @@ const petImagesData = {
     "2026-03-21": [
       {
         "date": "2026-03-21",
+        "time": "05:01",
+        "img": "/images/pets/20260321-050112-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": "/images/pets/annotated/20260321-050112-BD0673744.jpg",
+        "analysis": "image: API\u8fde\u63a5\u5931\u8d25\uff1bYOLO:\u65e0\u68c0\u6d4b(person/cat/dog)",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-03-21",
         "time": "03:36",
         "img": "/images/pets/20260321-033611-BD0673744.jpg",
         "type": "other",
         "found": false,
         "boxedImg": "/images/pets/annotated/20260321-033611-BD0673744.jpg",
-        "analysis": "image: API连接失败；YOLO:无检测(person/cat/dog)",
+        "analysis": "image: API\u8fde\u63a5\u5931\u8d25\uff1bYOLO:\u65e0\u68c0\u6d4b(person/cat/dog)",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
@@ -45,7 +57,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": "/images/pets/annotated/20260321-033905-BD0673744.jpg",
-        "analysis": "image: API连接失败；YOLO:无检测(person/cat/dog)",
+        "analysis": "image: API\u8fde\u63a5\u5931\u8d25\uff1bYOLO:\u65e0\u68c0\u6d4b(person/cat/dog)",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
@@ -57,7 +69,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image: API连接失败；YOLO:无检测(person/cat/dog)",
+        "analysis": "image: API\u8fde\u63a5\u5931\u8d25\uff1bYOLO:\u65e0\u68c0\u6d4b(person/cat/dog)",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
@@ -69,7 +81,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": "/images/pets/annotated/20260321-023030-BD0673744.jpg",
-        "analysis": "image: API连接失败；YOLO:无检测(person/cat/dog)",
+        "analysis": "image: API\u8fde\u63a5\u5931\u8d25\uff1bYOLO:\u65e0\u68c0\u6d4b(person/cat/dog)",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
@@ -81,7 +93,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": "/images/pets/annotated/20260321-020000-BD0673744.jpg",
-        "analysis": "image: API连接失败；YOLO:无检测(person/cat/dog)",
+        "analysis": "image: API\u8fde\u63a5\u5931\u8d25\uff1bYOLO:\u65e0\u68c0\u6d4b(person/cat/dog)",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
@@ -93,7 +105,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": "/images/pets/annotated/20260321-003415-BD0673744.jpg",
-        "analysis": "image: API连接失败；YOLO:无检测(person/cat/dog)",
+        "analysis": "image: API\u8fde\u63a5\u5931\u8d25\uff1bYOLO:\u65e0\u68c0\u6d4b(person/cat/dog)",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
@@ -105,7 +117,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": "/images/pets/annotated/20260320-210000-BD0673744.jpg",
-        "analysis": "image: API不可用(无OpenAI key)；YOLO:无检测(person/cat/dog)",
+        "analysis": "image: API\u4e0d\u53ef\u7528(\u65e0OpenAI key)\uff1bYOLO:\u65e0\u68c0\u6d4b(person/cat/dog)",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
@@ -117,7 +129,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": "/images/pets/annotated/20260320-193000-BD0673744.jpg",
-        "analysis": "image: 图像模糊，未检测到人/猫/狗；YOLO:无检测（person/cat/dog）",
+        "analysis": "image: \u56fe\u50cf\u6a21\u7cca\uff0c\u672a\u68c0\u6d4b\u5230\u4eba/\u732b/\u72d7\uff1bYOLO:\u65e0\u68c0\u6d4b\uff08person/cat/dog\uff09",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -129,7 +141,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": "/images/pets/annotated/20260320-223000-BD0673744.jpg",
-        "analysis": "image: API连接失败；YOLO:无检测(person/cat/dog)",
+        "analysis": "image: API\u8fde\u63a5\u5931\u8d25\uff1bYOLO:\u65e0\u68c0\u6d4b(person/cat/dog)",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
@@ -15116,12 +15128,12 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2115,
+    "totalImages": 2116,
     "personCount": 51,
     "catCount": 71,
     "dogCount": 73
   },
-  "generatedAt": "2026-03-21T03:39:14.063338Z",
+  "generatedAt": "2026-03-20T21:04:42.801133Z",
   "annotatedDir": "/images/pets/annotated/",
   "badImages": [
     "source/images/pets/20260301-033000-BD0673744.jpg",
