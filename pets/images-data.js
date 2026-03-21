@@ -27,6 +27,18 @@ const petImagesData = {
     "2026-03-21": [
       {
         "date": "2026-03-21",
+        "time": "21:00",
+        "img": "/images/pets/20260321-210000-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "boxedImg": null,
+        "analysis": "image: 客厅内有灰褐色猫咪一只，位于狗窝上；YOLO:无检测(person/cat/dog)",
+        "petIdentity": "Nomi",
+        "yoloClasses": [],
+        "decisionSource": "image"
+      },
+      {
+        "date": "2026-03-21",
         "time": "20:30",
         "img": "/images/pets/20260321-203000-BD0673744.jpg",
         "type": "other",
@@ -15091,9 +15103,9 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2113,
+    "totalImages": 2114,
     "personCount": 51,
-    "catCount": 71,
+    "catCount": 72,
     "dogCount": 73
   },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
