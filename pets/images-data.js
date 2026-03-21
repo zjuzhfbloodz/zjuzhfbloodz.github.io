@@ -1,6 +1,5 @@
 const petImagesData = {
-  "dates": [
-    "2026-03-21",
+  "dates": ["2026-03-22", "2026-03-21",
     "2026-03-02",
     "2026-03-01",
     "2026-02-28",
@@ -21,9 +20,21 @@ const petImagesData = {
     "2026-02-05",
     "2026-02-04",
     "2026-02-03",
-    "2026-02-02"
-  ],
-  "images": {
+    "2026-02-02"],
+  "images": {"2026-03-22": [
+      {
+        "date": "2026-03-22",
+        "time": "00:00",
+        "img": "/images/pets/20260322-000000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": "/images/pets/annotated/20260322-000000-BD0673744.jpg",
+        "analysis": "image: API connection failed (2 retries); YOLO: no detections",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      }
+    ],
     "2026-03-21": [
       {
         "date": "2026-03-21",
