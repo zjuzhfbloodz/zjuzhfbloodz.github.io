@@ -24,7 +24,20 @@ const petImagesData = {
     "2026-02-02"
   ],
   "images": {
-    "2026-03-21": [       {
+    "2026-03-21": [
+      {
+        "date": "2026-03-21",
+        "time": "17:03",
+        "img": "/images/pets/20260321-170351-BD0673744.jpg",
+        "type": "dog",
+        "found": true,
+        "boxedImg": "/images/pets/annotated/20260321-170351-BD0673744.jpg",
+        "analysis": "image: API连接失败，通过直接查看图片确认有白色西高地白梗( Mango)躺在灰色沙发上；YOLO:无检测",
+        "petIdentity": "Mango",
+        "yoloClasses": [],
+        "decisionSource": "image"
+      },
+      {
         "date": "2026-03-21",
         "time": "16:30",
         "img": "/images/pets/20260321-163008-BD0673744.jpg",
@@ -15090,11 +15103,11 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2112,
+    "totalImages": 2113,
     "personCount": 51,
     "catCount": 71,
-    "dogCount": 73,
-    "lastUpdate": "2026-03-21T08:04:07.867Z"
+    "dogCount": 74,
+    "lastUpdate": "2026-03-21T09:06:41.660Z"
   },
   "generatedAt": "2026-03-21T06:04:11.818Z",
   "annotatedDir": "/images/pets/annotated/",
