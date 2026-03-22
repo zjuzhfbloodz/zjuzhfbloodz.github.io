@@ -1,5 +1,6 @@
 const petImagesData = {
   "dates": [
+    "2026-03-22",
     "2026-03-02",
     "2026-03-01",
     "2026-02-28",
@@ -15001,21 +15002,27 @@ const petImagesData = {
         "type": "other",
         "found": false
       }
+    ],
+    "2026-03-22": [
+      {
+        "date": "2026-03-22",
+        "time": "19:30",
+        "img": "/images/pets/20260322-193000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image\u5de5\u5177\uff1a\u56fe\u7247\u6a21\u7cca\uff0c\u672a\u68c0\u6d4b\u5230\u4eba/\u732b/\u72d7\uff1bYOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      }
     ]
   },
   "stats": {
-    "totalImages": 2106,
-    "totalDays": 21,
-    "foundCount": 195,
-    "notFoundCount": 1911,
+    "totalImages": 2107,
     "personCount": 51,
-    "dogCount": 73,
     "catCount": 71,
-    "otherCount": 1911,
-    "badImageCount": 13,
-    "boxedCount": 195,
-    "deduplicated": true,
-    "confidenceThreshold": 0.5
+    "dogCount": 73
   },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
   "annotatedDir": "/images/pets/annotated/",
@@ -15035,3 +15042,5 @@ const petImagesData = {
     "source/images/pets/archive/20260302-003000-BD0673744.jpg"
   ]
 };
+
+export default petImagesData;
