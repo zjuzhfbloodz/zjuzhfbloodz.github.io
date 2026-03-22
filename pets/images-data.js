@@ -28,6 +28,18 @@ const petImagesData = {
     "2026-03-22": [
       {
         "date": "2026-03-22",
+        "time": "15:00",
+        "img": "/images/pets/20260322-150000-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "boxedImg": null,
+        "analysis": "image: 可见一只灰褐色猫（Nomi）；YOLO: 无检测(person/cat/dog)；冲突与最终采用规则：image检测到猫，采用image结论",
+        "petIdentity": "Nomi",
+        "yoloClasses": [],
+        "decisionSource": "conflict-resolved"
+      },
+      {
+        "date": "2026-03-22",
         "time": "14:30",
         "img": "/images/pets/20260322-143000-BD0673744.jpg",
         "type": "other",
@@ -15130,13 +15142,13 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2113,
+    "totalImages": 2114,
     "totalDays": 22,
-    "foundCount": 195,
+    "foundCount": 196,
     "notFoundCount": 1912,
     "personCount": 51,
     "dogCount": 73,
-    "catCount": 71,
+    "catCount": 72,
     "otherCount": 1914,
     "badImageCount": 13,
     "boxedCount": 195,
