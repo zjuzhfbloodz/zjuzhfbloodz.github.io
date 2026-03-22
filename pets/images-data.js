@@ -15006,12 +15006,24 @@ const petImagesData = {
     "2026-03-22": [
       {
         "date": "2026-03-22",
+        "time": "20:00",
+        "img": "/images/pets/20260322-200000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "YOLO未检测到人/猫/狗（置信度阈值0.25）",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-03-22",
         "time": "19:30",
         "img": "/images/pets/20260322-193000-BD0673744.jpg",
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\uff1a\u56fe\u7247\u6a21\u7cca\uff0c\u672a\u68c0\u6d4b\u5230\u4eba/\u732b/\u72d7\uff1bYOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807",
+        "analysis": "image工具：图片模糊，未检测到人/猫/狗；YOLO：未检测到任何目标",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
