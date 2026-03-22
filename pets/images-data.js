@@ -25,6 +25,20 @@ const petImagesData = {
     "2026-02-02"
   ],
   "images": {
+    "2026-03-22": [
+      {
+        "date": "2026-03-22",
+        "time": "11:30",
+        "img": "/images/pets/20260322-113000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": "/images/pets/annotated/20260322-113000-BD0673744.jpg",
+        "analysis": "image: API不可用(403错误)；YOLO: 无检测(person/cat/dog)",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      }
+    ],
     "2026-03-20": [
       {
         "date": "2026-03-20",
@@ -15041,31 +15055,17 @@ const petImagesData = {
         "type": "other",
         "found": false
       }
-    ],
-    "2026-03-22": [
-      {
-        "date": "2026-03-22",
-        "time": "11:00",
-        "img": "/images/pets/20260322-110210-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": "/images/pets/annotated/20260322-110210-BD0673744.jpg",
-        "analysis": "image: 图片模糊，未识别到人/猫/狗；YOLO: 无检测(person/cat/dog)",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both"
-      }
     ]
   },
   "stats": {
-    "totalImages": 2106,
-    "totalDays": 21,
+    "totalImages": 2107,
+    "totalDays": 22,
     "foundCount": 195,
     "notFoundCount": 1911,
     "personCount": 51,
     "dogCount": 73,
     "catCount": 71,
-    "otherCount": 1911,
+    "otherCount": 1912,
     "badImageCount": 13,
     "boxedCount": 195,
     "deduplicated": true,
