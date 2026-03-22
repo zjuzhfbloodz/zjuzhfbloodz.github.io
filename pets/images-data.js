@@ -1,6 +1,5 @@
 const petImagesData = {
   "dates": [
-    "2026-03-22",
     "2026-03-02",
     "2026-03-01",
     "2026-02-28",
@@ -15002,51 +15001,21 @@ const petImagesData = {
         "type": "other",
         "found": false
       }
-    ],
-    "2026-03-22": [
-      {
-        "date": "2026-03-22",
-        "time": "17:00",
-        "img": "/images/pets/20260322-170004-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": "/images/pets/annotated/20260322-170004-BD0673744.jpg",
-        "analysis": "image: 图片模糊/遮挡，无法清晰辨识是否有人员、猫或狗；YOLO: 无检测(person/cat/dog)",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both"
-      },
-      {
-        "date": "2026-03-22",
-        "time": "18:00",
-        "img": "/images/pets/20260322-180000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "image工具不可用；YOLO: 无检测(person/cat/dog)",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo"
-      },
-      {
-        "date": "2026-03-22",
-        "time": "18:30",
-        "img": "/images/pets/20260322-183000-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": "/images/pets/annotated/20260322-183000-BD0673744.jpg",
-        "analysis": "image工具：未检测到人/猫/狗，画面模糊；YOLO：无检测(person/cat/dog)",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both"
-      }
     ]
   },
   "stats": {
-    "totalImages": 2109,
+    "totalImages": 2106,
+    "totalDays": 21,
+    "foundCount": 195,
+    "notFoundCount": 1911,
     "personCount": 51,
+    "dogCount": 73,
     "catCount": 71,
-    "dogCount": 73
+    "otherCount": 1911,
+    "badImageCount": 13,
+    "boxedCount": 195,
+    "deduplicated": true,
+    "confidenceThreshold": 0.5
   },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
   "annotatedDir": "/images/pets/annotated/",
@@ -15066,5 +15035,3 @@ const petImagesData = {
     "source/images/pets/archive/20260302-003000-BD0673744.jpg"
   ]
 };
-
-export default petImagesData;
