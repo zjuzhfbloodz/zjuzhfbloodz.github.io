@@ -1,41 +1,54 @@
 const fs = require('fs');
 const path = require('path');
 
-const dataPath = '/Users/bloodz/Documents/macmini/service/bloodzSpace/source/pets/images-data.js';
-const content = fs.readFileSync(dataPath, 'utf8');
+const filePath = path.join(__dirname, 'images-data.js');
+let content = fs.readFileSync(filePath, 'utf8');
 
-// Extract JSON by evaluating the file
-const petImagesData = eval('(' + content.replace(/^const petImagesData = /, '').replace(/;$/, '') + ')');
+// Extract JSON from the JS file
+const jsonMatch = content.match(/^const petImagesData = (.+);$/s);
+if (!jsonMatch) {
+  console.error('Failed to parse JS file');
+  process.exit(1);
+}
+
+let data;
+try {
+  data = JSON.parse(jsonMatch[1]);
+} catch (e) {
+  console.error('JSON parse error:', e.message);
+  process.exit(1);
+}
 
 // New image entry
-const newEntry = {
-  date: "2026-03-22",
-  time: "04:00",
-  img: "/images/pets/20260322-040020-BD0673744.jpg",
-  type: "other",
+const newImage = {
+  date: '2026-03-23',
+  time: '09:30',
+  img: '/images/pets/20260323-093000-BD0673744.jpg',
+  type: 'other',
   found: false,
-  boxedImg: "/images/pets/annotated/20260322-040020-BD0673744.jpg",
-  analysis: "image: 图片模糊，未发现明显的人/猫/狗；YOLO:无检测(person/cat/dog)",
+  boxedImg: null,
+  analysis: '图片模糊，无法明确识别出人、猫、狗或其他动物。YOLO未检测到任何目标。',
   petIdentity: null,
   yoloClasses: [],
-  decisionSource: "both"
+  decisionSource: 'both'
 };
 
-// Add to the beginning of 2026-03-22 array
-petImagesData.images["2026-03-22"].unshift(newEntry);
+// Add date if not exists
+if (!data.dates.includes('2026-03-23')) {
+  data.dates.unshift('2026-03-23');
+  data.images['2026-03-23'] = [];
+}
+// Add image to beginning of array
+data.images['2026-03-23'].unshift(newImage);
 
-// Calculate stats
-const allImages = Object.values(petImagesData.images).flat();
-const stats = {
-  totalImages: allImages.length,
-  personCount: allImages.filter(i => i.type === 'person').length,
-  catCount: allImages.filter(i => i.type === 'cat').length,
-  dogCount: allImages.filter(i => i.type === 'dog').length
-};
-
-console.log('Stats:', JSON.stringify(stats));
+// Recalculate stats
+const totalImages = Object.values(data.images).reduce((sum, arr) => sum + arr.length, 0);
+const personCount = Object.values(data.images).reduce((sum, arr) => sum + arr.filter(i => i.type === 'person').length, 0);
+const catCount = Object.values(data.images).reduce((sum, arr) => sum + arr.filter(i => i.type === 'cat').length, 0);
+const dogCount = Object.values(data.images).reduce((sum, arr) => sum + arr.filter(i => i.type === 'dog').length, 0);
 
 // Write back
-const output = 'const petImagesData = ' + JSON.stringify(petImagesData, null, 2) + ';\n\nmodule.exports = petImagesData;';
-fs.writeFileSync(dataPath, output);
-console.log('Updated successfully');
+const output = 'const petImagesData = ' + JSON.stringify(data, null, 2) + ';\nmodule.exports = petImagesData;';
+fs.writeFileSync(filePath, output);
+
+console.log('Updated. Stats:', { totalImages, personCount, catCount, dogCount });

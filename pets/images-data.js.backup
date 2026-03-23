@@ -1,6 +1,7 @@
 const petImagesData = {
   "dates": [
-    "2026-03-11",
+    "2026-03-23",
+    "2026-03-22",
     "2026-03-02",
     "2026-03-01",
     "2026-02-28",
@@ -24,20 +25,6 @@ const petImagesData = {
     "2026-02-02"
   ],
   "images": {
-    "2026-03-11": [
-      {
-        "date": "2026-03-11",
-        "time": "23:30",
-        "img": "/images/pets/20260311-233057-BD0673744.jpg",
-        "type": "other",
-        "found": false,
-        "boxedImg": null,
-        "analysis": "YOLO检测未识别到人/猫/狗（image工具因地区限制不可用）。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo"
-      }
-    ],
     "2026-02-05": [
       {
         "date": "2026-02-05",
@@ -15016,23 +15003,307 @@ const petImagesData = {
         "type": "other",
         "found": false
       }
+    ],
+    "2026-03-23": [
+      {
+        "date": "2026-03-23",
+        "time": "09:06",
+        "img": "/images/pets/20260323-090649-BD0673744.jpg",
+        "type": "other",
+        "boxedImg": null,
+        "analysis": "image工具：图像模糊，主要是浅色区域和一些深色边缘，未识别到人、猫或狗；YOLO：未检测到任何目标（no detections）",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo",
+        "found": false
+      },
+      {
+        "date": "2026-03-23",
+        "time": "08:00",
+        "img": "/images/pets/20260323-080030-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具: 无法识别任何人物或动物，画面模糊。YOLO: 无检测结果（no detections）。最终判定: other",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-03-23",
+        "time": "07:00",
+        "img": "/images/pets/20260323-070000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：API调用失败（Model does not support images）；YOLO：未检测到任何目标（no detections）。按照判定规则，无检测=other",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-03-23",
+        "time": "06:30",
+        "img": "/images/pets/20260323-063000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：API调用失败（no OpenAI API key）；YOLO：未检测到任何目标（no detections）。按照判定规则，无检测=other",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-23",
+        "time": "06:00",
+        "img": "/images/pets/20260323-060000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": "/images/pets/annotated/20260323-060000-BD0673744.jpg",
+        "analysis": "image工具：图片模糊，未检测到人/猫/狗；YOLO：未检测到任何目标（no detections）",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-23",
+        "time": "05:30",
+        "img": "/images/pets/20260323-053022-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：图片模糊，无法清晰地看出具体内容，未检测到人/猫/狗；YOLO：未检测到任何目标（no detections）",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-23",
+        "time": "04:30",
+        "img": "/images/pets/20260323-043000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：图片模糊，未检测到人/猫/狗；YOLO：未检测到任何目标（no detections）",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-23",
+        "time": "03:31",
+        "img": "/images/pets/20260323-033141-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "Image tool: blurry, no clear person/cat/dog. YOLO: no detections. Both channels agree: no target detected.",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-23",
+        "time": "03:02",
+        "img": "/images/pets/20260323-030229-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：图片模糊，未检测到人/猫/狗；YOLO：未检测到任何目标（no detections）",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-23",
+        "time": "02:32",
+        "img": "/images/pets/20260323-023242-BD0673744.jpg",
+        "type": "other",
+        "boxedImg": null,
+        "analysis": "Image analysis: blurry grayscale image, no clear person/cat/dog visible. YOLO: no detections.",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-23",
+        "time": "02:00",
+        "img": "/images/pets/20260323-020000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：图片模糊，无法明确识别任何对象；YOLO：未检测到任何目标（no detections）",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-23",
+        "time": "01:30",
+        "img": "/images/pets/20260323-013000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：图片模糊，未检测到人/猫/狗；YOLO：未检测到任何目标（no detections）",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-23",
+        "time": "00:30",
+        "img": "/images/pets/20260323-003000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "YOLO检测结果：no detections（未检测到人/猫/狗）；image工具不可用。",
+        "yoloClasses": [],
+        "petIdentity": null,
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-03-23",
+        "time": "01:00",
+        "img": "/images/pets/20260323-010021-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：图片模糊，无法明确识别任何对象；YOLO：未检测到任何目标（no detections）",
+        "yoloClasses": [],
+        "petIdentity": null,
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-23",
+        "time": "04:00",
+        "img": "/images/pets/20260323-040020-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：图片模糊且主要由灰色和黑色阴影组成，无法清晰辨别是否有任何人、猫或狗。YOLO：未检测到任何目标（no detections）。两者结论一致：无检测目标。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-23",
+        "time": "08:30",
+        "img": "/images/pets/20260323-083000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具不可用；YOLO：未检测到任何目标（no detections）",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-03-23",
+        "time": "05:00",
+        "img": "/images/pets/20260323-050000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：无法识别图片内容；YOLO：未检测到任何目标（no detections）",
+        "yoloClasses": [],
+        "petIdentity": null,
+        "decisionSource": "both"
+      }
+    ],
+    "2026-03-22": [
+      {
+        "date": "2026-03-22",
+        "time": "23:30",
+        "img": "/images/pets/20260322-233000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": "/images/pets/annotated/20260322-233000-BD0673744.jpg",
+        "analysis": "image工具无法识别图片内容；YOLO检测结果：no detections（未检测到人/猫/狗）",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-22",
+        "time": "22:31",
+        "img": "/images/pets/20260322-223112-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image和YOLO均未检测到人/猫/狗。image识别结果：这是一张模糊的黑白图像，无法明确识别任何对象。YOLO检测结果：no detections。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-22",
+        "time": "22:00",
+        "img": "/images/pets/20260322-220000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：图片模糊，无法识别；YOLO：未检测到任何目标（no detections）",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-22",
+        "time": "20:30",
+        "img": "/images/pets/20260322-203000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具和YOLO均未检测到人/猫/狗",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-22",
+        "time": "20:00",
+        "img": "/images/pets/20260322-200000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "YOLO未检测到人/猫/狗（置信度阈值0.25）",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-03-22",
+        "time": "19:30",
+        "img": "/images/pets/20260322-193000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：图片模糊，未检测到人/猫/狗；YOLO：未检测到任何目标",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-22",
+        "time": "21:00",
+        "img": "/images/pets/20260322-210000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：图片模糊，未检测到人/猫/狗；YOLO：未检测到任何目标（no detections）",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      }
     ]
   },
   "stats": {
-    "totalImages": 2107,
-    "totalDays": 21,
-    "foundCount": 195,
-    "notFoundCount": 1911,
+    "totalImages": 2130,
     "personCount": 51,
-    "dogCount": 73,
     "catCount": 71,
-    "otherCount": 1911,
-    "badImageCount": 13,
-    "boxedCount": 195,
-    "deduplicated": true,
-    "confidenceThreshold": 0.5
+    "dogCount": 73,
+    "lastUpdated": "2026-03-23T01:07:48.975Z"
   },
-  "generatedAt": "2026-03-02T15:51:35.400737Z",
+  "generatedAt": "2026-03-22T21:35:09.479Z",
   "annotatedDir": "/images/pets/annotated/",
   "badImages": [
     "source/images/pets/20260301-033000-BD0673744.jpg",
