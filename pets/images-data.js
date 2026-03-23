@@ -15007,6 +15007,18 @@ const petImagesData = {
     "2026-03-23": [
       {
         "date": "2026-03-23",
+        "time": "12:00",
+        "img": "/images/pets/20260323-120000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具和YOLO均未检测到人/猫/狗",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-03-23",
         "time": "11:31",
         "img": "/images/pets/20260323-113105-BD0673744.jpg",
         "type": "other",
@@ -15357,7 +15369,7 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2135,
+    "totalImages": 2136,
     "personCount": 51,
     "catCount": 71,
     "dogCount": 73
@@ -15380,4 +15392,5 @@ const petImagesData = {
     "source/images/pets/archive/20260302-003000-BD0673744.jpg"
   ]
 };
-module.exports = petImagesData;
+
+export default petImagesData;
