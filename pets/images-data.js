@@ -15007,6 +15007,18 @@ const petImagesData = {
     "2026-03-23": [
       {
         "date": "2026-03-23",
+        "time": "19:00",
+        "img": "/images/pets/20260323-190000-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "boxedImg": null,
+        "analysis": "YOLO未检测到对象；人工识别到一只橙色虎斑猫在电视柜附近休息。YOLO与人工识别结论一致：cat。",
+        "petIdentity": "猫（未确定个体）",
+        "yoloClasses": [],
+        "decisionSource": "image"
+      },
+      {
+        "date": "2026-03-23",
         "time": "15:01",
         "img": "/images/pets/20260323-150144-BD0673744.jpg",
         "type": "other",
@@ -15452,9 +15464,9 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2141,
+    "totalImages": 2144,
     "personCount": 51,
-    "catCount": 71,
+    "catCount": 72,
     "dogCount": 73
   },
   "generatedAt": "2026-03-23T09:36:06.329Z",
