@@ -15013,7 +15013,7 @@ const petImagesData = {
         "type": "other",
         "boxedImg": null,
         "found": false,
-        "analysis": "image \u548c YOLO \u5747\u672a\u68c0\u6d4b\u5230\u4eba\u3001\u732b\u3001\u72d7\u3002image \u63cf\u8ff0\u753b\u9762\u6a21\u7cca\u5931\u7126\uff0c\u9ed1\u767d\u8272\u8c03\uff0c\u65e0\u660e\u663e\u7269\u4f53\u3002YOLO \u786e\u8ba4\u65e0\u68c0\u6d4b\u3002",
+        "analysis": "image 和 YOLO 均未检测到人、猫、狗。image 描述画面模糊失焦，黑白色调，无明显物体。YOLO 确认无检测。",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15025,8 +15025,8 @@ const petImagesData = {
         "type": "cat",
         "found": true,
         "boxedImg": null,
-        "analysis": "YOLO\u672a\u68c0\u6d4b\u5230\u5bf9\u8c61\uff1b\u4eba\u5de5\u8bc6\u522b\u5230\u4e00\u53ea\u6a59\u8272\u864e\u6591\u732b\u5728\u7535\u89c6\u67dc\u9644\u8fd1\u4f11\u606f\u3002YOLO\u4e0e\u4eba\u5de5\u8bc6\u522b\u7ed3\u8bba\u4e00\u81f4\uff1acat\u3002",
-        "petIdentity": "\u732b\uff08\u672a\u786e\u5b9a\u4e2a\u4f53\uff09",
+        "analysis": "YOLO未检测到对象；人工识别到一只橙色虎斑猫在电视柜附近休息。YOLO与人工识别结论一致：cat。",
+        "petIdentity": "猫（未确定个体）",
         "yoloClasses": [],
         "decisionSource": "image"
       },
@@ -15037,7 +15037,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": "/images/pets/annotated/20260323-150144-BD0673744.jpg",
-        "analysis": "\u56fe\u7247\u975e\u5e38\u6a21\u7cca\uff0c\u96be\u4ee5\u8fa8\u8ba4\u5177\u4f53\u5185\u5bb9\u3002YOLO\u68c0\u6d4b\u7ed3\u679c\uff1a\u65e0\u68c0\u6d4b\u5230\uff08no detections\uff09\u3002",
+        "analysis": "图片非常模糊，难以辨认具体内容。YOLO检测结果：无检测到（no detections）。",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15048,7 +15048,7 @@ const petImagesData = {
         "img": "/images/pets/20260323-133510-BD0673744.jpg",
         "type": "other",
         "boxedImg": "/images/pets/annotated/20260323-133510-BD0673744.jpg",
-        "analysis": "YOLO\u672a\u68c0\u6d4b\u5230\u4eba/\u732b/\u72d7\uff08image\u5de5\u5177\u56e0\u6a21\u578b\u9650\u5236\u4e0d\u53ef\u7528\uff09",
+        "analysis": "YOLO未检测到人/猫/狗（image工具因模型限制不可用）",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
@@ -15060,7 +15060,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\u672a\u4f7f\u7528\uff08API key\u95ee\u9898\uff09\uff0cYOLO\u672a\u68c0\u6d4b\u5230\u4eba/\u732b/\u72d7\uff08no detections\uff09",
+        "analysis": "image工具未使用（API key问题），YOLO未检测到人/猫/狗（no detections）",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
@@ -15072,7 +15072,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\u548cYOLO\u5747\u672a\u68c0\u6d4b\u5230\u4eba/\u732b/\u72d7",
+        "analysis": "image工具和YOLO均未检测到人/猫/狗",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15084,7 +15084,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "\u56fe\u7247\u6a21\u7cca\uff0c\u65e0\u6cd5\u660e\u786e\u8bc6\u522b\u51fa\u4eba\u3001\u732b\u3001\u72d7\u7b49\u76ee\u6807\u3002YOLO\u68c0\u6d4b\u7ed3\u679c\uff1a\u65e0\u68c0\u6d4b\u5230\u3002",
+        "analysis": "图片模糊，无法明确识别出人、猫、狗等目标。YOLO检测结果：无检测到。",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15096,7 +15096,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\uff1a\u56fe\u7247\u6a21\u7cca/\u8fc7\u66dd\uff0c\u65e0\u6cd5\u660e\u786e\u8bc6\u522b\u4efb\u4f55\u5bf9\u8c61\uff1bYOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\uff08no detections\uff09",
+        "analysis": "image工具：图片模糊/过曝，无法明确识别任何对象；YOLO：未检测到任何目标（no detections）",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15108,7 +15108,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\uff1a\u56fe\u7247\u6a21\u7cca/\u8fc7\u66dd\uff0c\u65e0\u6cd5\u660e\u786e\u8bc6\u522b\u4efb\u4f55\u5bf9\u8c61\uff1bYOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\uff08no detections\uff09",
+        "analysis": "image工具：图片模糊/过曝，无法明确识别任何对象；YOLO：未检测到任何目标（no detections）",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15120,7 +15120,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "\u56fe\u7247\u6a21\u7cca\uff0c\u65e0\u6cd5\u660e\u786e\u8bc6\u522b\u51fa\u4eba\u3001\u732b\u3001\u72d7\u6216\u5176\u4ed6\u52a8\u7269\u3002YOLO\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\u3002",
+        "analysis": "图片模糊，无法明确识别出人、猫、狗或其他动物。YOLO未检测到任何目标。",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15131,7 +15131,7 @@ const petImagesData = {
         "img": "/images/pets/20260323-090649-BD0673744.jpg",
         "type": "other",
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\uff1a\u56fe\u50cf\u6a21\u7cca\uff0c\u4e3b\u8981\u662f\u6d45\u8272\u533a\u57df\u548c\u4e00\u4e9b\u6df1\u8272\u8fb9\u7f18\uff0c\u672a\u8bc6\u522b\u5230\u4eba\u3001\u732b\u6216\u72d7\uff1bYOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\uff08no detections\uff09",
+        "analysis": "image工具：图像模糊，主要是浅色区域和一些深色边缘，未识别到人、猫或狗；YOLO：未检测到任何目标（no detections）",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo",
@@ -15144,7 +15144,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177: \u65e0\u6cd5\u8bc6\u522b\u4efb\u4f55\u4eba\u7269\u6216\u52a8\u7269\uff0c\u753b\u9762\u6a21\u7cca\u3002YOLO: \u65e0\u68c0\u6d4b\u7ed3\u679c\uff08no detections\uff09\u3002\u6700\u7ec8\u5224\u5b9a: other",
+        "analysis": "image工具: 无法识别任何人物或动物，画面模糊。YOLO: 无检测结果（no detections）。最终判定: other",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
@@ -15156,7 +15156,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\uff1aAPI\u8c03\u7528\u5931\u8d25\uff08Model does not support images\uff09\uff1bYOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\uff08no detections\uff09\u3002\u6309\u7167\u5224\u5b9a\u89c4\u5219\uff0c\u65e0\u68c0\u6d4b=other",
+        "analysis": "image工具：API调用失败（Model does not support images）；YOLO：未检测到任何目标（no detections）。按照判定规则，无检测=other",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
@@ -15168,7 +15168,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\uff1aAPI\u8c03\u7528\u5931\u8d25\uff08no OpenAI API key\uff09\uff1bYOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\uff08no detections\uff09\u3002\u6309\u7167\u5224\u5b9a\u89c4\u5219\uff0c\u65e0\u68c0\u6d4b=other",
+        "analysis": "image工具：API调用失败（no OpenAI API key）；YOLO：未检测到任何目标（no detections）。按照判定规则，无检测=other",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15180,7 +15180,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": "/images/pets/annotated/20260323-060000-BD0673744.jpg",
-        "analysis": "image\u5de5\u5177\uff1a\u56fe\u7247\u6a21\u7cca\uff0c\u672a\u68c0\u6d4b\u5230\u4eba/\u732b/\u72d7\uff1bYOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\uff08no detections\uff09",
+        "analysis": "image工具：图片模糊，未检测到人/猫/狗；YOLO：未检测到任何目标（no detections）",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15192,7 +15192,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\uff1a\u56fe\u7247\u6a21\u7cca\uff0c\u65e0\u6cd5\u6e05\u6670\u5730\u770b\u51fa\u5177\u4f53\u5185\u5bb9\uff0c\u672a\u68c0\u6d4b\u5230\u4eba/\u732b/\u72d7\uff1bYOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\uff08no detections\uff09",
+        "analysis": "image工具：图片模糊，无法清晰地看出具体内容，未检测到人/猫/狗；YOLO：未检测到任何目标（no detections）",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15204,7 +15204,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\uff1a\u56fe\u7247\u6a21\u7cca\uff0c\u672a\u68c0\u6d4b\u5230\u4eba/\u732b/\u72d7\uff1bYOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\uff08no detections\uff09",
+        "analysis": "image工具：图片模糊，未检测到人/猫/狗；YOLO：未检测到任何目标（no detections）",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15228,7 +15228,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\uff1a\u56fe\u7247\u6a21\u7cca\uff0c\u672a\u68c0\u6d4b\u5230\u4eba/\u732b/\u72d7\uff1bYOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\uff08no detections\uff09",
+        "analysis": "image工具：图片模糊，未检测到人/猫/狗；YOLO：未检测到任何目标（no detections）",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15251,7 +15251,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\uff1a\u56fe\u7247\u6a21\u7cca\uff0c\u65e0\u6cd5\u660e\u786e\u8bc6\u522b\u4efb\u4f55\u5bf9\u8c61\uff1bYOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\uff08no detections\uff09",
+        "analysis": "image工具：图片模糊，无法明确识别任何对象；YOLO：未检测到任何目标（no detections）",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15263,7 +15263,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\uff1a\u56fe\u7247\u6a21\u7cca\uff0c\u672a\u68c0\u6d4b\u5230\u4eba/\u732b/\u72d7\uff1bYOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\uff08no detections\uff09",
+        "analysis": "image工具：图片模糊，未检测到人/猫/狗；YOLO：未检测到任何目标（no detections）",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15275,7 +15275,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "YOLO\u68c0\u6d4b\u7ed3\u679c\uff1ano detections\uff08\u672a\u68c0\u6d4b\u5230\u4eba/\u732b/\u72d7\uff09\uff1bimage\u5de5\u5177\u4e0d\u53ef\u7528\u3002",
+        "analysis": "YOLO检测结果：no detections（未检测到人/猫/狗）；image工具不可用。",
         "yoloClasses": [],
         "petIdentity": null,
         "decisionSource": "yolo"
@@ -15287,7 +15287,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\uff1a\u56fe\u7247\u6a21\u7cca\uff0c\u65e0\u6cd5\u660e\u786e\u8bc6\u522b\u4efb\u4f55\u5bf9\u8c61\uff1bYOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\uff08no detections\uff09",
+        "analysis": "image工具：图片模糊，无法明确识别任何对象；YOLO：未检测到任何目标（no detections）",
         "yoloClasses": [],
         "petIdentity": null,
         "decisionSource": "both"
@@ -15299,7 +15299,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\uff1a\u56fe\u7247\u6a21\u7cca\u4e14\u4e3b\u8981\u7531\u7070\u8272\u548c\u9ed1\u8272\u9634\u5f71\u7ec4\u6210\uff0c\u65e0\u6cd5\u6e05\u6670\u8fa8\u522b\u662f\u5426\u6709\u4efb\u4f55\u4eba\u3001\u732b\u6216\u72d7\u3002YOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\uff08no detections\uff09\u3002\u4e24\u8005\u7ed3\u8bba\u4e00\u81f4\uff1a\u65e0\u68c0\u6d4b\u76ee\u6807\u3002",
+        "analysis": "image工具：图片模糊且主要由灰色和黑色阴影组成，无法清晰辨别是否有任何人、猫或狗。YOLO：未检测到任何目标（no detections）。两者结论一致：无检测目标。",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15311,7 +15311,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\u4e0d\u53ef\u7528\uff1bYOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\uff08no detections\uff09",
+        "analysis": "image工具不可用；YOLO：未检测到任何目标（no detections）",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
@@ -15323,7 +15323,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\uff1a\u65e0\u6cd5\u8bc6\u522b\u56fe\u7247\u5185\u5bb9\uff1bYOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\uff08no detections\uff09",
+        "analysis": "image工具：无法识别图片内容；YOLO：未检测到任何目标（no detections）",
         "yoloClasses": [],
         "petIdentity": null,
         "decisionSource": "both"
@@ -15335,7 +15335,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\uff1a\u56fe\u7247\u6a21\u7cca\uff0c\u65e0\u6cd5\u660e\u786e\u8bc6\u522b\u4efb\u4f55\u5bf9\u8c61\uff1bYOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\uff08no detections\uff09",
+        "analysis": "image工具：图片模糊，无法明确识别任何对象；YOLO：未检测到任何目标（no detections）",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15347,7 +15347,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\uff1a\u56fe\u7247\u6a21\u7cca\uff0c\u65e0\u6cd5\u660e\u786e\u8bc6\u522b\u4efb\u4f55\u5bf9\u8c61\uff1bYOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\uff08no detections\uff09",
+        "analysis": "image工具：图片模糊，无法明确识别任何对象；YOLO：未检测到任何目标（no detections）",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15359,7 +15359,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": "/images/pets/annotated/20260323-143000-BD0673744.jpg",
-        "analysis": "image\u5de5\u5177\uff1a\u56fe\u7247\u6a21\u7cca\uff0c\u65e0\u6cd5\u660e\u786e\u8bc6\u522b\u4efb\u4f55\u5bf9\u8c61\uff1bYOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\uff08no detections\uff09",
+        "analysis": "image工具：图片模糊，无法明确识别任何对象；YOLO：未检测到任何目标（no detections）",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15371,7 +15371,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\uff1a\u5ba4\u5185\u5ba2\u5385\u5bb6\u5c45\u6446\u4ef6\uff0c\u65e0\u4eba/\u732b/\u72d7\uff1bYOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\uff08no detections\uff09",
+        "analysis": "image工具：室内客厅家居摆件，无人/猫/狗；YOLO：未检测到任何目标（no detections）",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
@@ -15383,7 +15383,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\u4e0d\u53ef\u7528\uff08API key\u95ee\u9898\uff09\uff1bYOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\uff08no detections\uff09",
+        "analysis": "image工具不可用（API key问题）；YOLO：未检测到任何目标（no detections）",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
@@ -15395,7 +15395,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\uff1a\u56fe\u7247\u6a21\u7cca\uff0c\u672a\u68c0\u6d4b\u5230\u4eba/\u732b/\u72d7\uff1bYOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\uff08no detections\uff09",
+        "analysis": "image工具：图片模糊，未检测到人/猫/狗；YOLO：未检测到任何目标（no detections）",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15407,7 +15407,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\u4e0d\u53ef\u7528\uff08API key\u914d\u7f6e\u95ee\u9898\uff09\uff1bYOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\uff08no detections\uff09",
+        "analysis": "image工具不可用（API key配置问题）；YOLO：未检测到任何目标（no detections）",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
@@ -15419,7 +15419,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\uff1a\u56fe\u50cf\u4e0d\u6e05\u6670\uff0c\u96be\u4ee5\u8fa8\u522b\u662f\u5426\u5b58\u5728\u4eba\u3001\u732b\u6216\u72d7\u3002YOLO\u68c0\u6d4b\u7ed3\u679c\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\uff08no detections\uff09",
+        "analysis": "image工具：图像不清晰，难以辨别是否存在人、猫或狗。YOLO检测结果：未检测到任何目标（no detections）",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15433,7 +15433,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": "/images/pets/annotated/20260322-233000-BD0673744.jpg",
-        "analysis": "image\u5de5\u5177\u65e0\u6cd5\u8bc6\u522b\u56fe\u7247\u5185\u5bb9\uff1bYOLO\u68c0\u6d4b\u7ed3\u679c\uff1ano detections\uff08\u672a\u68c0\u6d4b\u5230\u4eba/\u732b/\u72d7\uff09",
+        "analysis": "image工具无法识别图片内容；YOLO检测结果：no detections（未检测到人/猫/狗）",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15445,7 +15445,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u548cYOLO\u5747\u672a\u68c0\u6d4b\u5230\u4eba/\u732b/\u72d7\u3002image\u8bc6\u522b\u7ed3\u679c\uff1a\u8fd9\u662f\u4e00\u5f20\u6a21\u7cca\u7684\u9ed1\u767d\u56fe\u50cf\uff0c\u65e0\u6cd5\u660e\u786e\u8bc6\u522b\u4efb\u4f55\u5bf9\u8c61\u3002YOLO\u68c0\u6d4b\u7ed3\u679c\uff1ano detections\u3002",
+        "analysis": "image和YOLO均未检测到人/猫/狗。image识别结果：这是一张模糊的黑白图像，无法明确识别任何对象。YOLO检测结果：no detections。",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15457,7 +15457,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\uff1a\u56fe\u7247\u6a21\u7cca\uff0c\u65e0\u6cd5\u8bc6\u522b\uff1bYOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\uff08no detections\uff09",
+        "analysis": "image工具：图片模糊，无法识别；YOLO：未检测到任何目标（no detections）",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15469,7 +15469,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\u548cYOLO\u5747\u672a\u68c0\u6d4b\u5230\u4eba/\u732b/\u72d7",
+        "analysis": "image工具和YOLO均未检测到人/猫/狗",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15481,7 +15481,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "YOLO\u672a\u68c0\u6d4b\u5230\u4eba/\u732b/\u72d7\uff08\u7f6e\u4fe1\u5ea6\u9608\u503c0.25\uff09",
+        "analysis": "YOLO未检测到人/猫/狗（置信度阈值0.25）",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
@@ -15493,7 +15493,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\uff1a\u56fe\u7247\u6a21\u7cca\uff0c\u672a\u68c0\u6d4b\u5230\u4eba/\u732b/\u72d7\uff1bYOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807",
+        "analysis": "image工具：图片模糊，未检测到人/猫/狗；YOLO：未检测到任何目标",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15505,25 +15505,36 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\uff1a\u56fe\u7247\u6a21\u7cca\uff0c\u672a\u68c0\u6d4b\u5230\u4eba/\u732b/\u72d7\uff1bYOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\uff08no detections\uff09",
+        "analysis": "image工具：图片模糊，未检测到人/猫/狗；YOLO：未检测到任何目标（no detections）",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
       }
     ],
     "2026-03-24": [
-{
-  "date": "2026-03-24",
-  "time": "20:00",
-  "img": "/images/pets/20260324-200000-BD0673744.jpg",
-  "type": "other",
-  "found": false,
-  "boxedImg": null,
-  "analysis": "image工具：图片模糊，无法清晰识别任何人、猫或狗；YOLO：未检测到任何目标（no detections）。最终type=other",
-  "petIdentity": null,
-  "yoloClasses": [],
-  "decisionSource": "both"
-},
+      {
+        "date": "2026-03-24",
+        "time": "22:00",
+        "img": "/images/pets/20260324-220000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "YOLO 未检测到人/猫/狗；图片中猫爬架顶部似有白色物体，但无法确定。",
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-03-24",
+        "time": "20:00",
+        "img": "/images/pets/20260324-200000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具：图片模糊，无法清晰识别任何人、猫或狗；YOLO：未检测到任何目标（no detections）。最终type=other",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
       {
         "date": "2026-03-24",
         "time": "18:40",
@@ -15531,7 +15542,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": "/images/pets/annotated/20260324-183846-BD0673744.jpg",
-        "analysis": "YOLO: \u65e0\u68c0\u6d4b\u7ed3\u679c (no detections). image\u5de5\u5177\u4e0d\u53ef\u7528\uff0c\u672a\u80fd\u8fdb\u884c\u4eba\u5de5\u5206\u6790\u3002\u6700\u7ec8type=other",
+        "analysis": "YOLO: 无检测结果 (no detections). image工具不可用，未能进行人工分析。最终type=other",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
@@ -15543,7 +15554,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image: \u6a21\u7cca\u7684\u9ed1\u767d\u7167\u7247\uff0c\u6ca1\u6709\u660e\u663e\u53ef\u8bc6\u522b\u7684\u4eba\u6216\u5ba0\u7269\u7279\u5f81\u3002YOLO: \u65e0\u68c0\u6d4b\u7ed3\u679c\u3002\u6700\u7ec8type=other",
+        "analysis": "image: 模糊的黑白照片，没有明显可识别的人或宠物特征。YOLO: 无检测结果。最终type=other",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15555,7 +15566,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "YOLO\u672a\u68c0\u6d4b\u5230\u4eba/\u732b/\u72d7\uff0c\u5224\u5b9a\u4e3aother",
+        "analysis": "YOLO未检测到人/猫/狗，判定为other",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
@@ -15567,7 +15578,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177: \u672a\u68c0\u6d4b\u5230\u4eba/\u732b/\u72d7; YOLO: \u65e0\u68c0\u6d4b\u7ed3\u679c",
+        "analysis": "image工具: 未检测到人/猫/狗; YOLO: 无检测结果",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15579,7 +15590,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\uff1a\u56fe\u7247\u6a21\u7cca\u4e14\u5149\u7ebf\u8f83\u6697\uff0c\u65e0\u6cd5\u786e\u5b9a\u662f\u5426\u6709\u4eba\u3001\u732b\u6216\u72d7\uff1bYOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\uff08no detections\uff09",
+        "analysis": "image工具：图片模糊且光线较暗，无法确定是否有人、猫或狗；YOLO：未检测到任何目标（no detections）",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15590,7 +15601,7 @@ const petImagesData = {
         "img": "/images/pets/20260324-140052-BD0673744.jpg",
         "type": "other",
         "boxedImg": null,
-        "analysis": "YOLO\u672a\u68c0\u6d4b\u5230\u4eba/\u732b/\u72d7\uff08no detections\uff09\uff1bimage\u5de5\u5177\u56e0API key\u95ee\u9898\u4e0d\u53ef\u7528",
+        "analysis": "YOLO未检测到人/猫/狗（no detections）；image工具因API key问题不可用",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
@@ -15601,7 +15612,7 @@ const petImagesData = {
         "img": "/images/pets/20260324-133000-BD0673744.jpg",
         "type": "other",
         "boxedImg": null,
-        "analysis": "YOLO\u672a\u68c0\u6d4b\u5230\u4eba/\u732b/\u72d7\uff1bimage\u5de5\u5177\u56e0API key\u95ee\u9898\u4e0d\u53ef\u7528",
+        "analysis": "YOLO未检测到人/猫/狗；image工具因API key问题不可用",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
@@ -15612,7 +15623,7 @@ const petImagesData = {
         "img": "/images/pets/20260324-123000-BD0673744.jpg",
         "type": "other",
         "boxedImg": null,
-        "analysis": "YOLO\u672a\u68c0\u6d4b\u5230\u4eba/\u732b/\u72d7\uff0c\u4ec5YOLO\u68c0\u6d4b\uff0c\u7ed3\u8bba\uff1a\u672a\u68c0\u6d4b\u5230\u76ee\u6807",
+        "analysis": "YOLO未检测到人/猫/狗，仅YOLO检测，结论：未检测到目标",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
@@ -15624,7 +15635,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\uff1a\u56fe\u7247\u6a21\u7cca\uff0c\u65e0\u6cd5\u6e05\u6670\u8bc6\u522b\u4efb\u4f55\u4eba\u7269\u6216\u52a8\u7269\uff1bYOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\uff08no detections\uff09",
+        "analysis": "image工具：图片模糊，无法清晰识别任何人物或动物；YOLO：未检测到任何目标（no detections）",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15636,7 +15647,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": "/images/pets/annotated/20260324-103235-BD0673744.jpg",
-        "analysis": "image\u548cYOLO\u5747\u672a\u68c0\u6d4b\u5230\u4eba/\u732b/\u72d7\u3002image\u8bc6\u522b\u7ed3\u679c\uff1a\u8fd9\u5f20\u56fe\u7247\u6a21\u7cca\u4e0d\u6e05\uff0c\u770b\u4e0d\u51fa\u6709\u4efb\u4f55\u660e\u663e\u7684\u4eba\u3001\u732b\u6216\u72d7\u3002YOLO\u68c0\u6d4b\u7ed3\u679c\uff1ano detections\u3002",
+        "analysis": "image和YOLO均未检测到人/猫/狗。image识别结果：这张图片模糊不清，看不出有任何明显的人、猫或狗。YOLO检测结果：no detections。",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15648,7 +15659,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\uff1a\u56fe\u7247\u4e0d\u6e05\u6670\uff0c\u65e0\u6cd5\u8fa8\u8ba4\u662f\u5426\u6709\u4eba\u3001\u732b\u6216\u72d7\uff1bYOLO\uff1a\u672a\u68c0\u6d4b\u5230\u4efb\u4f55\u76ee\u6807\uff08no detections\uff09",
+        "analysis": "image工具：图片不清晰，无法辨认是否有人、猫或狗；YOLO：未检测到任何目标（no detections）",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15660,7 +15671,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": "/images/pets/annotated/20260324-130000-BD0673744.jpg",
-        "analysis": "image\u548cYOLO\u5747\u672a\u68c0\u6d4b\u5230\u4eba/\u732b/\u72d7\u3002image\u8bc6\u522b\u7ed3\u679c\uff1a\u56fe\u7247\u6a21\u7cca\uff0c\u65e0\u660e\u663e\u76ee\u6807\u3002YOLO\u68c0\u6d4b\u7ed3\u679c\uff1ano detections\u3002",
+        "analysis": "image和YOLO均未检测到人/猫/狗。image识别结果：图片模糊，无明显目标。YOLO检测结果：no detections。",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both"
@@ -15672,7 +15683,7 @@ const petImagesData = {
         "type": "other",
         "found": false,
         "boxedImg": null,
-        "analysis": "image\u5de5\u5177\u4e0d\u53ef\u7528\uff1bYOLO\u68c0\u6d4b\u7ed3\u679c\uff1ano detections (\u65e0\u76ee\u6807)\u3002\u6700\u7ec8type=other",
+        "analysis": "image工具不可用；YOLO检测结果：no detections (无目标)。最终type=other",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
@@ -15728,7 +15739,7 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2166,
+    "totalImages": 2167,
     "personCount": 51,
     "catCount": 73,
     "dogCount": 73
