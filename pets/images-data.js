@@ -30,6 +30,18 @@ const petImagesData = {
     "2026-03-25": [
       {
         "date": "2026-03-25",
+        "time": "03:04",
+        "img": "/images/pets/20260325-030421-BD0673744.jpg",
+        "type": "other",
+        "boxedImg": null,
+        "analysis": "image工具：图像模糊，以灰暗的色调为主，图中没有明显的人、猫或狗，整个画面似乎被一个近距离的模糊物体占据；YOLO：未检测到任何目标（no detections）",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both",
+        "found": false
+      },
+      {
+        "date": "2026-03-25",
         "time": "00:00",
         "img": "/images/pets/20260325-000000-BD0673744.jpg",
         "type": "other",
@@ -15788,10 +15800,11 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2171,
+    "totalImages": 2172,
     "personCount": 51,
     "catCount": 73,
-    "dogCount": 73
+    "dogCount": 73,
+    "lastUpdated": "2026-03-24T19:07:17.498Z"
   },
   "generatedAt": "2026-03-24T09:04:54.094Z",
   "annotatedDir": "/images/pets/annotated/",
