@@ -15700,13 +15700,25 @@ const petImagesData = {
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-03-24",
+        "time": "21:04",
+        "img": "/images/pets/20260324-210449-BD0673744.jpg",
+        "type": "cat",
+        "found": true,
+        "boxedImg": "/images/pets/annotated/20260324-210449-BD0673744.jpg",
+        "analysis": "image工具API调用失败，肉眼观察：客厅场景，有一只灰褐色猫咪坐在地上（左侧），看起来是Nomi（灰褐色为主）。YOLO检测结果：no detections。最终type=cat（基于肉眼观察）",
+        "petIdentity": "Nomi",
+        "yoloClasses": [],
+        "decisionSource": "image"
       }
     ]
   },
   "stats": {
-    "totalImages": 2164,
+    "totalImages": 2165,
     "personCount": 51,
-    "catCount": 72,
+    "catCount": 73,
     "dogCount": 73
   },
   "generatedAt": "2026-03-24T09:04:54.094Z",
