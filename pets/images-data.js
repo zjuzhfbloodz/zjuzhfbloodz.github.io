@@ -30,6 +30,18 @@ const petImagesData = {
     "2026-03-25": [
       {
         "date": "2026-03-25",
+        "time": "07:30",
+        "img": "/images/pets/20260325-073000-BD0673744.jpg",
+        "type": "other",
+        "boxedImg": null,
+        "analysis": "image工具：这是一张模糊的黑白图像，无法清晰辨认图中是否有人、猫或狗。；YOLO：未检测到任何目标（no detections）",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both",
+        "found": false
+      },
+      {
+        "date": "2026-03-25",
         "time": "07:00",
         "img": "/images/pets/20260325-070000-BD0673744.jpg",
         "type": "other",
