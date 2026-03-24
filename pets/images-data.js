@@ -30,62 +30,17 @@ const petImagesData = {
     "2026-03-25": [
       {
         "date": "2026-03-25",
-        "time": "05:00",
-        "img": "/images/pets/20260325-050000-BD0673744.jpg",
+        "time": "06:00",
+        "img": "/images/pets/20250325-060000-BD0673744.jpg",
         "type": "other",
         "boxedImg": null,
-        "analysis": "YOLO检测：无目标（no detections）；image工具未配置可用模型。综合判定：无人/猫/狗。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo",
-        "found": false
-      },
-      {
-        "date": "2026-03-25",
-        "time": "03:04",
-        "img": "/images/pets/20260325-030421-BD0673744.jpg",
-        "type": "other",
-        "boxedImg": null,
-        "analysis": "image工具：图像模糊，以灰暗的色调为主，图中没有明显的人、猫或狗，整个画面似乎被一个近距离的模糊物体占据；YOLO：未检测到任何目标（no detections）",
+        "analysis": "image工具：这是一张模糊的黑白图像，看不清具体内容。不能确认是否有任何人、猫或狗的存在。；YOLO：未检测到任何目标（no detections）",
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "both",
         "found": false
       },
-      {
-        "date": "2026-03-25",
-        "time": "00:00",
-        "img": "/images/pets/20260325-000000-BD0673744.jpg",
-        "type": "other",
-        "boxedImg": null,
-        "analysis": "图片模糊，无法识别具体内容。image工具识别：图片模糊不清，无法准确判断内容。YOLO检测：无检测结果。综合判定：无人/猫/狗。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo"
-      },
-      {
-        "date": "2026-03-25",
-        "time": "02:00",
-        "img": "/images/pets/20260325-020000-BD0673744.jpg",
-        "type": "other",
-        "boxedImg": null,
-        "analysis": "图片模糊，无法识别具体内容。image工具识别：图片模糊，细节不可辨，无可见人/猫/狗。YOLO检测：无检测结果。综合判定：无人/猫/狗。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both"
-      },
-      {
-        "date": "2026-03-25",
-        "time": "04:30",
-        "img": "/images/pets/20260325-043000-BD0673744.jpg",
-        "type": "other",
-        "boxedImg": null,
-        "analysis": "image工具：图像模糊，不明确显示任何具体细节或目标。没有明显可识别的人、猫或狗。；YOLO：未检测到任何目标（no detections）",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both"
-      }
-    ],
+],
     "2026-02-05": [
       {
         "date": "2026-02-05",
