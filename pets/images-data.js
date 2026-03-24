@@ -15688,11 +15688,23 @@ const petImagesData = {
         "petIdentity": null,
         "yoloClasses": [],
         "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-03-24",
+        "time": "20:30",
+        "img": "/images/pets/20260324-203000-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": null,
+        "analysis": "image工具不可用；YOLO检测结果：no detections (无目标)。最终type=other",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
       }
     ]
   },
   "stats": {
-    "totalImages": 2163,
+    "totalImages": 2164,
     "personCount": 51,
     "catCount": 72,
     "dogCount": 73
