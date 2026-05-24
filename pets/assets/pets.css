@@ -54,6 +54,94 @@
     .hero h1 { margin: 0; font-size: 24px; }
     .hero p { margin: 8px 0 0; color: var(--muted); font-size: 14px; }
 
+    .diaries {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      padding: 14px;
+      margin-bottom: 14px;
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .section-head h2 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .section-head p {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .diary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+    }
+
+    .diary-card {
+      display: grid;
+      grid-template-rows: 150px 1fr;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      overflow: hidden;
+      background: #fff;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .diary-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .diary-body {
+      padding: 12px;
+    }
+
+    .diary-date {
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .diary-body h3 {
+      margin: 4px 0 6px;
+      font-size: 16px;
+    }
+
+    .diary-body p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .diary-meta {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      color: #475569;
+      font-size: 12px;
+    }
+
+    .diary-meta span {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 2px 8px;
+      background: #f8fafc;
+    }
+
     .panel { padding: 14px; margin-bottom: 14px; }
 
     .actions {

@@ -35,6 +35,39 @@
       `;
     }
 
+    function renderDiaries() {
+      const wrap = document.getElementById('diaries');
+      if (!wrap || typeof petDiaryData === 'undefined' || !petDiaryData.diaries || !petDiaryData.diaries.length) {
+        return;
+      }
+      const latest = petDiaryData.diaries.slice(0, 6);
+      wrap.style.display = 'block';
+      wrap.innerHTML = `
+        <div class="section-head">
+          <div>
+            <h2>生活日记</h2>
+            <p>把摄像头拍到的小片段整理成每天的图文记录。</p>
+          </div>
+        </div>
+        <div class="diary-grid">
+          ${latest.map(entry => `
+            <a class="diary-card" href="${entry.url}">
+              ${entry.cover ? `<img src="${entry.cover}" alt="${entry.title}" loading="lazy" />` : ''}
+              <div class="diary-body">
+                <div class="diary-date">${formatDate(entry.date)}</div>
+                <h3>${entry.title}</h3>
+                <p>${entry.summary || ''}</p>
+                <div class="diary-meta">
+                  <span>${entry.eventCount || 0} 个片段</span>
+                  <span>${(entry.pets || []).length ? (entry.pets || []).join('、') : '未确定'}</span>
+                </div>
+              </div>
+            </a>
+          `).join('')}
+        </div>
+      `;
+    }
+
     function initRangeFilters() {
       const dates = [...state.data.dates].sort();
       state.startDate = dates[0] || null;
@@ -143,6 +176,7 @@
         return;
       }
       state.data = petImagesData;
+      renderDiaries();
       renderSummary();
       initRangeFilters();
       renderTypeButtons();
