@@ -15147,6 +15147,18 @@ const petImagesData = {
     "2026-05-25": [
       {
         "date": "2026-05-25",
+        "time": "14:03",
+        "img": "/images/pets/20260525-140320-BD0673744.jpg",
+        "type": "other",
+        "found": false,
+        "boxedImg": "/images/pets/annotated/20260525-140320-BD0673744.jpg",
+        "analysis": "视觉识别与 YOLO 目标检测均未检测到人、猫或狗。截图中可见室内区域和窗外景观，没有可确认的人、猫或狗。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-05-25",
         "time": "12:33",
         "img": "/images/pets/20260525-123339-BD0673744.jpg",
         "type": "other",
@@ -15220,7 +15232,7 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2123,
+    "totalImages": 2124,
     "personCount": 52,
     "catCount": 75,
     "dogCount": 73,
