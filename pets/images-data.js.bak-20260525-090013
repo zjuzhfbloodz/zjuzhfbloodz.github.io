@@ -15147,18 +15147,6 @@ const petImagesData = {
     "2026-05-25": [
       {
         "date": "2026-05-25",
-        "time": "09:00",
-        "img": "/images/pets/20260525-090013-BD0673744.jpg",
-        "type": "cat",
-        "boxedImg": null,
-        "analysis": "图中有一只猫坐在窗台上，室内画面里还能看到椅子和家居物品。image 识别到 cat；YOLO 未检测到任何目标（no detections），存在冲突，按规则最终采用 image 结果，type=cat。",
-        "petIdentity": "Ywu",
-        "yoloClasses": [],
-        "decisionSource": "conflict-resolved",
-        "found": true
-      },
-      {
-        "date": "2026-05-25",
         "time": "08:01",
         "img": "/images/pets/20260525-080110-BD0673744.jpg",
         "type": "cat",
@@ -15196,11 +15184,11 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2121,
+    "totalImages": 2120,
     "personCount": 52,
-    "catCount": 74,
+    "catCount": 73,
     "dogCount": 73,
-    "lastUpdated": "2026-05-25T01:02:21.081Z"
+    "lastUpdated": "2026-05-25T00:03:07.130Z"
   },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
   "annotatedDir": "/images/pets/annotated/",
