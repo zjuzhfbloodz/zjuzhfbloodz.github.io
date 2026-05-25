@@ -1,18 +1,19 @@
 :root {
-  --bg: #f7f8f4;
+  --bg: #ffffff;
+  --paper: #f7f9fb;
   --surface: #ffffff;
-  --surface-soft: #f1f5ee;
-  --ink: #17211b;
-  --muted: #66736a;
-  --line: #dce5da;
-  --green: #2f7d5c;
-  --coral: #d86f4c;
-  --gold: #b7892f;
+  --surface-soft: #f7f9fb;
+  --ink: #111317;
+  --muted: #757d88;
+  --line: #e5e9ef;
+  --green: #315d7d;
+  --coral: #b72c35;
+  --gold: #b8862f;
   --up: #d54d3f;
   --down: #238660;
   --warn: #b7892f;
   --danger: #c85252;
-  --shadow: 0 18px 48px rgba(23, 33, 27, 0.08);
+  --shadow: 0 24px 80px rgba(17, 19, 23, 0.08);
   --radius: 8px;
 }
 
@@ -22,8 +23,9 @@ body {
   margin: 0;
   color: var(--ink);
   background:
-    radial-gradient(860px 420px at 10% -10%, rgba(47, 125, 92, 0.14), transparent 70%),
-    radial-gradient(760px 360px at 92% -8%, rgba(216, 111, 76, 0.12), transparent 70%),
+    linear-gradient(90deg, rgba(17,19,23,0.035) 1px, transparent 1px) 0 0 / 72px 72px,
+    linear-gradient(180deg, rgba(17,19,23,0.028) 1px, transparent 1px) 0 0 / 72px 72px,
+    radial-gradient(760px 360px at 92% -8%, rgba(183, 44, 53, 0.08), transparent 70%),
     var(--bg);
   min-height: 100vh;
   font-family: "Avenir Next", "Inter", "PingFang SC", "Microsoft YaHei", sans-serif;
@@ -38,24 +40,26 @@ body {
 }
 
 .card {
-  background: rgba(255,255,255,0.94);
+  background: rgba(255,255,255,0.9);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  box-shadow: none;
 }
 
 .toolbar {
-  padding: 16px;
+  padding: clamp(20px, 4vw, 38px);
   display: grid;
   gap: 12px;
+  border-top: 1px solid var(--ink);
 }
 
 .toolbar::before {
   content: "A股看盘";
   display: block;
-  font-size: clamp(30px, 5vw, 52px);
-  line-height: 1;
-  font-weight: 850;
+  font-family: Georgia, "Times New Roman", "Songti SC", serif;
+  font-size: clamp(42px, 7vw, 82px);
+  line-height: .95;
+  font-weight: 700;
   letter-spacing: 0;
   color: var(--ink);
 }
@@ -81,7 +85,7 @@ select {
   background: #fff;
   border: 1px solid var(--line);
   color: var(--ink);
-  border-radius: var(--radius);
+  border-radius: 999px;
   padding: 0 12px;
   outline: none;
   font: inherit;
@@ -96,7 +100,7 @@ input[type="text"] {
 input[type="text"]:focus,
 select:focus {
   border-color: var(--green);
-  box-shadow: 0 0 0 3px rgba(47, 125, 92, 0.12);
+  box-shadow: 0 0 0 3px rgba(49, 93, 125, 0.12);
 }
 
 .switch-wrap {
@@ -116,7 +120,7 @@ input[type="checkbox"] {
 
 button {
   border: 1px solid var(--green);
-  border-radius: var(--radius);
+  border-radius: 999px;
   padding: 0 14px;
   height: 40px;
   background: var(--green);
@@ -173,7 +177,7 @@ button.secondary {
 }
 
 .quote {
-  padding: 16px;
+  padding: clamp(18px, 3vw, 30px);
   display: grid;
   gap: 14px;
 }
@@ -187,8 +191,9 @@ button.secondary {
 }
 
 #stockName {
-  font-size: 22px;
-  font-weight: 850;
+  font-family: Georgia, "Times New Roman", "Songti SC", serif;
+  font-size: 28px;
+  font-weight: 700;
 }
 
 .symbol {
@@ -205,7 +210,7 @@ button.secondary {
 
 .latest {
   font-size: clamp(38px, 7vw, 64px);
-  font-weight: 850;
+  font-weight: 800;
   letter-spacing: 0;
   line-height: 1;
 }
@@ -250,7 +255,7 @@ button.secondary {
 .chart-box {
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: linear-gradient(180deg, #ffffff, #f3f6ef);
+  background: linear-gradient(180deg, #ffffff, var(--paper));
   padding: 10px;
 }
 
@@ -284,7 +289,7 @@ canvas {
 
 .watch-item.active {
   border-color: var(--green);
-  box-shadow: 0 0 0 2px rgba(47, 125, 92, 0.14) inset;
+  box-shadow: 0 0 0 2px rgba(49, 93, 125, 0.14) inset;
 }
 
 .watch-name {
