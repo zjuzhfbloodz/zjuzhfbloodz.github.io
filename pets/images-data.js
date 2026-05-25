@@ -15150,7 +15150,7 @@ const petImagesData = {
         "time": "09:00",
         "img": "/images/pets/20260525-090013-BD0673744.jpg",
         "type": "cat",
-        "boxedImg": null,
+        "boxedImg": "/images/pets/annotated/20260525-090013-BD0673744.jpg",
         "analysis": "图中有一只猫坐在窗台上，室内画面里还能看到椅子和家居物品。image 识别到 cat；YOLO 未检测到任何目标（no detections），存在冲突，按规则最终采用 image 结果，type=cat。",
         "petIdentity": "Ywu",
         "yoloClasses": [],
