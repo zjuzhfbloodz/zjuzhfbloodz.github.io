@@ -1,6 +1,5 @@
 const petImagesData = {
   "dates": [
-    "2026-05-26",
     "2026-05-25",
     "2026-03-26",
     "2026-03-25",
@@ -15254,28 +15253,14 @@ const petImagesData = {
         "decisionSource": "conflict-resolved",
         "found": true
       }
-    ],
-    "2026-05-26": [
-      {
-        "date": "2026-05-26",
-        "time": "02:31",
-        "img": "/images/pets/20260526-023154-BD0673744.jpg",
-        "type": "dog",
-        "boxedImg": "/images/pets/annotated/20260526-023154-BD0673744.jpg",
-        "analysis": "图中有一只狗，背景为室内环境，有家具和窗户。image 识别到 dog；YOLO 未检测到 person/cat/dog，存在冲突，按优先规则最终采用 image 结果，type=dog。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "conflict-resolved",
-        "found": true
-      }
     ]
   },
   "stats": {
-    "totalImages": 2127,
+    "totalImages": 2126,
     "personCount": 53,
     "catCount": 75,
-    "dogCount": 74,
-    "lastUpdated": "2026-05-25T18:33:16.718Z"
+    "dogCount": 73,
+    "lastUpdated": "2026-05-25T09:33:55.749Z"
   },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
   "annotatedDir": "/images/pets/annotated/",
