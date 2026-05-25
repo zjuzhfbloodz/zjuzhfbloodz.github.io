@@ -15147,18 +15147,6 @@ const petImagesData = {
     "2026-05-25": [
       {
         "date": "2026-05-25",
-        "time": "17:32",
-        "img": "/images/pets/20260525-173217-BD0673744.jpg",
-        "type": "person",
-        "boxedImg": "/images/pets/annotated/20260525-173217-BD0673744.jpg",
-        "found": true,
-        "analysis": "画面中可以看到一名人员正在室内环境中，周围有一些家具和物品。YOLO 未检测到 person/cat/dog，按“任一通道检测到 person 优先”的规则，最终判定为 person。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "conflict-resolved"
-      },
-      {
-        "date": "2026-05-25",
         "time": "14:03",
         "img": "/images/pets/20260525-140320-BD0673744.jpg",
         "type": "other",
@@ -15244,11 +15232,11 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2125,
-    "personCount": 53,
+    "totalImages": 2124,
+    "personCount": 52,
     "catCount": 75,
     "dogCount": 73,
-    "lastUpdated": "2026-05-25T09:33:55.749Z"
+    "lastUpdated": "2026-05-25T04:35:54.422Z"
   },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
   "annotatedDir": "/images/pets/annotated/",
