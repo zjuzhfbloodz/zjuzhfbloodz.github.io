@@ -15258,18 +15258,6 @@ const petImagesData = {
     "2026-05-26": [
       {
         "date": "2026-05-26",
-        "time": "18:02",
-        "img": "/images/pets/20260526-180236-BD0673744.jpg",
-        "type": "cat",
-        "boxedImg": "/images/pets/annotated/20260526-180236-BD0673744.jpg",
-        "analysis": "图中可见一只猫，未见人或狗。YOLO 未检测到任何目标；按冲突处理规则，image 检测到 cat 而 YOLO 为空，最终采用 cat。",
-        "petIdentity": "猫（未确定个体）",
-        "yoloClasses": [],
-        "decisionSource": "conflict-resolved",
-        "found": true
-      },
-      {
-        "date": "2026-05-26",
         "time": "16:34",
         "img": "/images/pets/20260526-163404-BD0673744.jpg",
         "type": "cat",
@@ -15367,11 +15355,11 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2135,
+    "totalImages": 2134,
     "personCount": 54,
-    "catCount": 82,
+    "catCount": 81,
     "dogCount": 74,
-    "lastUpdated": "2026-05-26T10:04:47.829Z"
+    "lastUpdated": "2026-05-26T16:34:04+08:00"
   },
   "generatedAt": "2026-05-26T16:34:04+08:00",
   "annotatedDir": "/images/pets/annotated/",
