@@ -15258,20 +15258,6 @@ const petImagesData = {
     "2026-05-26": [
       {
         "date": "2026-05-26",
-        "time": "22:04",
-        "img": "/images/pets/20260526-220414-BD0673744.jpg",
-        "type": "person",
-        "boxedImg": "/images/pets/annotated/20260526-220414-BD0673744.jpg",
-        "analysis": "image 工具不可用（No media-understanding provider registered for openai），未能完成 image 通道识别；YOLO 检测到 1 个 person。按规则最终判定为 person。",
-        "petIdentity": null,
-        "yoloClasses": [
-          "person"
-        ],
-        "decisionSource": "yolo",
-        "found": true
-      },
-      {
-        "date": "2026-05-26",
         "time": "21:38",
         "img": "/images/pets/20260526-213824-BD0673744.jpg",
         "type": "person",
@@ -15431,11 +15417,11 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2140,
-    "personCount": 56,
+    "totalImages": 2139,
+    "personCount": 55,
     "catCount": 83,
     "dogCount": 74,
-    "lastUpdated": "2026-05-26T14:08:41.859Z",
+    "lastUpdated": "2026-05-26T13:43:28.448Z",
     "otherCount": 1927
   },
   "generatedAt": "2026-05-26T21:38:24+08:00",
