@@ -15258,6 +15258,18 @@ const petImagesData = {
     "2026-05-26": [
       {
         "date": "2026-05-26",
+        "time": "10:32",
+        "img": "/images/pets/20260526-103212-BD0673744.jpg",
+        "type": "cat",
+        "boxedImg": "/images/pets/annotated/20260526-103212-BD0673744.jpg",
+        "found": true,
+        "analysis": "画面里可见一只猫，坐在室内的桌子旁边，未见人或狗。冲突与最终采用规则：图像识别为[\"cat\"]，YOLO为[]；按优先级 person > cat > dog，最终判定为 cat。",
+        "petIdentity": "Ywu",
+        "yoloClasses": [],
+        "decisionSource": "conflict-resolved"
+      },
+      {
+        "date": "2026-05-26",
         "time": "10:01",
         "img": "/images/pets/20260526-100112-BD0673744.jpg",
         "type": "cat",
@@ -15319,9 +15331,9 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2131,
+    "totalImages": 2132,
     "personCount": 54,
-    "catCount": 78,
+    "catCount": 79,
     "dogCount": 74,
     "lastUpdated": "2026-05-26T02:02:58.453Z"
   },
@@ -15343,7 +15355,3 @@ const petImagesData = {
     "source/images/pets/archive/20260302-003000-BD0673744.jpg"
   ]
 };
-
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = petImagesData;
-}
