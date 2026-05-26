@@ -15258,18 +15258,6 @@ const petImagesData = {
     "2026-05-26": [
       {
         "date": "2026-05-26",
-        "time": "11:01",
-        "img": "/images/pets/20260526-110134-BD0673744.jpg",
-        "type": "cat",
-        "found": true,
-        "boxedImg": "/images/pets/annotated/20260526-110134-BD0673744.jpg",
-        "analysis": "图中可见一只白色与浅棕色为主的猫，位于窗边区域。YOLO 未检出 person/cat/dog，与图像识别结论冲突；按规则最终采用 cat。",
-        "petIdentity": "Ywu",
-        "yoloClasses": [],
-        "decisionSource": "conflict-resolved"
-      },
-      {
-        "date": "2026-05-26",
         "time": "10:32",
         "img": "/images/pets/20260526-103212-BD0673744.jpg",
         "type": "cat",
@@ -15343,13 +15331,13 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2133,
+    "totalImages": 2132,
     "personCount": 54,
-    "catCount": 80,
+    "catCount": 79,
     "dogCount": 74,
-    "lastUpdated": "2026-05-26T03:05:20Z"
+    "lastUpdated": "2026-05-26T02:02:58.453Z"
   },
-  "generatedAt": "2026-05-26T03:05:20Z",
+  "generatedAt": "2026-05-26T02:02:58.454Z",
   "annotatedDir": "/images/pets/annotated/",
   "badImages": [
     "source/images/pets/20260301-033000-BD0673744.jpg",
