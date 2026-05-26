@@ -15445,6 +15445,18 @@ const petImagesData = {
     "2026-05-27": [
       {
         "date": "2026-05-27",
+        "time": "05:30",
+        "img": "/images/pets/20260527-053030-BD0673744.jpg",
+        "type": "cat",
+        "boxedImg": "/images/pets/annotated/20260527-053030-BD0673744.jpg",
+        "found": true,
+        "analysis": "图中可以看到一只猫，环境为室内，有家具和窗户可见。image 通道识别到 cat，YOLO 未检出目标，按规则以任一通道命中 cat 作为最终结果。",
+        "petIdentity": "Ywu",
+        "yoloClasses": [],
+        "decisionSource": "conflict-resolved"
+      },
+      {
+        "date": "2026-05-27",
         "time": "01:03",
         "img": "/images/pets/20260527-010350-BD0673744.jpg",
         "type": "other",
@@ -15482,9 +15494,9 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2144,
+    "totalImages": 2145,
     "personCount": 56,
-    "catCount": 83,
+    "catCount": 84,
     "dogCount": 74,
     "lastUpdated": "2026-05-26T17:05:20.105Z",
     "otherCount": 1931,
