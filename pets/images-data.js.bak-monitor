@@ -15258,18 +15258,6 @@ const petImagesData = {
     "2026-05-26": [
       {
         "date": "2026-05-26",
-        "time": "09:31",
-        "img": "/images/pets/20260526-093136-BD0673744.jpg",
-        "type": "person",
-        "boxedImg": "/images/pets/annotated/20260526-093136-BD0673744.jpg",
-        "found": true,
-        "analysis": "图中可见一个穿戴衣物的人影，站立于室内靠近窗户处。画面中未发现猫或狗的存在。 冲突与最终采用规则：图像识别为['person']，YOLO为[]；按优先级 person > cat > dog，最终判定为 person。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "image"
-      },
-      {
-        "date": "2026-05-26",
         "time": "08:30",
         "img": "/images/pets/20260526-083000-BD0673744.jpg",
         "type": "cat",
@@ -15307,8 +15295,8 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2130,
-    "personCount": 54,
+    "totalImages": 2129,
+    "personCount": 53,
     "catCount": 77,
     "dogCount": 74,
     "lastUpdated": "2026-05-26T00:32:17.176Z"
