@@ -15258,18 +15258,6 @@ const petImagesData = {
     "2026-05-26": [
       {
         "date": "2026-05-26",
-        "time": "08:30",
-        "img": "/images/pets/20260526-083000-BD0673744.jpg",
-        "type": "cat",
-        "boxedImg": "/images/pets/annotated/20260526-083000-BD0673744.jpg",
-        "found": true,
-        "analysis": "image 识别到 cat；YOLO 未检测到 person/cat/dog，存在冲突。按优先规则，未检测到 person 时，cat 优先于 dog，因此最终采用 type=cat。画面中可见两只猫，一只在猫爬架上，另一只靠近窗边。",
-        "petIdentity": "Ywu",
-        "yoloClasses": [],
-        "decisionSource": "conflict-resolved"
-      },
-      {
-        "date": "2026-05-26",
         "time": "08:01",
         "img": "/images/pets/20260526-080155-BD0673744.jpg",
         "type": "cat",
@@ -15295,11 +15283,11 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2129,
+    "totalImages": 2128,
     "personCount": 53,
-    "catCount": 77,
+    "catCount": 76,
     "dogCount": 74,
-    "lastUpdated": "2026-05-26T00:32:17.176Z"
+    "lastUpdated": "2026-05-26T00:03:35.882Z"
   },
   "generatedAt": "2026-03-02T15:51:35.400737Z",
   "annotatedDir": "/images/pets/annotated/",
