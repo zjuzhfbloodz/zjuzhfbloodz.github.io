@@ -15258,6 +15258,18 @@ const petImagesData = {
     "2026-05-26": [
       {
         "date": "2026-05-26",
+        "time": "19:30",
+        "img": "/images/pets/20260526-193050-BD0673744.jpg",
+        "type": "cat",
+        "boxedImg": "/images/pets/annotated/20260526-193050-BD0673744.jpg",
+        "analysis": "图中可见一只猫，位于室内窗边上方的平台/置物区域。画面里未见人或狗。 image 识别到 cat；YOLO 未检测到 person/cat/dog，存在冲突。按最终采用规则，在未检测到 person 时采用 cat，因此 type=cat。",
+        "petIdentity": "Ywu",
+        "yoloClasses": [],
+        "decisionSource": "conflict-resolved",
+        "found": true
+      },
+      {
+        "date": "2026-05-26",
         "time": "18:32",
         "img": "/images/pets/20260526-183210-BD0673744.jpg",
         "type": "other",
@@ -15379,13 +15391,13 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2136,
+    "totalImages": 2137,
     "personCount": 54,
-    "catCount": 82,
+    "catCount": 83,
     "dogCount": 74,
-    "lastUpdated": "2026-05-26T10:04:47.829Z"
+    "lastUpdated": "2026-05-26T11:33:19.889Z"
   },
-  "generatedAt": "2026-05-26T18:32:10+08:00",
+  "generatedAt": "2026-05-26T19:33:19+08:00",
   "annotatedDir": "/images/pets/annotated/",
   "badImages": [
     "source/images/pets/20260301-033000-BD0673744.jpg",
