@@ -15258,6 +15258,20 @@ const petImagesData = {
     "2026-05-26": [
       {
         "date": "2026-05-26",
+        "time": "21:38",
+        "img": "/images/pets/20260526-213824-BD0673744.jpg",
+        "type": "person",
+        "boxedImg": "/images/pets/annotated/20260526-213824-BD0673744.jpg",
+        "found": true,
+        "analysis": "image 工具不可用（No media-understanding provider registered for openai），未能完成该通道识别；YOLO 检测到 1 个 person，标注图已生成。当前无法确认画面中有猫或狗。",
+        "petIdentity": null,
+        "yoloClasses": [
+          "person"
+        ],
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-05-26",
         "time": "20:33",
         "img": "/images/pets/20260526-203330-BD0673744.jpg",
         "type": "other",
@@ -15403,14 +15417,14 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2138,
-    "personCount": 54,
+    "totalImages": 2139,
+    "personCount": 55,
     "catCount": 83,
     "dogCount": 74,
-    "lastUpdated": "2026-05-26T12:36:19.544Z",
+    "lastUpdated": "2026-05-26T13:43:28.448Z",
     "otherCount": 1927
   },
-  "generatedAt": "2026-05-26T19:33:19+08:00",
+  "generatedAt": "2026-05-26T21:38:24+08:00",
   "annotatedDir": "/images/pets/annotated/",
   "badImages": [
     "source/images/pets/20260301-033000-BD0673744.jpg",
