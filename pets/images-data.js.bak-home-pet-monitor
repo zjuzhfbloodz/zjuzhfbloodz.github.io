@@ -1,5 +1,6 @@
 const petImagesData = {
   "dates": [
+    "2026-05-27",
     "2026-05-26",
     "2026-05-25",
     "2026-03-26",
@@ -15258,6 +15259,32 @@ const petImagesData = {
     "2026-05-26": [
       {
         "date": "2026-05-26",
+        "time": "22:32",
+        "img": "/images/pets/20260526-223215-BD0673744.jpg",
+        "type": "other",
+        "boxedImg": "/images/pets/annotated/20260526-223215-BD0673744.jpg",
+        "found": false,
+        "analysis": "image 工具当前不可用，未能完成 image 通道识别。 YOLO 也未检测到 person/cat/dog。按规则最终判定为 other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-05-26",
+        "time": "22:04",
+        "img": "/images/pets/20260526-220414-BD0673744.jpg",
+        "type": "person",
+        "boxedImg": "/images/pets/annotated/20260526-220414-BD0673744.jpg",
+        "analysis": "image 工具不可用（No media-understanding provider registered for openai），未能完成 image 通道识别；YOLO 检测到 1 个 person。按规则最终判定为 person。",
+        "petIdentity": null,
+        "yoloClasses": [
+          "person"
+        ],
+        "decisionSource": "yolo",
+        "found": true
+      },
+      {
+        "date": "2026-05-26",
         "time": "21:38",
         "img": "/images/pets/20260526-213824-BD0673744.jpg",
         "type": "person",
@@ -15414,15 +15441,30 @@ const petImagesData = {
         "decisionSource": "conflict-resolved",
         "found": true
       }
+    ],
+    "2026-05-27": [
+      {
+        "date": "2026-05-27",
+        "time": "00:03",
+        "img": "/images/pets/20260527-000334-BD0673744.jpg",
+        "type": "other",
+        "boxedImg": "/images/pets/annotated/20260527-000334-BD0673744.jpg",
+        "found": false,
+        "analysis": "image 通道调用失败：No media-understanding provider registered for openai。YOLO 未检测到 person/cat/dog。按规则最终判定为 other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      }
     ]
   },
   "stats": {
-    "totalImages": 2139,
-    "personCount": 55,
+    "totalImages": 2142,
+    "personCount": 56,
     "catCount": 83,
     "dogCount": 74,
-    "lastUpdated": "2026-05-26T13:43:28.448Z",
-    "otherCount": 1927
+    "lastUpdated": "2026-05-26T16:04:00.000Z",
+    "otherCount": 1929,
+    "foundCount": 213
   },
   "generatedAt": "2026-05-26T21:38:24+08:00",
   "annotatedDir": "/images/pets/annotated/",
