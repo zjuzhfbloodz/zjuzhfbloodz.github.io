@@ -15568,6 +15568,18 @@ const petImagesData = {
     "2026-05-28": [
       {
         "date": "2026-05-28",
+        "time": "04:02",
+        "img": "/images/pets/20260528-040234-BD0673744.jpg",
+        "type": "other",
+        "boxedImg": "/images/pets/annotated/20260528-040234-BD0673744.jpg",
+        "analysis": "图中未见 person、cat、dog。画面显示室内的衣物和鞋子，窗户外是黑夜。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both",
+        "found": false
+      },
+      {
+        "date": "2026-05-28",
         "time": "03:35",
         "img": "/images/pets/20260528-033130-BD0673744.jpg",
         "type": "other",
@@ -15593,15 +15605,15 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2153,
+    "totalImages": 2154,
     "personCount": 57,
     "catCount": 86,
     "dogCount": 74,
     "lastUpdated": "2026-05-27T19:35:13.846286Z",
-    "otherCount": 1936,
+    "otherCount": 1937,
     "foundCount": 217
   },
-  "generatedAt": "2026-05-27T19:35:13.846307Z",
+  "generatedAt": "2026-05-27T20:03:45.260Z",
   "annotatedDir": "/images/pets/annotated/",
   "badImages": [
     "source/images/pets/20260301-033000-BD0673744.jpg",

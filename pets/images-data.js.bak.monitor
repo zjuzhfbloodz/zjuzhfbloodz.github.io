@@ -1,5 +1,7 @@
 const petImagesData = {
   "dates": [
+    "2026-05-28",
+    "2026-05-27",
     "2026-05-26",
     "2026-05-25",
     "2026-03-26",
@@ -15440,17 +15442,166 @@ const petImagesData = {
         "decisionSource": "conflict-resolved",
         "found": true
       }
+    ],
+    "2026-05-27": [
+      {
+        "date": "2026-05-27",
+        "time": "22:02",
+        "img": "/images/pets/20260527-220226-BD0673744.jpg",
+        "type": "other",
+        "boxedImg": "/images/pets/annotated/20260527-220226-BD0673744.jpg",
+        "found": false,
+        "analysis": "image 通道调用失败：No media-understanding provider registered for openai。YOLO 未检测到 person/cat/dog。按规则最终判定为 other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-05-27",
+        "time": "20:00",
+        "img": "/images/pets/20260527-200033-BD0673744.jpg",
+        "type": "other",
+        "boxedImg": "/images/pets/annotated/20260527-200033-BD0673744.jpg",
+        "found": false,
+        "analysis": "画面中可见室内区域、门框和部分家具，未检测到人、猫或狗。YOLO 也未检测到 person/cat/dog，最终判定为 other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-05-27",
+        "time": "17:31",
+        "img": "/images/pets/20260527-173150-BD0673744.jpg",
+        "type": "other",
+        "boxedImg": "/images/pets/annotated/20260527-173150-BD0673744.jpg",
+        "found": false,
+        "analysis": "image 通道调用失败：No media-understanding provider registered for openai。YOLO 未检测到 person/cat/dog。按规则最终判定为 other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-05-27",
+        "time": "14:31",
+        "img": "/images/pets/20260527-143117-BD0673744.jpg",
+        "type": "person",
+        "boxedImg": "/images/pets/annotated/20260527-143117-BD0673744.jpg",
+        "found": true,
+        "analysis": "画面中能明确看到一名站立的人。未见猫或狗的明确形态。 冲突与最终采用规则：image 判定 ['person']，YOLO 判定 []；按 person > cat > dog 优先级，最终采用 type=person。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "conflict-resolved"
+      },
+      {
+        "date": "2026-05-27",
+        "time": "13:01",
+        "img": "/images/pets/20260527-130122-BD0673744.jpg",
+        "type": "cat",
+        "boxedImg": "/images/pets/annotated/20260527-130122-BD0673744.jpg",
+        "found": true,
+        "analysis": "画面中能明确看到一只猫。未见有狗或人的明确形象。 冲突与最终采用规则：image 判定 ['cat']，YOLO 判定 []；按 person > cat > dog 优先级，最终采用 type=cat。 猫个体判定：猫（未确定个体）（能看到一只猫，但颜色证据不足，无法准确判断个体。）",
+        "petIdentity": "猫（未确定个体）",
+        "yoloClasses": [],
+        "decisionSource": "conflict-resolved"
+      },
+      {
+        "date": "2026-05-27",
+        "time": "11:01",
+        "img": "/images/pets/20260527-110105-BD0673744.jpg",
+        "type": "other",
+        "boxedImg": "/images/pets/annotated/20260527-110105-BD0673744.jpg",
+        "analysis": "image 通道不可用（当前环境未配置可用视觉后端），未获得该通道识别结果；YOLO 未检测到 person/cat/dog，因此按可用结果保守记为 other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo",
+        "found": false
+      },
+      {
+        "date": "2026-05-27",
+        "time": "05:30",
+        "img": "/images/pets/20260527-053030-BD0673744.jpg",
+        "type": "cat",
+        "boxedImg": "/images/pets/annotated/20260527-053030-BD0673744.jpg",
+        "found": true,
+        "analysis": "图中可以看到一只猫，环境为室内，有家具和窗户可见。image 通道识别到 cat，YOLO 未检出目标，按规则以任一通道命中 cat 作为最终结果。",
+        "petIdentity": "Ywu",
+        "yoloClasses": [],
+        "decisionSource": "conflict-resolved"
+      },
+      {
+        "date": "2026-05-27",
+        "time": "01:03",
+        "img": "/images/pets/20260527-010350-BD0673744.jpg",
+        "type": "other",
+        "boxedImg": "/images/pets/annotated/20260527-010350-BD0673744.jpg",
+        "found": false,
+        "analysis": "image 工具调用失败，未能完成 image 通道识别。 YOLO 未检测到 person/cat/dog。按规则最终判定为 other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-05-27",
+        "time": "00:34",
+        "img": "/images/pets/20260527-003254-BD0673744.jpg",
+        "type": "other",
+        "boxedImg": "/images/pets/annotated/20260527-003254-BD0673744.jpg",
+        "found": false,
+        "analysis": "image 工具调用失败，未能完成 image 通道识别。 YOLO 未检测到 person/cat/dog。按规则最终判定为 other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-05-27",
+        "time": "00:03",
+        "img": "/images/pets/20260527-000334-BD0673744.jpg",
+        "type": "other",
+        "boxedImg": "/images/pets/annotated/20260527-000334-BD0673744.jpg",
+        "found": false,
+        "analysis": "image 通道调用失败：No media-understanding provider registered for openai。YOLO 未检测到 person/cat/dog。按规则最终判定为 other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      }
+    ],
+    "2026-05-28": [
+      {
+        "date": "2026-05-28",
+        "time": "03:35",
+        "img": "/images/pets/20260528-033130-BD0673744.jpg",
+        "type": "other",
+        "boxedImg": "/images/pets/annotated/20260528-033130-BD0673744.jpg",
+        "found": false,
+        "analysis": "画面中没有人、猫或狗的存在。环境包含家具和一些物品，但没有可见的动物或人。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "both"
+      },
+      {
+        "date": "2026-05-28",
+        "time": "03:01",
+        "img": "/images/pets/20260528-030141-BD0673744.jpg",
+        "type": "cat",
+        "boxedImg": "/images/pets/annotated/20260528-030141-BD0673744.jpg",
+        "analysis": "图像通道识别到一只猫在画面中的架子上，未见明显的人或狗。YOLO 未检测到 person/cat/dog；按规则，image 与 YOLO 结论冲突时以优先级规则合并，最终采用 type=cat。",
+        "petIdentity": "猫（未确定个体）",
+        "yoloClasses": [],
+        "decisionSource": "conflict-resolved",
+        "found": true
+      }
     ]
   },
   "stats": {
-    "totalImages": 2141,
-    "personCount": 56,
-    "catCount": 83,
+    "totalImages": 2153,
+    "personCount": 57,
+    "catCount": 86,
     "dogCount": 74,
-    "lastUpdated": "2026-05-26T14:34:01.419Z",
-    "otherCount": 1928
+    "lastUpdated": "2026-05-27T19:35:13.846286Z",
+    "otherCount": 1936,
+    "foundCount": 217
   },
-  "generatedAt": "2026-05-26T21:38:24+08:00",
+  "generatedAt": "2026-05-27T19:35:13.846307Z",
   "annotatedDir": "/images/pets/annotated/",
   "badImages": [
     "source/images/pets/20260301-033000-BD0673744.jpg",
