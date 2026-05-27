@@ -15568,18 +15568,6 @@ const petImagesData = {
     "2026-05-28": [
       {
         "date": "2026-05-28",
-        "time": "03:35",
-        "img": "/images/pets/20260528-033130-BD0673744.jpg",
-        "type": "other",
-        "boxedImg": "/images/pets/annotated/20260528-033130-BD0673744.jpg",
-        "found": false,
-        "analysis": "画面中没有人、猫或狗的存在。环境包含家具和一些物品，但没有可见的动物或人。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "both"
-      },
-      {
-        "date": "2026-05-28",
         "time": "03:01",
         "img": "/images/pets/20260528-030141-BD0673744.jpg",
         "type": "cat",
@@ -15593,15 +15581,15 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2153,
+    "totalImages": 2152,
     "personCount": 57,
     "catCount": 86,
     "dogCount": 74,
-    "lastUpdated": "2026-05-27T19:35:13.846286Z",
-    "otherCount": 1936,
-    "foundCount": 217
+    "lastUpdated": "2026-05-27T19:04:10.620Z",
+    "otherCount": 1935,
+    "foundCount": 216
   },
-  "generatedAt": "2026-05-27T19:35:13.846307Z",
+  "generatedAt": "2026-05-27T14:05:37.432Z",
   "annotatedDir": "/images/pets/annotated/",
   "badImages": [
     "source/images/pets/20260301-033000-BD0673744.jpg",
