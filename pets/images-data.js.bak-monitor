@@ -15445,6 +15445,42 @@ const petImagesData = {
     "2026-05-27": [
       {
         "date": "2026-05-27",
+        "time": "17:31",
+        "img": "/images/pets/20260527-173150-BD0673744.jpg",
+        "type": "other",
+        "boxedImg": "/images/pets/annotated/20260527-173150-BD0673744.jpg",
+        "found": false,
+        "analysis": "image 通道调用失败：No media-understanding provider registered for openai。YOLO 未检测到 person/cat/dog。按规则最终判定为 other。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "yolo"
+      },
+      {
+        "date": "2026-05-27",
+        "time": "14:31",
+        "img": "/images/pets/20260527-143117-BD0673744.jpg",
+        "type": "person",
+        "boxedImg": "/images/pets/annotated/20260527-143117-BD0673744.jpg",
+        "found": true,
+        "analysis": "画面中能明确看到一名站立的人。未见猫或狗的明确形态。 冲突与最终采用规则：image 判定 ['person']，YOLO 判定 []；按 person > cat > dog 优先级，最终采用 type=person。",
+        "petIdentity": null,
+        "yoloClasses": [],
+        "decisionSource": "conflict-resolved"
+      },
+      {
+        "date": "2026-05-27",
+        "time": "13:01",
+        "img": "/images/pets/20260527-130122-BD0673744.jpg",
+        "type": "cat",
+        "boxedImg": "/images/pets/annotated/20260527-130122-BD0673744.jpg",
+        "found": true,
+        "analysis": "画面中能明确看到一只猫。未见有狗或人的明确形象。 冲突与最终采用规则：image 判定 ['cat']，YOLO 判定 []；按 person > cat > dog 优先级，最终采用 type=cat。 猫个体判定：猫（未确定个体）（能看到一只猫，但颜色证据不足，无法准确判断个体。）",
+        "petIdentity": "猫（未确定个体）",
+        "yoloClasses": [],
+        "decisionSource": "conflict-resolved"
+      },
+      {
+        "date": "2026-05-27",
         "time": "11:01",
         "img": "/images/pets/20260527-110105-BD0673744.jpg",
         "type": "other",
@@ -15506,15 +15542,15 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2146,
-    "personCount": 56,
-    "catCount": 84,
+    "totalImages": 2149,
+    "personCount": 57,
+    "catCount": 85,
     "dogCount": 74,
-    "lastUpdated": "2026-05-27T03:02:36.490Z",
-    "otherCount": 1931,
-    "foundCount": 213
+    "lastUpdated": "2026-05-27T09:32:56.778Z",
+    "otherCount": 1933,
+    "foundCount": 216
   },
-  "generatedAt": "2026-05-26T21:38:24+08:00",
+  "generatedAt": "2026-05-27T09:32:56.779Z",
   "annotatedDir": "/images/pets/annotated/",
   "badImages": [
     "source/images/pets/20260301-033000-BD0673744.jpg",
