@@ -1,5 +1,6 @@
 const petImagesData = {
   "dates": [
+    "2026-05-28",
     "2026-05-27",
     "2026-05-26",
     "2026-05-25",
@@ -15563,14 +15564,28 @@ const petImagesData = {
         "yoloClasses": [],
         "decisionSource": "yolo"
       }
+    ],
+    "2026-05-28": [
+      {
+        "date": "2026-05-28",
+        "time": "03:01",
+        "img": "/images/pets/20260528-030141-BD0673744.jpg",
+        "type": "cat",
+        "boxedImg": "/images/pets/annotated/20260528-030141-BD0673744.jpg",
+        "analysis": "图像通道识别到一只猫在画面中的架子上，未见明显的人或狗。YOLO 未检测到 person/cat/dog；按规则，image 与 YOLO 结论冲突时以优先级规则合并，最终采用 type=cat。",
+        "petIdentity": "猫（未确定个体）",
+        "yoloClasses": [],
+        "decisionSource": "conflict-resolved",
+        "found": true
+      }
     ]
   },
   "stats": {
-    "totalImages": 2151,
+    "totalImages": 2152,
     "personCount": 57,
-    "catCount": 85,
+    "catCount": 86,
     "dogCount": 74,
-    "lastUpdated": "2026-05-27T14:05:37.432Z",
+    "lastUpdated": "2026-05-27T19:04:10.620Z",
     "otherCount": 1935,
     "foundCount": 216
   },
