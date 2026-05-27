@@ -15445,30 +15445,6 @@ const petImagesData = {
     "2026-05-27": [
       {
         "date": "2026-05-27",
-        "time": "13:01",
-        "img": "/images/pets/20260527-130122-BD0673744.jpg",
-        "type": "cat",
-        "boxedImg": "/images/pets/annotated/20260527-130122-BD0673744.jpg",
-        "found": true,
-        "analysis": "画面中能明确看到一只猫。未见有狗或人的明确形象。 冲突与最终采用规则：image 判定 ['cat']，YOLO 判定 []；按 person > cat > dog 优先级，最终采用 type=cat。 猫个体判定：猫（未确定个体）（能看到一只猫，但颜色证据不足，无法准确判断个体。）",
-        "petIdentity": "猫（未确定个体）",
-        "yoloClasses": [],
-        "decisionSource": "conflict-resolved"
-      },
-      {
-        "date": "2026-05-27",
-        "time": "11:01",
-        "img": "/images/pets/20260527-110105-BD0673744.jpg",
-        "type": "other",
-        "boxedImg": "/images/pets/annotated/20260527-110105-BD0673744.jpg",
-        "analysis": "image 通道不可用（当前环境未配置可用视觉后端），未获得该通道识别结果；YOLO 未检测到 person/cat/dog，因此按可用结果保守记为 other。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "yolo",
-        "found": false
-      },
-      {
-        "date": "2026-05-27",
         "time": "05:30",
         "img": "/images/pets/20260527-053030-BD0673744.jpg",
         "type": "cat",
@@ -15518,11 +15494,11 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2147,
+    "totalImages": 2145,
     "personCount": 56,
-    "catCount": 85,
+    "catCount": 84,
     "dogCount": 74,
-    "lastUpdated": "2026-05-27T03:02:36.490Z",
+    "lastUpdated": "2026-05-26T17:05:20.105Z",
     "otherCount": 1931,
     "foundCount": 213
   },
