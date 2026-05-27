@@ -15445,18 +15445,6 @@ const petImagesData = {
     "2026-05-27": [
       {
         "date": "2026-05-27",
-        "time": "14:31",
-        "img": "/images/pets/20260527-143117-BD0673744.jpg",
-        "type": "person",
-        "boxedImg": "/images/pets/annotated/20260527-143117-BD0673744.jpg",
-        "found": true,
-        "analysis": "画面中能明确看到一名站立的人。未见猫或狗的明确形态。 冲突与最终采用规则：image 判定 ['person']，YOLO 判定 []；按 person > cat > dog 优先级，最终采用 type=person。",
-        "petIdentity": null,
-        "yoloClasses": [],
-        "decisionSource": "conflict-resolved"
-      },
-      {
-        "date": "2026-05-27",
         "time": "13:01",
         "img": "/images/pets/20260527-130122-BD0673744.jpg",
         "type": "cat",
@@ -15530,15 +15518,15 @@ const petImagesData = {
     ]
   },
   "stats": {
-    "totalImages": 2148,
-    "personCount": 57,
+    "totalImages": 2147,
+    "personCount": 56,
     "catCount": 85,
     "dogCount": 74,
-    "lastUpdated": "2026-05-27T06:33:01.855137Z",
-    "otherCount": 1932,
-    "foundCount": 216
+    "lastUpdated": "2026-05-27T03:02:36.490Z",
+    "otherCount": 1931,
+    "foundCount": 213
   },
-  "generatedAt": "2026-05-27T14:33:01+08:00",
+  "generatedAt": "2026-05-26T21:38:24+08:00",
   "annotatedDir": "/images/pets/annotated/",
   "badImages": [
     "source/images/pets/20260301-033000-BD0673744.jpg",
