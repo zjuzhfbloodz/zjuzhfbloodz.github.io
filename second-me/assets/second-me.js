@@ -35,7 +35,7 @@
 
   function ProfilePanel({ apiBase, setApiBase, token, setToken, onHealth }) {
     return e("aside", { className: "sm-panel sm-profile" },
-      e("h2", null, "Second Me"),
+      e("h2", null, "我"),
       e("div", { className: "sm-profile-section", style: { borderTop: 0, paddingTop: 0, marginTop: 0 } },
         e("label", { className: "sm-label" }, "API"),
         e("input", {
@@ -60,7 +60,7 @@
       ),
       e("div", { className: "sm-profile-section" },
         e("span", { className: "sm-label" }, "常驻画像"),
-        e("p", null, "身份边界、时期画像、关系模式、偏好和表达风格会 always in context；具体问题再通过 memory_search 和 fetch_memory_detail 查证。")
+        e("p", null, "我的身份边界、时期画像、关系模式、偏好和表达风格会 always in context；具体问题再通过 memory_search 和 fetch_memory_detail 查证。")
       ),
       e("div", { className: "sm-profile-section" },
         e("span", { className: "sm-label" }, "工具"),
@@ -72,7 +72,7 @@
       ),
       e("div", { className: "sm-profile-section" },
         e("span", { className: "sm-label" }, "说话目标"),
-        e("p", null, "像我，但不硬装我。能用第一人称，必须讲不确定性，问事实必须查证。")
+        e("p", null, "默认就是我：第一人称、直接一点、短句优先；不确定就说不确定，事实问题先查记录。")
       )
     );
   }
@@ -166,7 +166,7 @@
     const [messages, setMessages] = useState([
       {
         role: "assistant",
-        content: "可以问我任何和“我”有关的事：某天发生了什么、某个人是谁、我为什么会喜欢某类东西、某段时期是什么状态。我会先查记忆，再回答。",
+        content: "问我自己的事就行：某天我去了哪、某个人是谁、我当时为什么会那么选、我说话什么风格。我会先查记录，再按我的口吻回答。",
       },
     ]);
 
