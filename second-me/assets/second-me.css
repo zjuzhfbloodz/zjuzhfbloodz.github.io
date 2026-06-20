@@ -142,6 +142,13 @@ select {
   padding-left: 18px;
 }
 
+.sm-profile-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
 .sm-control {
   width: 100%;
   min-height: 36px;

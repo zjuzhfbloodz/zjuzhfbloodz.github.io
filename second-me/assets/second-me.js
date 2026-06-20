@@ -2,24 +2,43 @@
   const e = React.createElement;
   const { useMemo, useState } = React;
 
-  const DEFAULT_API = window.SECOND_ME_API_BASE || localStorage.getItem("secondMeApiBase") || "http://127.0.0.1:8765";
+  const FALLBACK_API = "http://localhost:8765";
+  const DEFAULT_API = window.SECOND_ME_API_BASE || localStorage.getItem("secondMeApiBase") || FALLBACK_API;
   const DEFAULT_TOKEN = localStorage.getItem("secondMeApiToken") || "";
 
   function joinUrl(base, path) {
     return String(base || "").replace(/\/+$/, "") + path;
   }
 
+  async function readJsonResponse(res) {
+    const text = await res.text();
+    try {
+      return text ? JSON.parse(text) : {};
+    } catch (err) {
+      return { error: text || res.statusText || err.message };
+    }
+  }
+
+  function apiConnectHint(apiBase) {
+    return `连接不到 API：${apiBase}。先点左侧“检查连接”；如果你是在手机或另一台电脑打开博客，localhost/127.0.0.1 指的是那台设备，不是这台 Mac。`;
+  }
+
   async function callApi(apiBase, token, path, body) {
-    const res = await fetch(joinUrl(apiBase, path), {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        ...(token ? { Authorization: "Bearer " + token } : {}),
-      },
-      body: JSON.stringify(body || {}),
-    });
-    const data = await res.json();
-    if (!res.ok) throw new Error(data.error || res.statusText);
+    let res;
+    try {
+      res = await fetch(joinUrl(apiBase, path), {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          ...(token ? { Authorization: "Bearer " + token } : {}),
+        },
+        body: JSON.stringify(body || {}),
+      });
+    } catch (err) {
+      throw new Error(apiConnectHint(apiBase) + ` 浏览器错误：${err.message}`);
+    }
+    const data = await readJsonResponse(res);
+    if (!res.ok) throw new Error(`${res.status} ${data.error || res.statusText}`);
     return data;
   }
 
@@ -33,7 +52,7 @@
     return [item.date, item.doc_type, item.involvement, item.event_type, item.confidence].filter(Boolean).join(" / ");
   }
 
-  function ProfilePanel({ apiBase, setApiBase, token, setToken, onHealth }) {
+  function ProfilePanel({ apiBase, setApiBase, token, setToken, onHealth, onResetApi }) {
     return e("aside", { className: "sm-panel sm-profile" },
       e("h2", null, "我"),
       e("div", { className: "sm-profile-section", style: { borderTop: 0, paddingTop: 0, marginTop: 0 } },
@@ -56,7 +75,10 @@
             localStorage.setItem("secondMeApiToken", ev.target.value);
           },
         }),
-        e("button", { className: "sm-chip", style: { marginTop: 10 }, onClick: onHealth }, "检查连接")
+        e("div", { className: "sm-profile-actions" },
+          e("button", { className: "sm-chip", onClick: onHealth }, "检查连接"),
+          e("button", { className: "sm-chip", onClick: onResetApi }, "恢复默认")
+        )
       ),
       e("div", { className: "sm-profile-section" },
         e("span", { className: "sm-label" }, "常驻画像"),
@@ -211,11 +233,18 @@
     async function health() {
       try {
         const res = await fetch(joinUrl(apiBase, "/api/health"));
-        const data = await res.json();
+        const data = await readJsonResponse(res);
+        if (!res.ok) throw new Error(`${res.status} ${data.error || res.statusText}`);
         setDetail({ kind: "health", status: data });
       } catch (err) {
-        setDetail({ error: "连接失败：" + err.message });
+        setDetail({ error: apiConnectHint(apiBase) + ` 浏览器错误：${err.message}` });
       }
+    }
+
+    function resetApi() {
+      setApiBase(FALLBACK_API);
+      localStorage.setItem("secondMeApiBase", FALLBACK_API);
+      setDetail({ kind: "api_reset", status: { api: FALLBACK_API, note: "已恢复默认 API，点“检查连接”确认。" } });
     }
 
     return e("div", { className: "sm-shell" },
@@ -231,7 +260,7 @@
         )
       ),
       e("main", { className: "sm-layout" },
-        e(ProfilePanel, { apiBase, setApiBase, token, setToken, onHealth: health }),
+        e(ProfilePanel, { apiBase, setApiBase, token, setToken, onHealth: health, onResetApi: resetApi }),
         e("section", { className: "sm-panel sm-chat" },
           e("div", { className: "sm-messages" },
             messages.map((msg, idx) => e(Message, { key: idx, msg, onOpen: openRef }))
