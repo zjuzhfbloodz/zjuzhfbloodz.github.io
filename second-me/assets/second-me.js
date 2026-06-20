@@ -2,10 +2,15 @@
   const e = React.createElement;
   const { useMemo, useState } = React;
 
-  const FALLBACK_API = "http://localhost:8765";
-  const DEFAULT_API = window.SECOND_ME_API_BASE || localStorage.getItem("secondMeApiBase") || FALLBACK_API;
+  const FALLBACK_API = "http://127.0.0.1:8765";
+  const LOCAL_API_CANDIDATES = ["http://127.0.0.1:8765", "http://localhost:8765"];
+  const storedApiBase = localStorage.getItem("secondMeApiBase") || "";
+  const DEFAULT_API = window.SECOND_ME_API_BASE || normalizeApiBase(storedApiBase) || FALLBACK_API;
   const DEFAULT_TOKEN = localStorage.getItem("secondMeApiToken") || "";
   const DEFAULT_THINKING = localStorage.getItem("secondMeThinking") === "true";
+  if (storedApiBase && normalizeApiBase(storedApiBase) !== storedApiBase) {
+    localStorage.setItem("secondMeApiBase", normalizeApiBase(storedApiBase));
+  }
 
   const CORE_PHOTOS = [
     {
@@ -39,6 +44,18 @@
     return String(base || "").replace(/\/+$/, "") + path;
   }
 
+  function normalizeApiBase(value) {
+    const text = String(value || "").replace(/\/+$/, "");
+    if (!text) return "";
+    if (text === "http://localhost:8765") return FALLBACK_API;
+    return text;
+  }
+
+  function apiCandidates(apiBase) {
+    const normalized = normalizeApiBase(apiBase) || FALLBACK_API;
+    return Array.from(new Set([normalized, ...LOCAL_API_CANDIDATES]));
+  }
+
   function fileUrl(apiBase, url) {
     if (!url) return "";
     if (/^https?:\/\//.test(url)) return url;
@@ -59,26 +76,47 @@
   }
 
   function apiConnectHint(apiBase) {
-    return `连接不到 API：${apiBase}。如果你是在手机或另一台电脑打开，localhost/127.0.0.1 指的是那台设备，不是这台 Mac。`;
+    return `连接不到 API：${apiBase}。如果是在这台 Mac 打开，点“设置 -> 恢复默认”或填 ${FALLBACK_API}；如果是在手机/另一台电脑打开，localhost/127.0.0.1 指的是那台设备，需要改成本机局域网 API 地址或用本地博客页面。`;
   }
 
   async function callApi(apiBase, token, path, body) {
-    let res;
-    try {
-      res = await fetch(joinUrl(apiBase, path), {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          ...(token ? { Authorization: "Bearer " + token } : {}),
-        },
-        body: JSON.stringify(body || {}),
-      });
-    } catch (err) {
-      throw new Error(apiConnectHint(apiBase) + ` 浏览器错误：${err.message}`);
+    let lastError = null;
+    for (const candidate of apiCandidates(apiBase)) {
+      try {
+        const res = await fetch(joinUrl(candidate, path), {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            ...(token ? { Authorization: "Bearer " + token } : {}),
+          },
+          body: JSON.stringify(body || {}),
+        });
+        const data = await readJsonResponse(res);
+        if (!res.ok) throw new Error(`${res.status} ${data.error || res.statusText}`);
+        if (candidate !== normalizeApiBase(apiBase)) data.__apiBase = candidate;
+        return data;
+      } catch (err) {
+        lastError = err;
+      }
     }
-    const data = await readJsonResponse(res);
-    if (!res.ok) throw new Error(`${res.status} ${data.error || res.statusText}`);
-    return data;
+    throw new Error(apiConnectHint(apiBase) + ` 浏览器错误：${lastError ? lastError.message : "Failed to fetch"}`);
+  }
+
+  async function callHealth(apiBase) {
+    let res;
+    let lastError = null;
+    for (const candidate of apiCandidates(apiBase)) {
+      try {
+        res = await fetch(joinUrl(candidate, "/api/health"));
+        const data = await readJsonResponse(res);
+        if (!res.ok) throw new Error(`${res.status} ${data.error || res.statusText}`);
+        if (candidate !== normalizeApiBase(apiBase)) data.__apiBase = candidate;
+        return data;
+      } catch (err) {
+        lastError = err;
+      }
+    }
+    throw new Error(apiConnectHint(apiBase) + ` 浏览器错误：${lastError ? lastError.message : "Failed to fetch"}`);
   }
 
   function compactTrace(trace) {
@@ -215,6 +253,10 @@
           : { evidence_ref: ref };
       try {
         const data = await callApi(apiBase, token, "/api/memory/detail", body);
+        if (data.__apiBase) {
+          setApiBase(data.__apiBase);
+          localStorage.setItem("secondMeApiBase", data.__apiBase);
+        }
         setDetail(data);
       } catch (err) {
         setDetail({ error: err.message });
@@ -230,6 +272,10 @@
       setBusy(true);
       try {
         const data = await callApi(apiBase, token, "/api/chat", { messages: next, model: "glm-4.6v", thinking });
+        if (data.__apiBase) {
+          setApiBase(data.__apiBase);
+          localStorage.setItem("secondMeApiBase", data.__apiBase);
+        }
         setMessages([...next, {
           role: "assistant",
           content: data.answer || "(empty)",
@@ -246,12 +292,14 @@
 
     async function health() {
       try {
-        const res = await fetch(joinUrl(apiBase, "/api/health"));
-        const data = await readJsonResponse(res);
-        if (!res.ok) throw new Error(`${res.status} ${data.error || res.statusText}`);
-        setMessages(m => [...m, { role: "assistant", content: `连接正常：${data.service} / ${data.model}` }]);
+        const data = await callHealth(apiBase);
+        if (data.__apiBase) {
+          setApiBase(data.__apiBase);
+          localStorage.setItem("secondMeApiBase", data.__apiBase);
+        }
+        setMessages(m => [...m, { role: "assistant", content: `连接正常：${data.service} / ${data.model}，API=${data.__apiBase || apiBase}` }]);
       } catch (err) {
-        setMessages(m => [...m, { role: "assistant", content: apiConnectHint(apiBase) + ` 浏览器错误：${err.message}` }]);
+        setMessages(m => [...m, { role: "assistant", content: err.message }]);
       }
     }
 
